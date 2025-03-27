@@ -6,7 +6,7 @@
 <!-- Unit Infos -->
 <Civ4UnitInfos xmlns="x-schema:XX_CIV4UnitSchema.xml">
 	<UnitInfos>
-			<UnitInfo>        <!-- Beastman -->
+			<UnitInfo>        <!-- Ravenous Werewolf -->
 			<Class>UNITCLASS_RAVENOUS_WEREWOLF</Class>
 			<Type>UNIT_RAVENOUS_WEREWOLF</Type>
 			<Combat>UNITCOMBAT_MELEE</Combat>
@@ -35,7 +35,7 @@
 			</UnitAIs>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_WEREWOLF_FERAL</PromotionType>
+					<PromotionType>PROMOTION_WEREWOLF</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
@@ -44,7 +44,8 @@
 				</FreePromotion>
 			</FreePromotions>
 			<iMoves>3</iMoves>
-			<iCombat>3</iCombat>
+			<iCombat>4</iCombat>
+			<iCombatDefense>2</iCombatDefense>
 			<iCityAttack>20</iCityAttack>
 			<iCultureGarrison>3</iCultureGarrison>
 			<iAsset>1</iAsset>

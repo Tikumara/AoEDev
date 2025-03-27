@@ -6,7 +6,7 @@
 <!-- Promotion Infos -->
 <Civ4PromotionInfos xmlns="x-schema:XX_CIV4UnitSchema.xml">
 	<PromotionInfos>
-			<PromotionInfo>		<!-- Werewolf Feral -->
+			<!-- <PromotionInfo>		 Werewolf Feral 
 			<Type>PROMOTION_WEREWOLF_FERAL</Type>
 			<Description>TXT_KEY_PROMOTION_WEREWOLF_FERAL</Description>
 			<Help>TXT_KEY_PROMOTION_WEREWOLF_PEDIA</Help>
@@ -73,7 +73,7 @@
 				</UnitCombat>
 			</UnitCombats>
 				<iMinLevel>-1</iMinLevel>
-		</PromotionInfo>
+		</PromotionInfo> -->
 			<PromotionInfo>		<!-- Werewolf Form -->
 			<Type>PROMOTION_WEREWOLF_FORM1</Type>
 			<Description>TXT_KEY_PROMOTION_WEREWOLF_FORM1</Description>
@@ -113,17 +113,14 @@
 			<Description>TXT_KEY_PROMOTION_WEREWOLF_FORM3</Description>
 			<bNoXP>1</bNoXP>
 			<Button>Art/Interface/Buttons/Units/Ravenous Werewolf.dds</Button>
-			<PromotionDegradesTo>
-				<Promotion>PROMOTION_WEREWOLF_FORM4</Promotion>
-			</PromotionDegradesTo>
-			<iPromotionDuration>3</iPromotionDuration>
+			<iPromotionDuration>4</iPromotionDuration>
 		</PromotionInfo>
-		<PromotionInfo>		<!-- Werewolf Form - Ready -->
+		<!-- <PromotionInfo>		 Werewolf Form - Ready 
 			<Type>PROMOTION_WEREWOLF_FORM4</Type>
 			<Description>TXT_KEY_PROMOTION_WEREWOLF_FORM4</Description>
 			<bNoXP>1</bNoXP>
 			<Button>Art/Interface/Buttons/Units/Ravenous Werewolf.dds</Button>
-		</PromotionInfo>
+		</PromotionInfo> -->
 		<PromotionInfo>		<!-- Test Promotion -->				<!-- Full Fields for use as a Template -->
 			<Type>PROMOTION_TESTPROMO</Type>
 			<Description>zzzzTestPromo</Description>

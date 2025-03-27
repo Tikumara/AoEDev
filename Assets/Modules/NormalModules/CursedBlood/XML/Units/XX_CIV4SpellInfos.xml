@@ -11,7 +11,6 @@
 			<Description>TXT_KEY_SPELL_BLOODMOON</Description>
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
 			<PromotionPrereq1>PROMOTION_WEREWOLF</PromotionPrereq1>
-			<PromotionPrereq2>PROMOTION_WEREWOLF_FORM4</PromotionPrereq2>
 			<RemovePromotions>
 				<RemovePromotion>PROMOTION_WEREWOLF_FORM4</RemovePromotion>
 			</RemovePromotions>
@@ -27,6 +26,7 @@
 			<Effect>EFFECT_WIND_SWIRL</Effect>
 			<Sound>AS3D_INSPIRE_FURY</Sound>
 			<Button>Art/Interface/Buttons/Units/Ravenous Werewolf.dds</Button>
+			<PyRequirement>reqBloodMoon(pCaster)</PyRequirement>
 		</SpellInfo>
 		<SpellInfo>			<!-- Display All Units -->				<!-- BEGIN DEBUG TOOLS -->
 			<Type>SPELL_DISPLAY_ALL_UNITS</Type>
