@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jon Shafer (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Mission Infos -->
+<Civ4MissionInfos xmlns="x-schema:XX_CIV4UnitSchema.xml">
+	<!--Changes must be reflected in CvEnums.h-->
+	<MissionInfos>
+		<MissionInfo>
+			<Type>MISSION_MOVE_TO</Type>
+			<Description>TXT_KEY_MISSION_MOVE_TO</Description>
+			<Help>TXT_KEY_MISSION_MOVE_TO_HELP</Help>
+			<Waypoint>EFFECT_FOOTSTEP_ON</Waypoint>
+			<iTime>4</iTime>
+			<bTarget>1</bTarget>
+			<bBuild>0</bBuild>
+			<bSound>0</bSound>
+		</MissionInfo>
+	</MissionInfos>
+</Civ4MissionInfos>
