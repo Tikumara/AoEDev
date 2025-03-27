@@ -99,7 +99,7 @@
 			<iExtraCombatStr>2</iExtraCombatStr>
 			<iMovesChange>2</iMovesChange>
 			<iCombatHealPercent>10</iCombatHealPercent>
-			<iPromotionDuration>1</iPromotionDuration>
+			<iPromotionDuration>2</iPromotionDuration>
 			<bAllowAttacks>1</bAllowAttacks>
 			<bFreeUnit>1</bFreeUnit>
 			<bNoSupply>1</bNoSupply>
