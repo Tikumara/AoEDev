@@ -11,21 +11,21 @@
 			<Type>UNIT_RAVENOUS_WEREWOLF</Type>
 			<Combat>UNITCOMBAT_MELEE</Combat>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_BEASTMAN</Description>
-			<Civilopedia>TXT_KEY_UNIT_WARRIOR_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_BEASTMAN_STRATEGY</Strategy>
+			<Description>TXT_KEY_UNIT_RAVENOUS_WEREWOLF</Description>
+			<Civilopedia>TXT_KEY_UNIT_RAVENOUS_WEREWOLF_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_RAVENOUS_WEREWOLF_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
-			<UnitClassUpgrades>
-				<UnitClassUpgradeType>UNITCLASS_AXEMAN</UnitClassUpgradeType>
-				<UnitClassUpgradeType>UNITCLASS_SPEARMAN</UnitClassUpgradeType>
-			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK_CITY_LEMMING</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
@@ -33,12 +33,9 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<iCost>25</iCost>
-			<iMoves>1</iMoves>
+			<iMoves>3</iMoves>
 			<iCombat>3</iCombat>
 			<iCityAttack>20</iCityAttack>
-			<iCityDefense>25</iCityDefense>
-			<iConscription>1</iConscription>
 			<iCultureGarrison>3</iCultureGarrison>
 			<iAsset>1</iAsset>
 			<UnitMeshGroups>
@@ -50,6 +47,7 @@
 					<EarlyArtDefineTag>ART_DEF_UNIT_RAVENOUS_WEREWOLF</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
+			<PrereqTech>TECH_NEVER</PrereqTech>
 			<iTier>1</iTier>
 			<iWeaponTierMax>1</iWeaponTierMax>
 		</UnitInfo>

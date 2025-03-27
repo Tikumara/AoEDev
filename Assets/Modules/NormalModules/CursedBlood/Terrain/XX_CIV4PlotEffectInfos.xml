@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Firaxis Games (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Feature -->
+<Civ4PlotEffectInfos xmlns="x-schema:XX_CIV4TerrainSchema.xml">
+	<PlotEffectInfos>
+		<PlotEffectInfo>		<!-- Blizzard -->
+			<Type>PLOT_EFFECT_BLIZZARD</Type>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Description>TXT_KEY_FEATURE_BLIZZARD</Description>
+			<DefaultFeatureGraphics>FEATURE_BLIZZARD</DefaultFeatureGraphics>
+			<iTurnDamage>10</iTurnDamage>
+			<iDamageLimit>50</iDamageLimit>
+			<DamageType>DAMAGE_COLD</DamageType>
+			<Button>Art/Interface/Buttons/TerrainFeatures/Blizzard.dds</Button>
+		</PlotEffectInfo>
+		</PlotEffectInfos>
+</Civ4PlotEffectInfos>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Civ4ClimateZoneInfos xmlns="x-schema:XX_CIV4TerrainSchema.xml">
+	<ClimateZoneInfos>
+		<ClimateZoneInfo>	<!-- Arid -->
+			<Type>CLIMATEZONE_ARID</Type>
+			<Description>TXT_KEY_CLIMATEZONE_ARID</Description>
+			<iMinTemperature>5</iMinTemperature>
+			<iMinHumidity>5</iMinHumidity>
+			<iMaxHumidity>9</iMaxHumidity>
+			<TerrainClass>TERRAINCLASS_DESERT</TerrainClass>
+		</ClimateZoneInfo>
+	</ClimateZoneInfos>
+</Civ4ClimateZoneInfos>

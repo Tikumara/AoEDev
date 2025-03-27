@@ -7,6 +7,15 @@
 <Civ4ArtDefines xmlns="x-schema:XX_CIV4ArtDefinesSchema.xml">
 	<ImprovementArtInfos>
 		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_WEREWOLF_FORTRESS</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/improvements/Hill_Giant_Fortress/HillGiantFortress.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/Castle.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,6,3</Button>
+		</ImprovementArtInfo>
+		<ImprovementArtInfo>
 			<Type>ART_DEF_IMPROVEMENT_MONSTER_SKELETON</Type>
 			<bExtraAnimations>0</bExtraAnimations>
 			<fScale>0.4</fScale>
