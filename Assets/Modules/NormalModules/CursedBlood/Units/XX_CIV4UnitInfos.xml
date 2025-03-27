@@ -33,6 +33,16 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WEREWOLF_FERAL</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FREE_UNIT</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
 			<iMoves>3</iMoves>
 			<iCombat>3</iCombat>
 			<iCityAttack>20</iCityAttack>
