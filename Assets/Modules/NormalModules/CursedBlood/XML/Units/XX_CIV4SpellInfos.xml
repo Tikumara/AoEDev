@@ -11,9 +11,6 @@
 			<Description>TXT_KEY_SPELL_BLOODMOON</Description>
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
 			<PromotionPrereq1>PROMOTION_WEREWOLF</PromotionPrereq1>
-			<RemovePromotions>
-				<RemovePromotion>PROMOTION_WEREWOLF_FORM4</RemovePromotion>
-			</RemovePromotions>
 			<bAllowAI>1</bAllowAI>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>

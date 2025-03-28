@@ -6,7 +6,7 @@
 <!-- Improvement Infos -->
 <Civ4ImprovementInfos xmlns="x-schema:XX_CIV4TerrainSchema.xml">
 	<ImprovementInfos>
-		<ImprovementInfo><!-- Barrow -->
+		<ImprovementInfo><!-- Werewolf Den -->
 			<Type>IMPROVEMENT_WEREWOLF_DEN</Type>
 			<Description>TXT_KEY_IMPROVEMENT_WEREWOLF_DEN</Description>
 			<Civilopedia>TXT_KEY_IMPROVEMENT_WEREWOLF_DEN_PEDIA</Civilopedia>
@@ -60,11 +60,11 @@
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
 			</TerrainMakesValids>
-			<ImprovementUpgrade>IMPROVEMENT_BARROW_GLOOMY</ImprovementUpgrade>
-			<iAppearanceProbability>50</iAppearanceProbability>
+			<ImprovementUpgrade>IMPROVEMENT_WEREWOLF_PACK</ImprovementUpgrade>
+			<iAppearanceProbability>30</iAppearanceProbability>
 			<SpawnUnitType>UNIT_RAVENOUS_WEREWOLF</SpawnUnitType>
 			<ImmediateSpawnUnitType>UNIT_RAVENOUS_WEREWOLF</ImmediateSpawnUnitType>
-			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
+			<SpawnUnitCiv>CIVILIZATION_ORC</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
 			<bExplorable>1</bExplorable>
@@ -75,37 +75,282 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_DEMONIC_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_UNDEAD_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_CENTAUR_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_SPIRIT_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iLairCreationWeight>75</iLairCreationWeight>
+			<iLairCreationWeight>50</iLairCreationWeight>
 			<LairCreationWeightTechs>
 				<LairCreationWeightTech>
-					<LairCreationWeightTechType>TECH_NECROMANCY</LairCreationWeightTechType>
+					<LairCreationWeightTechType>TECH_TRACKING</LairCreationWeightTechType>
 					<iLairCreationWeightTech>-20</iLairCreationWeightTech>
 				</LairCreationWeightTech>
 			</LairCreationWeightTechs>
 			<LairUpgradeTechs>
 				<LairUpgradeTech>
-					<LairUpgradeTechType>TECH_NECROMANCY</LairUpgradeTechType>
+					<LairUpgradeTechType>TECH_TRACKING</LairUpgradeTechType>
 					<iLairUpgradeTech>30</iLairUpgradeTech>
 				</LairUpgradeTech>
 			</LairUpgradeTechs>
 			<SpawnPromotions>
-				<Promotion>PROMOTION_STIGMATA</Promotion>
+				<Promotion>PROMOTION_FOREST_STEALTH</Promotion>
 			</SpawnPromotions>
 			<GuardianPromotions>
 				<Promotion>PROMOTION_LEASH_1</Promotion>
-				<Promotion>PROMOTION_STIGMATA</Promotion>
+				<Promotion>PROMOTION_MAGIC_RESISTANCE</Promotion>
+			</GuardianPromotions>
+		</ImprovementInfo>
+		<ImprovementInfo><!-- Werewolf Pack -->
+			<Type>IMPROVEMENT_WEREWOLF_PACK</Type>
+			<Description>TXT_KEY_IMPROVEMENT_WEREWOLF_PACK</Description>
+			<Civilopedia>TXT_KEY_IMPROVEMENT_BARROW_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_WEREWOLF_FORTRESS</ArtDefineTag>
+			<bPermanent>1</bPermanent>
+			<iPillageGold>10</iPillageGold>
+			<bOutsideBorders>1</bOutsideBorders>
+			<TerrainMakesValids>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_BROKEN_LANDS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_FIELDS_OF_PERDITION</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_SHALLOWS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_TAIGA</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_GLACIER</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+			</TerrainMakesValids>
+			<ImprovementUpgrade>IMPROVEMENT_WEREWOLF_CLAN</ImprovementUpgrade>
+			<SpawnUnitType>UNIT_RAVENOUS_WEREWOLF</SpawnUnitType>
+			<ImmediateSpawnUnitType>UNIT_GREATER_WEREWOLF</ImmediateSpawnUnitType>
+			<SpawnUnitCiv>CIVILIZATION_ORC</SpawnUnitCiv>
+			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
+			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
+			<bExplorable>1</bExplorable>
+			<iLairTier>2</iLairTier>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIVING_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_CENTAUR_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_CENTAUR_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_NATURE_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<LairCreationWeightTechs>
+				<LairCreationWeightTech>
+					<LairCreationWeightTechType>TECH_TRACKING</LairCreationWeightTechType>
+					<iLairCreationWeightTech>25</iLairCreationWeightTech>
+				</LairCreationWeightTech>
+				<LairCreationWeightTech>
+					<LairCreationWeightTechType>TECH_FERAL_BOND</LairCreationWeightTechType>
+					<iLairCreationWeightTech>-25</iLairCreationWeightTech>
+				</LairCreationWeightTech>
+			</LairCreationWeightTechs>
+			<LairUpgradeTechs>
+				<LairUpgradeTech>
+					<LairUpgradeTechType>TECH_FERAL_BOND</LairUpgradeTechType>
+					<iLairUpgradeTech>30</iLairUpgradeTech>
+				</LairUpgradeTech>
+			</LairUpgradeTechs>
+			<SpawnPromotions>
+				<Promotion>PROMOTION_FOREST_STEALTH</Promotion>
+			</SpawnPromotions>
+			<GuardianPromotions>
+				<Promotion>PROMOTION_LEASH_1</Promotion>
+				<Promotion>PROMOTION_MAGIC_RESISTANCE</Promotion>
+			</GuardianPromotions>
+		</ImprovementInfo>
+				<ImprovementInfo><!-- Werewolf Clan -->
+			<Type>IMPROVEMENT_WEREWOLF_CLAN</Type>
+			<Description>TXT_KEY_IMPROVEMENT_WEREWOLF_CLAN</Description>
+			<Civilopedia>TXT_KEY_IMPROVEMENT_BARROW_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_WEREWOLF_FORTRESS</ArtDefineTag>
+			<bPermanent>1</bPermanent>
+			<iPillageGold>10</iPillageGold>
+			<bOutsideBorders>1</bOutsideBorders>
+			<TerrainMakesValids>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_BROKEN_LANDS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_FIELDS_OF_PERDITION</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_SHALLOWS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_TAIGA</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_GLACIER</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+			</TerrainMakesValids>
+			<SpawnUnitType>UNIT_GREATER_WEREWOLF_WEREWOLF</SpawnUnitType>
+			<ImmediateSpawnUnitType>UNIT_GREATER_WEREWOLF</ImmediateSpawnUnitType>
+			<SpawnUnitCiv>CIVILIZATION_ORC</SpawnUnitCiv>
+			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
+			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
+			<bExplorable>1</bExplorable>
+			<iLairTier>3</iLairTier>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIVING_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIVING_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_CENTAUR_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_CENTAUR_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_CENTAUR_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_NATURE_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_NATURE_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<LairCreationWeightTechs>
+				<LairCreationWeightTech>
+					<LairCreationWeightTechType>TECH_FERAL_BOND</LairCreationWeightTechType>
+					<iLairCreationWeightTech>30</iLairCreationWeightTech>
+				</LairCreationWeightTech>
+			</LairCreationWeightTechs>
+			<SpawnPromotions>
+				<Promotion>PROMOTION_FOREST_STEALTH</Promotion>
+			</SpawnPromotions>
+			<GuardianPromotions>
+				<Promotion>PROMOTION_LEASH_1</Promotion>
+				<Promotion>PROMOTION_MAGIC_RESISTANCE</Promotion>
 			</GuardianPromotions>
 		</ImprovementInfo>
 		<ImprovementInfo><!-- Ash Field -->

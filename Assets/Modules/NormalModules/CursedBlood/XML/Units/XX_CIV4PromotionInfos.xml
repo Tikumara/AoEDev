@@ -99,11 +99,12 @@
 			<iExtraCombatStr>2</iExtraCombatStr>
 			<iMovesChange>2</iMovesChange>
 			<iCombatHealPercent>10</iCombatHealPercent>
-			<iPromotionDuration>2</iPromotionDuration>
+			<iPromotionDuration>3</iPromotionDuration>
 			<bAllowAttacks>1</bAllowAttacks>
 			<bFreeUnit>1</bFreeUnit>
 			<bNoSupply>1</bNoSupply>
 			<bAIControl>1</bAIControl>
+			<iVisibilityChange>2</iVisibilityChange>
 			<PromotionDegradesTo>
 				<Promotion>PROMOTION_WEREWOLF_FORM3</Promotion>
 			</PromotionDegradesTo>
@@ -113,7 +114,7 @@
 			<Description>TXT_KEY_PROMOTION_WEREWOLF_FORM3</Description>
 			<bNoXP>1</bNoXP>
 			<Button>Art/Interface/Buttons/Units/Ravenous Werewolf.dds</Button>
-			<iPromotionDuration>4</iPromotionDuration>
+			<iPromotionDuration>5</iPromotionDuration>
 		</PromotionInfo>
 		<!-- <PromotionInfo>		 Werewolf Form - Ready 
 			<Type>PROMOTION_WEREWOLF_FORM4</Type>
