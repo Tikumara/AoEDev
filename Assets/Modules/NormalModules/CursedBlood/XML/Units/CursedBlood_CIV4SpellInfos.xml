@@ -4,12 +4,13 @@
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- Spell Infos -->
-<Civ4SpellInfos xmlns="x-schema:XX_CIV4UnitSpellSchema.xml">
+<Civ4SpellInfos xmlns="x-schema:CursedBlood_CIV4UnitSpellSchema.xml">
 	<SpellInfos>
 		<SpellInfo>			<!-- Blood Moon -->
 			<Type>SPELL_BLOODMOON</Type>
 			<Description>TXT_KEY_SPELL_BLOODMOON</Description>
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Help>TXT_KEY_SPELL_BLOODMOON_HELP</Help>
 			<PromotionPrereq1>PROMOTION_WEREWOLF</PromotionPrereq1>
 			<bAllowAI>1</bAllowAI>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
@@ -22,7 +23,7 @@
 			<bBuffCasterOnly>1</bBuffCasterOnly>
 			<Effect>EFFECT_WIND_SWIRL</Effect>
 			<Sound>AS3D_INSPIRE_FURY</Sound>
-			<Button>Art/Interface/Buttons/Units/Ravenous Werewolf.dds</Button>
+			<Button>Modules/NormalModules/CursedBlood/Art/Interface/Buttons/Promotions/BloodMoonTransform.dds</Button>
 			<PyRequirement>reqBloodMoon(pCaster)</PyRequirement>
 		</SpellInfo>
 		<SpellInfo>			<!-- Display All Units -->				<!-- BEGIN DEBUG TOOLS -->

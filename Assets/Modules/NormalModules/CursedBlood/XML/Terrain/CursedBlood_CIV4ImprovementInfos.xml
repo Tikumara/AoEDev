@@ -4,7 +4,7 @@
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- Improvement Infos -->
-<Civ4ImprovementInfos xmlns="x-schema:XX_CIV4TerrainSchema.xml">
+<Civ4ImprovementInfos xmlns="x-schema:CursedBlood_CIV4TerrainSchema.xml">
 	<ImprovementInfos>
 		<ImprovementInfo><!-- Werewolf Den -->
 			<Type>IMPROVEMENT_WEREWOLF_DEN</Type>
@@ -111,7 +111,7 @@
 		<ImprovementInfo><!-- Werewolf Pack -->
 			<Type>IMPROVEMENT_WEREWOLF_PACK</Type>
 			<Description>TXT_KEY_IMPROVEMENT_WEREWOLF_PACK</Description>
-			<Civilopedia>TXT_KEY_IMPROVEMENT_BARROW_PEDIA</Civilopedia>
+			<Civilopedia>TXT_KEY_IMPROVEMENT_WEREWOLF_DEN_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_WEREWOLF_FORTRESS</ArtDefineTag>
 			<bPermanent>1</bPermanent>
 			<iPillageGold>10</iPillageGold>
@@ -231,7 +231,7 @@
 				<ImprovementInfo><!-- Werewolf Clan -->
 			<Type>IMPROVEMENT_WEREWOLF_CLAN</Type>
 			<Description>TXT_KEY_IMPROVEMENT_WEREWOLF_CLAN</Description>
-			<Civilopedia>TXT_KEY_IMPROVEMENT_BARROW_PEDIA</Civilopedia>
+			<Civilopedia>TXT_KEY_IMPROVEMENT_WEREWOLF_DEN_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_WEREWOLF_FORTRESS</ArtDefineTag>
 			<bPermanent>1</bPermanent>
 			<iPillageGold>10</iPillageGold>
@@ -282,7 +282,7 @@
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
 			</TerrainMakesValids>
-			<SpawnUnitType>UNIT_GREATER_WEREWOLF_WEREWOLF</SpawnUnitType>
+			<SpawnUnitType>UNIT_GREATER_WEREWOLF</SpawnUnitType>
 			<ImmediateSpawnUnitType>UNIT_GREATER_WEREWOLF</ImmediateSpawnUnitType>
 			<SpawnUnitCiv>CIVILIZATION_ORC</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>

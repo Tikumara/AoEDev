@@ -5,7 +5,7 @@
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- UnitClass Schema -->
-<Civ4UnitClassInfos xmlns="x-schema:XX_CIV4UnitSchema.xml">
+<Civ4UnitClassInfos xmlns="x-schema:CursedBlood_CIV4UnitSchema.xml">
 	<UnitClassInfos>
 	<UnitClassInfo>
 			<Type>UNITCLASS_RAVENOUS_WEREWOLF</Type>

@@ -4,7 +4,7 @@
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- Unit Infos -->
-<Civ4UnitInfos xmlns="x-schema:XX_CIV4UnitSchema.xml">
+<Civ4UnitInfos xmlns="x-schema:CursedBlood_CIV4UnitSchema.xml">
 	<UnitInfos>
 			<UnitInfo>        <!-- Ravenous Werewolf -->
 			<Class>UNITCLASS_RAVENOUS_WEREWOLF</Class>
@@ -34,15 +34,11 @@
 					<PromotionType>PROMOTION_WEREWOLF</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
-				<FreePromotion>
-					<PromotionType>PROMOTION_FREE_UNIT</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
 			</FreePromotions>
 			<iExtraPerception>2</iExtraPerception>
 			<iMoves>2</iMoves>
-			<iCombat>5</iCombat>
-			<iCombatDefense>2</iCombatDefense>
+			<iCombat>4</iCombat>
+			<iCombatDefense>1</iCombatDefense>
 			<iCityAttack>20</iCityAttack>
 			<iAsset>1</iAsset>
 			<UnitMeshGroups>

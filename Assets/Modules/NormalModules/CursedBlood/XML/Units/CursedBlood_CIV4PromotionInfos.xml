@@ -4,81 +4,13 @@
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- Promotion Infos -->
-<Civ4PromotionInfos xmlns="x-schema:XX_CIV4UnitSchema.xml">
+<Civ4PromotionInfos xmlns="x-schema:CursedBlood_CIV4UnitSchema.xml">
 	<PromotionInfos>
-			<!-- <PromotionInfo>		 Werewolf Feral 
-			<Type>PROMOTION_WEREWOLF_FERAL</Type>
-			<Description>TXT_KEY_PROMOTION_WEREWOLF_FERAL</Description>
-			<Help>TXT_KEY_PROMOTION_WEREWOLF_PEDIA</Help>
-			<bNonAbandon>1</bNonAbandon>
-			<bPrereqAlive>1</bPrereqAlive>
-			<iSlaveGenerationChance>30</iSlaveGenerationChance>
-			<bPrereqAliveCapture>1</bPrereqAliveCapture>
-			<CapturePromotions>
-				<PromotionType>PROMOTION_WEREWOLF</PromotionType>
-			</CapturePromotions>
-			<PromotionExcludes>
-				<Promotion>PROMOTION_TAME</Promotion>
-			</PromotionExcludes>
-			<PromotionOverwrites>
-				<Promotion>PROMOTION_TAME</Promotion>
-			</PromotionOverwrites>
-			<PythonPostCombatLost>postCombatLossWerewolf(pCaster, pOpponent)</PythonPostCombatLost>
-			<PythonPostCombatWon>postCombatWinWerewolf(pCaster, pOpponent)</PythonPostCombatWon>
-			<Button>Art/Interface/Buttons/Promotions/Werewolf.dds</Button>
-			<UnitCombats>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-			</UnitCombats>
-				<iMinLevel>-1</iMinLevel>
-		</PromotionInfo> -->
 			<PromotionInfo>		<!-- Werewolf Form -->
 			<Type>PROMOTION_WEREWOLF_FORM1</Type>
 			<Description>TXT_KEY_PROMOTION_WEREWOLF_FORM1</Description>
 			<bNoXP>1</bNoXP>
-			<Button>Art/Interface/Buttons/Units/Ravenous Werewolf.dds</Button>
+			<Button>Modules/NormalModules/CursedBlood/Art/Interface/Buttons/Promotions/BloodMoonTransform.dds</Button>
 			<ReplaceArtType>ART_DEF_UNIT_RAVENOUS_WEREWOLF</ReplaceArtType>
 			<bFreeUnit>1</bFreeUnit>
 			<bNoSupply>1</bNoSupply>
@@ -94,7 +26,7 @@
 			<Type>PROMOTION_WEREWOLF_FORM2</Type>
 			<Description>TXT_KEY_PROMOTION_WEREWOLF_FORM2</Description>
 			<bNoXP>1</bNoXP>
-			<Button>Art/Interface/Buttons/Units/Ravenous Werewolf.dds</Button>
+			<Button>Modules/NormalModules/CursedBlood/Art/Interface/Buttons/Promotions/BloodMoonRage.dds</Button>
 			<ReplaceArtType>ART_DEF_UNIT_RAVENOUS_WEREWOLF</ReplaceArtType>
 			<iExtraCombatStr>2</iExtraCombatStr>
 			<iMovesChange>2</iMovesChange>
@@ -113,15 +45,9 @@
 			<Type>PROMOTION_WEREWOLF_FORM3</Type>
 			<Description>TXT_KEY_PROMOTION_WEREWOLF_FORM3</Description>
 			<bNoXP>1</bNoXP>
-			<Button>Art/Interface/Buttons/Units/Ravenous Werewolf.dds</Button>
+			<Button>Modules/NormalModules/CursedBlood/Art/Interface/Buttons/Promotions/BloodMoonRecover.dds</Button>
 			<iPromotionDuration>5</iPromotionDuration>
 		</PromotionInfo>
-		<!-- <PromotionInfo>		 Werewolf Form - Ready 
-			<Type>PROMOTION_WEREWOLF_FORM4</Type>
-			<Description>TXT_KEY_PROMOTION_WEREWOLF_FORM4</Description>
-			<bNoXP>1</bNoXP>
-			<Button>Art/Interface/Buttons/Units/Ravenous Werewolf.dds</Button>
-		</PromotionInfo> -->
 		<PromotionInfo>		<!-- Test Promotion -->				<!-- Full Fields for use as a Template -->
 			<Type>PROMOTION_TESTPROMO</Type>
 			<Description>zzzzTestPromo</Description>
