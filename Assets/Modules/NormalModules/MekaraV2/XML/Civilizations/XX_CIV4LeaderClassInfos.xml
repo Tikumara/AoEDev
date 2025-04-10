@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+
+<Civ4LeaderClassInfos xmlns="x-schema:XX_CIV4CivilizationsSchema.xml">
+	<LeaderClassInfos>
+			<LeaderClassInfo> <!--Barb-->
+			<Type>LEADERCLASS_BARB</Type>
+			<Description>TXT_KEY_LEADERCLASS_BARB</Description>
+			<LeaderStatus>NO_STATUS</LeaderStatus>
+		</LeaderClassInfo>
+	</LeaderClassInfos>
+</Civ4LeaderClassInfos>

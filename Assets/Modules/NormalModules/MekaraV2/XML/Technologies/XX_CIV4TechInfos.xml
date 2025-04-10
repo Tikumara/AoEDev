@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Tech Infos -->
+<Civ4TechInfos xmlns="x-schema:XX_CIV4TechnologiesSchema.xml">
+	<TechInfos>
+		<TechInfo>		<!-- Agriculture -->
+			<Type>TECH_AGRICULTURE</Type>
+			<Description>TXT_KEY_TECH_AGRICULTURE</Description>
+			<Strategy>TEXT_MUST_BE_WRITTEN</Strategy>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<iAIWeight>45</iAIWeight>
+			<iCost>125</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<Era>ERA_ANCIENT</Era>
+			<iAsset>8</iAsset>
+			<bTrade>1</bTrade>
+			<bGoodyTech>1</bGoodyTech>
+			<iGridX>1</iGridX>
+			<iGridY>7</iGridY>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>20</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_HEALTH</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+			</Flavors>
+			<Quote>TXT_KEY_TECH_AGRICULTURE_QUOTE</Quote>
+			<Sound>AS2D_TECH_DING</Sound>
+			<SoundMP>AS2D_TECH_DING</SoundMP>
+			<Button>,Art/Interface/Buttons/TechTree/Agriculture.dds,Art/Interface/Buttons/TechTree_Atlas.dds,1,1</Button>
+		</TechInfo>
+	</TechInfos>
+</Civ4TechInfos>

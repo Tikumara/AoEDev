@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Event Infos -->
+<Civ4EventInfos xmlns="x-schema:XX_CIV4EventSchema.xml">
+	<EventInfos>
+		<EventInfo>
+			<Type>EVENT_OPHELIA_SCION</Type>
+			<Description>TXT_KEY_EVENT_OPHELIA_SCION</Description>
+			<PythonCallback>doOpheliaScion</PythonCallback>
+			<PythonHelp>helpOpheliaScion</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>1000</iAIValue>
+		</EventInfo>
+	</EventInfos>
+</Civ4EventInfos>

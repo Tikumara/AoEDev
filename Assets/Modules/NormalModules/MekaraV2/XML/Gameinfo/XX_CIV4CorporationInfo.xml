@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Religion -->
+<Civ4CorporationInfo xmlns="x-schema:XX_CIV4GameInfoSchema.xml">
+	<CorporationInfos>
+		<CorporationInfo>
+			<Type>CORPORATION_FISHERMANS_GUILD</Type>
+			<Description>TXT_KEY_CORPORATION_FISHERMANS_GUILD</Description>
+			<Civilopedia>TXT_KEY_CORPORATION_FISHERMANS_GUILD_PEDIA</Civilopedia>
+			<TechPrereq>NONE</TechPrereq>
+			<FreeUnitClass>NONE</FreeUnitClass>
+			<iSpreadFactor>200</iSpreadFactor>
+			<iTGAIndex>0</iTGAIndex>
+			<iSpreadCost>25</iSpreadCost>
+			<iMaintenance>0</iMaintenance>
+			<PrereqBonuses>
+				<BonusType>BONUS_CRAB</BonusType>
+				<BonusType>BONUS_FISH</BonusType>
+				<BonusType>BONUS_CLAM</BonusType>
+				<BonusType>BONUS_SHRIMP</BonusType>
+			</PrereqBonuses>
+			<HeadquarterCommerces>
+				<iHeadquarterCommerce>0</iHeadquarterCommerce>
+				<iHeadquarterCommerce>0</iHeadquarterCommerce>
+				<iHeadquarterCommerce>0</iHeadquarterCommerce>
+			</HeadquarterCommerces>
+			<BonusProduced>NONE</BonusProduced>
+			<CommercesProduced>
+				<iCommerceProduced>0</iCommerceProduced>
+				<iCommerceProduced>0</iCommerceProduced>
+			</CommercesProduced>
+			<YieldsProduced>
+				<iYieldProduced>25</iYieldProduced>
+				<iYieldProduced>0</iYieldProduced>
+				<iYieldProduced>50</iYieldProduced>
+			</YieldsProduced>
+			<Button>Art/Interface/Buttons/Guilds/KingfisherBrotherhood.dds</Button>
+			<MovieFile>NONE</MovieFile>
+			<MovieSound>NONE</MovieSound>
+			<Sound>AS2D_BUILD_LIGHTHOUSE</Sound>
+			<iCrime>0</iCrime>
+		</CorporationInfo>
+	</CorporationInfos>
+</Civ4CorporationInfo>

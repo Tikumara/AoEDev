@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jason Winokur (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- World Picker -->
+<Civ4WorldPickerInfos xmlns="x-schema:XX_CIV4InterfaceSchema.xml">
+	<WorldPickerInfos>
+		<WorldPickerInfo>
+			<MapName>DefaultWorldPicker</MapName>
+			<ModelFile>Art/Interface/Screens/WorldPicker/Globe.nif</ModelFile>
+			<Sizes>
+				<Size>1.0</Size> <!-- Random -->
+			</Sizes>
+			<Climates>
+				<ClimatePath>Art/Interface/Screens/WorldPicker/MapBlank.dds</ClimatePath> <!-- Random -->
+			</Climates>
+			<WaterLevelDecals>
+				<WaterLevelDecalPath>Art/Interface/Screens/WorldPicker/FLAT_DARK.dds</WaterLevelDecalPath> <!-- Random -->
+			</WaterLevelDecals>
+			<WaterLevelGloss>
+				<WaterLevelGlossPath>Art/Interface/Screens/WorldPicker/MapBlank.dds</WaterLevelGlossPath> <!-- Random -->
+			</WaterLevelGloss>
+		</WorldPickerInfo>
+	</WorldPickerInfos>
+</Civ4WorldPickerInfos>

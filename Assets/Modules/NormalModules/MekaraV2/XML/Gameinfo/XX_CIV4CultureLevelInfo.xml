@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jesse Smith (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Culture Level Infos -->
+<Civ4CultureLevelInfo xmlns="x-schema:XX_CIV4GameInfoSchema.xml">
+	<CultureLevelInfos>
+		<CultureLevelInfo>
+			<Type>CULTURELEVEL_NONE</Type>
+			<Description>TXT_KEY_CULTURELEVEL_NONE</Description>
+			<iCityDefenseModifier>0</iCityDefenseModifier>
+			<SpeedThresholds>
+				<SpeedThreshold>
+					<GameSpeedType>GAMESPEED_MARATHON</GameSpeedType>
+					<iThreshold>0</iThreshold>
+				</SpeedThreshold>
+				<SpeedThreshold>
+					<GameSpeedType>GAMESPEED_EPIC</GameSpeedType>
+					<iThreshold>0</iThreshold>
+				</SpeedThreshold>
+				<SpeedThreshold>
+					<GameSpeedType>GAMESPEED_NORMAL</GameSpeedType>
+					<iThreshold>0</iThreshold>
+				</SpeedThreshold>
+				<SpeedThreshold>
+					<GameSpeedType>GAMESPEED_QUICK</GameSpeedType>
+					<iThreshold>0</iThreshold>
+				</SpeedThreshold>
+			</SpeedThresholds>
+		</CultureLevelInfo>
+	</CultureLevelInfos>
+</Civ4CultureLevelInfo>

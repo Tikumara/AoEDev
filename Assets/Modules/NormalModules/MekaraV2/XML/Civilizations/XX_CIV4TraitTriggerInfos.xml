@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+
+<Civ4TraitTriggerInfos xmlns="x-schema:XX_CIV4CivilizationsSchema.xml">
+	<TraitTriggerInfos>
+		<TraitTriggerInfo> <!-- Acquire City			by Conquest                             Aggressive -->
+			<Type>TRAITTRIGGER_CONQUER_CITY_IMPORTANT</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_AGGRESSIVE</TraitType>
+					<iModifier>300</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>
+			<TraitHookType>TRAITHOOK_CITY_ACQUIRE</TraitHookType>
+			<bPrereqConquest>1</bPrereqConquest>
+		</TraitTriggerInfo>
+	</TraitTriggerInfos>
+</Civ4TraitTriggerInfos>

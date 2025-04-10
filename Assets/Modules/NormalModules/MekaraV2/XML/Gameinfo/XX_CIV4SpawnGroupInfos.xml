@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+<Civ4SpawnGroupInfos xmlns="x-schema:XX_CIV4GameInfoSchema.xml">
+	<SpawnGroupInfos>
+		<SpawnGroupInfo>	<!-- Dummy -->
+			<Type>SPAWN_GROUP_TEST</Type>
+			<Description>TXT_KEY_SPAWN_GROUP_TEST</Description>
+			<Civilopedia>TXT_KEY_SPAWN_GROUP_TEST_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPAWN_GROUP_TEST_STRATEGY</Strategy>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<bUnique>0</bUnique>
+			<bAlwaysSpawn>0</bAlwaysSpawn>
+			<bNeverSpawn>0</bNeverSpawn>
+			<bNaval>0</bNaval>
+			<iPrereqMinTurn>0</iPrereqMinTurn>
+			<iPrereqMaxTurn>0</iPrereqMaxTurn>
+			<iPrereqMinAC>0</iPrereqMinAC>
+			<iPrereqMaxAC>0</iPrereqMaxAC>
+			<PrereqRitual/>
+			<iWeight>0</iWeight>
+			<CommanderUnits/>
+			<GroupUnits/>
+			<GroupUnitClasses/>
+			<GroupPromotions/>
+			<CommanderPromotions/>
+			<SpawnTerrains/>
+			<SpawnFeatures/>
+			<PrereqTechANDs/>
+			<PrereqTechORs/>
+			<BlockTechANDs/>
+			<BlockTechORs/>
+			<PyOnSpawn/>
+			<PyRequirement/>
+		</SpawnGroupInfo>
+	</SpawnGroupInfos>
+</Civ4SpawnGroupInfos>

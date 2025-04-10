@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Dean Ray Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Soundscapes -->
+<ScriptSoundscapes xmlns="x-schema:XX_AudioScriptSchema.xml">
+	<ScriptSoundscape>
+		<ScriptID>ASSS_FIRE_SELECT_AMB</ScriptID>
+		<iMinVolume>100</iMinVolume>
+		<iMaxVolume>100</iMaxVolume>
+		<SoundscapeElement>
+			<ScriptType>2D</ScriptType>
+			<ScriptID>AS2D_SS_FIRELOOP</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_FIRELOOP</ScriptID>
+		</SoundscapeElement>
+	</ScriptSoundscape>
+</ScriptSoundscapes>

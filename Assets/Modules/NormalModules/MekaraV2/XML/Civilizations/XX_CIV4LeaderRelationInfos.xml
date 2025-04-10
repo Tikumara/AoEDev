@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Relations between leaders -->
+<Civ4LeaderRelationInfos xmlns="x-schema:XX_CIV4LeaderRelationsSchema.xml">
+	<LeaderRelationInfos>
+			<LeaderRelationInfo>
+			<Type>LEADERRELATION_ABSAROKE</Type>
+			<Leader>LEADER_CHISLEV</Leader>
+			<LeaderAttitudeChanges>
+				<LeaderAttitudeChange>
+					<TargetLeaderType>LEADER_HAFGAN</TargetLeaderType>
+					<iAttitudeChange>-5</iAttitudeChange>
+				</LeaderAttitudeChange>
+				<LeaderAttitudeChange>
+					<TargetLeaderType>LEADER_JONAS</TargetLeaderType>
+					<iAttitudeChange>-6</iAttitudeChange>
+				</LeaderAttitudeChange>
+				<LeaderAttitudeChange>
+					<TargetLeaderType>LEADER_SHEELBA</TargetLeaderType>
+					<iAttitudeChange>-4</iAttitudeChange>
+				</LeaderAttitudeChange>
+			</LeaderAttitudeChanges>
+		</LeaderRelationInfo>
+	</LeaderRelationInfos>
+</Civ4LeaderRelationInfos>

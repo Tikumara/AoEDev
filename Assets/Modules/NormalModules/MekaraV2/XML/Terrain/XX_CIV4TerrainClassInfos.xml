@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Civ4TerrainClassInfos xmlns="x-schema:XX_CIV4TerrainSchema.xml">
+	<TerrainClassInfos>
+		<TerrainClassInfo>		<!-- Coast -->
+			<Type>TERRAINCLASS_COAST</Type>
+			<iDefaultTemperature>2</iDefaultTemperature>
+			<iDefaultHumidity>2</iDefaultHumidity>
+			<NaturalTerrain>TERRAIN_COAST</NaturalTerrain>
+			<HellTerrain>TERRAIN_BLIGHTED_COAST</HellTerrain>
+		</TerrainClassInfo>
+		</TerrainClassInfos>
+</Civ4TerrainClassInfos>

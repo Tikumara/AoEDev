@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civic Infos -->
+<Civ4CivicInfos xmlns="x-schema:XX_CIV4GameInfoSchema.xml">
+	<CivicInfos>
+		<CivicInfo>		<!-- Despotism -->
+			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+			<Type>CIVIC_DESPOTISM</Type>
+			<Description>TXT_KEY_CIVIC_DESPOTISM</Description>
+			<Button>,Art/Interface/Buttons/Civics/Despotism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,5,1</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<Upkeep>UPKEEP_LOW</Upkeep>
+			<iNumCitiesMaintenanceModifier>50</iNumCitiesMaintenanceModifier>
+			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_DESPOT</WeLoveTheKing>
+			<iWorkerSpeedModifier>25</iWorkerSpeedModifier>
+		</CivicInfo>
+	</CivicInfos>
+</Civ4CivicInfos>

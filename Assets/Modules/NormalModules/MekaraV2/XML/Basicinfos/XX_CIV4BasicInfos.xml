@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+<Civ4BasicInfos xmlns="x-schema:XX_CIV4BasicInfoSchema.xml">
+	<LoreInfos>
+		<LoreInfo>
+			<Type>LORE_FALL_FROM_HEAVEN_HISTORY</Type>
+			<Description>TXT_KEY_LORE_FALL_FROM_HEAVEN_HISTORY</Description>
+			<Civilopedia>TXT_KEY_LORE_FALL_FROM_HEAVEN_HISTORY_PEDIA</Civilopedia>
+		</LoreInfo>
+	</LoreInfos>
+	<ConceptInfos>
+		<ConceptInfo>
+			<Type>CONCEPT_AFFINITY</Type>
+			<Description>TXT_KEY_CONCEPT_AFFINITY</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_AFFINITY_PEDIA</Civilopedia>
+		</ConceptInfo>
+	</ConceptInfos>
+</Civ4BasicInfos>

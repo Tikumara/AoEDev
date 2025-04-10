@@ -1,0 +1,16 @@
+[name]
+MekaraV2
+[version]
+1.0
+[rifeversion]
+378
+[author]
+Tikumara
+[dependency]
+;Ashes of Erebus
+[compatible]
+;(everything)
+[shortdesc]
+Rebuild the Mekara Order 
+[desc]
+The Mekara Order is built on a throne of lies. Better to burn the corrupted to ash and begin anew.

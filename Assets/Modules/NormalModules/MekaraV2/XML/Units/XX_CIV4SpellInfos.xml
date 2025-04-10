@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:XX_CIV4UnitSpellSchema.xml">
+	<SpellInfos>
+		<SpellInfo>			<!-- Display All Units -->				<!-- BEGIN DEBUG TOOLS -->
+			<Type>SPELL_DISPLAY_ALL_UNITS</Type>
+			<Description>TXT_KEY_SPELL_DISPLAY_ALL_UNITS</Description>
+			<Civilopedia>TXT_KEY_SPELL_FOUND_TEMPLE_OF_GIFT_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_DISPLAY_ALL_UNITS_HELP</Help>
+			<TechPrereq>TECH_NEVER</TechPrereq>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>0</bHasCasted>
+			<PyResult>displayAllUnits(pCaster)</PyResult>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_FOUND_TEMPLE</Sound>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Units/duck.dds</Button>
+		</SpellInfo>
+</SpellInfos>
+</Civ4SpellInfos>

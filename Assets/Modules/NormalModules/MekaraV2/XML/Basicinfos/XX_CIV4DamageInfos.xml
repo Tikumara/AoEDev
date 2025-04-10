@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+<Civ4DamageInfos xmlns="x-schema:XX_CIV4BasicInfoSchema.xml">
+	<DamageInfos>
+		<DamageInfo>
+			<Type>DAMAGE_COLD</Type>
+			<Description>TXT_KEY_DAMAGE_COLD</Description>
+			<Button>Art/Interface/Buttons/Cold.dds</Button>
+		</DamageInfo>
+	</DamageInfos>
+</Civ4DamageInfos>

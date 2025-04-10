@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Project -->
+<Civ4ProjectInfo xmlns="x-schema:XX_CIV4GameInfoSchema.xml">
+	<ProjectInfos>
+		<ProjectInfo>		<!-- Appease Divinity -->
+			<Type>PROJECT_APPEASE_DIVINITY</Type>
+			<Description>TXT_KEY_PROJECT_APPEASE_DIVINITY</Description>
+			<Civilopedia>TXT_KEY_PROJECT_APPEASE_DIVINITY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_PROJECT_APPEASE_DIVINITY_STRATEGY</Strategy>
+			<bPrereqBlockBonuses>1</bPrereqBlockBonuses>
+			<iCost>200</iCost>
+			<iRestoreBonuses>1</iRestoreBonuses>
+			<Button>Art/Interface/Buttons/Projects/Appease Divinity.dds</Button>
+			<iAIWeight>50</iAIWeight>
+		</ProjectInfo>
+	</ProjectInfos>
+</Civ4ProjectInfo>

@@ -1,0 +1,36 @@
+<CivFlavourInfos>
+	<CivFlavourInfo>
+		<Civilization>CIVILIZATION_AMURITES</Civilization>
+		<Preference>
+			<FlavourType>BONUS_MANA</FlavourType>
+			<Value>2</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>BONUS_REAGENTS</FlavourType>
+			<Value>4</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>IMPROVEMENT_LETUM_FRIGUS</FlavourType>
+			<Value>1</Value>
+		</Preference>
+	</CivFlavourInfo>
+	<CivFlavourInfo>
+		<Civilization>CIVILIZATION_BALSERAPHS</Civilization>
+		<Preference>
+			<FlavourType>BONUS_DYE</FlavourType>
+			<Value>1</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>BONUS_SILK</FlavourType>
+			<Value>1</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>BONUS_COTTON</FlavourType>
+			<Value>1</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>BONUS_SHEEP</FlavourType>
+			<Value>1</Value>
+		</Preference>
+	</CivFlavourInfo>
+</CivFlavourInfos>

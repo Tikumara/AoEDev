@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Firaxis Games (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Effect Infos -->
+<Civ4EffectInfos xmlns="x-schema:XX_CIV4MiscSchema.xml">
+	<EffectInfos>
+		<!-- Interface:-->
+		<EffectInfo>
+			<Type>EFFECT_BALOONPROJECTILE</Type>
+			<Description>Mali Spear</Description>
+			<fScale>.6</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Units/Unique/Mali/Skirmisher/MaliSkirmisherSpear.nif</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>450.0</fSpeed>
+			<fArcValue>0.0</fArcValue>
+		</EffectInfo>
+	</EffectInfos>
+</Civ4EffectInfos>

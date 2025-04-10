@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Option -->
+<Civ4GameOptionInfos xmlns="x-schema:XX_CIV4GameInfoSchema.xml">
+	<GameOptionInfos>
+		<GameOptionInfo>		<!-- Advanced Start Hardcoded to be 0 -->
+			<Type>GAMEOPTION_ADVANCED_START</Type>
+			<Description>TXT_KEY_GAME_OPTION_ADVANCED_START</Description>
+			<Help>TXT_KEY_GAME_OPTION_ADVANCED_START_HELP</Help>
+			<bDefault>0</bDefault>
+			<bVisible>1</bVisible>
+		</GameOptionInfo>
+	</GameOptionInfos>
+</Civ4GameOptionInfos>

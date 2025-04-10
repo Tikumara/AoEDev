@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Event Trigger Infos -->
+<Civ4EventTriggerInfos xmlns="x-schema:XX_CIV4EventSchema.xml">
+	<EventTriggerInfos>
+		<EventTriggerInfo> <!--Aeron's Chosen-->
+			<Type>EVENTTRIGGER_AERONS_CHOSEN</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_EVENTTRIGGER_AERONS_CHOSEN</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_AERONS_CHOSEN</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<iNumUnits>1</iNumUnits>
+			<iUnitExperienceWeight>1</iUnitExperienceWeight>
+			<iNumPlotsRequired>1</iNumPlotsRequired>
+			<bOwnPlot>1</bOwnPlot>
+			<iPlotType>-1</iPlotType>
+			<Events>
+				<Event>EVENT_AERONS_CHOSEN_1</Event>
+			</Events>
+			<bRecurring>0</bRecurring>
+			<bGlobal>1</bGlobal>
+			<bShowPlot>1</bShowPlot>
+			<PythonCanDo>canTriggerAeronsChosen</PythonCanDo>
+		</EventTriggerInfo>
+			
+		</EventTriggerInfos>
+</Civ4EventTriggerInfos>

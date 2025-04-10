@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- World Infos -->
+<!-- NOTE: If you remove any of these you need to update Interface/WorldPickerInfos.xml -->
+<Civ4WorldInfo xmlns="x-schema:XX_CIV4GameInfoSchema.xml">
+	<WorldInfos>
+		<WorldInfo>
+			<Type>WORLDSIZE_DUEL</Type>
+			<Description>TXT_KEY_WORLD_DUEL</Description>
+			<Help>TXT_KEY_WORLD_DUEL_HELP</Help>
+			<iDefaultPlayers>2</iDefaultPlayers>
+			<iUnitNameModifier>50</iUnitNameModifier>
+			<iTargetNumCities>4</iTargetNumCities>
+			<iNumFreeBuildingBonuses>1</iNumFreeBuildingBonuses>
+			<iBuildingClassPrereqModifier>0</iBuildingClassPrereqModifier>
+			<iMaxConscriptModifier>-50</iMaxConscriptModifier>
+			<iWarWearinessModifier>50</iWarWearinessModifier>
+			<iGridWidth>10</iGridWidth>
+			<iGridHeight>6</iGridHeight>
+			<iTerrainGrainChange>-1</iTerrainGrainChange>
+			<iFeatureGrainChange>-1</iFeatureGrainChange>
+			<iResearchPercent>100</iResearchPercent>
+			<iTradeProfitPercent>80</iTradeProfitPercent>
+			<iDistanceMaintenancePercent>50</iDistanceMaintenancePercent>
+			<iNumCitiesMaintenancePercent>45</iNumCitiesMaintenancePercent>
+			<iColonyMaintenancePercent>67</iColonyMaintenancePercent>
+			<iCorporationMaintenancePercent>200</iCorporationMaintenancePercent>
+			<iNumCitiesAnarchyPercent>11</iNumCitiesAnarchyPercent>
+			<iAdvancedStartPointsMod>80</iAdvancedStartPointsMod>
+			<iMaxCitiesMod>-1</iMaxCitiesMod>
+			<iUniqueFeatureChance>-45</iUniqueFeatureChance>
+		</WorldInfo>
+	</WorldInfos>
+</Civ4WorldInfo>

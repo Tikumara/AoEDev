@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Firaxis Games (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- MPOptionInfos - This structure describes the name for each multiplayer option. -->
+<Civ4MPOptionInfos xmlns="x-schema:XX_CIV4GameInfoSchema.xml">
+	<MPOptionInfos>
+		<MPOptionInfo>
+			<Type>MPOPTION_SIMULTANEOUS_TURNS</Type>
+			<Description>TXT_KEY_MP_OPTION_SIMULTANEOUS_TURNS</Description>
+			<Help>TXT_KEY_MP_OPTION_SIMULTANEOUS_TURNS_HELP</Help>
+			<bDefault>0</bDefault>
+		</MPOptionInfo>
+	</MPOptionInfos>
+</Civ4MPOptionInfos>

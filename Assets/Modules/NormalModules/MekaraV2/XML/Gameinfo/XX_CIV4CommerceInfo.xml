@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jesse Smith (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Commerce Infos -->
+<Civ4CommerceInfo xmlns="x-schema:XX_CIV4GameInfoSchema.xml">
+	<CommerceInfos>
+		<CommerceInfo>
+			<Type>COMMERCE_GOLD</Type>
+			<Description>TXT_KEY_COMMERCE_GOLD</Description>
+			<iInitialPercent>0</iInitialPercent>
+			<iTradeModifier>0</iTradeModifier>
+			<iInitialHappiness>0</iInitialHappiness>
+			<iAIWeightPercent>100</iAIWeightPercent>
+			<bFlexiblePercent>0</bFlexiblePercent>
+			<Button>Art/Interface/Buttons/Process/ProcessWealth.dds</Button>
+		</CommerceInfo>
+	</CommerceInfos>
+</Civ4CommerceInfo>

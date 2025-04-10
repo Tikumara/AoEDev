@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+<Civ4UnitAIInfos xmlns="x-schema:XX_CIV4BasicInfoSchema.xml">
+	<UnitAIInfos>
+		<UnitAIInfo>
+			<Type>UNITAI_UNKNOWN</Type>
+			<Description>UNITAI_UNKNOWN</Description>
+		</UnitAIInfo>
+	</UnitAIInfos>
+</Civ4UnitAIInfos>

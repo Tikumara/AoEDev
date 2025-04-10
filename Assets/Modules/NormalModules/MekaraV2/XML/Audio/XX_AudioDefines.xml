@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Dean Ray Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- AudioDefines -->
+<!--
+SoundID : The name of the Sound ID that other files reference.
+	Prefixed with identifiers such as SND_, SONG_, or DIPLO_ for easier identification.
+Filename : The location of the sound file (or files) that contain the audio data for the sound.
+	These are .wav files for sound effects, and .mp3 files for the soundtrack and diplomacy music.
+	Note that the file extension (.wav or .mp3) should not be included here; only include the filename (e.g. Sounds/Error.wav is listed as Sounds/Error).
+	Furthermore, collections of sounds (usually for unit responses) such as BabylonOrder-000.wav, BabylonOrder-001.wav, BabylonOrder-002.wav, etc. are collectively referenced simply as 'BabylonOrder'.
+	When the sound with this SoundID is played in-game, the sounds makred -000, -001, -002, etc. are selected such that they are different each time. This ensures that if you click on a unit, it will not say the same thing over and over again, and will instead have a variety of differing responses. 
+LoadType: How the sound should be loaded. Types are:
+	RESIDENT - sound is loaded with the game on startup
+	STREAMED - sound is streamed from the disk, not requiring the completion of loading before the sound begins to play (used for larger file sizes such as music or lengthy ambiances)
+	DYNAMIC_RES - sound is loaded as needed from the disk and played upon completion of loading (used for virtually all sound effects and other small file sizes).
+bIsCompressed: Unknown. Always 1.
+bInGeneric: Unknown. Always 1.
+-->
+<AudioDefines xmlns="x-schema:XX_AudioDefinesSchema.xml">
+	<SoundDatas>
+		<SoundData>
+			<SoundID>SND_ERROR</SoundID>
+			<Filename>Sounds/Error</Filename>
+			<LoadType>RESIDENT</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+	</SoundDatas>
+	<ContextTypes>
+		<ContextType>Generic</ContextType>
+	</ContextTypes>
+	<SoundTypes>
+		<SoundType>GAME_MUSIC</SoundType>
+		<SoundType>GAME_SFX</SoundType>
+		<SoundType>GAME_SPEECH</SoundType>
+		<SoundType>GAME_AMBIENCE</SoundType>
+		<SoundType>GAME_INTERFACE</SoundType>
+	</SoundTypes>
+	<PositionTypes>
+		<PositionType>NONE</PositionType>
+		<PositionType>RANDOM</PositionType>
+		<PositionType>ALL</PositionType>
+		<PositionType>FRONT</PositionType>
+		<PositionType>BACK</PositionType>
+		<PositionType>BACK_LEFT</PositionType>
+		<PositionType>BACK_RIGHT</PositionType>
+		<PositionType>LEFT</PositionType>
+		<PositionType>RIGHT</PositionType>
+		<PositionType>FRONT_LEFT</PositionType>
+		<PositionType>FRONT_RIGHT</PositionType>
+		<PositionType>REARS</PositionType>
+	</PositionTypes>
+	<ScriptTypes>
+		<ScriptType>NONE</ScriptType>
+		<ScriptType>2D</ScriptType>
+		<ScriptType>3D</ScriptType>
+		<ScriptType>SOUNDSCAPE</ScriptType>
+	</ScriptTypes>
+	<LoadTypes>
+		<LoadType>RESIDENT</LoadType>
+		<LoadType>DYNAMIC_RES</LoadType>
+		<LoadType>STREAMED</LoadType>
+	</LoadTypes>
+	<EffectTypes>
+		<EffectType>GENERIC</EffectType>
+		<EffectType>PADDEDCELL</EffectType>
+		<EffectType>ROOM</EffectType>
+		<EffectType>BATHROOM</EffectType>
+		<EffectType>LIVINGROOM</EffectType>
+		<EffectType>STONEROOM</EffectType>
+		<EffectType>AUDITORIUM</EffectType>
+		<EffectType>CONCERTHALL</EffectType>
+		<EffectType>CAVE</EffectType>
+		<EffectType>ARENA</EffectType>
+		<EffectType>HANGAR</EffectType>
+		<EffectType>CARPETEDHALLWAY</EffectType>
+		<EffectType>HALLWAY</EffectType>
+		<EffectType>STONECORRIDOR</EffectType>
+		<EffectType>ALLEY</EffectType>
+		<EffectType>FOREST</EffectType>
+		<EffectType>CITY</EffectType>
+		<EffectType>MOUNTAINS</EffectType>
+		<EffectType>QUARRY</EffectType>
+		<EffectType>PLAIN</EffectType>
+		<EffectType>PARKINGLOT</EffectType>
+		<EffectType>SEWERPIPE</EffectType>
+		<EffectType>UNDERWATER</EffectType>
+		<EffectType>DRUGGED</EffectType>
+		<EffectType>DIZZY</EffectType>
+		<EffectType>PSYCHOTIC</EffectType>
+	</EffectTypes>
+	<GameEnvironmentTypes>
+		<GameEnvironmentType>GENERAL</GameEnvironmentType>
+	</GameEnvironmentTypes>
+	<Effects>
+		<GameEnvironmentMap>
+			<GameEnvironmentType>GENERAL</GameEnvironmentType>
+			<ReverbData>
+				<fReverbTime>1.0</fReverbTime>
+				<fReverbPredelay>0.0</fReverbPredelay>
+				<fReverbDamping>0.0</fReverbDamping>
+				<fReverbDryLevel>1.0</fReverbDryLevel>
+				<fReverbWetLevel>0.0</fReverbWetLevel>
+			</ReverbData>
+			<EffectType>FOREST</EffectType>
+		</GameEnvironmentMap>
+	</Effects>
+	<SpeakerConfigs>
+		<SpeakerConfig>TXT_KEY_OPTION_SOUND_MONO</SpeakerConfig>
+		<SpeakerConfig>TXT_KEY_OPTION_SOUND_STEREO</SpeakerConfig>
+		<SpeakerConfig>TXT_KEY_OPTION_SOUND_SYSTEM_CONFIG</SpeakerConfig>
+		<SpeakerConfig>TXT_KEY_OPTION_SOUND_HEADPHONES</SpeakerConfig>
+		<SpeakerConfig>Dolby Surround</SpeakerConfig>
+		<SpeakerConfig>SRS Circle Surround</SpeakerConfig>
+		<SpeakerConfig>4.0 Discrete</SpeakerConfig>
+		<SpeakerConfig>5.1 Discrete</SpeakerConfig>
+		<SpeakerConfig>6.1 Discrete</SpeakerConfig>
+		<SpeakerConfig>7.1 Discrete</SpeakerConfig>
+		<SpeakerConfig>8.1 Discrete</SpeakerConfig>
+		<SpeakerConfig>DirectSound 3D</SpeakerConfig>
+		<SpeakerConfig>EAX 2.0</SpeakerConfig>
+		<SpeakerConfig>EAX Advanced HD 3.0</SpeakerConfig>
+		<SpeakerConfig>EAX Advanced HD 4.0</SpeakerConfig>
+	</SpeakerConfigs>
+	<AudioSystemInit>
+		<iSampleRate>22050</iSampleRate>
+		<iSampleBits>16</iSampleBits>
+		<iMultiChannelPref>2</iMultiChannelPref>
+		<iNum2DSamples>64</iNum2DSamples>
+		<iNum3DSamples>64</iNum3DSamples>
+		<iNum2DStreams>10</iNum2DStreams>
+		<iNum3DStreams>0</iNum3DStreams>
+		<fPercentSamplesFor3D>0.6</fPercentSamplesFor3D>
+	</AudioSystemInit>
+</AudioDefines>

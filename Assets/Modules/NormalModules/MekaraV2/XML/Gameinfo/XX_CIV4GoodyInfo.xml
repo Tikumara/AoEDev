@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jesse Smith (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Goody Infos -->
+<Civ4GoodyInfo xmlns="x-schema:XX_CIV4GameInfoSchema.xml">
+	<GoodyInfos>
+		<GoodyInfo>																<!--Description in comments-->
+			<Type>GOODY_TEST_TEST</Type>										<!--Name-->
+			<bForceOverwrite>0</bForceOverwrite>								<!--Used in modules, if 1 - it will completely ignore the previous entry with that name-->
+			<Description>TXT_KEY_TEST_TEST</Description>						<!--A reference to an entry in CIV4GameText, text displayed on screen-->
+			<Sound>AS2D_GOODY_GOLD</Sound>										<!--A reference to an entry in Audio2DScripts-->
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>	<!--Lairs with that Goody Class can trigger that result, if none it's a Goody Hut result-->
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>0</iWeight>												<!--Weight against all other valid results when lair is explored, don't go over 2^16 total sum-->
+			<iDestroyLairChance>0</iDestroyLairChance>							<!--[0;100] Chance for lair to be destoyed after exploration, UFs are immune-->
+			<iGold>0</iGold>													<!--Gold you get-->
+			<iGoldRand1>0</iGoldRand1>											<!--Additional Gold you get between 0 and iGoldRand1-->
+			<iGoldRand2>0</iGoldRand2>											<!--Additional Gold you get between 0 and iGoldRand2-->
+			<iScience>0</iScience>												<!--[0;100] Gives % of Tech towards current research, modified by Game Speed-->
+			<iScienceRand1>0</iScienceRand1>									<!--[0;100] Additional % of Tech towards current research between 0 and iScienceRand1, modified by Game Speed-->
+			<iScienceRand2>0</iScienceRand2>									<!--[0;100] Additional % of Tech towards current research between 0 and iScienceRand2, modified by Game Speed-->
+			<iMapOffset>0</iMapOffset>											<!--Presumably Tiles from pPlot-->
+			<iMapRange>0</iMapRange>											<!--In what range tiles are revealed-->
+			<iMapProb>0</iMapProb>												<!--[0;100] With what chance per tile-->
+			<iExperience>0</iExperience>										<!--Extra XP that unit gets from result-->
+			<iHealing>0</iHealing>												<!--[-100;100] % of HP unit will heal (if positive) or get damaged (if negative), if unit gets damaged to 0 it dies-->
+			<DamageType>DAMAGE_POISON</DamageType>								<!--If IHealing is negative could be used to state damage type, if not stated damage is pure-->
+			<iDamageLimit>0</iDamageLimit>										<!--[0;100] If IHealing is negative unit can't get below that % HP-->
+			<iDamagePrereq>0</iDamagePrereq>									<!--[0;100] % of HP Unit should be below to trigger, 0 = ignored-->
+			<bTech>0</bTech>													<!--if 1 get free tech-->
+			<bBad>0</bBad>														<!--0 - good result, 1 - bad result-->
+			<BonusType>BONUS_MANA_NATURE</BonusType>							<!--Get that bonus on a tile, if tile has bonus already result can't be triggered-->
+			<!--Gives promotion to the unit, if unit has promotion already result can't be triggered (don't quote me on that one, T_W)-->
+			<PromotionAdds>
+				<Promotion>PROMOTION_NATURE1</Promotion>						
+			</PromotionAdds>
+			<!--Removes promotion from the unit-->
+			<PromotionRemoves>						
+				<Promotion>PROMOTION_RUSTED</Promotion>	
+			</PromotionRemoves>
+			<UnitClass>UNITCLASS_SETTLER</UnitClass>							<!--Spawns UnitClass, if BarbarianCivilization is not stated - unit spawned for player, please use PythonCallback for unit spawn!-->
+			<BarbarianCivilization>CIVILIZATION_ORC</BarbarianCivilization>		<!--Used to state Civ of created via XML unit, please use PythonCallback for unit spawn!-->
+			<bAnyPromotion>0</bAnyPromotion>									<!--If 0 promotion above can only be applied to unit with valid UnitCombat, if 1 to any unit-->
+			<PythonCallback>ExploreGearStash</PythonCallback>					<!--Function called after lair is triggered, Args (pUnit, pPlot)-->
+			<PythonPrereq>ReqGearStash</PythonPrereq>							<!--Function called before lair is added to valid ones, if True is returned function passed prereq, if False - result is not valid, Args (pUnit, pPlot)-->
+			<PrereqEra>ERA_CLASSICAL</PrereqEra>								<!--Era prereq, mostly redundant, there are better ways to do it with GoodyClass and PythonPrereq-->
+			<PrereqAlignment>ALIGNMENT_EVIL</PrereqAlignment>					<!--Alignment prereq-->
+		</GoodyInfo>
+	</GoodyInfos>
+</Civ4GoodyInfo>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jesse Smith (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- City Classes -->
+<Civ4CityClassInfos xmlns="x-schema:XX_CIV4BuildingsSchema.xml">
+	<CityClassInfos>
+	<CityClassInfo>
+	<Type>CITYCLASS_TEST</Type>
+	<Units>
+		<Unit>
+			<UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
+			<UnitType>UNIT_MOROI</UnitType>
+		</Unit>
+	</Units>
+	<ShortDescription>TXT_KEY_CITYCLASS_TEST_SHORT</ShortDescription>
+			
+	</CityClassInfo>
+	</CityClassInfos>
+</Civ4CityClassInfos>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Interface Mode -->
+<Civ4InterfaceModeInfos xmlns="x-schema:XX_CIV4InterfaceSchema.xml">
+	<InterfaceModeInfos>
+		<InterfaceModeInfo>
+			<Type>INTERFACEMODE_SELECTION</Type>
+			<Description>TXT_KEY_INTERFACEMODE_SELECTION</Description>
+			<Help/>
+			<CursorType>CURSOR_DEFAULT</CursorType>
+			<Mission>NONE</Mission>
+			<bVisible>0</bVisible>
+			<bGotoPlot>0</bGotoPlot>
+			<bHighlightPlot>0</bHighlightPlot>
+			<bSelectType>0</bSelectType>
+			<bSelectAll>0</bSelectAll>
+		</InterfaceModeInfo>
+	</InterfaceModeInfos>
+</Civ4InterfaceModeInfos>
