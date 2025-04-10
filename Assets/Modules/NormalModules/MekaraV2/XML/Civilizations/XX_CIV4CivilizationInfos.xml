@@ -140,7 +140,7 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_SLUGA</UnitClassType>
-					<UnitType>UNIT_SLUGA</UnitType>
+					<UnitType>UNIT_SLUGA_V2</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_BATTLE_SLUGA</UnitClassType>
@@ -156,7 +156,7 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_OVERSEER</UnitClassType>
-					<UnitType>UNIT_OVERSEER</UnitType>
+					<UnitType>UNIT_OVERSEER_V2</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_COMBAT_OVERSEER</UnitClassType>

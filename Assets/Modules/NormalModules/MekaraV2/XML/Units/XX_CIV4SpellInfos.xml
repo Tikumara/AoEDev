@@ -6,19 +6,83 @@
 <!-- Spell Infos -->
 <Civ4SpellInfos xmlns="x-schema:XX_CIV4UnitSpellSchema.xml">
 	<SpellInfos>
-		<SpellInfo>			<!-- Display All Units -->				<!-- BEGIN DEBUG TOOLS -->
-			<Type>SPELL_DISPLAY_ALL_UNITS</Type>
-			<Description>TXT_KEY_SPELL_DISPLAY_ALL_UNITS</Description>
-			<Civilopedia>TXT_KEY_SPELL_FOUND_TEMPLE_OF_GIFT_PEDIA</Civilopedia>
-			<Help>TXT_KEY_SPELL_DISPLAY_ALL_UNITS_HELP</Help>
-			<TechPrereq>TECH_NEVER</TechPrereq>
+		<SpellInfo>			<!-- MEKARA_V2 - Bloom -->
+			<Type>SPELL_BLOOM_MEKARA_V2</Type>
+			<Description>TXT_KEY_SPELL_BLOOM_MEKARA_V2</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<SpellClasses>
+				<SpellClass>
+					<SpellClassType>SPELLCLASS_TERRAFORMING</SpellClassType>
+					<bSpellClass>1</bSpellClass>
+				</SpellClass>
+			</SpellClasses>
+			<PromotionPrereq1>PROMOTION_OVERSEER_BLOOM_UNIT_V2</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<bIsAutoCastable>1</bIsAutoCastable>
+			<bInBordersOnly>1</bInBordersOnly>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
-			<bHasCasted>0</bHasCasted>
-			<PyResult>displayAllUnits(pCaster)</PyResult>
-			<Effect>EFFECT_SPELL1</Effect>
-			<Sound>AS3D_SPELL_FOUND_TEMPLE</Sound>
-			<bGraphicalOnly>1</bGraphicalOnly>
-			<Button>Art/Interface/Buttons/Units/duck.dds</Button>
+			<bHasCasted>1</bHasCasted>
+			<CreateFeatureType>FEATURE_FOREST_NEW</CreateFeatureType>
+			<iDelay>2</iDelay>
+			<Effect>EFFECT_BLOOM</Effect>
+			<Sound>AS3D_SPELL_BLOOM</Sound>
+			<Button>Art/Interface/Buttons/Spells/Bloom.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- MEKARA - Spring -->
+			<Type>SPELL_SPRING_MEKARA_V2</Type>
+			<Description>TXT_KEY_SPELL_SPRING_MEKARA_V2</Description>
+			<Civilopedia>TXT_KEY_SPELL_SPRING_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPELL_SPRING_STRATEGY</Strategy>
+			<Help>TXT_KEY_SPELL_SPRING_HELP</Help>
+			<SpellClasses>
+				<SpellClass>
+					<SpellClassType>SPELLCLASS_WATER</SpellClassType>
+					<bSpellClass>1</bSpellClass>
+				</SpellClass>
+				<SpellClass>
+					<SpellClassType>SPELLCLASS_TERRAFORMING</SpellClassType>
+					<bSpellClass>1</bSpellClass>
+				</SpellClass>
+			</SpellClasses>
+			<PromotionPrereq1>PROMOTION_OVERSEER_SPRING_UNIT_V2</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<bIsAutoCastable>1</bIsAutoCastable>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bCausesWar>1</bCausesWar>
+			<PyResult>spellSpring(pCaster)</PyResult>
+			<PyRequirement>reqSpring(pCaster)</PyRequirement>
+			<Effect>EFFECT_SPRING</Effect>
+			<Sound>AS3D_SPELL_SPRING</Sound>
+			<Button>Art/Interface/Buttons/Spells/Spring.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- MEKARA  - Scorch -->
+			<Type>SPELL_SCORCH_MEKARA_V2</Type>
+			<Description>TXT_KEY_SPELL_SCORCH_MEKARA_V2</Description>
+			<Strategy>TXT_KEY_SPELL_SCORCH_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_SPELL_SCORCH_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_SCORCH_HELP</Help>
+			<SpellClasses>
+				<SpellClass>
+					<SpellClassType>SPELLCLASS_SUN</SpellClassType>
+					<bSpellClass>1</bSpellClass>
+				</SpellClass>
+				<SpellClass>
+					<SpellClassType>SPELLCLASS_TERRAFORMING</SpellClassType>
+					<bSpellClass>1</bSpellClass>
+				</SpellClass>
+			</SpellClasses>
+			<PromotionPrereq1>PROMOTION_OVERSEER_SCORCH_UNIT_V2</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<bIsAutoCastable>1</bIsAutoCastable>
+			<bCausesWar>1</bCausesWar>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<PyResult>spellScorch(pCaster)</PyResult>
+			<PyRequirement>reqScorch(pCaster)</PyRequirement>
+			<Effect>EFFECT_SCORCH</Effect>
+			<Sound>AS3D_SPELL_DEFILE</Sound>
+			<Button>Art/Interface/Buttons/Spells/Scorch.dds</Button>
 		</SpellInfo>
 </SpellInfos>
 </Civ4SpellInfos>
