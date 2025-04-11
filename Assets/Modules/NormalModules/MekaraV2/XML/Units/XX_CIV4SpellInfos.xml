@@ -363,6 +363,7 @@
 			<Description>TXT_KEY_SPELL_RITUAL_PREPARATION</Description>
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
 			<PromotionPrereq1>PROMOTION_MEKARA_RITUALIST</PromotionPrereq1>
+			<Help>TXT_KEY_SPELL_RITUAL_PREPARATION_HELP</Help>
 			<bAllowAI>1</bAllowAI>
 			<iCasterMinLevel>4</iCasterMinLevel>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
@@ -375,7 +376,7 @@
 			<iDelay>0</iDelay>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_ENCHANTMENT</Sound>
-			<Button>Art/Interface/Buttons/Promotions/Mutated.dds</Button>
+			<Button>Modules/NormalModules/MekaraV2/Art/Interface/Buttons/Spells/AugmentRitual.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Abandon Ritual -->
 			<Type>SPELL_RITUAL_ABANDON</Type>
@@ -393,7 +394,7 @@
 			<iCost>0</iCost>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_ENCHANTMENT</Sound>
-			<Button>Art/Civs/Mekara/MutateRed.dds</Button>
+			<Button>Modules/NormalModules/MekaraV2/Art/Interface/Buttons/Spells/AugmentRitualEnd.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Designate Ritual Target -->
 			<Type>SPELL_RITUAL_TARGET_DESIGNATE</Type>
@@ -410,7 +411,7 @@
 			<bAbility>1</bAbility>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_ENCHANTMENT</Sound>
-			<Button>Art/Interface/Buttons/Promotions/Mutated.dds</Button>
+			<Button>Modules/NormalModules/MekaraV2/Art/Interface/Buttons/Spells/AugmentRitual.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Withdraw from Ritual -->
 			<Type>SPELL_RITUAL_TARGET_WITHDRAW</Type>
@@ -427,7 +428,7 @@
 			<bAbility>1</bAbility>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_ENCHANTMENT</Sound>
-			<Button>Art/Civs/Mekara/MutateRed.dds</Button>
+			<Button>Modules/NormalModules/MekaraV2/Art/Interface/Buttons/Spells/AugmentRitualEnd.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Aspect of the Beserker -->
 			<Type>SPELL_RITUAL_AUG_OFFENCE</Type>
@@ -435,7 +436,9 @@
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
 			<PromotionPrereq1>PROMOTION_MEKARA_RITUAL</PromotionPrereq1>
 			<PromotionInStackPrereq>PROMOTION_MEKARA_RITUAL_TARGET</PromotionInStackPrereq>
+			<Help>TXT_KEY_SPELL_RITUAL_AUG_OFFENCE_HELP</Help>
 			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<RemovePromotions>
 				<RemovePromotion>PROMOTION_MEKARA_RITUAL</RemovePromotion>
 			</RemovePromotions>
@@ -453,7 +456,9 @@
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
 			<PromotionPrereq1>PROMOTION_MEKARA_RITUAL</PromotionPrereq1>
 			<PromotionInStackPrereq>PROMOTION_MEKARA_RITUAL_TARGET</PromotionInStackPrereq>
+			<Help>TXT_KEY_SPELL_RITUAL_AUG_DEFENCE_HELP</Help>
 			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<RemovePromotions>
 				<RemovePromotion>PROMOTION_MEKARA_RITUAL</RemovePromotion>
 			</RemovePromotions>
@@ -471,7 +476,9 @@
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
 			<PromotionPrereq1>PROMOTION_MEKARA_RITUAL</PromotionPrereq1>
 			<PromotionInStackPrereq>PROMOTION_MEKARA_RITUAL_TARGET</PromotionInStackPrereq>
+			<Help>TXT_KEY_SPELL_RITUAL_AUG_ASSASSIN_HELP</Help>
 			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<RemovePromotions>
 				<RemovePromotion>PROMOTION_MEKARA_RITUAL</RemovePromotion>
 			</RemovePromotions>
@@ -488,13 +495,14 @@
 			<Description>TXT_KEY_SPELL_SHAPER_EXPERIMENTS</Description>
 			<Strategy>TXT_KEY_SPELL_SHAPER_EXPERIMENTS_STRATEGY</Strategy>
 			<PromotionPrereq1>PROMOTION_MEKARA_RITUALIST</PromotionPrereq1>
+			<Help>TXT_KEY_SPELL_SHAPER_EXPERIMENTS_HELP</Help>
 			<UnitInStackPrereq>UNIT_SLAVE</UnitInStackPrereq>
 			<bInCityOnly>1</bInCityOnly>
 			<bHasCasted>1</bHasCasted>
 			<PyResult>spellShaperExperiments(pCaster)</PyResult>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_LEECH_BREATH</Sound>
-			<Button>Art/Interface/Buttons/Promotions/Enervated.dds</Button>
+			<Button>Modules/NormalModules/MekaraV2/Art/Interface/Buttons/Spells/ShaperExperiment.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Settle Slave -->
 			<Type>SPELL_SETTLE_SLAVE_V2</Type>

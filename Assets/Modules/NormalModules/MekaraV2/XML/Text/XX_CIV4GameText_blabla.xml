@@ -13,4 +13,44 @@
 		<Italian>[ICON_BULLET]Sacrifices 4 Slave units to create a Behemoth unit[NEWLINE][ICON_BULLET]Can only by cast by a civ lead by Jamal Dahkar</Italian>
 		<Spanish>[ICON_BULLET]Sacrifices 4 Slave units to create a Behemoth unit[NEWLINE][ICON_BULLET]Can only by cast by a civ lead by Jamal Dahkar</Spanish>
 	</TEXT>
+	<TEXT>	<!-- Prepare Augmentation Ritual -->
+		<Tag>TXT_KEY_SPELL_RITUAL_PREPARATION_HELP</Tag>
+		<English>[ICON_BULLET]Click on another unit in the stack and use their "Designate Target Spell" to choose who to buff[NEWLINE][ICON_BULLET]Berserker needs Body and Force mana to use[NEWLINE][ICON_BULLET]Protector needs Earth and Law mana to use[NEWLINE][ICON_BULLET]Assassin needs Shadow and Air mana to use</English>
+		<French>[ICON_BULLET]Click on another unit in the stack and use their "Designate Target Spell" to choose who to buff[NEWLINE][ICON_BULLET]Berserker needs Body and Force mana to use[NEWLINE][ICON_BULLET]Protector needs Earth and Law mana to use[NEWLINE][ICON_BULLET]Assassin needs Shadow and Air mana to use</French>
+		<German>[ICON_BULLET]Click on another unit in the stack and use their "Designate Target Spell" to choose who to buff[NEWLINE][ICON_BULLET]Berserker needs Body and Force mana to use[NEWLINE][ICON_BULLET]Protector needs Earth and Law mana to use[NEWLINE][ICON_BULLET]Assassin needs Shadow and Air mana to use</German>
+		<Italian>[ICON_BULLET]Click on another unit in the stack and use their "Designate Target Spell" to choose who to buff[NEWLINE][ICON_BULLET]Berserker needs Body and Force mana to use[NEWLINE][ICON_BULLET]Protector needs Earth and Law mana to use[NEWLINE][ICON_BULLET]Assassin needs Shadow and Air mana to use</Italian>
+		<Spanish>[ICON_BULLET]Click on another unit in the stack and use their "Designate Target Spell" to choose who to buff[NEWLINE][ICON_BULLET]Berserker needs Body and Force mana to use[NEWLINE][ICON_BULLET]Protector needs Earth and Law mana to use[NEWLINE][ICON_BULLET]Assassin needs Shadow and Air mana to use</Spanish>
+	</TEXT>
+	<TEXT>	<!-- Augmentation Berserker -->
+		<Tag>TXT_KEY_SPELL_RITUAL_AUG_OFFENCE_HELP</Tag>
+		<English>[ICON_BULLET]Berserker needs Body and Force mana to use</English>
+		<French>[ICON_BULLET]Berserker needs Body and Force mana to use</French>
+		<German>[ICON_BULLET]Berserker needs Body and Force mana to use</German>
+		<Italian>[ICON_BULLET]Berserker needs Body and Force mana to use</Italian>
+		<Spanish>[ICON_BULLET]Berserker needs Body and Force mana to use</Spanish>
+	</TEXT>
+	<TEXT>	<!-- Augmentation Protector -->
+		<Tag>TXT_KEY_SPELL_RITUAL_AUG_DEFENCE_HELP</Tag>
+		<English>[ICON_BULLET]Protector needs Earth and Law mana to use</English>
+		<French>[ICON_BULLET]Protector needs Earth and Law mana to use</French>
+		<German>[ICON_BULLET]Protector needs Earth and Law mana to use</German>
+		<Italian>[ICON_BULLET]Protector needs Earth and Law mana to use</Italian>
+		<Spanish>[ICON_BULLET]Protector needs Earth and Law mana to use</Spanish>
+	</TEXT>
+	<TEXT>	<!-- Augmentation Assassin -->
+		<Tag>TXT_KEY_SPELL_RITUAL_AUG_ASSASSIN_HELP</Tag>
+		<English>[ICON_BULLET]Assassin needs Shadow and Air mana to use</English>
+		<French>[ICON_BULLET]Assassin needs Shadow and Air mana to use</French>
+		<German>[ICON_BULLET]Assassin needs Shadow and Air mana to use</German>
+		<Italian>[ICON_BULLET]Assassin needs Shadow and Air mana to use</Italian>
+		<Spanish>[ICON_BULLET]Assassin needs Shadow and Air mana to use</Spanish>
+	</TEXT>
+	<TEXT>	<!-- Conduct Experiments -->
+		<Tag>TXT_KEY_SPELL_SHAPER_EXPERIMENTS_HELP</Tag>
+		<English>[ICON_BULLET]Kills the Slave and gives the Shaper some experience</English>
+		<French>[ICON_BULLET]Kills the Slave and gives the Shaper some experience</French>
+		<German>[ICON_BULLET]Kills the Slave and gives the Shaper some experience</German>
+		<Italian>[ICON_BULLET]Kills the Slave and gives the Shaper some experience</Italian>
+		<Spanish>[ICON_BULLET]Kills the Slave and gives the Shaper some experience</Spanish>
+	</TEXT>
 </Civ4GameText>
