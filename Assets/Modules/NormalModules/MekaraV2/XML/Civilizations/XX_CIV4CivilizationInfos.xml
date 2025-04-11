@@ -127,8 +127,8 @@
 					<UnitType>UNIT_CORGAYLE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_KARAS</UnitClassType>
-					<UnitType>UNIT_KARAS</UnitType>
+					<UnitClassType>UNITCLASS_KARAS_V2</UnitClassType>
+					<UnitType>UNIT_KARAS_V2</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_ADVENTURER</UnitClassType>
@@ -139,32 +139,32 @@
 					<UnitType>UNIT_FAMILIAR</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_SLUGA</UnitClassType>
+					<UnitClassType>UNITCLASS_SLUGA_V2</UnitClassType>
 					<UnitType>UNIT_SLUGA_V2</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_BATTLE_SLUGA</UnitClassType>
-					<UnitType>UNIT_BATTLE_SLUGA</UnitType>
+					<UnitClassType>UNITCLASS_BATTLE_SLUGA_V2</UnitClassType>
+					<UnitType>UNIT_BATTLE_SLUGA_V2</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_WAR_SLUGA</UnitClassType>
-					<UnitType>UNIT_WAR_SLUGA</UnitType>
+					<UnitClassType>UNITCLASS_WAR_SLUGA_V2</UnitClassType>
+					<UnitType>UNIT_WAR_SLUGA_V2</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_BEHEMOTH_SLUGA</UnitClassType>
-					<UnitType>UNIT_BEHEMOTH_SLUGA</UnitType>
+					<UnitClassType>UNITCLASS_BEHEMOTH_SLUGA_V2</UnitClassType>
+					<UnitType>UNIT_BEHEMOTH_SLUGA_V2</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_OVERSEER</UnitClassType>
+					<UnitClassType>UNITCLASS_OVERSEER_V2</UnitClassType>
 					<UnitType>UNIT_OVERSEER_V2</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_COMBAT_OVERSEER</UnitClassType>
-					<UnitType>UNIT_COMBAT_OVERSEER</UnitType>
+					<UnitClassType>UNITCLASS_COMBAT_OVERSEER_V2</UnitClassType>
+					<UnitType>UNIT_COMBAT_OVERSEER_V2</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_SLUGA_COMMANDER</UnitClassType>
-					<UnitType>UNIT_SLUGA_COMMANDER</UnitType>
+					<UnitClassType>UNITCLASS_SLUGA_COMMANDER_V2</UnitClassType>
+					<UnitType>UNIT_SLUGA_COMMANDER_V2</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_FORT_COMMANDER</UnitClassType>

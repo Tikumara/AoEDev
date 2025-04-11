@@ -7,15 +7,93 @@
 <!-- UnitClass Schema -->
 <Civ4UnitClassInfos xmlns="x-schema:XX_CIV4UnitSchema.xml">
 	<UnitClassInfos>
-		<UnitClassInfo>		<!-- SCOUT -->
-			<Type>UNITCLASS_SCOUT</Type>
-			<Description>TXT_KEY_UNIT_SCOUT</Description>
+		<UnitClassInfo>		<!-- Karas -->
+			<Type>UNITCLASS_KARAS_V2</Type>
+			<Description>TXT_KEY_UNIT_KARAS</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_KARAS_V2</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Overseer -->
+			<Type>UNITCLASS_OVERSEER_V2</Type>
+			<Description>TXT_KEY_UNIT_OVERSEER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iInstanceCostModifier>0</iInstanceCostModifier>
-			<DefaultUnit>UNIT_SCOUT</DefaultUnit>
-			<iMercenaryWeight>20</iMercenaryWeight>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_OVERSEER_V2</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Combat Overseer -->
+			<Type>UNITCLASS_COMBAT_OVERSEER_V2</Type>
+			<Description>TXT_KEY_UNIT_COMBAT_OVERSEER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_COMBAT_OVERSEER_V2</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Sluga Commander -->
+			<Type>UNITCLASS_SLUGA_COMMANDER_V2</Type>
+			<Description>TXT_KEY_UNIT_SLUGA_COMMANDER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_SLUGA_COMMANDER_V2</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Sluga -->
+			<Type>UNITCLASS_SLUGA_V2</Type>
+			<Description>TXT_KEY_UNIT_SLUGA</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_SLUGA_V2</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Battle Sluga -->
+			<Type>UNITCLASS_BATTLE_SLUGA_V2</Type>
+			<Description>TXT_KEY_UNIT_BATTLE_SLUGA</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_BATTLE_SLUGA_V2</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- War Sluga -->
+			<Type>UNITCLASS_WAR_SLUGA_V2</Type>
+			<Description>TXT_KEY_UNIT_WAR_SLUGA</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_WAR_SLUGA_V2</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Behemoth -->
+			<Type>UNITCLASS_BEHEMOTH_SLUGA_V2</Type>
+			<Description>TXT_KEY_UNIT_BEHEMOTH_SLUGA</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>4</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_BEHEMOTH_SLUGA_V2</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
 		</UnitClassInfo>
 </UnitClassInfos>
 	</Civ4UnitClassInfos>
