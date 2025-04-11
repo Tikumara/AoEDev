@@ -345,7 +345,7 @@
 			</MaintainFeatures>
 			<Image>Art/Civs/Mekara/MekaraBanner.dds</Image>
 		</CivilizationInfo>
-				<CivilizationInfo><!-- Mekara Order -->
+		<CivilizationInfo><!-- Mekara Order -->
 			<Type>CIVILIZATION_MEKARA</Type>
 			<Description>TXT_KEY_CIV_MEKARA_DESC</Description>
 			<ShortDescription>TXT_KEY_CIV_MEKARA_SHORT_DESC</ShortDescription>
@@ -359,6 +359,7 @@
 			<bPlayable>0</bPlayable>
 			<bAIPlayable>0</bAIPlayable>
 			<bGraphicalOnly>1</bGraphicalOnly>
+			<bForceOverwrite>1</bForceOverwrite>
 			<Cities>
 				<City>TXT_KEY_CITY_MEKARA_1</City>
 				<City>TXT_KEY_CITY_MEKARA_2</City>
