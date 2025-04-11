@@ -126,12 +126,30 @@
 			<CivilizationPrereq>CIVILIZATION_MEKARA_V2</CivilizationPrereq>
 			<BuildingPrereq>BUILDING_SHAPER_CABAL</BuildingPrereq>
 			<UnitClassPrereq>UNITCLASS_SLAVE</UnitClassPrereq>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bInCityOnly>1</bInCityOnly>
 			<bAllowAI>1</bAllowAI>
 			<bHasCasted>1</bHasCasted>
 			<bSacrificeCaster>1</bSacrificeCaster>
-            <CreateUnitType>UNIT_SLUGA_V2</CreateUnitType>
-			<iCreateUnitNum>1</iCreateUnitNum>
+			<ConvertUnitType>UNIT_SLUGA_V2</ConvertUnitType>
+			<RemovePromotions>
+				<RemovePromotion>PROMOTION_SKILLED1</RemovePromotion>
+				<RemovePromotion>PROMOTION_SKILLED2</RemovePromotion>
+				<RemovePromotion>PROMOTION_SKILLED3</RemovePromotion>
+				<RemovePromotion>PROMOTION_SKILLED4</RemovePromotion>
+				<RemovePromotion>PROMOTION_SKILLED5</RemovePromotion>
+				<RemovePromotion>PROMOTION_APTITUDE1</RemovePromotion>
+				<RemovePromotion>PROMOTION_APTITUDE2</RemovePromotion>
+				<RemovePromotion>PROMOTION_FORTIFICATION_SPECIALIST</RemovePromotion>
+				<RemovePromotion>PROMOTION_HARDY1</RemovePromotion>
+				<RemovePromotion>PROMOTION_HARDY2</RemovePromotion>
+				<RemovePromotion>PROMOTION_HARDY3</RemovePromotion>
+				<RemovePromotion>PROMOTION_MOBILITY1</RemovePromotion>
+				<RemovePromotion>PROMOTION_MOBILITY2</RemovePromotion>
+			</RemovePromotions>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_SLUGA_ABILITIES_V2</AddPromotion>
+			</AddPromotions>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_SPRING</Sound>
 			<Button>Art/Interface/Buttons/Units/Scions/worker.dds</Button>
@@ -144,12 +162,30 @@
 			<TechPrereq>TECH_ALTERATION</TechPrereq>
 			<BuildingPrereq>BUILDING_SHAPER_CABAL</BuildingPrereq>
 			<UnitClassPrereq>UNITCLASS_SLAVE</UnitClassPrereq>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bInCityOnly>1</bInCityOnly>
 			<bAllowAI>1</bAllowAI>
 			<bHasCasted>1</bHasCasted>
 			<bSacrificeCaster>1</bSacrificeCaster>
-            <CreateUnitType>UNIT_BATTLE_SLUGA_V2</CreateUnitType>
-			<iCreateUnitNum>1</iCreateUnitNum>
+			<ConvertUnitType>UNIT_BATTLE_SLUGA_V2</ConvertUnitType>
+			<RemovePromotions>
+				<RemovePromotion>PROMOTION_SKILLED1</RemovePromotion>
+				<RemovePromotion>PROMOTION_SKILLED2</RemovePromotion>
+				<RemovePromotion>PROMOTION_SKILLED3</RemovePromotion>
+				<RemovePromotion>PROMOTION_SKILLED4</RemovePromotion>
+				<RemovePromotion>PROMOTION_SKILLED5</RemovePromotion>
+				<RemovePromotion>PROMOTION_APTITUDE1</RemovePromotion>
+				<RemovePromotion>PROMOTION_APTITUDE2</RemovePromotion>
+				<RemovePromotion>PROMOTION_FORTIFICATION_SPECIALIST</RemovePromotion>
+				<RemovePromotion>PROMOTION_HARDY1</RemovePromotion>
+				<RemovePromotion>PROMOTION_HARDY2</RemovePromotion>
+				<RemovePromotion>PROMOTION_HARDY3</RemovePromotion>
+				<RemovePromotion>PROMOTION_MOBILITY1</RemovePromotion>
+				<RemovePromotion>PROMOTION_MOBILITY2</RemovePromotion>
+			</RemovePromotions>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_COM_SLUGA_ABILITIES_V2</AddPromotion>
+			</AddPromotions>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_SPRING</Sound>
 			<Button>Art/Interface/Buttons/Units/Scions/velite.dds</Button>
@@ -162,14 +198,14 @@
 			<PrereqTraits>
 			   <PrereqTrait>TRAIT_JAMAL_INFO</PrereqTrait>
 			</PrereqTraits>
-			<Help>TXT_KEY_SPELL_BEHEMOTH_CREATION_HELP</Help>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<Help>TXT_KEY_SPELL_BEHEMOTH_CREATION_V2_HELP</Help>
 			<TechPrereq>TECH_ARCANE_LORE</TechPrereq>
 			<BuildingPrereq>BUILDING_SHAPER_CABAL</BuildingPrereq>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
-			<bCityAction>1</bCityAction>
 			<bAllowAI>1</bAllowAI>
 			<iCost>300</iCost>
-			<UnitPrereq>UNIT_SLAVE</UnitPrereq>
+			<UnitClassPrereq>UNITCLASS_SLAVE</UnitClassPrereq>
 			<bAllowAI>1</bAllowAI>
 			<bSacrificeCaster>1</bSacrificeCaster>
 			<ConvertUnitType>UNIT_BEHEMOTH_SLUGA_V2</ConvertUnitType>
@@ -188,6 +224,10 @@
 				<RemovePromotion>PROMOTION_MOBILITY1</RemovePromotion>
 				<RemovePromotion>PROMOTION_MOBILITY2</RemovePromotion>
 			</RemovePromotions>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_DOUBLE_GC_REQUIREMENT_V2</AddPromotion>
+				<AddPromotion>PROMOTION_COM_SLUGA_ABILITIES_V2</AddPromotion>
+			</AddPromotions>
 			<PyResult>spellFormSlugaBehemoth(pCaster)</PyResult>
 			<PyRequirement>reqFormSlugaBehemoth(pCaster)</PyRequirement>
 			<Effect>EFFECT_SPELL1</Effect>

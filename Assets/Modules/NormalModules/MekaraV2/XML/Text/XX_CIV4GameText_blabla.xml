@@ -5,12 +5,12 @@
 <!-- -->
 <!-- Game Text - Units -->
 <Civ4GameText xmlns="http://www.firaxis.com">
-	<TEXT>
-		<Tag>TXT_KEY_PEDIA_CATEGORY_AFFINITY</Tag>
-		<English>Affinities</English>
-		<French>Affinités</French>
-		<German>Affinitäten</German>
-		<Italian>Affinità</Italian>
-		<Spanish>Affinities</Spanish>
+	<TEXT>  <!-- Create Behemoth, Help -->
+		<Tag>TXT_KEY_SPELL_BEHEMOTH_CREATION_V2_HELP</Tag>
+		<English>[ICON_BULLET]Sacrifices 4 Slave units to create a Behemoth unit[NEWLINE][ICON_BULLET]Can only by cast by a civ lead by Jamal Dahkar</English>
+		<French>[ICON_BULLET]Sacrifices 4 Slave units to create a Behemoth unit[NEWLINE][ICON_BULLET]Can only by cast by a civ lead by Jamal Dahkar</French>
+		<German>[ICON_BULLET]Sacrifices 4 Slave units to create a Behemoth unit[NEWLINE][ICON_BULLET]Can only by cast by a civ lead by Jamal Dahkar</German>
+		<Italian>[ICON_BULLET]Sacrifices 4 Slave units to create a Behemoth unit[NEWLINE][ICON_BULLET]Can only by cast by a civ lead by Jamal Dahkar</Italian>
+		<Spanish>[ICON_BULLET]Sacrifices 4 Slave units to create a Behemoth unit[NEWLINE][ICON_BULLET]Can only by cast by a civ lead by Jamal Dahkar</Spanish>
 	</TEXT>
 </Civ4GameText>
