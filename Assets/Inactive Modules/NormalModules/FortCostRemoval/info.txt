@@ -1,0 +1,16 @@
+[name]
+NoFortCost
+[version]
+1.0
+[rifeversion]
+377
+[author]
+Tikumara
+[dependency]
+;Ashes of Erebus
+[compatible]
+;(everything)
+[shortdesc]
+No Fort Costs
+[desc]
+(rambling here)

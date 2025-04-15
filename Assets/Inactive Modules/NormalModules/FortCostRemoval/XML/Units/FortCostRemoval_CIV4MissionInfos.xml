@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jon Shafer (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Mission Infos -->
+<Civ4MissionInfos xmlns="x-schema:FortCostRemoval_CIV4UnitSchema.xml">
+	<!--Changes must be reflected in CvEnums.h-->
+	<MissionInfos>
+		<MissionInfo>
+			<Type>MISSION_CLAIM_FORT</Type>
+			<Description>TXT_KEY_MISSION_CLAIM_FORT</Description>
+			<Help>TXT_KEY_MISSION_CLAIM_FORT_HELP</Help>
+			<Waypoint>NONE</Waypoint>
+			<EntityEventType>ENTITY_EVENT_BUILD</EntityEventType>
+			<iTime>10</iTime>
+			<iGoldCost>1</iGoldCost>
+			<bTarget>0</bTarget>
+			<bBuild>0</bBuild>
+			<bSound>0</bSound>
+			<HotKey>KB_F</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>1</bShiftDown>
+			<bCtrlDown>1</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<bVisible>1</bVisible>
+			<Button>Art/Civs/Other/FortCommander/Influence.dds</Button>
+			<bForceOverwrite>1</bForceOverwrite>
+		</MissionInfo>
+	</MissionInfos>
+</Civ4MissionInfos>
