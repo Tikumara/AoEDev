@@ -4,7 +4,7 @@
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- Handicap Infos -->
-<Civ4HandicapInfo xmlns="x-schema:CIV4GameInfoSchema.xml">
+<Civ4HandicapInfo xmlns="x-schema:ViciousSeas_CIV4GameInfoSchema.xml">
 	<HandicapInfos>
 		<HandicapInfo>
 			<Type>HANDICAP_SETTLER</Type>
