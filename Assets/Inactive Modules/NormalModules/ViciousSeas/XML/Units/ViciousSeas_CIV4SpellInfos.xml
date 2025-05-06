@@ -177,6 +177,7 @@
 			<iCasterMinLevel>6</iCasterMinLevel>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bAbility>1</bAbility>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
 			<CreateImprovementType>IMPROVEMENT_PIRATE_FREE_CITY</CreateImprovementType>
 			<AddPromotions>
 			<AddPromotion>PROMOTION_PIRATE_PRINCE2</AddPromotion>
@@ -184,28 +185,30 @@
 			<RemovePromotions>
 				<RemovePromotion>PROMOTION_PIRATE_PRINCE1</RemovePromotion>
 			</RemovePromotions>
+			<PyRequirement>reqPirateCity(pCaster)</PyRequirement>
 			<Effect>EFFECT_SCORCH</Effect>
 			<Sound>AS3D_SPELL_DEFILE</Sound>
 			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/PiratePrince.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Found Howling Reef -->
-			<Type>SPELL_CREATE_DROWNED_REEF</Type>
-			<Description>TXT_KEY_CREATE_DROWNED_REEF</Description>
+			<Type>SPELL_CREATE_HOWLING_REEF</Type>
+			<Description>TXT_KEY_CREATE_HOWLING_REEF</Description>
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
-			<UnitPrereq>UNIT_DROWNED</UnitPrereq>
-			<PromotionPrereq1>PROMOTION_DROWN_CALLER1</PromotionPrereq1>
+			<PromotionPrereq1>PROMOTION_DROWNED_CALLER1</PromotionPrereq1>
 			<bAllowAI>1</bAllowAI>
 			<iAIWeight>300</iAIWeight>
 			<iCasterMinLevel>6</iCasterMinLevel>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bAbility>1</bAbility>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
 			<CreateImprovementType>IMPROVEMENT_HOWLING_REEF</CreateImprovementType>
 			<AddPromotions>
-			<AddPromotion>PROMOTION_DROWN_CALLER2</AddPromotion>
+			<AddPromotion>PROMOTION_DROWNED_CALLER2</AddPromotion>
 			</AddPromotions>
 			<RemovePromotions>
-				<RemovePromotion>PROMOTION_DROWN_CALLER1</RemovePromotion>
+				<RemovePromotion>PROMOTION_DROWNED_CALLER1</RemovePromotion>
 			</RemovePromotions>
+			<PyRequirement>reqHowlingReef(pCaster)</PyRequirement>
 			<Effect>EFFECT_SCORCH</Effect>
 			<Sound>AS3D_SPELL_DEFILE</Sound>
 			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/DrownCaller.dds</Button>

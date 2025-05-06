@@ -191,3 +191,32 @@ def spellTsunamiweak(caster):
 				if bEffect==True:
 					effect(gc.getInfoTypeForString('EFFECT_SPRING'),pPlot.getPoint())
 
+def reqHowlingReef(caster):
+    pPlot = caster.plot()
+    pPlayer = gc.getPlayer(caster.getOwner())
+    
+    TERRAIN_OCEAN = gc.getInfoTypeForString("TERRAIN_OCEAN")
+
+    #Check if the plot is Ocean
+    if pPlot.getTerrainType() != (TERRAIN_OCEAN):
+        return False
+
+    if pPlot.isWater():
+        return True
+
+    return True
+
+def reqPirateCity(caster):
+    pPlot = caster.plot()
+    pPlayer = gc.getPlayer(caster.getOwner())
+
+    TERRAIN_COAST = gc.getInfoTypeForString("TERRAIN_COAST")
+
+    #Check if the plot is Coast
+    if pPlot.getTerrainType() != (TERRAIN_COAST):
+        return False
+
+    if pPlot.isWater():
+        return True
+
+    return True
