@@ -6,6 +6,54 @@
 <!-- Game Text - Units -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
+		<Tag>TXT_KEY_SPELL_FOUND_PIRATE_FREE_CITY</Tag>
+		<English>Found Pirate Free City</English>
+		<French>Found Pirate Free City</French>
+		<German>Found Pirate Free City</German>
+		<Italian>Found Pirate Free City</Italian>
+		<Spanish>Found Pirate Free City</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CREATE_HOWLING_REEF</Tag>
+		<English>Create Howling Reef</English>
+		<French>Create Howling Reef</French>
+		<German>Create Howling Reef</German>
+		<Italian>Create Howling Reef</Italian>
+		<Spanish>Create Howling Reef</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DROWNED_CALLER1</Tag>
+		<English>Drowned Caller I</English>
+		<French>Drowned Caller I</French>
+		<German>Drowned Caller I</German>
+		<Italian>Drowned Caller I</Italian>
+		<Spanish>Drowned Caller I</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DROWNED_CALLER2</Tag>
+		<English>Drowned Caller II</English>
+		<French>Drowned Caller II</French>
+		<German>Drowned Caller II</German>
+		<Italian>Drowned Caller II</Italian>
+		<Spanish>Drowned Caller II</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PIRATE_PRINCE1</Tag>
+		<English>Pirate Prince I</English>
+		<French>Pirate Prince I</French>
+		<German>Pirate Prince I</German>
+		<Italian>Pirate Prince I</Italian>
+		<Spanish>Pirate Prince I</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PIRATE_PRINCE2</Tag>
+		<English>Pirate Prince II</English>
+		<French>Pirate Prince II</French>
+		<German>Pirate Prince II</German>
+		<Italian>Pirate Prince II</Italian>
+		<Spanish>Pirate Prince II</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LEASH_2</Tag>
 		<English>Leash 2</English>
 		<French>Leash 2</French>

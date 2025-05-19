@@ -15,7 +15,7 @@ ViciousSeas
 ;Note: it have to be number, so only numberic characters and none or one period
 ;note: one line
 [rifeversion]
-376
+378
 ;
 ;
 ;Author - you
@@ -68,10 +68,17 @@ Trade routes become available at optics, the final tier of research (astronomy),
 
 Bezeri are not supposed to be overpowered, if they are pulling an "illians" and stomping every game, let me know what you think is imbalanced about them so I can tackle it!
 
+V1.6
+Drowned can become Drowned Callers at lvl 6, giving them Drowns on combat win and can create a Howling Burrow
+Barbarian ships can become Pirate Princes at lvl 6, giving them ship capture chance and creating a Pirate Free City
+Changes to barbarian ship and lair spawns to balance the new lair and spawn system in the core game.
+Barbarian sea forts now have a commander
+
+
 V1.5
 Fixed the promotion Sinking sharing names with Scionhealthcare promotions 
 Added 5% bonus culture to Coral.
-Bezeri animals are offended by the idea of being cargo transport; dragon turtles can now get in the Pokéball.
+Bezeri animals are offended by the idea of being cargo transport; dragon turtles can now get in the Pok ball.
 Bezeri Fort Commanders now drown when using Create Aquatic City.
 Added missing ModuleInfo (thank you, The360MlgNoscoper).
 Erosion is a part of nature; however, the spell still needs to respect the Amurite world spell.
