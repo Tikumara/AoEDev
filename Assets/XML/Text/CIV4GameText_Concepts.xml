@@ -97,6 +97,40 @@
 		<Spanish>[H1]Equipo[\H1][PARAGRAPH:2]El equipo es un tipo de objeto especial en Fall from Heaven.  Puede estar representado en forma de ascenso en una unidad que lo lleva, o como una unidad no trasladable cuando esta asentada en una casilla.  Algunas piezas de Equipo pueden usarse también como un edificio en una ciudad.[PARAGRAPH:2]La principal diferencia entre el equipo y otros ascensos es que si una unidad con una pieza de equipo es destruida ese equipo cae al suelo al mismo tiempo que la unidad muere, en lugar de perderse.[PARAGRAPH:2]Notas de Kael: Aunque el sistema de equipos permite a los modders crear un arsenal entero de espadas, escudos y arcos para sus ejércitos nuestro objetivo con el Equipo es usarlo sólo para artefactos raros y poderosos con un significante impacto estratégico.  Hacemos esto para evitar el micromanejo y mantener el especial encanto de capturar piezas de equipo.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_EMERGENT_IMPORTANT</Tag>
+		<English>Emergent and Important Leaders</English>
+		<French>Emergent and Important Leaders</French>
+		<German>Emergent and Important Leaders</German>
+		<Italian>Emergent and Important Leaders</Italian>
+		<Spanish>Emergent and Important Leaders</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_EMERGENT_IMPORTANT_PEDIA</Tag>
+		<English>Leaders with the Emergent and Important tag are able to gain new bonuses as they play, effectively gaining "XP" from performing tasks in an ongoing game, when they gain enough "XP" they will unlock these new traits for that playthrough. (these requirements scale up and down based on the size of map and game speed selected.)
+
+[ICON_BULLET]To see what actions will give experience towards traits, you can check the star shaped button in the top left corner while playing.
+[ICON_BULLET]Remember that any leader can only have up to 3 traits under normal circumstances,
+although mechanics like the Elohim's [LINK=CONCEPT_ELOHIM_KEEPERS_OF_SACRED_PLACES]Keeper[\LINK] Traits, Pact with the Infernal Traits, or civilization traits like [LINK=TRAIT_HORSELORD]Hippus Horselord[\LINK] can bypass the 3 trait limit.
+
+[H1]Important Leaders[\H1]
+
+[ICON_BULLET]Important leaders are able to earn other normal traits such as trader, warlord, aggressive and so on by performing the tasks associated with that trait. (EG: trading resources, gold or maps with other civs will work towards the [LINK=TRAIT_TRADER]Trader[\LINK] trait.)
+
+
+[H1]Emergent Leaders[\H1]
+
+[ICON_BULLET]Emergent leaders level up a trait unique to them, gaining new and more powerful bonuses on each level up.
+[ICON_BULLET]Emergent traits have 3 levels.
+[ICON_BULLET]Each level requires more experience then the previous. (these requirements scale up and down based on the size of map and game speed selected.)
+
+
+</English>
+		<French>Commanders</French>
+		<German>Commanders</German>
+		<Italian>Commanders</Italian>
+		<Spanish>Commanders</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_COMMANDERS</Tag>
 		<English>Commanders</English>
 		<French>Commanders</French>

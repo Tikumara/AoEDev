@@ -214,6 +214,11 @@
 			<Civilopedia>TXT_KEY_CONCEPT_COMMANDERS_PEDIA</Civilopedia>
 		</ConceptInfo>
 		<ConceptInfo>
+			<Type>CONCEPT_EMERGENT_IMPORTANT</Type>
+			<Description>TXT_KEY_CONCEPT_EMERGENT_IMPORTANT</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_EMERGENT_IMPORTANT_PEDIA</Civilopedia>
+		</ConceptInfo>
+		<ConceptInfo>
 			<Type>CONCEPT_FORTS</Type>
 			<Description>TXT_KEY_CONCEPT_FORTS</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_FORTS_PEDIA</Civilopedia>
