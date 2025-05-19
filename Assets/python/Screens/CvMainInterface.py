@@ -2576,10 +2576,15 @@ class CvMainInterface:
 				# City Actions (Spells) available
 				iSelectedCount = 0
 				pPlayer = gc.getPlayer(pHeadSelectedCity.getOwner())
-				for iCity in xrange (pPlayer.getNumCities()):
-					pCity = pPlayer.getCity(iCity)
-					if CyInterface().isCitySelected(pCity):
-						iSelectedCount += 1
+				(loopCity,iter)= pPlayer.firstCity(False)
+				while(loopCity):
+					if CyInterface().isCitySelected(loopCity):
+						iSelectedCount+=1
+					(loopCity,iter)=pPlayer.nextCity(iter,False)
+		#		for iCity in xrange (pPlayer.getNumCities()):
+		#			pCity = pPlayer.getCity(iCity)
+		#			if CyInterface().isCitySelected(pCity):
+		#				iSelectedCount += 1
 				if iSelectedCount == 1:
 					for i in xrange ( gc.getNumSpellInfos() ):
 

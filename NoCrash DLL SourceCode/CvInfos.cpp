@@ -3433,6 +3433,7 @@ m_bBadEffect(false),
 /*************************************************************************************************/
 m_iMaxApplications(0),
 m_piUnitCombat(NULL),
+m_piExtraSpellClassPower(NULL),
 m_piiPrereqPromotionORs(NULL),
 m_piiPrereqPromotionANDs(NULL),
 m_iNumPrereqPromotionORs(0),
@@ -3713,6 +3714,7 @@ CvPromotionInfo::~CvPromotionInfo()
 	SAFE_DELETE_ARRAY(m_piiPrereqPromotionANDs);
 	*/
 	SAFE_DELETE_ARRAY(m_piUnitCombat);
+	SAFE_DELETE_ARRAY(m_piExtraSpellClassPower);
 /*************************************************************************************************/
 /**												END												**/
 /*************************************************************************************************/
@@ -4552,6 +4554,12 @@ bool CvPromotionInfo::isBadEffect() const
 /**																								**/
 /**									New tags required for 1.4									**/
 /*************************************************************************************************/
+
+int CvPromotionInfo::getExtraSpellClassPower(int i) const
+{
+	return m_piExtraSpellClassPower ? m_piExtraSpellClassPower[i] : 0;
+}
+
 int CvPromotionInfo::getMaxApplications() const
 {
 	return m_iMaxApplications;
@@ -5903,6 +5911,11 @@ void CvPromotionInfo::read(FDataStreamBase* stream)
 	m_piUnitCombat = new int[GC.getNumUnitCombatInfos()];
 	stream->Read(GC.getNumUnitCombatInfos(), m_piUnitCombat);
 
+
+	SAFE_DELETE_ARRAY(m_piExtraSpellClassPower);
+	m_piExtraSpellClassPower = new int[GC.getNumSpellClassInfos()];
+	stream->Read(GC.getNumSpellClassInfos(), m_piExtraSpellClassPower);
+
 	/* original code
 	SAFE_DELETE_ARRAY(m_piPrereqPromotionORs);
 	m_piPrereqPromotionORs = new int[GC.getNumPromotionInfos()];
@@ -6653,6 +6666,7 @@ void CvPromotionInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iRangedCombatPercentGlobalCounter);
 	stream->Write(m_iRangedCombatPercentInBorders);
 	stream->Write(GC.getNumUnitCombatInfos(), m_piUnitCombat);
+	stream->Write(GC.getNumSpellClassInfos(), m_piExtraSpellClassPower);
 	stream->Write(m_iNumPrereqPromotionORs);
 	for(int i=0;i<m_iNumPrereqPromotionORs;i++)
 	{
@@ -7343,6 +7357,7 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 /*************************************************************************************************/
 	pXML->GetChildXmlValByName(&m_iMaxApplications, "iMaxApplications");
 	pXML->SetVariableListTagPair(&m_piUnitCombat, "UnitCombats", sizeof(GC.getUnitCombatInfo((UnitCombatTypes)0)), GC.getNumUnitCombatInfos(), -1);
+	pXML->SetVariableListTagPair(&m_piExtraSpellClassPower, "SpellClassExtraPowers", sizeof(GC.getSpellClassInfo((SpellClassTypes)0)), GC.getNumSpellClassInfos());
 	pXML->GetChildXmlValByName(&m_iAntiWithdrawal, "iAntiWithdrawal");
 	pXML->GetChildXmlValByName(&m_iAntiFirstStrikes, "iAntiFirstStrikes");
 	pXML->GetChildXmlValByName(&m_iRangedCombatPercent, "iRangedCombatPercent");
@@ -8258,6 +8273,10 @@ void CvPromotionInfo::copyNonDefaults(CvPromotionInfo* pClassInfo, CvXMLLoadUtil
 /*************************************************************************************************/
 /**	GWS										END													**/
 /*************************************************************************************************/
+	for (int j = 0; j < GC.getNumSpellClassInfos(); j++)
+	{
+		if (m_piExtraSpellClassPower[j] == 0)					m_piExtraSpellClassPower[j] = pClassInfo->getExtraSpellClassPower(j);
+	}
 	for (int j = 0; j < GC.getNumUnitCombatInfos(); j++)
 	{
 		if (m_piUnitCombatModifierPercent[j]	== 0)					m_piUnitCombatModifierPercent[j]	= pClassInfo->getUnitCombatModifierPercent(j);
@@ -10462,6 +10481,7 @@ m_bRemoveHasCasted(false),
 m_bSacrificeCaster(false),
 m_iChangePopulation(0),
 m_iCost(0),
+m_iNumTargets(-1),
 m_iCrimePrereq(0),
 m_iDelay(0),
 m_iImmobileTurns(0),
@@ -10905,6 +10925,11 @@ int CvSpellInfo::getCost() const
 	return m_iCost;
 }
 
+int CvSpellInfo::getNumTargets() const
+{
+	return m_iNumTargets;
+}
+
 int CvSpellInfo::getCrimePrereq() const
 {
 	return m_iCrimePrereq;
@@ -11227,6 +11252,7 @@ void CvSpellInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bSacrificeCaster);
 	stream->Read(&m_iChangePopulation);
 	stream->Read(&m_iCost);
+	stream->Read(&m_iNumTargets);
 	stream->Read(&m_iCrimePrereq);
 	stream->Read(&m_iDelay);
 	stream->Read(&m_iImmobileTurns);
@@ -11409,6 +11435,7 @@ void CvSpellInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bSacrificeCaster);
 	stream->Write(m_iChangePopulation);
 	stream->Write(m_iCost);
+	stream->Write(m_iNumTargets);
 	stream->Write(m_iCrimePrereq);
 	stream->Write(m_iDelay);
 	stream->Write(m_iImmobileTurns);
@@ -11523,6 +11550,10 @@ bool CvSpellInfo::read(CvXMLLoadUtility* pXML)
 					SpellBonuses cbTemp;
 					pXML->GetChildXmlValByName(&(cbTemp.iPrereqExtraPower), "iPrereqExtraPower", 0);
 					pXML->GetChildXmlValByName(&(cbTemp.iMaxApplications), "iMaxApplications", 0);
+					pXML->GetChildXmlValByName(&(cbTemp.iExtraDamage), "iExtraDamage", 0);
+					pXML->GetChildXmlValByName(&(cbTemp.iExtraMaxDamage), "iExtraMaxDamage", 0);
+					pXML->GetChildXmlValByName(&(cbTemp.iExtraNumTargets), "iExtraNumTargets", 0);
+					pXML->GetChildXmlValByName(&(cbTemp.iExtraTargetRange), "iExtraTargetRange", 0);
 					m_cbSpellBonuses.push_back(cbTemp);
 					if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()))						break;
 				}
@@ -11649,6 +11680,7 @@ bool CvSpellInfo::read(CvXMLLoadUtility* pXML)
 
 	pXML->GetChildXmlValByName(&m_iChangePopulation, "iChangePopulation");
 	pXML->GetChildXmlValByName(&m_iCost, "iCost");
+	pXML->GetChildXmlValByName(&m_iNumTargets, "iNumTargets",-1);
 	pXML->GetChildXmlValByName(&m_iCrimePrereq, "iCrimePrereq");
 	pXML->GetChildXmlValByName(&m_iDelay, "iDelay");
 	pXML->GetChildXmlValByName(&m_iImmobileTurns, "iImmobileTurns");
@@ -11794,6 +11826,7 @@ void CvSpellInfo::copyNonDefaults(CvSpellInfo* pClassInfo, CvXMLLoadUtility* pXM
 	if (getCreateUnitNum()				== 0)					m_iCreateUnitNum				= pClassInfo->getCreateUnitNum();
 	if (getChangePopulation()			== 0)					m_iChangePopulation				= pClassInfo->getChangePopulation();
 	if (getCost()						== 0)					m_iCost							= pClassInfo->getCost();
+	if (getNumTargets() == -1)					m_iNumTargets = pClassInfo->getNumTargets();
 	if (getCrimePrereq() == 0)					m_iCrimePrereq = pClassInfo->getCrimePrereq();
 	if (getDelay()						== 0)					m_iDelay						= pClassInfo->getDelay();
 	if (getImmobileTurns()				== 0)					m_iImmobileTurns				= pClassInfo->getImmobileTurns();

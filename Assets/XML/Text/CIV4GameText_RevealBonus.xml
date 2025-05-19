@@ -10898,20 +10898,20 @@ Exposure to others minds often causes befuddlement or confusion in the practitio
 		<Spanish>Potion</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<Tag>TXT_KEY_EXTRA_SPELLCLASS_POWER</Tag>
+		<English>+%d1 Magical Power to %s2</English>
+		<French>+%d1 Magical Power to %s2</French>
+		<German>+%d1 Magical Power to %s2</German>
+		<Italian>+%d1 Magical Power to %s2</Italian>
+		<Spanish>+%d1 Magical Power to %s2</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<Tag>TXT_KEY_SPELL_IMMOBILE_TURNS</Tag>
+		<English>[ICON_BULLET]Affects up to %d1 units in the targeted tile.</English>
+		<French>[ICON_BULLET]Affects up to %d1 units in the targeted tile.</French>
+		<German>[ICON_BULLET]Affects up to %d1 units in the targeted tile.</German>
+		<Italian>[ICON_BULLET]Affects up to %d1 units in the targeted tile.</Italian>
+		<Spanish>[ICON_BULLET]Affects up to %d1 units in the targeted tile.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>

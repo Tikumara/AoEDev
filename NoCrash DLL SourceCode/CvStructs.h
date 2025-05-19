@@ -601,10 +601,28 @@ struct SpellBonuses
 {
 	int iPrereqExtraPower;
 	int iMaxApplications;
+	int iExtraDamage;
+	int iExtraMaxDamage;
+	int iExtraNumTargets;
+	int iExtraTargetRange;
 
 
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);
 	bool compare(SpellBonuses cbTemp);
+};
+struct SpellUpgradeData
+{
+	SpellUpgradeData() :iDamage(0),iMaxDamage(0),iNumTargets(0)
+	{
+	}
+	int iDamage;
+	int iMaxDamage;
+	int iNumTargets;
+
+
+	void read(FDataStreamBase* pStream);
+	void write(FDataStreamBase* pStream);
+	bool compare(SpellUpgradeData cbTemp);
 };
 #endif	// CVSTRUCTS_H

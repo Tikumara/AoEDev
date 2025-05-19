@@ -75,6 +75,7 @@ CvUnit::CvUnit()
 /**	GWS										END													**/
 /*************************************************************************************************/
 	m_paiExtraUnitCombatModifier = NULL;
+	m_paiExtraSpellClassPower = NULL;
 
 /*************************************************************************************************/
 /**	New Tag Defs	(UnitInfos)				05/15/08								Xienwolf	**/
@@ -574,6 +575,7 @@ void CvUnit::uninit()
 /**	GWS										END													**/
 /*************************************************************************************************/
 	SAFE_DELETE_ARRAY(m_paiExtraUnitCombatModifier);
+	SAFE_DELETE_ARRAY(m_paiExtraSpellClassPower);
 /*************************************************************************************************/
 /**	New Tag Defs	(UnitInfos)				05/15/08								Xienwolf	**/
 /**																								**/
@@ -1204,6 +1206,12 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 			m_paiExtraUnitCombatModifier[iI] = 0;
 		}
 
+		FAssertMsg((0 < GC.getNumSpellClassInfos()), "GC.getNu_mSpellClassInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
+		m_paiExtraSpellClassPower = new int[GC.getNumSpellClassInfos()];
+		for (iI = 0; iI < GC.getNumSpellClassInfos(); iI++)
+		{
+			m_paiExtraSpellClassPower[iI] = 0;
+		}
 		AI_reset();
 	}
 /*************************************************************************************************/
@@ -20967,6 +20975,21 @@ void CvUnit::changeExtraUnitCombatModifier(UnitCombatTypes eIndex, int iChange)
 	m_paiExtraUnitCombatModifier[eIndex] = (m_paiExtraUnitCombatModifier[eIndex] + iChange);
 }
 
+int CvUnit::getExtraSpellClassPower(SpellClassTypes eIndex) const
+{
+	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
+	FAssertMsg(eIndex < GC.getNumSpellClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
+	return m_paiExtraSpellClassPower[eIndex];
+}
+
+
+void CvUnit::changeExtraSpellClassPower(SpellClassTypes eIndex, int iChange)
+{
+	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
+	FAssertMsg(eIndex < GC.getNumSpellClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
+	m_paiExtraSpellClassPower[eIndex] = (m_paiExtraSpellClassPower[eIndex] + iChange);
+}
+
 
 bool CvUnit::canAcquirePromotion(PromotionTypes ePromotion,bool bMustMaintainCheck) const
 {
@@ -23117,6 +23140,12 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 			changeExtraUnitCombatModifier(((UnitCombatTypes)iI), (kPromotion.getUnitCombatModifierPercent(iI) * iChange));
 		}
 
+		for (iI = 0; iI < GC.getNumSpellClassInfos(); iI++)
+		{
+			changeExtraSpellClassPower(((SpellClassTypes)iI), (kPromotion.getExtraSpellClassPower(iI) * iChange));
+		}
+	
+
 		for (iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
 		{
 			changeExtraDomainModifier(((DomainTypes)iI), (kPromotion.getDomainModifierPercent(iI) * iChange));
@@ -23309,7 +23338,7 @@ bool CvUnit::canCastAnyPlot(int spell, bool bTestVisible)
 	if (GC.getSpellInfo((SpellTypes)spell).isTargeted())
 	{
 		bool bValid = false;
-		int iRange = GC.getSpellInfo((SpellTypes)spell).getTargetRange();// +getSpellExtraRange();
+		int iRange = getSpellTargetRange(spell);//GC.getSpellInfo((SpellTypes)spell).getTargetRange();// +getSpellExtraRange();
 		int iDX, iDY;
 		for (iDX = -(iRange); iDX <= iRange; iDX++)
 		{
@@ -23357,7 +23386,7 @@ bool CvUnit::canCast(int spell, bool bTestVisible, CvPlot* pTargetPlot)
 	if (GC.getSpellInfo(eSpell).isTargeted() && pTargetPlot==NULL)
 	{
 		bValid = false;
-		int iRange = GC.getSpellInfo(eSpell).getTargetRange();// + getSpellExtraRange();
+		int iRange = getSpellTargetRange(eSpell);//GC.getSpellInfo(eSpell).getTargetRange();// + getSpellExtraRange();
 		int iDX, iDY;
 		for (iDX = -(iRange); iDX <= iRange; iDX++)
 		{
@@ -23382,7 +23411,7 @@ bool CvUnit::canCast(int spell, bool bTestVisible, CvPlot* pTargetPlot)
 	{
 		pTargetPlot = plot();
 	}
-	if (plotDistance(plot()->getX_INLINE(), plot()->getY_INLINE(), pTargetPlot->getX_INLINE(), pTargetPlot->getY_INLINE()) > GC.getSpellInfo((SpellTypes)spell).getTargetRange())
+	if (plotDistance(plot()->getX_INLINE(), plot()->getY_INLINE(), pTargetPlot->getX_INLINE(), pTargetPlot->getY_INLINE()) > getSpellTargetRange(spell))//GC.getSpellInfo((SpellTypes)spell).getTargetRange())
 	{
 		return false;
 	}
@@ -24192,7 +24221,51 @@ bool CvUnit::canCast(int spell, bool bTestVisible, CvPlot* pTargetPlot)
 /*************************************************************************************************/
 	return false;
 }
+SpellUpgradeData CvUnit::getSpellData(int spell)
+{
+	int iMagicalPower = getSpellMagicalPower(spell);
+	int iExtraPower = iMagicalPower - GC.getSpellInfo((SpellTypes)spell).getMagicalPowerPrereq();
+	SpellUpgradeData data;
+	
+	//Core Spell Data
+	data.iDamage = GC.getSpellInfo((SpellTypes)spell).getDamage();
+	data.iMaxDamage = GC.getSpellInfo((SpellTypes)spell).getDamageLimit();
+	data.iNumTargets = GC.getSpellInfo((SpellTypes)spell).getNumTargets();
 
+
+	//Applying Spell Bonuses
+	for (int iI = 0; iI < GC.getSpellInfo((SpellTypes)spell).getNumSpellBonuses(); iI++)
+	{
+		SpellBonuses bonus = GC.getSpellInfo((SpellTypes)spell).getSpellBonus(iI);
+
+		int iNumBonusApplications =std::min( (iExtraPower/(bonus.iPrereqExtraPower)), bonus.iMaxApplications);
+		if (iNumBonusApplications > 0)
+		{
+			data.iDamage += bonus.iExtraDamage * iNumBonusApplications;
+			data.iMaxDamage += bonus.iExtraMaxDamage * iNumBonusApplications;
+			data.iNumTargets += bonus.iExtraNumTargets * iNumBonusApplications;
+		}
+	}
+	return data;
+}
+int CvUnit::getSpellTargetRange(int spell)
+{
+	int iMagicalPower = getSpellMagicalPower(spell);
+	int iExtraPower = iMagicalPower - GC.getSpellInfo((SpellTypes)spell).getMagicalPowerPrereq();
+	int iTargetRange = GC.getSpellInfo((SpellTypes)spell).getTargetRange();
+	//Applying Spell Bonuses
+	for (int iI = 0; iI < GC.getSpellInfo((SpellTypes)spell).getNumSpellBonuses(); iI++)
+	{
+		SpellBonuses bonus = GC.getSpellInfo((SpellTypes)spell).getSpellBonus(iI);
+
+		int iNumBonusApplications = std::min((iExtraPower / (bonus.iPrereqExtraPower)), bonus.iMaxApplications);
+		if (iNumBonusApplications > 0)
+		{
+			iTargetRange += bonus.iExtraTargetRange * iNumBonusApplications;
+		}
+	}
+	return iTargetRange;
+}
 bool CvUnit::canCastTargetPlot(int spell, bool bTestVisible, CvPlot* pTargetPlot) const
 {
 	SpellTypes eSpell = (SpellTypes)spell;
@@ -24298,6 +24371,35 @@ bool CvUnit::canCastTargetPlot(int spell, bool bTestVisible, CvPlot* pTargetPlot
 
 	return true;
 }
+int CvUnit::getSpellDefenderValue(CvUnit* pLoopUnit, CvPlot* pTargetplot, int iDmgType) const {
+	int iValue = 0;
+
+	if (pLoopUnit == pTargetplot->getBestDefender(getOwnerINLINE()))
+	{
+		iValue = MAX_INT;
+	}
+	else if (pLoopUnit->getTeam() == getTeam())
+	{
+		iValue = 1;
+	}
+	else if (!GET_TEAM(getTeam()).isAtWar(pLoopUnit->getTeam()))
+	{
+		iValue = 2;
+	}
+	else
+	{
+		iValue = (pLoopUnit->baseCombatStr() + pLoopUnit->baseCombatStrDefense()) * 100 / (10 + pLoopUnit->getDamage());
+		if (iDmgType != -1)
+		{
+			iValue *= 100;
+			iValue /= std::max(1, 100 + pLoopUnit->getDamageTypeResist((DamageTypes)iDmgType));
+		}
+		iValue = std::max(iValue, 3);
+	}
+
+	return iValue;
+}
+
 bool CvUnit::canCreateUnit(int spell, CvPlot* pTargetPlot) const
 {
 	if (getDuration() > 0) // to prevent summons summoning spinlocks
@@ -25631,11 +25733,15 @@ void CvUnit::castDamage(int spell, CvPlot* pTargetPlot)
 	{
 		pTargetPlot = plot();
 	}
+	SpellUpgradeData spellData = getSpellData(spell);
 	bool bResistable = GC.getSpellInfo((SpellTypes)spell).isResistable();
-	int iDmg = GC.getSpellInfo((SpellTypes)spell).getDamage();
-	int iDmgLimit = GC.getSpellInfo((SpellTypes)spell).getDamageLimit();
+	int iDmg = spellData.iDamage;
+	int iDmgLimit = spellData.iMaxDamage;
+	int iNumTargets = spellData.iNumTargets;
 	int iDmgType = GC.getSpellInfo((SpellTypes)spell).getDamageType();
 	int iRange = GC.getSpellInfo((SpellTypes)spell).getRange();
+
+
 /*************************************************************************************************/
 /**	Spellcasting Range						04/08/08	Written: Grey Fox	Imported: Xienwolf	**/
 /**																								**/
@@ -25650,6 +25756,7 @@ void CvUnit::castDamage(int spell, CvPlot* pTargetPlot)
 	CLLNode<IDInfo>* pUnitNode;
 	CvUnit* pLoopUnit;
 	CvPlot* pLoopPlot;
+	bool* bUnitHit = NULL;
 	for (int i = -iRange; i <= iRange; ++i)
 	{
 		for (int j = -iRange; j <= iRange; ++j)
@@ -25659,29 +25766,86 @@ void CvUnit::castDamage(int spell, CvPlot* pTargetPlot)
 			{
 				if (pLoopPlot->getX() != plot()->getX() || pLoopPlot->getY() != plot()->getY())
 				{
-					pUnitNode = pLoopPlot->headUnitNode();
-					while (pUnitNode != NULL)
+					if (iNumTargets == -1 || iNumTargets < pLoopPlot->getNumUnits())
 					{
-						pLoopUnit = ::getUnit(pUnitNode->m_data);
-						pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
-						if (pLoopUnit != NULL)
+						pUnitNode = pLoopPlot->headUnitNode();
+						while (pUnitNode != NULL)
 						{
-							if (!pLoopUnit->isImmuneToSpell(this, spell))
+							pLoopUnit = ::getUnit(pUnitNode->m_data);
+							pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+							if (pLoopUnit != NULL)
 							{
-								if (bResistable)
+								if (!pLoopUnit->isImmuneToSpell(this, spell))
 								{
-									if (!pLoopUnit->isResisted(this, spell))
+									if (bResistable)
+									{
+										if (!pLoopUnit->isResisted(this, spell))
+										{
+											pLoopUnit->doDamage((iDmg / 2) + GC.getGameINLINE().getSorenRandNum(iDmg, "doDamage"), iDmgLimit, this, iDmgType, true);
+										}
+									}
+									else
 									{
 										pLoopUnit->doDamage((iDmg / 2) + GC.getGameINLINE().getSorenRandNum(iDmg, "doDamage"), iDmgLimit, this, iDmgType, true);
 									}
 								}
-								else
-								{
-									pLoopUnit->doDamage((iDmg / 2) + GC.getGameINLINE().getSorenRandNum(iDmg, "doDamage"), iDmgLimit, this, iDmgType, true);
-								}
 							}
 						}
 					}
+				}
+				else
+				{
+					int iUnitsOnPlot = pLoopPlot->getNumUnits();
+					int iValue;
+					int iBestValue = 0;
+					int iBestUnitCounter = -1;
+					CvUnit* pBestUnit = NULL;
+					int iNumUnitsHit = 0;
+
+					bUnitHit = new bool[iUnitsOnPlot];
+
+					for (int i = 0; i < iUnitsOnPlot; i++)
+					{
+						bUnitHit[i] = false;
+					}
+
+					for (int iI = 0; iI < std::min(iUnitsOnPlot, iNumTargets); iI++)
+					{
+						pUnitNode = pLoopPlot->headUnitNode();
+						int iCounter = -1;
+						iBestValue = 0;
+						pBestUnit = NULL;
+						while (pUnitNode != NULL)
+						{
+							iCounter++; // Start at 0
+							pLoopUnit = ::getUnit(pUnitNode->m_data);
+							pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+							if (!pLoopUnit->isImmuneToSpell(this, spell))
+							{
+								if (GC.getSpellInfo((SpellTypes)spell).isCausesWar() || GET_TEAM(getTeam()).isAtWar(pLoopUnit->getTeam()))
+								{
+									if (!bUnitHit[iCounter])
+									{
+										iValue = getSpellDefenderValue(pLoopUnit, pLoopPlot, iDmgType);
+									
+										if (iValue > iBestValue)
+										{
+											iBestValue = iValue;
+											pBestUnit = pLoopUnit;
+											iBestUnitCounter = iCounter;
+										}
+									}
+								}
+							}
+						}
+						if (pBestUnit != NULL)
+						{
+							pBestUnit->doDamage(iDmg, iDmgLimit, this, iDmgType, true);		
+							bUnitHit[iBestUnitCounter] = true;
+						}
+					}
+					SAFE_DELETE_ARRAY(bUnitHit);
+
 				}
 			}
 		}
@@ -29431,6 +29595,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 /**	GWS										END													**/
 /*************************************************************************************************/
 	pStream->Read(GC.getNumUnitCombatInfos(), m_paiExtraUnitCombatModifier);
+	pStream->Read(GC.getNumSpellClassInfos(), m_paiExtraSpellClassPower);
 /*************************************************************************************************/
 /**	AutoCast								02/09/10									Snarko	**/
 /**																								**/
@@ -29937,7 +30102,8 @@ void CvUnit::write(FDataStreamBase* pStream)
 /**	GWS										END													**/
 /*************************************************************************************************/
 	pStream->Write(GC.getNumUnitCombatInfos(), m_paiExtraUnitCombatModifier);
-/*************************************************************************************************/
+	pStream->Write(GC.getNumSpellClassInfos(), m_paiExtraSpellClassPower);
+	/*************************************************************************************************/
 /**	AutoCast								02/09/10									Snarko	**/
 /**																								**/
 /**						Making the human able to set units to autocast spells					**/
@@ -33324,7 +33490,7 @@ bool CvUnit::canSpellTargetPlot(CvPlot* pTarget, int iI)
 		return false;
 	}
 
-	int iRange = GC.getSpellInfo((SpellTypes)iI).getTargetRange();
+	int iRange = getSpellTargetRange(iI);//GC.getSpellInfo((SpellTypes)iI).getTargetRange();
 
 	if (!plot()->canSeePlot(pTarget, getTeam(), iRange, getFacingDirection(true)))
 	{
@@ -33389,15 +33555,15 @@ int CvUnit::getMagicalPower() const
 int CvUnit::getSpellMagicalPower(int spell) const
 {
 	int res = getMagicalPower();
-//	CvSpellInfo kSpell = GC.getSpellInfo((SpellTypes)spell);
-//	for (int i = 0; i < GC.getNumSpellClassInfos(); i++)
-//	{
-//		if (kSpell.isSpellClass(i))
-//		{
-//			res += getUnitInfo().getSpellClassExtraPower(i);
-//			res += getSpellClassExtraPower(i);
-//		}
-//	}
+	CvSpellInfo kSpell = GC.getSpellInfo((SpellTypes)spell);
+	for (int i = 0; i < GC.getNumSpellClassInfos(); i++)
+	{
+		if (kSpell.isSpellClass(i))
+		{
+	//		res += getUnitInfo().getSpellClassExtraPower(i);
+			res += getExtraSpellClassPower((SpellClassTypes)i);
+		}
+	}
 	return res;
 }
 

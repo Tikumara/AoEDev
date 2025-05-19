@@ -2727,11 +2727,11 @@
 			</FreePromotionUnitCombats>
 			<ExtraUnitClasses>
 				<ExtraUnitClass>
-					<UnitClassType>UNITCLASS_ASSASSIN</UnitClassType>
+					<UnitClassType>UNITCLASS_AGENT</UnitClassType>
 					<UnitType>UNIT_AGENT</UnitType>
 				</ExtraUnitClass>
 				<ExtraUnitClass>
-					<UnitClassType>UNITCLASS_SHADOW</UnitClassType>
+					<UnitClassType>UNITCLASS_ADJUNCT</UnitClassType>
 					<UnitType>UNIT_ADJUNCT</UnitType>
 				</ExtraUnitClass>
 				<ExtraUnitClass>

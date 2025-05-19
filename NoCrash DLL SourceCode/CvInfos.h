@@ -808,6 +808,7 @@ public:
 	bool getTerrainDoubleMove(int i) const;				// Exposed to Python
 	bool getFeatureDoubleMove(int i) const;				// Exposed to Python
 	bool getPlotEffectDoubleMove(int i) const;				// Exposed to Python
+	int getExtraSpellClassPower(int i) const;				// Exposed to Python
 	bool getUnitCombat(int i) const;				// Exposed to Python
 	int getMaxExpReward() const;
 	/*************************************************************************************************/
@@ -1837,6 +1838,7 @@ protected:
 /*************************************************************************************************/
 	int m_iMaxApplications;
 	int* m_piUnitCombat;
+	int* m_piExtraSpellClassPower;
 	int** m_piiPrereqPromotionORs;
 	int** m_piiPrereqPromotionANDs;
 	int m_iNumPrereqPromotionORs;
@@ -2128,6 +2130,7 @@ public:
 	int getCasterMinLevel() const;
 	int getChangePopulation() const;
 	int getCost() const;
+	int getNumTargets() const;
 	int getCrimePrereq() const;
 	int getDamage() const;
 	int getDamageLimit() const;
@@ -2346,6 +2349,7 @@ protected:
 	bool m_bSacrificeCaster;
 	int m_iChangePopulation;
 	int m_iCost;
+	int m_iNumTargets;
 	int m_iCrimePrereq;
 	int m_iImmobileTurns;
 	int m_iMiscastChance;

@@ -13261,7 +13261,14 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 			szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_VERSUS_CAPTURE_TEXT", GC.getPromotionInfo(ePromotion).getUnitCombatCaptureRatePercent(iI), GC.getUnitCombatInfo((UnitCombatTypes)iI).getTextKeyWide()));
 		}
 	}
-
+	for (iI = 0; iI < GC.getNumSpellClassInfos(); ++iI)
+	{
+		if (GC.getPromotionInfo(ePromotion).getExtraSpellClassPower(iI) != 0)
+		{
+			szBuffer.append(pcNewline);
+			szBuffer.append(gDLL->getText("TXT_KEY_EXTRA_SPELLCLASS_POWER", GC.getPromotionInfo(ePromotion).getExtraSpellClassPower(iI), GC.getSpellClassInfo((SpellClassTypes)iI).getTextKeyWide()));
+		}
+	}
 	for (iI = 0; iI < NUM_DOMAIN_TYPES; ++iI)
 	{
 		if (GC.getPromotionInfo(ePromotion).getDomainModifierPercent(iI) != 0)
@@ -14490,6 +14497,11 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 		szBuffer.append(pcNewline);
 		szBuffer.append(gDLL->getText("TXT_KEY_SPELL_IMMOBILE_TURNS", GC.getSpellInfo(eSpell).getImmobileTurns()));
 	}
+	if (GC.getSpellInfo(eSpell).getImmobileTurns() != -1)
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_SPELL_NUM_TARGETS", GC.getSpellInfo(eSpell).getNumTargets()));
+	}
 	if (GC.getSpellInfo(eSpell).isSacrificeCaster())
 	{
 		szBuffer.append(pcNewline);
@@ -14513,7 +14525,7 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 	//Spell Bonuses
 	CvWString szBonusString;
 	CvWString szTempBuffer;
-	int iI;
+	int iI,iValue;
 	for (iI = 0; iI < GC.getSpellInfo(eSpell).getNumSpellBonuses(); iI++)
 	{
 		szTempBuffer.clear();
@@ -14523,6 +14535,64 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getSymbolID(BULLET_CHAR));
 		szBuffer.append(gDLL->getText("TXT_KEY_SPELL_BONUS_PREFIX",cbTemp.iPrereqExtraPower,cbTemp.iMaxApplications));
+		iValue = cbTemp.iExtraDamage;
+		if (iValue != 0)
+		{
+			szBonusString.Format(L"%.0f", iValue);
+			if (!bFirst)
+			{
+				szTempBuffer += L", ";
+			}
+			else
+			{
+				bFirst = false;
+			}
+			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_DAMAGE", szBonusString.GetCString());
+		}
+		iValue = cbTemp.iExtraMaxDamage;
+		if (iValue != 0)
+		{
+			szBonusString.Format(L"%.0f", iValue);
+			if (!bFirst)
+			{
+				szTempBuffer += L", ";
+			}
+			else
+			{
+				bFirst = false;
+			}
+			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_MAX_DAMAGE", szBonusString.GetCString());
+		}
+		iValue = cbTemp.iExtraNumTargets;
+		if (iValue != 0)
+		{
+			szBonusString.Format(L"%.0f", iValue);
+			if (!bFirst)
+			{
+				szTempBuffer += L", ";
+			}
+			else
+			{
+				bFirst = false;
+			}
+			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_NUM_TARGETS", szBonusString.GetCString());
+		}
+		iValue = cbTemp.iExtraTargetRange;
+		if (iValue != 0)
+		{
+			szBonusString.Format(L"%.0f", iValue);
+			if (!bFirst)
+			{
+				szTempBuffer += L", ";
+			}
+			else
+			{
+				bFirst = false;
+			}
+			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_TARGET_RANGE", szBonusString.GetCString());
+		}
+		szBuffer.append(gDLL->getText(szTempBuffer.GetCString()));
+
 	}
 
 }

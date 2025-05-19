@@ -331,6 +331,38 @@
 		<Spanish>With %d1 Extra Magical Power and up to %d2 times, Grants[SPACE]</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SPELL_BONUS_EXTRA_DAMAGE</Tag>
+		<English>%s1 Extra Damage[SPACE]</English>
+		<French>%s1 Extra Damage[SPACE]</French>
+		<German>%s1 Extra Damage[SPACE]</German>
+		<Italian>%s1 Extra Damage[SPACE]</Italian>
+		<Spanish>%s1 Extra Damage[SPACE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BONUS_EXTRA_MAX_DAMAGE</Tag>
+		<English>%s1 Extra Damage Limit[SPACE]</English>
+		<French>%s1 Extra Damage Limit[SPACE]</French>
+		<German>%s1 Extra Damage Limit[SPACE]</German>
+		<Italian>%s1 Extra Damage Limit[SPACE]</Italian>
+		<Spanish>%s1 Extra Damage Limit[SPACE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BONUS_EXTRA_NUM_TARGETS</Tag>
+		<English>To %s1 Additional Targets[SPACE]</English>
+		<French>To %s1 Additional Targets[SPACE]</French>
+		<German>To %s1 Additional Targets[SPACE]</German>
+		<Italian>To %s1 Additional Targets[SPACE]</Italian>
+		<Spanish>To %s1 Additional Targets[SPACE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BONUS_EXTRA_TARGET_RANGE</Tag>
+		<English>%s1 Extra Spell Range[SPACE]</English>
+		<French>%s1 Extra Spell Range[SPACE]</French>
+		<German>%s1 Extra Spell Range[SPACE]</German>
+		<Italian>%s1 Extra Spell Range[SPACE]</Italian>
+		<Spanish>%s1 Extra Spell Range[SPACE]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CHEATERS_NEVER_PROSPER</Tag>
 		<English>[COLOR_NEGATIVE_TEXT]You have already chosen your free tech(s)[COLOR_REVERT]</English>
 		<French>[COLOR_NEGATIVE_TEXT]You have already chosen your free tech(s)[COLOR_REVERT]</French>

@@ -922,6 +922,9 @@ public:
 	int getExtraUnitCombatModifier(UnitCombatTypes eIndex) const;														// Exposed to Python
 	void changeExtraUnitCombatModifier(UnitCombatTypes eIndex, int iChange);
 
+	int getExtraSpellClassPower(SpellClassTypes eIndex) const;														// Exposed to Python
+	void changeExtraSpellClassPower(SpellClassTypes eIndex, int iChange);
+
 	bool canAcquirePromotion(PromotionTypes ePromotion, bool bMustMaintainCheck=false) const;															// Exposed to Python
 	bool canAcquirePromotionAny() const;																										// Exposed to Python
 	bool isPromotionValid(PromotionTypes ePromotion) const;															// Exposed to Python
@@ -1441,6 +1444,11 @@ public:
 	bool canPush(int spell);
 	bool canRemovePromotion(int spell, CvPlot* pTargetPlot = NULL);
 	//TargetedSpell 0924 blackimp
+	SpellUpgradeData getSpellData(int spell);
+	int getSpellTargetRange(int spell);
+
+	int getSpellDefenderValue(CvUnit* pLoopUnit, CvPlot* pTargetplot, int iDmgType) const;
+
 	void cast(int spell, CvPlot* pTargetPlot = NULL);
 	void castAddPromotion(int spell, CvPlot* pTargetPlot = NULL);
 	void castCreateUnit(int spell, CvPlot* pTargetPlot = NULL);
@@ -2230,6 +2238,7 @@ protected:
 /*************************************************************************************************/
 /**	GWS										END													**/
 /*************************************************************************************************/
+	int* m_paiExtraSpellClassPower;
 	int* m_paiExtraUnitCombatModifier;
 
 	bool canAdvance(const CvPlot* pPlot, int iThreshold) const;
