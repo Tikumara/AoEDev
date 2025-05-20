@@ -3962,28 +3962,6 @@
 			<DefaultUnit>UNIT_BEHEMOTH_SLUGA</DefaultUnit>
 			<iMercenaryWeight>0</iMercenaryWeight>
 		</UnitClassInfo> -->
-		<UnitClassInfo>		<!-- Agent -->
-			<Type>UNITCLASS_AGENT</Type>
-			<Description>TXT_KEY_UNIT_AGENT</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>0</iInstanceCostModifier>
-			<bUnique>1</bUnique>
-			<DefaultUnit>UNIT_AGENT</DefaultUnit>
-			<iMercenaryWeight>1</iMercenaryWeight>
-		</UnitClassInfo>
-		<UnitClassInfo>		<!-- Adjunct -->
-			<Type>UNITCLASS_ADJUNCT</Type>
-			<Description>TXT_KEY_UNIT_ADJUNCT</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>4</iMaxPlayerInstances>
-			<iInstanceCostModifier>0</iInstanceCostModifier>
-			<bUnique>1</bUnique>
-			<DefaultUnit>UNIT_ADJUNCT</DefaultUnit>
-				<iMercenaryWeight>1</iMercenaryWeight>
-	</UnitClassInfo>
 	<UnitClassInfo>	<!-- Caretaker Matron --> <!-- Mekara End -->
 			<Type>UNITCLASS_CARETAKER_MATRON</Type>
 			<Description>TXT_KEY_UNIT_CARETAKER_MATRON</Description>

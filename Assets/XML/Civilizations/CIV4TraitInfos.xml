@@ -2797,7 +2797,7 @@
 			</SpecialistHappinessChanges>			
 			<UnitClassPlayerInstancesChanges>
 				<UnitClassPlayerInstancesChange>
-					<UnitClassType>UNITCLASS_ADJUNCT</UnitClassType>
+					<UnitClassType>UNITCLASS_SHADOW</UnitClassType>
 					<iPlayerInstancesChange>4</iPlayerInstancesChange>
 				</UnitClassPlayerInstancesChange>
 			</UnitClassPlayerInstancesChanges>
