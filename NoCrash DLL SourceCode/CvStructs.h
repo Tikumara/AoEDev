@@ -599,6 +599,9 @@ struct TraitTriggeredData
 
 struct SpellBonuses
 {
+	SpellBonuses() :iPrereqExtraPower(0), iMaxApplications(0), iExtraDamage(0), iExtraMaxDamage(0), iExtraNumTargets(0), iExtraTargetRange(0)
+	{
+	}
 	int iPrereqExtraPower;
 	int iMaxApplications;
 	int iExtraDamage;

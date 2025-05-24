@@ -24226,7 +24226,8 @@ SpellUpgradeData CvUnit::getSpellData(int spell)
 	int iMagicalPower = getSpellMagicalPower(spell);
 	int iExtraPower = iMagicalPower - GC.getSpellInfo((SpellTypes)spell).getMagicalPowerPrereq();
 	SpellUpgradeData data;
-	
+	SpellBonuses bonus;
+	int iNumBonusApplications=0;
 	//Core Spell Data
 	data.iDamage = GC.getSpellInfo((SpellTypes)spell).getDamage();
 	data.iMaxDamage = GC.getSpellInfo((SpellTypes)spell).getDamageLimit();
@@ -24236,9 +24237,9 @@ SpellUpgradeData CvUnit::getSpellData(int spell)
 	//Applying Spell Bonuses
 	for (int iI = 0; iI < GC.getSpellInfo((SpellTypes)spell).getNumSpellBonuses(); iI++)
 	{
-		SpellBonuses bonus = GC.getSpellInfo((SpellTypes)spell).getSpellBonus(iI);
+		 bonus = GC.getSpellInfo((SpellTypes)spell).getSpellBonus(iI);
 
-		int iNumBonusApplications =std::min( (iExtraPower/(bonus.iPrereqExtraPower)), bonus.iMaxApplications);
+		 iNumBonusApplications =std::min( (iExtraPower/(bonus.iPrereqExtraPower)), bonus.iMaxApplications);
 		if (iNumBonusApplications > 0)
 		{
 			data.iDamage += bonus.iExtraDamage * iNumBonusApplications;
@@ -24253,12 +24254,15 @@ int CvUnit::getSpellTargetRange(int spell)
 	int iMagicalPower = getSpellMagicalPower(spell);
 	int iExtraPower = iMagicalPower - GC.getSpellInfo((SpellTypes)spell).getMagicalPowerPrereq();
 	int iTargetRange = GC.getSpellInfo((SpellTypes)spell).getTargetRange();
+	SpellBonuses bonus;
+	int iNumBonusApplications = 0; 
 	//Applying Spell Bonuses
 	for (int iI = 0; iI < GC.getSpellInfo((SpellTypes)spell).getNumSpellBonuses(); iI++)
 	{
-		SpellBonuses bonus = GC.getSpellInfo((SpellTypes)spell).getSpellBonus(iI);
-
-		int iNumBonusApplications = std::min((iExtraPower / (bonus.iPrereqExtraPower)), bonus.iMaxApplications);
+		bonus = GC.getSpellInfo((SpellTypes)spell).getSpellBonus(iI);
+		iNumBonusApplications = 0;
+		if(bonus.iPrereqExtraPower>0)
+			iNumBonusApplications = std::min((iExtraPower / (bonus.iPrereqExtraPower)), bonus.iMaxApplications);
 		if (iNumBonusApplications > 0)
 		{
 			iTargetRange += bonus.iExtraTargetRange * iNumBonusApplications;
@@ -33555,10 +33559,9 @@ int CvUnit::getMagicalPower() const
 int CvUnit::getSpellMagicalPower(int spell) const
 {
 	int res = getMagicalPower();
-	CvSpellInfo kSpell = GC.getSpellInfo((SpellTypes)spell);
 	for (int i = 0; i < GC.getNumSpellClassInfos(); i++)
 	{
-		if (kSpell.isSpellClass(i))
+		if (GC.getSpellInfo((SpellTypes)spell).isSpellClass(i))
 		{
 	//		res += getUnitInfo().getSpellClassExtraPower(i);
 			res += getExtraSpellClassPower((SpellClassTypes)i);
