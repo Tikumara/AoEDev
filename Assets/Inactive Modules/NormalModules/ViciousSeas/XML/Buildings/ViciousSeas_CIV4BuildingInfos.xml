@@ -177,7 +177,8 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HUNTING_LODGE</ArtDefineTag>
 			<MovieDefineTag></MovieDefineTag>
-			<bGovernmentCenter>1</bGovernmentCenter>
+			<iMaintenanceModifier>-30</iMaintenanceModifier>
+			<iTradeRoutes>1</iTradeRoutes>
 			<bNeverCapture>1</bNeverCapture>
 			<iConquestProb>0</iConquestProb>
 			<iAsset>8</iAsset>

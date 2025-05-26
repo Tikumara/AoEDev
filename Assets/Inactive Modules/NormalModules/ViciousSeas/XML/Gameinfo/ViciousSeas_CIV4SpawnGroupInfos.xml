@@ -10,7 +10,7 @@
 			<Type>SPAWN_GROUP_GALLEY</Type>
 			<Description>TXT_KEY_SPAWN_GROUP_GALLEY</Description>
 			<bNaval>1</bNaval>
-			<iWeight>-1</iWeight>
+			<iWeight>-999</iWeight>
 			<GroupUnitClasses>
 				<GroupUnitClass>
 					<UnitClass>UNITCLASS_GALLEY</UnitClass>
@@ -25,7 +25,7 @@
 			<Type>SPAWN_GROUP_GALLEON</Type>
 			<Description>TXT_KEY_SPAWN_SPAWN_GROUP_GALLEON</Description>
 			<bNaval>1</bNaval>
-			<iWeight>-1</iWeight>
+			<iWeight>-999</iWeight>
 			<GroupUnitClasses>
 				<GroupUnitClass>
 					<UnitClass>UNITCLASS_GALLEON</UnitClass>
@@ -44,7 +44,7 @@
 			<Type>SPAWN_GROUP_CARAVEL</Type>
 			<Description>TXT_KEY_SPAWN_GROUP_CARAVEL</Description>
 			<bNaval>1</bNaval>
-			<iWeight>-1</iWeight>
+			<iWeight>-999</iWeight>
 			<GroupUnitClasses>
 				<GroupUnitClass>
 					<UnitClass>UNITCLASS_CARAVEL</UnitClass>
@@ -59,7 +59,7 @@
 			<Type>SPAWN_GROUP_CARRACK</Type>
 			<Description>TXT_KEY_SPAWN_GROUP_CARRACK</Description>
 			<bNaval>1</bNaval>
-			<iWeight>-1</iWeight>
+			<iWeight>-999</iWeight>
 			<GroupUnitClasses>
 				<GroupUnitClass>
 					<UnitClass>UNITCLASS_CARRACK</UnitClass>
@@ -78,7 +78,7 @@
 			<Type>SPAWN_GROUP_PRIVATEER</Type>
 			<Description>TXT_KEY_SPAWN_GROUP_PRIVATEER</Description>
 			<bNaval>1</bNaval>
-			<iWeight>-1</iWeight>
+			<iWeight>-999</iWeight>
 			<GroupUnitClasses>
 				<GroupUnitClass>
 					<UnitClass>UNITCLASS_PRIVATEER</UnitClass>
@@ -93,7 +93,7 @@
 			<Type>SPAWN_GROUP_FRIGATE</Type>
 			<Description>TXT_KEY_SPAWN_GROUP_FRIGATE</Description>
 			<bNaval>1</bNaval>
-			<iWeight>-1</iWeight>
+			<iWeight>-999</iWeight>
 			<GroupUnitClasses>
 				<GroupUnitClass>
 					<UnitClass>UNITCLASS_FRIGATE</UnitClass>
@@ -112,7 +112,7 @@
 			<Type>SPAWN_GROUP_QUEEN_OF_THE_LINE</Type>
 			<Description>TXT_KEY_SPAWN_GROUP_QUEEN_OF_THE_LINE</Description>
 			<bNaval>1</bNaval>
-			<iWeight>-1</iWeight>
+			<iWeight>-999</iWeight>
 			<GroupUnitClasses>
 				<GroupUnitClass>
 					<UnitClass>UNITCLASS_QUEEN_OF_THE_LINE</UnitClass>
@@ -136,7 +136,7 @@
 			<Type>SPAWN_GROUP_ARCANE_BARGE</Type>
 			<Description>TXT_KEY_SPAWN_GROUP_ARCANE_BARGES</Description>
 			<bNaval>1</bNaval>
-			<iWeight>-1</iWeight>
+			<iWeight>-999</iWeight>
 			<GroupUnitClasses>
 				<GroupUnitClass>
 					<UnitClass>UNITCLASS_ARCANE_BARGE</UnitClass>
