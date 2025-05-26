@@ -69,10 +69,14 @@ Trade routes become available at optics, the final tier of research (astronomy),
 Bezeri are not supposed to be overpowered, if they are pulling an "illians" and stomping every game, let me know what you think is imbalanced about them so I can tackle it!
 
 V1.6
-Drowned can become Drowned Callers at lvl 6, giving them Drowns on combat win and can create a Howling Burrow
-Barbarian ships can become Pirate Princes at lvl 6, giving them ship capture chance and creating a Pirate Free City
-Changes to barbarian ship and lair spawns to balance the new lair and spawn system in the core game.
-Barbarian sea forts now have a commander
+Drowned can become Drowned Callers at lvl 6, giving them Drowns on combat win and can create a Howling Burrow.
+Barbarian ships can become Pirate Princes at lvl 6, giving them ship capture chance and creating a Pirate Free City.
+Changes to barbarian ship and lair spawns to balance the new lair and spawn system in the core game. (hopefully)
+Barbarian sea forts now have a commander.
+Ocean City building nerfed(?) from "becomes city center" to -30% upkeep and +1 trade routs.
+Coral fort moved to Feral Bond, build time increased by 40%.
+
+
 
 
 V1.5
