@@ -33,7 +33,7 @@
 			<iTechTradeKnownModifier>-100</iTechTradeKnownModifier>
 			<iTilesPerAnimal>20</iTilesPerAnimal> <!-- DIFF CONSTANT: Applies to animals on land only -->
 			<iTilesPerOrc>30</iTilesPerOrc> <!-- DIFF CONSTANT: Applies to savages on land only -->
-			<iWaterTilesPerOrc>100</iWaterTilesPerOrc> <!-- DIFF CONSTANT: Applies to savages on water only -->
+			<iWaterTilesPerOrc>5</iWaterTilesPerOrc> <!-- DIFF CONSTANT: Applies to savages on water only -->
 			<iUnownedTilesPerBarbarianCity>105</iUnownedTilesPerBarbarianCity>
 			<iBarbarianCreationTurnsElapsed>50</iBarbarianCreationTurnsElapsed> <!-- Unused; calculated as a function of GameSpeedInfo iTurnsPerLairCycle instead  -->
 			<iBarbarianCityCreationTurnsElapsed>55</iBarbarianCityCreationTurnsElapsed>
@@ -105,7 +105,7 @@
 			</FreeTechs>
 			<AIFreeTechs>
 			</AIFreeTechs>
-			<iWaterTilesPerAnimal>50</iWaterTilesPerAnimal> <!-- DIFF CONSTANT: Applies to animals on water only -->
+			<iWaterTilesPerAnimal>105</iWaterTilesPerAnimal> <!-- DIFF CONSTANT: Applies to animals on water only -->
 			<iAnimalEscalationTurnsElapsed>150</iAnimalEscalationTurnsElapsed> <!-- DIFF MODULATED: Ehh... leaving for now. -->
 			<iPercentDemonsPerEvilPlot>75</iPercentDemonsPerEvilPlot> <!-- DIFF MODULATED: Applies to land and water both -->
 			<iPercentDemonsPerEvilPlotPerGlobalCounter>225</iPercentDemonsPerEvilPlotPerGlobalCounter> <!-- DIFF MODULATED: Additive with iPercentDemonsPerEvilPlot. 40 means if AC is 10, +4% demons/evil plot -->
@@ -141,7 +141,7 @@
 			<iTechTradeKnownModifier>-50</iTechTradeKnownModifier>
 			<iTilesPerAnimal>20</iTilesPerAnimal>
 			<iTilesPerOrc>30</iTilesPerOrc>
-			<iWaterTilesPerOrc>100</iWaterTilesPerOrc>
+			<iWaterTilesPerOrc>5</iWaterTilesPerOrc>
 			<iUnownedTilesPerBarbarianCity>84</iUnownedTilesPerBarbarianCity>
 			<iBarbarianCreationTurnsElapsed>45</iBarbarianCreationTurnsElapsed>
 			<iBarbarianCityCreationTurnsElapsed>50</iBarbarianCityCreationTurnsElapsed>
@@ -209,7 +209,7 @@
 			</FreeTechs>
 			<AIFreeTechs>
 			</AIFreeTechs>
-			<iWaterTilesPerAnimal>50</iWaterTilesPerAnimal>
+			<iWaterTilesPerAnimal>95</iWaterTilesPerAnimal>
 			<iAnimalEscalationTurnsElapsed>135</iAnimalEscalationTurnsElapsed>
 			<iPercentDemonsPerEvilPlot>75</iPercentDemonsPerEvilPlot>
 			<iPercentDemonsPerEvilPlotPerGlobalCounter>225</iPercentDemonsPerEvilPlotPerGlobalCounter>
@@ -245,7 +245,7 @@
 			<iTechTradeKnownModifier>-25</iTechTradeKnownModifier>
 			<iTilesPerAnimal>20</iTilesPerAnimal>
 			<iTilesPerOrc>30</iTilesPerOrc>
-			<iWaterTilesPerOrc>100</iWaterTilesPerOrc>
+			<iWaterTilesPerOrc>5</iWaterTilesPerOrc>
 			<iUnownedTilesPerBarbarianCity>84</iUnownedTilesPerBarbarianCity>
 			<iBarbarianCreationTurnsElapsed>40</iBarbarianCreationTurnsElapsed>
 			<iBarbarianCityCreationTurnsElapsed>45</iBarbarianCityCreationTurnsElapsed>
@@ -309,7 +309,7 @@
 			</FreeTechs>
 			<AIFreeTechs>
 			</AIFreeTechs>
-			<iWaterTilesPerAnimal>225</iWaterTilesPerAnimal>
+			<iWaterTilesPerAnimal>85</iWaterTilesPerAnimal>
 			<iAnimalEscalationTurnsElapsed>120</iAnimalEscalationTurnsElapsed>
 			<iPercentDemonsPerEvilPlot>75</iPercentDemonsPerEvilPlot>
 			<iPercentDemonsPerEvilPlotPerGlobalCounter>225</iPercentDemonsPerEvilPlotPerGlobalCounter>
@@ -345,7 +345,7 @@
 			<iTechTradeKnownModifier>0</iTechTradeKnownModifier>
 			<iTilesPerAnimal>20</iTilesPerAnimal>
 			<iTilesPerOrc>30</iTilesPerOrc>
-			<iWaterTilesPerOrc>100</iWaterTilesPerOrc>
+			<iWaterTilesPerOrc>5</iWaterTilesPerOrc>
 			<iUnownedTilesPerBarbarianCity>63</iUnownedTilesPerBarbarianCity>
 			<iBarbarianCreationTurnsElapsed>35</iBarbarianCreationTurnsElapsed>
 			<iBarbarianCityCreationTurnsElapsed>40</iBarbarianCityCreationTurnsElapsed>
@@ -406,7 +406,7 @@
 			</FreeTechs>
 			<AIFreeTechs>
 			</AIFreeTechs>
-			<iWaterTilesPerAnimal>50</iWaterTilesPerAnimal>
+			<iWaterTilesPerAnimal>75</iWaterTilesPerAnimal>
 			<iAnimalEscalationTurnsElapsed>90</iAnimalEscalationTurnsElapsed>
 			<iPercentDemonsPerEvilPlot>75</iPercentDemonsPerEvilPlot>
 			<iPercentDemonsPerEvilPlotPerGlobalCounter>225</iPercentDemonsPerEvilPlotPerGlobalCounter>
@@ -442,7 +442,7 @@
 			<iTechTradeKnownModifier>0</iTechTradeKnownModifier>
 			<iTilesPerAnimal>20</iTilesPerAnimal>
 			<iTilesPerOrc>30</iTilesPerOrc>
-			<iWaterTilesPerOrc>100</iWaterTilesPerOrc>
+			<iWaterTilesPerOrc>5</iWaterTilesPerOrc>
 			<iUnownedTilesPerBarbarianCity>63</iUnownedTilesPerBarbarianCity>
 			<iBarbarianCreationTurnsElapsed>30</iBarbarianCreationTurnsElapsed>
 			<iBarbarianCityCreationTurnsElapsed>35</iBarbarianCityCreationTurnsElapsed>
@@ -503,7 +503,7 @@
 			<AIFreeTechs>
 			</AIFreeTechs>
 			<iAIFreeXP>1</iAIFreeXP>
-			<iWaterTilesPerAnimal>175</iWaterTilesPerAnimal>
+			<iWaterTilesPerAnimal>65</iWaterTilesPerAnimal>
 			<iAnimalEscalationTurnsElapsed>75</iAnimalEscalationTurnsElapsed>
 			<iPercentDemonsPerEvilPlot>75</iPercentDemonsPerEvilPlot>
 			<iPercentDemonsPerEvilPlotPerGlobalCounter>225</iPercentDemonsPerEvilPlotPerGlobalCounter>
@@ -539,7 +539,7 @@
 			<iTechTradeKnownModifier>0</iTechTradeKnownModifier>
 			<iTilesPerAnimal>20</iTilesPerAnimal>
 			<iTilesPerOrc>30</iTilesPerOrc>
-			<iWaterTilesPerOrc>100</iWaterTilesPerOrc>
+			<iWaterTilesPerOrc>5</iWaterTilesPerOrc>
 			<iUnownedTilesPerBarbarianCity>42</iUnownedTilesPerBarbarianCity>
 			<iBarbarianCreationTurnsElapsed>25</iBarbarianCreationTurnsElapsed>
 			<iBarbarianCityCreationTurnsElapsed>30</iBarbarianCityCreationTurnsElapsed>
@@ -605,10 +605,10 @@
 				</FreeTech>
 			</AIFreeTechs>
 			<iAIFreeXP>2</iAIFreeXP>
-			<iWaterTilesPerAnimal>50</iWaterTilesPerAnimal>
+			<iWaterTilesPerAnimal>55</iWaterTilesPerAnimal>
 			<iAnimalEscalationTurnsElapsed>67</iAnimalEscalationTurnsElapsed>
 			<iPercentDemonsPerEvilPlot>75</iPercentDemonsPerEvilPlot>
-			<iPercentDemonsPerEvilPlotPerGlobalCounter>225</iPercentDemonsPerEvilPlotPerGlobalCounter>
+			<iPercentDemonsPerEvilPlotPerGlobalCounter>255</iPercentDemonsPerEvilPlotPerGlobalCounter>
 			<iDemonGlobalCounterFreeXPPercent>50</iDemonGlobalCounterFreeXPPercent>
 			<iDemonPerTurnKnownTechsPercent>5</iDemonPerTurnKnownTechsPercent>
 			<iDemonBonus>0</iDemonBonus>
@@ -641,7 +641,7 @@
 			<iTechTradeKnownModifier>0</iTechTradeKnownModifier>
 			<iTilesPerAnimal>20</iTilesPerAnimal>
 			<iTilesPerOrc>30</iTilesPerOrc>
-			<iWaterTilesPerOrc>100</iWaterTilesPerOrc>
+			<iWaterTilesPerOrc>5</iWaterTilesPerOrc>
 			<iUnownedTilesPerBarbarianCity>42</iUnownedTilesPerBarbarianCity>
 			<iBarbarianCreationTurnsElapsed>20</iBarbarianCreationTurnsElapsed>
 			<iBarbarianCityCreationTurnsElapsed>25</iBarbarianCityCreationTurnsElapsed>
@@ -712,7 +712,7 @@
 				</FreeTech>
 			</AIFreeTechs>
 			<iAIFreeXP>4</iAIFreeXP>
-			<iWaterTilesPerAnimal>125</iWaterTilesPerAnimal>
+			<iWaterTilesPerAnimal>45</iWaterTilesPerAnimal>
 			<iAnimalEscalationTurnsElapsed>50</iAnimalEscalationTurnsElapsed>
 			<iPercentDemonsPerEvilPlot>80</iPercentDemonsPerEvilPlot>
 			<iPercentDemonsPerEvilPlotPerGlobalCounter>400</iPercentDemonsPerEvilPlotPerGlobalCounter>
@@ -748,7 +748,7 @@
 			<iTechTradeKnownModifier>0</iTechTradeKnownModifier>
 			<iTilesPerAnimal>20</iTilesPerAnimal>
 			<iTilesPerOrc>30</iTilesPerOrc>
-			<iWaterTilesPerOrc>100</iWaterTilesPerOrc>
+			<iWaterTilesPerOrc>5</iWaterTilesPerOrc>
 			<iUnownedTilesPerBarbarianCity>21</iUnownedTilesPerBarbarianCity>
 			<iBarbarianCreationTurnsElapsed>15</iBarbarianCreationTurnsElapsed>
 			<iBarbarianCityCreationTurnsElapsed>20</iBarbarianCityCreationTurnsElapsed>
@@ -822,7 +822,7 @@
 				</FreeTech>
 			</AIFreeTechs>
 			<iAIFreeXP>6</iAIFreeXP>
-			<iWaterTilesPerAnimal>50</iWaterTilesPerAnimal>
+			<iWaterTilesPerAnimal>35</iWaterTilesPerAnimal>
 			<iAnimalEscalationTurnsElapsed>45</iAnimalEscalationTurnsElapsed>
 			<iPercentDemonsPerEvilPlot>90</iPercentDemonsPerEvilPlot>
 			<iPercentDemonsPerEvilPlotPerGlobalCounter>550</iPercentDemonsPerEvilPlotPerGlobalCounter>
@@ -858,7 +858,7 @@
 			<iTechTradeKnownModifier>0</iTechTradeKnownModifier>
 			<iTilesPerAnimal>20</iTilesPerAnimal>
 			<iTilesPerOrc>30</iTilesPerOrc>
-			<iWaterTilesPerOrc>100</iWaterTilesPerOrc>
+			<iWaterTilesPerOrc>5</iWaterTilesPerOrc>
 			<iUnownedTilesPerBarbarianCity>21</iUnownedTilesPerBarbarianCity>
 			<iBarbarianCreationTurnsElapsed>10</iBarbarianCreationTurnsElapsed>
 			<iBarbarianCityCreationTurnsElapsed>15</iBarbarianCityCreationTurnsElapsed>
@@ -935,7 +935,7 @@
 				</FreeTech>
 			</AIFreeTechs>
 			<iAIFreeXP>8</iAIFreeXP>
-			<iWaterTilesPerAnimal>75</iWaterTilesPerAnimal>
+			<iWaterTilesPerAnimal>25</iWaterTilesPerAnimal>
 			<iAnimalEscalationTurnsElapsed>35</iAnimalEscalationTurnsElapsed>
 			<iPercentDemonsPerEvilPlot>100</iPercentDemonsPerEvilPlot>
 			<iPercentDemonsPerEvilPlotPerGlobalCounter>700</iPercentDemonsPerEvilPlotPerGlobalCounter>

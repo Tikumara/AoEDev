@@ -75,7 +75,7 @@ Changes to barbarian ship and lair spawns to balance the new lair and spawn syst
 Barbarian sea forts now have a commander.
 Ocean City building nerfed(?) from "becomes city center" to -30% upkeep and +1 trade routs.
 Coral fort moved to Feral Bond, build time increased by 40%.
-
+(tentative) Drown and Krakens moved from demon to barbarian faction due to new demon spawn rules
 
 
 
