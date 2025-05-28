@@ -29254,7 +29254,7 @@
 			<iTier>2</iTier>
 		</UnitInfo>
 		<UnitInfo>        <!-- Agent 334-->
-			<Class>UNITCLASS_AGENT</Class>
+			<Class>UNITCLASS_ASSASSIN</Class>
 			<Type>UNIT_AGENT</Type>
 			<Combat>UNITCOMBAT_ROGUE</Combat>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
@@ -29268,7 +29268,7 @@
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bFirstStrikeImmune>1</bFirstStrikeImmune>
 			<UnitClassUpgrades>
-				<UnitClassUpgradeType>UNITCLASS_ADJUNCT</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_SHADOW</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_MARKSMAN</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
@@ -29327,7 +29327,7 @@
 			<PrereqBuildingClass>BUILDINGCLASS_THIEVES_DEN</PrereqBuildingClass>
 		</UnitInfo>
 		<UnitInfo>        <!-- Adjunct -->
-			<Class>UNITCLASS_ADJUNCT</Class>
+			<Class>UNITCLASS_SHADOW</Class>
 			<Type>UNIT_ADJUNCT</Type>
 			<Combat>UNITCOMBAT_ROGUE</Combat>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
