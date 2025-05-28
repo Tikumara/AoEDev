@@ -1238,7 +1238,7 @@
 					<EarlyArtDefineTag>ART_DEF_UNIT_SEA_SERPENT</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
-			<FreePromotions>>
+			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_DRAGON</PromotionType>
 					<iNumApplied>1</iNumApplied>

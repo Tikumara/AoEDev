@@ -9,6 +9,7 @@
 	<ElementType name="Strategy" content="textOnly"/>
 	<ElementType name="bTypeDependency" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bForceOverwrite" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bDispellable" content="textOnly" dt:type="boolean"/>
 	<ElementType name="DependencyType" content="textOnly"/>
 	<ElementType name="AndDependencyTypes" content="eltOnly">
 		<element type="DependencyType"/>
@@ -35,6 +36,7 @@
 	<ElementType name="bFound" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bFoundCoast" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bFoundFreshWater" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bFreshWater" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iMovement" content="textOnly" dt:type="int"/>
 	<ElementType name="iCultureDistance" content="textOnly" dt:type="int"/>
 	<ElementType name="iSeeFrom" content="textOnly" dt:type="int"/>
@@ -142,6 +144,9 @@
 	<ElementType name="iDisappearance" content="textOnly" dt:type="int"/>
 	<ElementType name="iGrowth" content="textOnly" dt:type="int"/>
 	<ElementType name="iTurnDamage" content="textOnly" dt:type="int"/>
+	<ElementType name="iDamageLimit" content="textOnly" dt:type="int"/>
+	<ElementType name="iMaxPlotCounter" content="textOnly" dt:type="int"/>
+	<ElementType name="iPerceptionCost" content="textOnly" dt:type="int"/>
 	<ElementType name="TerrainConvert" content="textOnly"/>
 	<ElementType name="bRequiresFreshwater" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoCoast" content="textOnly" dt:type="boolean"/>
@@ -169,6 +174,7 @@
 	<ElementType name="FeatureUpgrade" content="textOnly"/>
 	<ElementType name="PrereqStateReligion" content="textOnly"/>
 	<ElementType name="PythonOnMove" content="textOnly"/>
+	<ElementType name="PythonPerTurn" content="textOnly"/>
 	<ElementType name="RequireResist" content="textOnly"/>
 	<ElementType name="bMist" content="textOnly" dt:type="boolean"/>
 	<ElementType name="FeatureInfo" content="eltOnly" order="many">
@@ -289,6 +295,14 @@
 	<ElementType name="iMaintenanceModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iMutateChance" content="textOnly" dt:type="int"/>
 	<ElementType name="iResearchModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iCommerce" content="textOnly" dt:type="int"/>
+	<ElementType name="CommerceModifiers" content="eltOnly">
+		<element type="iCommerce" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="YieldModifiers" content="eltOnly">
+		<element type="iYield" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+
 	<ElementType name="DamageType" content="textOnly"/>
 	<ElementType name="FreePromotion" content="textOnly"/>
 	<ElementType name="BonusInfo" content="eltOnly" order="many">
@@ -341,6 +355,8 @@
 		<element type="iMaintenanceModifier"/>
 		<element type="iMutateChance"/>
 		<element type="iResearchModifier"/>
+		<element type="CommerceModifiers"/>
+		<element type="YieldModifiers"/>
 		<element type="DamageType"/>
 		<element type="FreePromotion"/>
 	</ElementType>
@@ -581,6 +597,7 @@
 		<element type="bFreshWaterMakesValid"/>
 		<element type="bRiverSideMakesValid"/>
 		<element type="bNoFreshWater"/>
+		<element type="bFreshWater"/>
 		<element type="bRequiresFlatlands"/>
 		<element type="bRequiresRiverSide"/>
 		<element type="bRequiresIrrigation"/>
@@ -725,6 +742,39 @@
 	</ElementType>
 	<ElementType name="Civ4ClimateZoneInfos" content="eltOnly">
 		<element type="ClimateZoneInfos"/>
+	</ElementType>
+	<ElementType name="DefaultFeatureGraphics" content="textOnly"/>
+	
+	<ElementType name="iSpawnChance" content="textOnly" dt:type="int"/>
+	<ElementType name="iSpreadChance" content="textOnly" dt:type="int"/>
+	<ElementType name="iDisappearChance" content="textOnly" dt:type="int"/>
+	<ElementType name="iMoveChance" content="textOnly" dt:type="int"/>
+	<ElementType name="PlotEffectInfo" content="eltOnly" order="many">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="DefaultFeatureGraphics"/>
+		<element type="PythonOnMove"/>
+		<element type="PythonPerTurn"/>
+		<element type="iTurnDamage"/>
+		<element type="iSeeThrough"/>
+		<element type="TerrainBooleans"/>
+		<element type="iMaxPlotCounter"/>
+		<element type="iSpawnChance"/>
+		<element type="iSpreadChance"/>
+		<element type="iDisappearChance"/>
+		<element type="iMoveChance"/>
+		<element type="iDamageLimit"/>
+		<element type="iPerceptionCost"/>
+		<element type="DamageType"/>
+		<element type="bDispellable"/>
+		<element type="YieldChanges"/>
+		<element type="iHealthPercent"/>
+	</ElementType>
+	<ElementType name="PlotEffectInfos" content="eltOnly">
+		<element type="PlotEffectInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4PlotEffectInfos" content="eltOnly">
+		<element type="PlotEffectInfos"/>
 	</ElementType>
 <!-- FlavourMod: End Add -->
 </Schema>

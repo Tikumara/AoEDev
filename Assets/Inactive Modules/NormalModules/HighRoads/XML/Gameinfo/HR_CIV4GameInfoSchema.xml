@@ -993,6 +993,13 @@
 	<ElementType name="SpecialistCounts" content="eltOnly">
 		<element type="SpecialistCount" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="FreeSpecialistCount" content="eltOnly">
+		<element type="SpecialistType"/>
+		<element type="iSpecialistCount"/>
+	</ElementType>
+	<ElementType name="FreeSpecialistCounts" content="eltOnly">
+		<element type="FreeSpecialistCount" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="bValid" content="textOnly" dt:type="boolean"/>
 	<ElementType name="SpecialistValid" content="eltOnly">
 		<element type="SpecialistType"/>
@@ -1032,6 +1039,14 @@
 	</ElementType>
 	<ElementType name="FeatureHappinessChanges" content="eltOnly">
 		<element type="FeatureHappinessChange" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="iCrimeChange" content="textOnly" dt:type="int"/>
+	<ElementType name="SpecialistCrimeChange" content="eltOnly">
+		<element type="SpecialistType"/>
+		<element type="iCrimeChange"/>
+	</ElementType>
+	<ElementType name="SpecialistCrimeChanges" content="eltOnly">
+		<element type="SpecialistCrimeChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="ImprovementType" content="textOnly"/>
 	<ElementType name="ImprovementYields" content="eltOnly">
@@ -1143,9 +1158,12 @@
 		<element type="SpecialBuildingNotRequireds"/>
 		<element type="SpecialistValids"/>
 		<element type="SpecialistUnlimiteds"/>
+		<element type="SpecialistCounts"/>
+		<element type="FreeSpecialistCounts"/>
 		<element type="BuildingHappinessChanges"/>
 		<element type="BuildingHealthChanges"/>
 		<element type="FeatureHappinessChanges"/>
+		<element type="SpecialistCrimeChanges"/>
 		<element type="ImprovementYieldChanges"/>
 		<element type="WeLoveTheKing"/>
 		<element type="bCompassionHigh"/>
@@ -1350,6 +1368,7 @@
 		<element type="Commerces"/>
 <!-- SPECIALIST ENHANCEMENTS				10/09/2009			SUPERCHEESE		-->
 		<element type="iHealth"/>
+		<element type="iCrime"/>
 		<element type="iHappiness"/>
 <!-- SPECIALIST ENHANCEMENTS				END							-->
 		<element type="iExperience"/>

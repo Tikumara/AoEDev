@@ -33,17 +33,8 @@
 				</Build>
 			</Builds>
 		</UnitInfo>
-		<UnitInfo>        <!-- Familiar -->
-			<Type>UNIT_FAMILIAR</Type>
-			<Builds>
-				<Build>
-					<BuildType>BUILD_IMPERIAL_ROAD</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-			</Builds>
-		</UnitInfo>
 		<UnitInfo>        <!-- Sluga -->
-			<Type>UNIT_SLUGA</Type>
+			<Type>UNIT_SLUGA_V2</Type>
 			<Builds>
 				<Build>
 					<BuildType>BUILD_IMPERIAL_ROAD</BuildType>

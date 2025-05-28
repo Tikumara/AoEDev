@@ -733,6 +733,7 @@
 		<element type="iMaxTeamBuildingProductionModifier"/>
 		<element type="iMaxPlayerBuildingProductionModifier"/>
 		<element type="UnitClassPlayerInstancesChanges"/>
+		<element type="ExtraUnitClasses"/>
 		<element type="FreeSpecialistsNonStateReligion"/>
 		<element type="FreeSpecialistsStateReligion"/>
 		<element type="bAdaptive"/>
@@ -1099,6 +1100,14 @@
 	<ElementType name="TraitHookType" content="textOnly"/>
 	<ElementType name="TraitClassType" content="textOnly"/>
 	<ElementType name="iTurnModulo" content="textOnly" dt:type="int"/>
+	
+	<ElementType name="ExtraUnitClass" content="eltOnly">
+		<element type="UnitClassType"/>
+		<element type="UnitType"/>
+	</ElementType>
+	<ElementType name="ExtraUnitClasses" content="eltOnly">
+		<element type="ExtraUnitClass" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	
 	<ElementType name="PrereqTrainXPCap" content="eltOnly">
 		<element type="UnitCombatType"/>

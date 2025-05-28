@@ -204,7 +204,7 @@ def onUnitCreated(self, argsList):
 	pMutated = gc.getPromotionInfo(iMutated)
 
 	# When a spider with variant promotion is stationed in a city, +10% chance to grant the respective mutation to newly created melee and recon units in the city.
-	if not pUnit.isHasPromotion(iMutated) and pMutated.getUnitCombat(pUnit.getUnitCombatType()):
+	if not pUnit.isHasPromotion(iMutated) and pUnit.getUnitCombatType()!=-1 and pMutated.getUnitCombat(pUnit.getUnitCombatType()):
 		spiderCounts = {
 			'PROMOTION_SPIDER_ARGYRONETA' : 0,
 			'PROMOTION_SPIDER_VENENUM' : 0,

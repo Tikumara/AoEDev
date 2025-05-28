@@ -2079,6 +2079,9 @@ public:
 	CvString getPrereqTraitsVectorElement(int i);
 	int getNumPromotionsPrereq() const;
 	int getPromotionPrereq(int iI) const;
+	
+	int getNumTargetPromotionsPrereq() const;
+	int getTargetPromotionPrereq(int iI) const;
 
 	int getNumAddPromotions() const;
 	int getAddPromotion(int iI) const;
@@ -2256,6 +2259,8 @@ protected:
 	std::vector<CvString> m_aszPrereqTraitsforPass3;
 	int m_iNumPromotionsPrereq;
 	int* m_piPromotionsPrereq;
+	int m_iNumTargetPromotionsPrereq;
+	int* m_piTargetPromotionsPrereq;
 	int* m_piAddPromotions;
 	int m_iNumAddPromotions;
 	std::vector<CvString> m_aszAddPromotionsforPass3;
@@ -2897,6 +2902,7 @@ public:
 	int getDefensiveStrikeChance() const;
 	int getDefensiveStrikeDamage() const;
 	int getDamageTypeCombat(int i) const;
+	int getSpellClassExtraPower(int i) const;
 	int getDiploVoteType() const;
 	int getDurationFromCombat() const;
 	int getEnslavementChance() const;
@@ -3450,6 +3456,7 @@ protected:
 	int m_iWithdrawlProbDefensive;
 	int* m_piBonusAffinity;
 	int* m_piDamageTypeCombat;
+	int* m_piSpellClassExtraPower;
 	CvString m_szPyPreCombat;//PyPrecombat by BI 07/24/11
 	CvString m_szPyPostCombatLost;
 	CvString m_szPyPostCombatWon;

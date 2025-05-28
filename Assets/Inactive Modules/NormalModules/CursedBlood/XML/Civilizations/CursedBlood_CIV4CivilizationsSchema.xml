@@ -522,9 +522,14 @@
 	</ElementType>
 	
 	<ElementType name="bRevealBonus" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNoBonus" content="textOnly" dt:type="boolean"/>
 	<ElementType name="RevealBonus" content="eltOnly">
 		<element type="BonusType"/>
 		<element type="bRevealBonus"/>
+	</ElementType>
+	<ElementType name="NoBonus" content="eltOnly">
+		<element type="BonusType"/>
+		<element type="bNoBonus"/>
 	</ElementType>
 	<ElementType name="bFreeBonus" content="textOnly" dt:type="boolean"/>
 	<ElementType name="FreeBonus" content="eltOnly">
@@ -553,6 +558,9 @@
 	</ElementType>
 	<ElementType name="RevealBonuses" content="eltOnly">
 		<element type="RevealBonus" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="NoBonuses" content="eltOnly">
+		<element type="NoBonus" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="FreeBonuses" content="eltOnly">
 		<element type="FreeBonus" minOccurs="0" maxOccurs="*"/>
@@ -725,6 +733,7 @@
 		<element type="iMaxTeamBuildingProductionModifier"/>
 		<element type="iMaxPlayerBuildingProductionModifier"/>
 		<element type="UnitClassPlayerInstancesChanges"/>
+		<element type="ExtraUnitClasses"/>
 		<element type="FreeSpecialistsNonStateReligion"/>
 		<element type="FreeSpecialistsStateReligion"/>
 		<element type="bAdaptive"/>
@@ -1092,6 +1101,14 @@
 	<ElementType name="TraitClassType" content="textOnly"/>
 	<ElementType name="iTurnModulo" content="textOnly" dt:type="int"/>
 	
+	<ElementType name="ExtraUnitClass" content="eltOnly">
+		<element type="UnitClassType"/>
+		<element type="UnitType"/>
+	</ElementType>
+	<ElementType name="ExtraUnitClasses" content="eltOnly">
+		<element type="ExtraUnitClass" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	
 	<ElementType name="PrereqTrainXPCap" content="eltOnly">
 		<element type="UnitCombatType"/>
 	</ElementType>
@@ -1116,6 +1133,8 @@
 	<ElementType name="bPrereqTrade" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bWerewolf" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bKilledWerewolf" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bUndead" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bKilledUndead" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bHero" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bKilledHero" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bHiddenNationality" content="textOnly" dt:type="boolean"/>
@@ -1210,6 +1229,8 @@
 		<element type="bPrereqTrade" minOccurs="0"/>
 		<element type="bWerewolf" minOccurs="0"/>
 		<element type="bKilledWerewolf" minOccurs="0"/>
+		<element type="bUndead" minOccurs="0"/>
+		<element type="bKilledUndead" minOccurs="0"/>
 		<element type="bHero" minOccurs="0"/>
 		<element type="bKilledHero" minOccurs="0"/>
 		<element type="bHiddenNationality" minOccurs="0"/>

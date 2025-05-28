@@ -33,10 +33,18 @@
 	
 	<ElementType name="iMagicalPowerPrereq" content="textOnly" dt:type="int"/>
 	<ElementType name="iPrereqExtraPower" content="textOnly" dt:type="int"/>
+	<ElementType name="iExtraDamage" content="textOnly" dt:type="int"/>
+	<ElementType name="iExtraMaxDamage" content="textOnly" dt:type="int"/>
+	<ElementType name="iExtraNumTargets" content="textOnly" dt:type="int"/>
+	<ElementType name="iExtraTargetRange" content="textOnly" dt:type="int"/>
 	<ElementType name="iMaxApplications" content="textOnly" dt:type="int"/>
 	
 	<ElementType name="SpellBonus" content="eltOnly" order="many">
 		<element type="iPrereqExtraPower"/>
+		<element type="iExtraDamage"/>
+		<element type="iExtraMaxDamage"/>
+		<element type="iExtraNumTargets"/>
+		<element type="iExtraTargetRange"/>
 		<element type="iMaxApplications"/>
 	</ElementType>
 	<ElementType name="SpellBonuses" content="eltOnly">
@@ -112,6 +120,7 @@
 	<ElementType name="bResistable" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iRange" content="textOnly" dt:type="int"/>
 	<ElementType name="iTargetRange" content="textOnly" dt:type="int"/>
+	<ElementType name="iNumTargets" content="textOnly" dt:type="int"/>
 	<ElementType name="iResistModify" content="textOnly" dt:type="int"/>
 	<ElementType name="iDamage" content="textOnly" dt:type="int"/>
 	<ElementType name="iDamageLimit" content="textOnly" dt:type="int"/>
@@ -233,6 +242,7 @@
 		<element type="bResistable"/>
 		<element type="iRange"/>
 		<element type="iTargetRange"/>
+		<element type="iNumTargets"/>
 		<element type="iResistModify"/>
 		<element type="iDamage"/>
 		<element type="iDamageLimit"/>

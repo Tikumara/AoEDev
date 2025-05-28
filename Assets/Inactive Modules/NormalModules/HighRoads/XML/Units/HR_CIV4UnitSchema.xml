@@ -18,6 +18,7 @@
 	<ElementType name="iDominionCapacity" content="textOnly" dt:type="int"/>
 	<ElementType name="TerrainType" content="textOnly"/>
 	<ElementType name="FeatureType" content="textOnly"/>
+	<ElementType name="PlotEffectType" content="textOnly"/>
 	<ElementType name="BonusType" content="textOnly"/>
 	<ElementType name="PrereqTech" content="textOnly"/>
 	<ElementType name="Description" content="textOnly"/>
@@ -125,6 +126,7 @@
 		<element type="UnitClassInfo" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="Class" content="textOnly"/>
+	<ElementType name="SecondaryClass" content="textOnly"/>
 	<ElementType name="UniqueName" content="textOnly"/>
 	<ElementType name="UniqueNames" content="eltOnly">
 		<element type="UniqueName" minOccurs="0" maxOccurs="*"/>
@@ -226,6 +228,7 @@
 	<ElementType name="FlankingStrikes" content="eltOnly">
 		<element type="FlankingStrike" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="iInvisibleLevel" content="textOnly" dt:type="int"/>
 	<ElementType name="iFlankingDamage" content="textOnly" dt:type="int"/>
 	<ElementType name="iFlankingDamageLimit" content="textOnly" dt:type="int"/>
 	<ElementType name="iFlankingDamageMaxUnits" content="textOnly" dt:type="int"/>
@@ -508,6 +511,22 @@
 	<ElementType name="FeatureDefenses" content="eltOnly">
 		<element type="FeatureDefense" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="iPlotEffectAttack" content="textOnly" dt:type="int"/>
+	<ElementType name="PlotEffectAttack" content="eltOnly">
+		<element type="PlotEffectType"/>
+		<element type="iPlotEffectAttack"/>
+	</ElementType>
+	<ElementType name="PlotEffectAttacks" content="eltOnly">
+		<element type="PlotEffectAttack" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="iPlotEffectDefense" content="textOnly" dt:type="int"/>
+	<ElementType name="PlotEffectDefense" content="eltOnly">
+		<element type="PlotEffectType"/>
+		<element type="iPlotEffectDefense"/>
+	</ElementType>
+	<ElementType name="PlotEffectDefenses" content="eltOnly">
+		<element type="PlotEffectDefense" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<!-- GWS start -->
 	<ElementType name="iHillMoveCost" content="textOnly" dt:type="int"/>
 	<ElementType name="iPeakMoveCost" content="textOnly" dt:type="int"/>
@@ -757,6 +776,15 @@
 	<ElementType name="BonusAffinities" content="eltOnly">
 		<element type="BonusAffinity" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="iExtraPower" content="textOnly" dt:type="int"/>
+	<ElementType name="SpellClassType" content="textOnly"/>
+	<ElementType name="SpellClassExtraPower" content="eltOnly">
+		<element type="SpellClassType"/>
+		<element type="iExtraPower"/>
+	</ElementType>
+	<ElementType name="SpellClassExtraPowers" content="eltOnly">
+		<element type="SpellClassExtraPower" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="iPrereqBroadAlignment" content="textOnly" dt:type="int"/>
 	<ElementType name="PrereqBroadAlignment" content="textOnly" dt:type="int"/>
 	<ElementType name="iAlignmentModifier" content="textOnly" dt:type="int"/>
@@ -794,6 +822,7 @@
 	<ElementType name="bJoinPop" content="textOnly" dt:type="boolean"/>
 	<ElementType name="UnitInfo" content="eltOnly" order="many">
 		<element type="Class"/>
+		<element type="SecondaryClass"/>
 		<element type="Type"/>
 		<element type="bTypeDependency"/>
 		<element type="AndDependencyTypes"/>
@@ -806,6 +835,7 @@
 		<element type="Combat"/>
 		<element type="Domain"/>
 		<element type="DefaultUnitAI"/>
+		<element type="iInvisibleLevel"/>
 		<element type="Invisible"/>
 		<element type="SeeInvisible"/>
 		<element type="Description"/>
@@ -949,6 +979,8 @@
 		<element type="TerrainDefenses"/>
 		<element type="FeatureAttacks"/>
 		<element type="FeatureDefenses"/>
+		<element type="PlotEffectAttacks"/>
+		<element type="PlotEffectDefenses"/>
 		<element type="iHillMoveCost"/>
 		<element type="iPeakMoveCost"/>
 		<element type="TerrainMoveCosts"/>
@@ -1025,6 +1057,7 @@
 		<element type="PythonPostCombatWon"/>
 		<element type="DamageTypeCombats"/>
 		<element type="BonusAffinities"/>
+		<element type="SpellClassExtraPowers"/>
 		<element type="Affinities"/>
 		<element type="AllowPromotions"/>
 		<element type="bBlind"/>
@@ -1416,6 +1449,10 @@
 		<element type="PrereqFeature" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="PrereqFeature" content="textOnly"/>
+	<ElementType name="PrereqPlotEffects" content="eltOnly">
+		<element type="PrereqPlotEffect" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="PrereqPlotEffect" content="textOnly"/>
 	<ElementType name="SecondaryUnitCombats" content="eltOnly">
 		<element type="SecondaryUnitCombat" minOccurs="0"/>
 	</ElementType>
@@ -1486,6 +1523,14 @@
 	<ElementType name="FeatureDoubleMoves" content="eltOnly">
 		<element type="FeatureDoubleMove" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="bPlotEffectDoubleMove" content="textOnly" dt:type="boolean"/>
+	<ElementType name="PlotEffectDoubleMove" content="eltOnly">
+		<element type="PlotEffectType"/>
+		<element type="bPlotEffectDoubleMove"/>
+	</ElementType>
+	<ElementType name="PlotEffectDoubleMoves" content="eltOnly">
+		<element type="PlotEffectDoubleMove" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="bAIControl" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bBoarding" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bDispellable" content="textOnly" dt:type="boolean"/>
@@ -1538,6 +1583,7 @@
 	<ElementType name="iWorkRateModify" content="textOnly" dt:type="int"/>
 	<ElementType name="iPromotionRandomApplyChance" content="textOnly" dt:type="int"/>
 	<ElementType name="CaptureUnitCombat" content="textOnly"/>
+	<ElementType name="BlockedSpellClass" content="textOnly"/>
 	<ElementType name="PromotionCombatApply" content="textOnly"/>
 	<ElementType name="PromotionImmune1" content="textOnly"/>
 	<ElementType name="PromotionImmune2" content="textOnly"/>
@@ -1769,6 +1815,7 @@
 		<element type="PrereqFeatNOTs"/>
 		<element type="PrereqFeatORs"/>
 		<element type="PrereqFeatures"/>
+		<element type="PrereqPlotEffects"/>
 		<element type="SecondaryUnitCombats"/>
 		<element type="PrereqImprovements"/>
 		<element type="PrereqInBorderEnemy"/>
@@ -1858,6 +1905,8 @@
 		<element type="TerrainDefenses"/>
 		<element type="FeatureAttacks"/>
 		<element type="FeatureDefenses"/>
+		<element type="PlotEffectAttacks"/>
+		<element type="PlotEffectDefenses"/>
 		<element type="iHillMoveCost"/>
 		<element type="iPeakMoveCost"/>
 		<element type="TerrainMoveCosts"/>
@@ -1867,6 +1916,7 @@
 		<element type="DomainMods"/>
 		<element type="TerrainDoubleMoves"/>
 		<element type="FeatureDoubleMoves"/>
+		<element type="PlotEffectDoubleMoves"/>
 		<element type="UnitCombats"/>
 		<element type="HotKey"/>
 		<element type="bAltDown"/>
@@ -1898,6 +1948,7 @@
 		<element type="iMutationMin"/>
 		<element type="iMutationMax"/>
 		<element type="iMutationMaxApplications"/>
+		<element type="iInvisibleLevel"/>
 		<element type="iMaxApplications"/>
 		<element type="bNotAlive"/>
 		<element type="bPrereqAlive"/>
@@ -1943,6 +1994,7 @@
 		<element type="iDefeatInfluenceModifier"/>
 		<element type="iPillageInfluenceModifier"/>
 		<element type="CaptureUnitCombat"/>
+		<element type="BlockedSpellClass"/>
 		<element type="PromotionCombatApply"/>
 		<element type="PromotionImmune1"/>
 		<element type="PromotionImmune2"/>
@@ -1966,6 +2018,7 @@
 		<element type="bNeverResurrect"/>
 		<element type="DamageTypeCombats"/>
 		<element type="BonusAffinities"/>
+		<element type="SpellClassExtraPowers"/>
 		<element type="Affinities"/>
 		<element type="DamageTypeResists"/>
 		<element type="iOrderPriority"/>

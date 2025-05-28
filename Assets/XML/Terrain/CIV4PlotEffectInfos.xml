@@ -40,7 +40,7 @@
 			<bDispellable>1</bDispellable>
 			<iSpawnChance>1</iSpawnChance>
 			<iSpreadChance>1</iSpreadChance>
-			<iDisappearChance>5</iDisappearChance>
+			<iDisappearChance>15</iDisappearChance>
 			<iHealthPercent>-50</iHealthPercent>
 			<TerrainBooleans>
 				<TerrainBoolean>

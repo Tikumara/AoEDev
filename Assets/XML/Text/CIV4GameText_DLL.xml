@@ -2390,6 +2390,14 @@
 		<Spanish>[ICON_BULLET]Requires:[SPACE]</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TARGET_PREREQ_ITEM</Tag>
+		<English>[ICON_BULLET]Targets Units with:[SPACE]</English>
+		<French>[ICON_BULLET]Targets Units with :[SPACE]</French>
+		<German>[ICON_BULLET]Targets Units with:[SPACE]</German>
+		<Italian>[ICON_BULLET]Targets Units with:[SPACE]</Italian>
+		<Spanish>[ICON_BULLET]Targets Units with:[SPACE]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_PREREQ_STATE_RELIGION</Tag>
 		<English>[SPACE]State Religion</English>
 		<French>[SPACE]comme religion d'État</French>

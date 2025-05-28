@@ -536,6 +536,7 @@
 	<ElementType name="bUseMultiBonuses" content="textOnly" dt:type="boolean"/><!-- Ronkhar thinks this is not functional. TODO understand and complete or delete -->
 	<ElementType name="bCrimeEffect" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bSeeInvisible" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bOverflowProduction" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bUnhappyProduction" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iCrime" content="textOnly" dt:type="int"/>
 	<ElementType name="iMinCrime" content="textOnly" dt:type="int"/>
@@ -954,6 +955,7 @@
 		<element type="bNoCivicAnger"/>
 		<element type="bRequiresCaster"/>
 		<element type="bSeeInvisible"/>
+		<element type="bOverflowProduction"/>
 		<element type="bUnhappyProduction"/>
 		<element type="iCrime"/>
 		<element type="iMinCrime"/>

@@ -13941,6 +13941,24 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 		szBuffer.append(pcNewline);
 		szBuffer.append(gDLL->getText("TXT_KEY_SPELL_PROMOTION_IN_STACK_PREREQ", ((CvWString)(GC.getPromotionInfo((PromotionTypes)GC.getSpellInfo(eSpell).getPromotionInStackPrereq()).getType())).c_str(), GC.getPromotionInfo((PromotionTypes)GC.getSpellInfo(eSpell).getPromotionInStackPrereq()).getTextKeyWide()));
 	}
+
+	int iNumPrereqs = GC.getSpellInfo(eSpell).getNumTargetPromotionsPrereq();
+	bool bFirst = true;
+	if (iNumPrereqs > 0)
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_TARGET_PREREQ_ITEM"));
+		for (int iI = 0; iI < iNumPrereqs; iI++)
+		{
+			if (!bFirst)
+			{
+				szBuffer.append(gDLL->getText("TXT_KEY_OR"));
+			}
+			szBuffer.append(gDLL->getText("TXT_KEY_LINK", ((CvWString)(GC.getPromotionInfo((PromotionTypes)GC.getSpellInfo(eSpell).getTargetPromotionPrereq(iI)).getType())).c_str(), GC.getPromotionInfo((PromotionTypes)GC.getSpellInfo(eSpell).getTargetPromotionPrereq(iI)).getTextKeyWide()));
+			bFirst = false;
+
+		}
+	}
 	if (GC.getSpellInfo(eSpell).getPromotionInStackTargetPrereq() != NO_PROMOTION)
 	{
 		szBuffer.append(pcNewline);
@@ -13963,8 +13981,8 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 	}
 
 
-	int iNumPrereqs = GC.getSpellInfo(eSpell).getNumPrereqTraits();
-	bool bFirst = true;
+	iNumPrereqs = GC.getSpellInfo(eSpell).getNumPrereqTraits();
+	bFirst = true;
 	if (iNumPrereqs > 0)
 	{
 		szBuffer.append(pcNewline);
@@ -17289,7 +17307,14 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_JOINPOP"));
 	}
-
+	for (iI = 0; iI < GC.getNumSpellClassInfos(); ++iI)
+	{
+		if (GC.getUnitInfo(eUnit).getSpellClassExtraPower(iI) != 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_EXTRA_SPELLCLASS_POWER", GC.getUnitInfo(eUnit).getSpellClassExtraPower(iI), GC.getSpellClassInfo((SpellClassTypes)iI).getTextKeyWide()));
+		}
+	}
 	//Yield for Loss
 	szTempBuffer.clear();
 	bool bFoundKillYield = false;
@@ -28140,7 +28165,7 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 		{
 			szBuffer.append(CvWString::format(L"%c", gDLL->getSymbolID(FURIOUS_CHAR)-ioffset));
 		}
-		if (pCity->getNumCrimeEffects() > 0)
+		if (pCity->getNumCrimeEffects() > 0 && pCity->getCrime()>pCity->getMinCrime()+50)
 		{
 			szBuffer.append(CvWString::format(L"%c", gDLL->getSymbolID(CRIME_CHAR) - ioffset));
 		}

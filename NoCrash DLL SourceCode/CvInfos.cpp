@@ -10391,6 +10391,8 @@ CvSpellInfo::CvSpellInfo() :
 	m_piPrereqTraits(NULL),
 	m_iNumPromotionsPrereq(0),
 	m_piPromotionsPrereq(NULL),
+	m_iNumTargetPromotionsPrereq(0),
+	m_piTargetPromotionsPrereq(NULL),
 	m_iNumAddPromotions(0),
 	m_piAddPromotions(NULL),
 	m_iNumRemovePromotions(0),
@@ -10517,6 +10519,7 @@ m_pbSpellClass(NULL)
 CvSpellInfo::~CvSpellInfo()
 {
 	SAFE_DELETE_ARRAY(m_piPrereqTraits);
+	SAFE_DELETE_ARRAY(m_piTargetPromotionsPrereq);
 	SAFE_DELETE_ARRAY(m_piPromotionsPrereq);
 	SAFE_DELETE_ARRAY(m_piAddPromotions);
 	SAFE_DELETE_ARRAY(m_piRemovePromotions);
@@ -10668,6 +10671,8 @@ int CvSpellInfo::getNumPrereqTraits() const { return m_iNumPrereqTraits; }
 CvString CvSpellInfo::getPrereqTraitsVectorElement(int i) { return m_aszPrereqTraitsforPass3[i]; }
 int CvSpellInfo::getPromotionPrereq(int iI) const { return (getNumPromotionsPrereq() > iI) ? m_piPromotionsPrereq[iI] : -1; }
 int CvSpellInfo::getNumPromotionsPrereq() const { return m_iNumPromotionsPrereq; }
+int CvSpellInfo::getTargetPromotionPrereq(int iI) const { return (getNumTargetPromotionsPrereq() > iI) ? m_piTargetPromotionsPrereq[iI] : -1; }
+int CvSpellInfo::getNumTargetPromotionsPrereq() const { return m_iNumTargetPromotionsPrereq; }
 int CvSpellInfo::getAddPromotion(int iI) const { return (getNumAddPromotions() > iI) ? m_piAddPromotions[iI] : -1; }
 int CvSpellInfo::getNumAddPromotions() const { return m_iNumAddPromotions; }
 CvString CvSpellInfo::getAddPromotionsVectorElement(int i) { return m_aszAddPromotionsforPass3[i]; }
@@ -11140,6 +11145,13 @@ void CvSpellInfo::read(FDataStreamBase* stream)
 		m_piPromotionsPrereq = new int[m_iNumPromotionsPrereq];
 		stream->Read(m_iNumPromotionsPrereq, m_piPromotionsPrereq);
 	}
+	stream->Read(&m_iNumTargetPromotionsPrereq);
+	if (m_iNumTargetPromotionsPrereq > 0)
+	{
+		SAFE_DELETE_ARRAY(m_piTargetPromotionsPrereq);
+		m_piTargetPromotionsPrereq = new int[m_iNumTargetPromotionsPrereq];
+		stream->Read(m_iNumTargetPromotionsPrereq, m_piTargetPromotionsPrereq);
+	}
 	stream->Read(&m_iNumAddPromotions);
 	if (m_iNumAddPromotions > 0)
 	{
@@ -11330,6 +11342,10 @@ void CvSpellInfo::write(FDataStreamBase* stream)
 	if (m_iNumPromotionsPrereq > 0)
 		stream->Write(m_iNumPromotionsPrereq, m_piPromotionsPrereq);
 	
+	stream->Write(m_iNumTargetPromotionsPrereq);
+	if (m_iNumTargetPromotionsPrereq > 0)
+		stream->Write(m_iNumTargetPromotionsPrereq, m_piTargetPromotionsPrereq);
+
 	stream->Write(m_iNumAddPromotions);
 	if (m_iNumAddPromotions > 0)
 		stream->Write(m_iNumAddPromotions, m_piAddPromotions);
@@ -11533,6 +11549,8 @@ bool CvSpellInfo::read(CvXMLLoadUtility* pXML)
 
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "PromotionsPrereq"))
 		pXML->SetIntWithChildList(&m_iNumPromotionsPrereq, &m_piPromotionsPrereq);
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "TargetPromotionsPrereq"))
+		pXML->SetIntWithChildList(&m_iNumTargetPromotionsPrereq, &m_piTargetPromotionsPrereq);
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "AddPromotions"))		pXML->SetStringWithChildList(&m_iNumAddPromotions, &m_aszAddPromotionsforPass3);
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "RemovePromotions"))		pXML->SetStringWithChildList(&m_iNumRemovePromotions, &m_aszRemovePromotionsforPass3);
 
@@ -13247,6 +13265,7 @@ m_iWeaponTierMin(0),
 m_iWithdrawlProbDefensive(0),
 m_piBonusAffinity(NULL),
 m_piDamageTypeCombat(NULL),
+m_piSpellClassExtraPower(NULL),
 /*************************************************************************************************/
 /**	Better Affinity						01/30/11									Valkrionn	**/
 /**																								**/
@@ -13262,7 +13281,6 @@ m_szImage(NULL),
 //Magic Rework
 m_iMagicalPower(0)
 //m_iDominionCapacity(0),
-//m_piSpellClassExtraPower(NULL)
 
 {
 }
@@ -13280,6 +13298,7 @@ CvUnitInfo::~CvUnitInfo()
 //FfH Damage Types: Added by Kael 08/23/2007
 	SAFE_DELETE_ARRAY(m_piBonusAffinity);
 	SAFE_DELETE_ARRAY(m_piDamageTypeCombat);
+	SAFE_DELETE_ARRAY(m_piSpellClassExtraPower);
 //FfH: End Add
 /*************************************************************************************************/
 /**	Speedup								12/02/12										Snarko	**/
@@ -14473,6 +14492,11 @@ int CvUnitInfo::getDamageTypeCombat(int i) const
 {
 	return m_piDamageTypeCombat ? m_piDamageTypeCombat[i] : -1;
 }
+
+int CvUnitInfo::getSpellClassExtraPower(int i) const
+{
+	return m_piSpellClassExtraPower ? m_piSpellClassExtraPower[i] : -1;
+}
 //FfH: End Add
 
 // Arrays
@@ -15405,6 +15429,10 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_piDamageTypeCombat);
 	m_piDamageTypeCombat = new int[GC.getNumDamageTypeInfos()];
 	stream->Read(GC.getNumDamageTypeInfos(), m_piDamageTypeCombat);
+
+	SAFE_DELETE_ARRAY(m_piSpellClassExtraPower);
+	m_piSpellClassExtraPower = new int[GC.getNumSpellClassInfos()];
+	stream->Read(GC.getNumSpellClassInfos(), m_piSpellClassExtraPower);
 //FfH: End Add
 
 	SAFE_DELETE_ARRAY(m_piPrereqAndTechs);
@@ -16027,6 +16055,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 
 	stream->Write(GC.getNumBonusInfos(), m_piBonusAffinity);
 	stream->Write(GC.getNumDamageTypeInfos(), m_piDamageTypeCombat);
+	stream->Write(GC.getNumSpellClassInfos(), m_piSpellClassExtraPower);
 //FfH: End Add
 
 	stream->Write(GC.getNUM_UNIT_AND_TECH_PREREQS(), m_piPrereqAndTechs);
@@ -16864,6 +16893,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(m_szPyPostCombatWon, "PythonPostCombatWon");
 	pXML->SetVariableListTagPair(&m_piDamageTypeCombat, "DamageTypeCombats", sizeof(GC.getDamageTypeInfo((DamageTypes)0)), GC.getNumDamageTypeInfos());
 	pXML->SetVariableListTagPair(&m_piBonusAffinity, "BonusAffinities", sizeof(GC.getBonusInfo((BonusTypes)0)), GC.getNumBonusInfos());
+	pXML->SetVariableListTagPair(&m_piSpellClassExtraPower, "SpellClassExtraPowers", sizeof(GC.getSpellClassInfo((SpellClassTypes)0)), GC.getNumSpellClassInfos());
 //FfH: End Add
 
 /*************************************************************************************************/
@@ -17460,6 +17490,10 @@ void CvUnitInfo::copyNonDefaults(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML)
 	for(int i=0;i<GC.getNumDamageTypeInfos();++i)
 	{
 		if(getDamageTypeCombat(i)			== 0)				m_piDamageTypeCombat[i]				= pClassInfo->getDamageTypeCombat(i);
+	}
+	for (int i = 0; i < GC.getNumSpellClassInfos(); ++i)
+	{
+		if (getSpellClassExtraPower(i) == 0)				m_piSpellClassExtraPower[i] = pClassInfo->getSpellClassExtraPower(i);
 	}
 	for(int i=0; i < pClassInfo->getNumSeeInvisibleTypes(); i++)
 	{
@@ -28652,7 +28686,7 @@ void CvHandicapInfo::copyNonDefaults(CvHandicapInfo* pClassInfo, CvXMLLoadUtilit
 		for ( int i = 0; i < m_iNumGoodies; i++ )
 		{
 			if (i < iNumGoodiesOld)		m_piGoodiesTemp[i] = m_piGoodies[i];
-			else if (!(pCurrentUnitClass->isDuplicate(getNumGoodies(), &m_piGoodiesTemp[0], pClassInfo->getGoodies(i))))		m_piGoodiesTemp[i] = pClassInfo->getGoodies(i);
+			else if (!(pCurrentUnitClass->isDuplicate(getNumGoodies(), &m_piGoodiesTemp[0], pClassInfo->getGoodies(i-iNumGoodiesOld))))		m_piGoodiesTemp[i] = pClassInfo->getGoodies(i - iNumGoodiesOld);
 		}
 		SAFE_DELETE_ARRAY(m_piGoodies);
 		m_piGoodies = new int[m_iNumGoodies];

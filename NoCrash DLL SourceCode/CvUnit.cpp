@@ -24302,7 +24302,28 @@ bool CvUnit::canCastTargetPlot(int spell, bool bTestVisible, CvPlot* pTargetPlot
 			return false;
 		}
 	}
-
+	if (GC.getSpellInfo(eSpell).getNumTargetPromotionsPrereq() > 0)
+	{
+		bValid = false;
+		for (int i = 0; i < GC.getSpellInfo(eSpell).getNumTargetPromotionsPrereq(); i++)
+		{
+			pUnitNode = pTargetPlot->headUnitNode();
+			while (pUnitNode != NULL)
+			{
+				pLoopUnit = ::getUnit(pUnitNode->m_data);
+				pUnitNode = pTargetPlot->nextUnitNode(pUnitNode);
+				if (pLoopUnit->isHasPromotion((PromotionTypes)GC.getSpellInfo(eSpell).getTargetPromotionPrereq(i)))
+				{
+					bValid = true;
+					break;
+				}
+			}
+		}
+		if (bValid == false)
+		{
+			return false;
+		}
+	}
 	if (GC.getSpellInfo(eSpell).getPromotionInStackTargetPrereq() != NO_PROMOTION)
 	{
 		bValid = false;
@@ -25761,6 +25782,7 @@ void CvUnit::castDamage(int spell, CvPlot* pTargetPlot)
 	CvUnit* pLoopUnit;
 	CvPlot* pLoopPlot;
 	bool* bUnitHit = NULL;
+	bool bValid=true;
 	for (int i = -iRange; i <= iRange; ++i)
 	{
 		for (int j = -iRange; j <= iRange; ++j)
@@ -25779,7 +25801,19 @@ void CvUnit::castDamage(int spell, CvPlot* pTargetPlot)
 							pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
 							if (pLoopUnit != NULL)
 							{
-								if (!pLoopUnit->isImmuneToSpell(this, spell))
+								if (GC.getSpellInfo((SpellTypes)spell).getNumTargetPromotionsPrereq() > 0)
+								{
+									bValid = false;
+									for (int i = 0; i < GC.getSpellInfo((SpellTypes)spell).getNumTargetPromotionsPrereq(); i++)
+									{
+										if (pLoopUnit->isHasPromotion((PromotionTypes)GC.getSpellInfo((SpellTypes)spell).getTargetPromotionPrereq(i)))
+										{
+												bValid = true;
+												break;
+										}
+									}	
+								}
+								if (bValid && !pLoopUnit->isImmuneToSpell(this, spell))
 								{
 									if (bResistable)
 									{
@@ -25824,7 +25858,19 @@ void CvUnit::castDamage(int spell, CvPlot* pTargetPlot)
 							iCounter++; // Start at 0
 							pLoopUnit = ::getUnit(pUnitNode->m_data);
 							pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
-							if (!pLoopUnit->isImmuneToSpell(this, spell))
+							if (GC.getSpellInfo((SpellTypes)spell).getNumTargetPromotionsPrereq() > 0)
+							{
+								bValid = false;
+								for (int i = 0; i < GC.getSpellInfo((SpellTypes)spell).getNumTargetPromotionsPrereq(); i++)
+								{
+									if (pLoopUnit->isHasPromotion((PromotionTypes)GC.getSpellInfo((SpellTypes)spell).getTargetPromotionPrereq(i)))
+									{
+										bValid = true;
+										break;
+									}
+								}
+							}
+							if (bValid && !pLoopUnit->isImmuneToSpell(this, spell))
 							{
 								if (GC.getSpellInfo((SpellTypes)spell).isCausesWar() || GET_TEAM(getTeam()).isAtWar(pLoopUnit->getTeam()))
 								{
