@@ -4835,10 +4835,14 @@ class CvEventManager:
 			if (iTechType == getInfoType("TECH_INFERNAL_PACT") and iPlayer != -1 and iPlayer != gc.getORC_PLAYER() and iPlayer != gc.getANIMAL_PLAYER() and iPlayer != gc.getDEMON_PLAYER() and not iLeader in lDemonLordsList ):
 				lDemonLordsToSpawn = []
 				lDemonLordsTraitToSpawn = []
+				lDemonLordsHelpTraitClean = []
+				lDemonLordsHelpPactClean = []
 				for iDemonLord in range(len(lDemonLordsList)):
 					if not CyGame().isLeaderEverActive(lDemonLordsList[iDemonLord]):
 						lDemonLordsToSpawn.append(lDemonLordsList[iDemonLord])
 						lDemonLordsTraitToSpawn.append(lDemonLordsTraitList[iDemonLord])
+						lDemonLordsHelpTraitClean.append(lDemonLordsHelpTraitList[iDemonLord])
+						lDemonLordsHelpPactClean.append(lDemonLordsHelpPactList[iDemonLord])
 				if lDemonLordsToSpawn:
 					if gc.getPlayer(iPlayer).isHuman() and not CyGame().GetWorldBuilderMode():
 						popupInfo = CyPopupInfo()
@@ -4850,8 +4854,8 @@ class CvEventManager:
 						popupInfo.setOption2(True); #Activate WIDGET HELP in buttons
 						popupInfo.setFlags(126);  #165 is WIDGET_HELP_EVENT
 						for i in range(len(lDemonLordsToSpawn)):
-							popupInfo.addPythonButton(localText.getText("TXT_KEY_SPAWN_DEMON_LORD", (gc.getLeaderHeadInfo(lDemonLordsToSpawn[i]).getDescription(),)),lDemonLordsHelpTraitList[i] )
-							popupInfo.addPythonButton(localText.getText("TXT_KEY_START_AS_DEMON_LORD", (gc.getLeaderHeadInfo(lDemonLordsToSpawn[i]).getDescription(),)), lDemonLordsHelpPactList[i])
+							popupInfo.addPythonButton(localText.getText("TXT_KEY_SPAWN_DEMON_LORD", (gc.getLeaderHeadInfo(lDemonLordsToSpawn[i]).getDescription(),)),lDemonLordsHelpTraitClean[i] )
+							popupInfo.addPythonButton(localText.getText("TXT_KEY_START_AS_DEMON_LORD", (gc.getLeaderHeadInfo(lDemonLordsToSpawn[i]).getDescription(),)), lDemonLordsHelpPactClean[i])
 						popupInfo.addPopup(iPlayer)
 					else:
 						irandid =CyGame().getSorenRandNum(len(lDemonLordsToSpawn), "Random Infernal Lord")
