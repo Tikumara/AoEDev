@@ -919,6 +919,35 @@ This will nuke your economy, but it can be rebuilt with the hunting reef improve
 As many negatives as this may have, the act of wiping out your attackers force in one turn and making your cities unreachable without boats is something that will turn the tide of any war.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SPELL_SEEK_LEVIATHAN</Tag>
+		<English>Seek the Leviathan</English>
+		<French>Seek the Leviathan</French>
+		<German>Seek the Leviathan</German>
+		<Italian>Seek the Leviathan</Italian>
+		<Spanish>Seek the Leviathan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_SEEK_LEVIATHAN_PEDIA</Tag>
+		<English>If Skaa'Raj faces the right direction, he can feel something, like a skittering, scritching, itch behind his eyes.
+		Skaa'Raj has been able to feel the Leviathan since birth, no matter the distance.</English>
+		<French>If Skaa'Raj faces the right direction, he can feel something, like a skittering, scritching, itch behind his eyes.
+		Skaa'Raj has been able to feel the Leviathan since birth, no matter the distance.</French>
+		<German>If Skaa'Raj faces the right direction, he can feel something, like a skittering, scritching, itch behind his eyes.
+		Skaa'Raj has been able to feel the Leviathan since birth, no matter the distance.</German>
+		<Italian>If Skaa'Raj faces the right direction, he can feel something, like a skittering, scritching, itch behind his eyes.
+		Skaa'Raj has been able to feel the Leviathan since birth, no matter the distance.</Italian>
+		<Spanish>If Skaa'Raj faces the right direction, he can feel something, like a skittering, scritching, itch behind his eyes.
+		Skaa'Raj has been able to feel the Leviathan since birth, no matter the distance.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_SEEK_LEVIATHAN_HELP</Tag>
+		<English>Skaa'Raj reveals the location of the Leviathan</English>
+		<French>Skaa'Raj reveals the location of the Leviathan</French>
+		<German>Skaa'Raj reveals the location of the Leviathan</German>
+		<Italian>Skaa'Raj reveals the location of the Leviathan</Italian>
+		<Spanish>Skaa'Raj reveals the location of the Leviathan</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SUNKEN_CITY</Tag>
 		<English>Create Aquatic City</English>
 		<French>Create Aquatic City</French>
