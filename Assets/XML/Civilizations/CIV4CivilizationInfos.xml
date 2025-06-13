@@ -8165,10 +8165,6 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_KARAS_V2</UnitClassType>
-					<UnitType>UNIT_KARAS_V2</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_CORGAYLE</UnitClassType>
 					<UnitType>UNIT_CORGAYLE</UnitType>
 				</Unit>

@@ -1303,8 +1303,8 @@ class CvGameUtils:
 		#	if eUnitClass == gc.getInfoTypeForString('UNITCLASS_AGENT'): return True
 		#	if eUnitClass == gc.getInfoTypeForString('UNITCLASS_ADJUNCT'): return True
 		#	if eUnitClass == gc.getInfoTypeForString('UNITCLASS_CARETAKER_MATRON'): return True
-		if pPlayer.getLeaderType() != gc.getInfoTypeForString('LEADER_JAMAL'):
-			if eUnitClass == gc.getInfoTypeForString('UNITCLASS_KARAS_V2'): return True
+	#	if pPlayer.getLeaderType() != gc.getInfoTypeForString('LEADER_JAMAL'):
+	#		if eUnitClass == gc.getInfoTypeForString('UNITCLASS_KARAS_V2'): return True
 		#if pPlayer.getLeaderType() != gc.getInfoTypeForString('LEADER_IRAM'):
 		#	if eUnit == gc.getInfoTypeForString('UNIT_CUSTODIAN'): return True
 		#	if eUnit == gc.getInfoTypeForString('UNIT_SHARPSHOOTER'): return True

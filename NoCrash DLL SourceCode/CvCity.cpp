@@ -2771,7 +2771,7 @@ bool CvCity::canUpgrade(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool
 		}
 	}
 	UnitClassTypes eUnitClass = ((UnitClassTypes)(GC.getUnitInfo(eUnit).getUnitClassType()));
-	if (::isWorldUnitClass(eUnitClass))
+	if (::isWorldUnitClass(eUnitClass) && (getCityUnits(eUnitClass) != eUnit))
 	{
 /*************************************************************************************************/
 /**	Xienwolf Tweak							09/06/08											**/
