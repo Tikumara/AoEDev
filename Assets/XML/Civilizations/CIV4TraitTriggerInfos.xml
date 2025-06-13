@@ -48,25 +48,12 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>50</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			<PrereqImprovementType>IMPROVEMENT_DWARVEN_MINE</PrereqImprovementType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Build               Chaos Mana                                  Necromancer -->
-			<Type>TRAITTRIGGER_BUILD_MANA_CHAOS</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>25</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
-			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
-			<PrereqImprovementType>IMPROVEMENT_MANA_CHAOS</PrereqImprovementType>
-			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Build               Death Mana                                  Necromancer -->
 			<Type>TRAITTRIGGER_BUILD_MANA_DEATH</Type>
@@ -79,32 +66,6 @@
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			<PrereqImprovementType>IMPROVEMENT_MANA_DEATH</PrereqImprovementType>
-			<bOncePerPlayer>1</bOncePerPlayer>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Build               Dimensional Mana                            Necromancer -->
-			<Type>TRAITTRIGGER_BUILD_MANA_DIMENSIONAL</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>25</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
-			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
-			<PrereqImprovementType>IMPROVEMENT_MANA_DIMENSIONAL</PrereqImprovementType>
-			<bOncePerPlayer>1</bOncePerPlayer>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Build               Entropy Mana                                Necromancer -->
-			<Type>TRAITTRIGGER_BUILD_MANA_ENTROPY</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>25</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
-			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
-			<PrereqImprovementType>IMPROVEMENT_MANA_ENTROPY</PrereqImprovementType>
 			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Build               Metamagic Mana                              Redeemed -->
@@ -152,13 +113,9 @@
 			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			<PrereqImprovementType>IMPROVEMENT_MANA_MIND</PrereqImprovementType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Build               Shadow Mana                                 Necromancer,Skiamancer -->
+		<TraitTriggerInfo> <!-- Build               Shadow Mana                                 Skiamancer -->
 			<Type>TRAITTRIGGER_BUILD_MANA_SHADOW</Type>
 			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>25</iModifier>
-				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
 					<iModifier>50</iModifier>
@@ -213,7 +170,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>15</iModifier>
+					<iModifier>10</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -327,6 +284,32 @@
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Cast                Bite Ally	                                Lycanthropic -->
+			<Type>TRAITTRIGGER_CAST_BITE_ALLY</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_LYCANTHROPIC</TraitType>
+					<iModifier>50</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
+			
+			<PrereqSpellType>SPELL_GIFT_WEREWOLF</PrereqSpellType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Cast                Drown Crew	                                Demon of the Deep -->
+			<Type>TRAITTRIGGER_CAST_DROWN_CREW</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_DEMON_OF_THE_DEEP</TraitType>
+					<iModifier>50</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
+			
+			<PrereqSpellType>SPELL_DROWN_CREW</PrereqSpellType>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Wall of Stone                               Veinhunter -->
 			<Type>TRAITTRIGGER_CAST_WALL_OF_STONE</Type>
@@ -660,7 +643,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -673,7 +656,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>75</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -686,7 +669,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>75</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -1785,6 +1768,42 @@
 			<TraitHookType>TRAITHOOK_CITY_CULTUREGROW</TraitHookType>
 			<PrereqCultureLevel>CULTURELEVEL_REFINED</PrereqCultureLevel>
 		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Culture Level gain     To   Fledgling                           Illusionist -->
+			<Type>TRAITTRIGGER_CULTURE_GAIN_FLEDGLING_EMERGENT</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_ILLUSIONIST</TraitType>
+					<iModifier>25</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
+			<TraitHookType>TRAITHOOK_CITY_CULTUREGROW</TraitHookType>
+			<PrereqCultureLevel>CULTURELEVEL_FLEDGLING</PrereqCultureLevel>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Culture Level gain     To   Developing                          Illusionist -->
+			<Type>TRAITTRIGGER_CULTURE_GAIN_DEVELOPING_EMERGENT</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_ILLUSIONIST</TraitType>
+					<iModifier>100</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
+			<TraitHookType>TRAITHOOK_CITY_CULTUREGROW</TraitHookType>
+			<PrereqCultureLevel>CULTURELEVEL_DEVELOPING</PrereqCultureLevel>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Culture Level gain     To   Refined                             Illusionist -->
+			<Type>TRAITTRIGGER_CULTURE_GAIN_REFINED_EMERGENT</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_ILLUSIONIST</TraitType>
+					<iModifier>200</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
+			<TraitHookType>TRAITHOOK_CITY_CULTUREGROW</TraitHookType>
+			<PrereqCultureLevel>CULTURELEVEL_REFINED</PrereqCultureLevel>
+		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Change Religion     To Kilmorph                                 Veinhunter -->
 			<Type>TRAITTRIGGER_CONVERT_KILMORPH</Type>
 			<CounterChanges>
@@ -1840,7 +1859,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -2538,45 +2557,6 @@
 			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
 			<PrereqPromotionType>PROMOTION_WATER3</PrereqPromotionType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Chaos 1               Necromancer -->
-			<Type>TRAITTRIGGER_GAIN_ADEPT_CHAOS1</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>1</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
-				<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
-			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
-			<PrereqPromotionType>PROMOTION_CHAOS1</PrereqPromotionType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Chaos 2               Necromancer -->
-			<Type>TRAITTRIGGER_GAIN_ADEPT_CHAOS2</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>10</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
-				<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
-			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
-			<PrereqPromotionType>PROMOTION_CHAOS2</PrereqPromotionType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Chaos 3               Necromancer -->
-			<Type>TRAITTRIGGER_GAIN_ADEPT_CHAOS3</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>50</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
-				<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
-			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
-			<PrereqPromotionType>PROMOTION_CHAOS3</PrereqPromotionType>
-		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Death 1               Necromancer -->
 			<Type>TRAITTRIGGER_GAIN_ADEPT_DEATH1</Type>
 			<CounterChanges>
@@ -2615,84 +2595,6 @@
 				<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
 			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
 			<PrereqPromotionType>PROMOTION_DEATH3</PrereqPromotionType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Dimensional 1         Necromancer -->
-			<Type>TRAITTRIGGER_GAIN_ADEPT_DIMENSIONAL1</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>1</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
-				<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
-			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
-			<PrereqPromotionType>PROMOTION_DIMENSIONAL1</PrereqPromotionType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Dimensional 2         Necromancer -->
-			<Type>TRAITTRIGGER_GAIN_ADEPT_DIMENSIONAL2</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>10</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
-				<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
-			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
-			<PrereqPromotionType>PROMOTION_DIMENSIONAL2</PrereqPromotionType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Dimensional 3         Necromancer -->
-			<Type>TRAITTRIGGER_GAIN_ADEPT_DIMENSIONAL3</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>50</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
-				<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
-			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
-			<PrereqPromotionType>PROMOTION_DIMENSIONAL3</PrereqPromotionType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Entropy 1             Necromancer -->
-			<Type>TRAITTRIGGER_GAIN_ADEPT_ENTROPY1</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>1</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
-				<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
-			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
-			<PrereqPromotionType>PROMOTION_ENTROPY1</PrereqPromotionType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Entropy 2             Necromancer -->
-			<Type>TRAITTRIGGER_GAIN_ADEPT_ENTROPY2</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>10</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
-				<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
-			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
-			<PrereqPromotionType>PROMOTION_ENTROPY2</PrereqPromotionType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Entropy 3             Necromancer -->
-			<Type>TRAITTRIGGER_GAIN_ADEPT_ENTROPY3</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>50</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
-				<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
-			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
-			<PrereqPromotionType>PROMOTION_ENTROPY3</PrereqPromotionType>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Mind 1	            Dominant, Illusionist -->
 			<Type>TRAITTRIGGER_GAIN_ADEPT_MIND1</Type>
@@ -2823,13 +2725,9 @@
 			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
 			<PrereqPromotionType>PROMOTION_METAMAGIC3</PrereqPromotionType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Shadow 1              Necromancer,Skiamancer -->
+		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Shadow 1              Skiamancer -->
 			<Type>TRAITTRIGGER_GAIN_ADEPT_SHADOW1</Type>
 			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>1</iModifier>
-				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
 					<iModifier>15</iModifier>
@@ -2840,13 +2738,9 @@
 			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
 			<PrereqPromotionType>PROMOTION_SHADOW1</PrereqPromotionType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Shadow 2              Necromancer,Skiamancer -->
+		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Shadow 2              Skiamancer -->
 			<Type>TRAITTRIGGER_GAIN_ADEPT_SHADOW2</Type>
 			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>10</iModifier>
-				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
 					<iModifier>30</iModifier>
@@ -2857,13 +2751,9 @@
 			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
 			<PrereqPromotionType>PROMOTION_SHADOW2</PrereqPromotionType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Shadow 3              Necromancer,Skiamancer -->
+		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Shadow 3              Skiamancer -->
 			<Type>TRAITTRIGGER_GAIN_ADEPT_SHADOW3</Type>
 			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>50</iModifier>
-				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
 					<iModifier>300</iModifier>
@@ -2891,7 +2781,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_LYCANTHROPIC</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -2903,7 +2793,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_LYCANTHROPIC</TraitType>
-					<iModifier>30</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3109,7 +2999,7 @@
 			<TraitHookType>TRAITHOOK_KILL_UNIT</TraitHookType>
 			<PrereqUnitClassType>UNITCLASS_MOTHER_SPIDER</PrereqUnitClassType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Kill                Anything        kills Mother                Spiderkin -->
+		<TraitTriggerInfo> <!-- Die                Anything        Mother Dies                Spiderkin -->
 			<Type>TRAITTRIGGER_KILL_VS_SPIDER_MOTHER</Type>
 			<CounterChanges>
 				<CounterChange>
@@ -3120,6 +3010,17 @@
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 			<TraitHookType>TRAITHOOK_UNIT_KILLED</TraitHookType>
 			<PrereqKilledUnitClassType>UNITCLASS_MOTHER_SPIDER</PrereqKilledUnitClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Die                Anything        Dies               Haunted Strategist -->
+			<Type>TRAITTRIGGER_KILL_VS_ANYTHING</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_HAUNTED_STRATEGIST</TraitType>
+					<iModifier>15</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<TraitHookType>TRAITHOOK_UNIT_KILLED</TraitHookType>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Kill                Water elemental kills anything              Hydromancer -->
 			<Type>TRAITTRIGGER_KILL_WATER_ELEMENTAL</Type>
@@ -3170,7 +3071,7 @@
 				<TraitHookType>TRAITHOOK_KILL_UNIT</TraitHookType>			
 			<bUndead>1</bUndead>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Kill                Anything        kills Anything              Scorched Earth -->
+		<TraitTriggerInfo> <!-- Kill                Anything        kills Anything              Scorched Earth, Lycanthropic, Haunted Strategist -->
 			<Type>TRAITTRIGGER_KILL</Type>
 			<CounterChanges>
 				<CounterChange>
@@ -3179,7 +3080,11 @@
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_LYCANTHROPIC</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>3</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_HAUNTED_STRATEGIST</TraitType>
+					<iModifier>3</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3622,7 +3527,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INSTRUCTOR</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>10</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4239,7 +4144,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>-50</iModifier>
+					<iModifier>-25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4441,7 +4346,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SLAVER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>3</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4688,6 +4593,18 @@
 			<PrereqTech>TECH_ARETE</PrereqTech>
 			<TraitHookType>TRAITHOOK_TECH</TraitHookType>	
 		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Tech                Priesthood                                		Sauros -->
+			<Type>TRAITTRIGGER_TECH_PRIESTHOOD</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_HEMAPYROSYNCRETISTIC</TraitType>
+					<iModifier>200</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
+			<TraitHookType>TRAITHOOK_TECH</TraitHookType>	
+		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Tech                Astronomy                              		Virtuous Pirate -->
 			<Type>TRAITTRIGGER_TECH_ASTRONOMY</Type>
 			<CounterChanges>
@@ -4897,7 +4814,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -5005,7 +4922,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -5029,7 +4946,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -5064,7 +4981,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>

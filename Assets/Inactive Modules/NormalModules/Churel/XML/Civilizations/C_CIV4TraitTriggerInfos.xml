@@ -60,7 +60,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_GRAVELEECH</TraitType>
-					<iModifier>50</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			

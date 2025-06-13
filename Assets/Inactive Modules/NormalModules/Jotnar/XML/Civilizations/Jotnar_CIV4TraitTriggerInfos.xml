@@ -20,7 +20,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_BLACKSMITH</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -32,7 +32,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_BLACKSMITH</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -83,7 +83,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_BLACKSMITH</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>20</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -95,7 +95,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_BLACKSMITH</TraitType>
-					<iModifier>15</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -107,7 +107,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_BLACKSMITH</TraitType>
-					<iModifier>30</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>

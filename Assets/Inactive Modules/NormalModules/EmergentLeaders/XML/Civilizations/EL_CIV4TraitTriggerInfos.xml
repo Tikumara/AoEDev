@@ -20,7 +20,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -34,7 +34,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PYROMANCER</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -48,13 +48,27 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			
 			<PrereqImprovementType>IMPROVEMENT_MANA_SHADOW</PrereqImprovementType>
+			<bOncePerPlayer>1</bOncePerPlayer>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Cast                Raise Skeleton                              Incorporeal -->
+			<Type>TRAITTRIGGER_CAST_RAISE_SKELETON_EL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_INCORPOREAL</TraitType>
+					<iModifier>50</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
+			
+			<PrereqSpellType>SPELL_RAISE_SKELETON</PrereqSpellType>
 			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Summon Spectre                              Incorporeal -->
@@ -70,6 +84,32 @@
 			
 			<PrereqSpellType>SPELL_SUMMON_SPECTRE</PrereqSpellType>
 			<bOncePerPlayer>1</bOncePerPlayer>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Cast                Summon Wraith                             Incorporeal -->
+			<Type>TRAITTRIGGER_CAST_RAISE_SKELETON_EL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_INCORPOREAL</TraitType>
+					<iModifier>15</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
+			
+			<PrereqSpellType>SPELL_SUMMON_WRAITH</PrereqSpellType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Cast                Summon Mistform                          Incorporeal -->
+			<Type>TRAITTRIGGER_CAST_RAISE_SKELETON_EL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_INCORPOREAL</TraitType>
+					<iModifier>15</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
+			
+			<PrereqSpellType>SPELL_SUMMON_MISTFORM</PrereqSpellType>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Resurrect       -goodluck with that one-                          Patriarch -->
 			<Type>TRAITTRIGGER_CAST_RESURRECTION_EL</Type>
@@ -117,14 +157,13 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PYROMANCER</TraitType>
-					<iModifier>300</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			
 			<PrereqSpellType>SPELL_SUMMON_FIRE_ELEMENTAL</PrereqSpellType>
-			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Ring of Flames                   		   	Pyromancer -->
 			<Type>TRAITTRIGGER_CAST_RING_OF_FLAMES_EL</Type>
@@ -159,7 +198,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PYROMANCER</TraitType>
-					<iModifier>50</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -332,7 +371,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>150</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>

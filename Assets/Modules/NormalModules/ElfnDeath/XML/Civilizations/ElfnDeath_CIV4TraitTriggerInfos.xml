@@ -67,7 +67,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>500</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -241,7 +241,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>15</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
