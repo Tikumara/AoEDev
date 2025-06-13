@@ -95,7 +95,7 @@
 			<Type>TRAIT_PYROMANCER3</Type>
 			<ParentTrait>TRAIT_PYROMANCER</ParentTrait>
 			<iLevel>3</iLevel>
-			<iMinRequiredPoints>3000</iMinRequiredPoints>
+			<iMinRequiredPoints>1500</iMinRequiredPoints>
 			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
 			<Help>TXT_KEY_TRAIT_PYROMANCER_HELP</Help>
 			<Civilopedia>TXT_KEY_TRAIT_PYROMANCER_PEDIA</Civilopedia>
@@ -144,7 +144,7 @@
 			<Type>TRAIT_WARLEADER3</Type>
 			<ParentTrait>TRAIT_WARLEADER</ParentTrait>
 			<iLevel>3</iLevel>
-			<iMinRequiredPoints>3000</iMinRequiredPoints>
+			<iMinRequiredPoints>1500</iMinRequiredPoints>
 			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
 			<Help>TXT_KEY_TRAIT_WARLEADER_HELP</Help>
 			<Civilopedia>TXT_KEY_TRAIT_WARLEADER_PEDIA</Civilopedia>

@@ -20,59 +20,63 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			
 			<PrereqImprovementType>IMPROVEMENT_MANA_DEATH</PrereqImprovementType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Build               Fire Mana                                   Pyromancer -->
 			<Type>TRAITTRIGGER_BUILD_MANA_FIRE_EL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PYROMANCER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			
 			<PrereqImprovementType>IMPROVEMENT_MANA_FIRE</PrereqImprovementType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Build               Shadow Mana                                 Incorporeal -->
 			<Type>TRAITTRIGGER_BUILD_MANA_SHADOW_EL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			
 			<PrereqImprovementType>IMPROVEMENT_MANA_SHADOW</PrereqImprovementType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Summon Spectre                              Incorporeal -->
 			<Type>TRAITTRIGGER_CAST_SUMMON_SPECTRE_EL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			
 			<PrereqSpellType>SPELL_SUMMON_SPECTRE</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Cast                Resurrect                                   Patriarch -->
+		<TraitTriggerInfo> <!-- Cast                Resurrect       -goodluck with that one-                          Patriarch -->
 			<Type>TRAITTRIGGER_CAST_RESURRECTION_EL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PATRIARCH</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -85,124 +89,133 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PYROMANCER</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			
 			<PrereqSpellType>SPELL_BLAZE</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Fireball		                            Pyromancer -->
 			<Type>TRAITTRIGGER_CAST_FIREBALL_EL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PYROMANCER</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			
 			<PrereqSpellType>SPELL_FIREBALL</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Summon Fire Elemental                      	Pyromancer -->
 			<Type>TRAITTRIGGER_CAST_SUMMON_FIRE_ELEMENTAL_EL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PYROMANCER</TraitType>
-					<iModifier>15</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			
 			<PrereqSpellType>SPELL_SUMMON_FIRE_ELEMENTAL</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Ring of Flames                   		   	Pyromancer -->
 			<Type>TRAITTRIGGER_CAST_RING_OF_FLAMES_EL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PYROMANCER</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			
 			<PrereqSpellType>SPELL_RING_OF_FLAMES2</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Pillar of Fire                   		   	Pyromancer -->
 			<Type>TRAITTRIGGER_CAST_PILLAR_OF_FIRE_EL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PYROMANCER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			
 			<PrereqSpellType>SPELL_CLAN_PILLAR_OF_FIRE2</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Ignite Pyre		                   		   	Pyromancer -->
 			<Type>TRAITTRIGGER_CAST_IGNITE_PYRE_EL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PYROMANCER</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			
 			<PrereqSpellType>SPELL_IGNITE_PYRE2</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Connect             Horse                                       Incorporeal -->
 			<Type>TRAITTRIGGER_CONNECT_HORSE_EL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>
 			
 			<PrereqBonusType>BONUS_HORSE</PrereqBonusType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Connect             Nightmare                                   Incorporeal -->
 			<Type>TRAITTRIGGER_CONNECT_NIGHTMARE_EL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>
 			
 			<PrereqBonusType>BONUS_NIGHTMARE</PrereqBonusType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Connect             Sheut stone                                 Incorporeal -->
 			<Type>TRAITTRIGGER_CONNECT_SHEUT_STONE_EL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>
 			
 			<PrereqBonusType>BONUS_SHEUT_STONE</PrereqBonusType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Construct           Command Post                                Patriarch -->
 			<Type>TRAITTRIGGER_CONSTRUCT_COMMAND_POST_EL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PATRIARCH</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -215,7 +228,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>500</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -228,7 +241,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -241,7 +254,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>4</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -254,7 +267,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PYROMANCER</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -280,7 +293,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PATRIARCH</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -293,7 +306,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PATRIARCH</TraitType>
-					<iModifier>25</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -306,7 +319,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PATRIARCH</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>200</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -319,13 +332,14 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>25</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_CHANGE_RELIGION</TraitHookType>
 			
 			<PrereqReligion>RELIGION_COUNCIL_OF_ESUS</PrereqReligion>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Gain plot           Broken Sepulcher                            Incorporeal -->
 			<Type>TRAITTRIGGER_GAIN_PLOT_BROKEN_SEPULCHER_EL</Type>
@@ -358,7 +372,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -372,7 +386,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -386,7 +400,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -400,7 +414,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PYROMANCER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -414,7 +428,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PYROMANCER</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -428,7 +442,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PYROMANCER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -442,7 +456,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -456,7 +470,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -470,7 +484,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -484,7 +498,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PATRIARCH</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -497,7 +511,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PATRIARCH</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -510,7 +524,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PATRIARCH</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -523,7 +537,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PATRIARCH</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -536,7 +550,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_WARLEADER</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>10</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -549,7 +563,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_WARLEADER</TraitType>
-					<iModifier>4</iModifier>
+					<iModifier>20</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -562,7 +576,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_WARLEADER</TraitType>
-					<iModifier>4</iModifier>
+					<iModifier>20</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -575,7 +589,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_WARLEADER</TraitType>
-					<iModifier>8</iModifier>
+					<iModifier>40</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -588,7 +602,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_WARLEADER</TraitType>
-					<iModifier>8</iModifier>
+					<iModifier>40</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -601,7 +615,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_WARLEADER</TraitType>
-					<iModifier>16</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -614,7 +628,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_WARLEADER</TraitType>
-					<iModifier>16</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -640,7 +654,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PYROMANCER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>3</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -653,7 +667,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PYROMANCER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>3</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -666,7 +680,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_WARLEADER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>3</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -678,7 +692,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PATRIARCH</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -691,7 +705,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -704,11 +718,11 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PATRIARCH</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_WARLEADER</TraitType>
-					<iModifier>4</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -747,7 +761,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -760,7 +774,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -773,7 +787,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_PYROMANCER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>

@@ -37,7 +37,7 @@
 			<ParentTrait>TRAIT_SOULBINDER</ParentTrait>
 			<NextTrait>TRAIT_SOULBINDER3</NextTrait>
 			<iLevel>2</iLevel>
-			<iMinRequiredPoints>450</iMinRequiredPoints>
+			<iMinRequiredPoints>300</iMinRequiredPoints>
 			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
 			<Description>TXT_KEY_TRAIT_SOULBINDER</Description>
 			<Help>TXT_KEY_TRAIT_SOULBINDER_HELP</Help>
@@ -48,7 +48,7 @@
 			<Type>TRAIT_SOULBINDER3</Type>
 			<ParentTrait>TRAIT_SOULBINDER</ParentTrait>
 			<iLevel>3</iLevel>
-			<iMinRequiredPoints>3500</iMinRequiredPoints>
+			<iMinRequiredPoints>1500</iMinRequiredPoints>
 			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
 			<Description>TXT_KEY_TRAIT_SOULBINDER</Description>
 			<Help>TXT_KEY_TRAIT_SOULBINDER_HELP</Help>

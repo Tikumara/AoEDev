@@ -44,43 +44,46 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_BLACKSMITH</TraitType>
-					<iModifier>4</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>			
 			<PrereqBonusType>BONUS_COPPER</PrereqBonusType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Connect             Iron                                        Blacksmith -->
 			<Type>TRAITTRIGGER_CONNECT_IRON_BLACKSMITH</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_BLACKSMITH</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>200</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>			
 			<PrereqBonusType>BONUS_IRON</PrereqBonusType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>		
 		<TraitTriggerInfo> <!-- Connect             Mithril                                     Blacksmith -->
 			<Type>TRAITTRIGGER_CONNECT_MITHRIL_BLACKSMITH</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_BLACKSMITH</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>500</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>			
 			<PrereqBonusType>BONUS_MITHRIL</PrereqBonusType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Gain promo          	           gains Bronze weapon          Blacksmith -->
 			<Type>TRAITTRIGGER_GAIN_BRONZE_WEAPONS_BLACKSMITH</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_BLACKSMITH</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>10</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -92,7 +95,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_BLACKSMITH</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -104,7 +107,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_BLACKSMITH</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>

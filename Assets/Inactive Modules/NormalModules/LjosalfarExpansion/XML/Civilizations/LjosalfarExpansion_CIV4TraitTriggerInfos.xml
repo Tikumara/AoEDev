@@ -44,20 +44,21 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_GUARDIAN_WOODS</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			
 			<PrereqImprovementType>IMPROVEMENT_MANA_NATURE</PrereqImprovementType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Gain plot           Forest                               Guardian of the Woods -->
 			<Type>TRAITTRIGGER_GAIN_PLOT_FOREST_GUARDIAN_WOODS</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_GUARDIAN_WOODS</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -70,7 +71,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_GUARDIAN_WOODS</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>10</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -114,7 +115,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_GUARDIAN_WOODS</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -127,7 +128,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_GUARDIAN_WOODS</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
