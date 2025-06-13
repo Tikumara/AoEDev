@@ -24,7 +24,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_EGALITARIAN</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -36,7 +36,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SLAVER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<PrereqUnitClassType>UNITCLASS_SLAVE</PrereqUnitClassType>
@@ -48,7 +48,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -60,15 +60,29 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			<PrereqImprovementType>IMPROVEMENT_MANA_CHAOS</PrereqImprovementType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Build               Death Mana                                  Necromancer -->
 			<Type>TRAITTRIGGER_BUILD_MANA_DEATH</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_NECROMANCER</TraitType>
+					<iModifier>50</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
+			<PrereqImprovementType>IMPROVEMENT_MANA_DEATH</PrereqImprovementType>
+			<bOncePerPlayer>1</bOncePerPlayer>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Build               Dimensional Mana                            Necromancer -->
+			<Type>TRAITTRIGGER_BUILD_MANA_DIMENSIONAL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
@@ -77,31 +91,21 @@
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
-			<PrereqImprovementType>IMPROVEMENT_MANA_DEATH</PrereqImprovementType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Build               Dimensional Mana                            Necromancer -->
-			<Type>TRAITTRIGGER_BUILD_MANA_DIMENSIONAL</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>2</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
-			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			<PrereqImprovementType>IMPROVEMENT_MANA_DIMENSIONAL</PrereqImprovementType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Build               Entropy Mana                                Necromancer -->
 			<Type>TRAITTRIGGER_BUILD_MANA_ENTROPY</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			<PrereqImprovementType>IMPROVEMENT_MANA_ENTROPY</PrereqImprovementType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Build               Metamagic Mana                              Redeemed -->
 			<Type>TRAITTRIGGER_BUILD_MANA_MIND_KAHD</Type>
@@ -120,20 +124,21 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DOMINANT</TraitType>
-					<iModifier>25</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_ILLUSIONIST</TraitType>
-					<iModifier>25</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_ZARIA_INFO</TraitType>
-					<iModifier>25</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			<PrereqImprovementType>IMPROVEMENT_MANA_MIND</PrereqImprovementType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Build               Mind Mana                                	Corrupted -->
 			<Type>TRAITTRIGGER_BUILD_MANA_MIND_KAHD</Type>
@@ -152,59 +157,63 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
-					<iModifier>30</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			<PrereqImprovementType>IMPROVEMENT_MANA_SHADOW</PrereqImprovementType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Build               Water Mana                                  Hydromancer -->
 			<Type>TRAITTRIGGER_BUILD_MANA_WATER</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HYDROMANCER</TraitType>
-					<iModifier>25</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>		
 			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			<PrereqImprovementType>IMPROVEMENT_MANA_WATER</PrereqImprovementType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Build               Fire Mana                                   Sauros -->
 			<Type>TRAITTRIGGER_BUILD_MANA_FIRE</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HEMAPYROSYNCRETISTIC</TraitType>
-					<iModifier>25</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>		
 			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			<PrereqImprovementType>IMPROVEMENT_MANA_FIRE</PrereqImprovementType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Build               Body Mana                                   Sauros -->
 			<Type>TRAITTRIGGER_BUILD_MANA_BODY</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HEMAPYROSYNCRETISTIC</TraitType>
-					<iModifier>25</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>		
 			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			<PrereqImprovementType>IMPROVEMENT_MANA_BODY</PrereqImprovementType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Build               Mine                                        Veinhunter -->
 			<Type>TRAITTRIGGER_BUILD_MINE</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -251,7 +260,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DOMINANT</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>3</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -273,11 +282,11 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SLAVER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>3</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_HEMAPYROSYNCRETISTIC</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>3</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -289,7 +298,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DEMON_OF_THE_DEEP</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>6</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -324,91 +333,97 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_WALL_OF_STONE</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Blaze (Clan)                                Scorched Earth -->
 			<Type>TRAITTRIGGER_CAST_BLAZE_CLAN</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SCORCHED_EARTH</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_BLAZE2</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Inquisition                                 Theocratic -->
 			<Type>TRAITTRIGGER_CAST_INQUISITION</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_INQUISITION</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Inquisition2                                Theocratic -->
 			<Type>TRAITTRIGGER_CAST_INQUISITION2</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_INQUISITION2</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Raise Skeleton                              Necromancer -->
 			<Type>TRAITTRIGGER_CAST_RAISE_SKELETON</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_RAISE_SKELETON</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Summon Spectre                              Necromancer -->
 			<Type>TRAITTRIGGER_CAST_SUMMON_SPECTRE</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_SUMMON_SPECTRE</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Summon Wraith                               Necromancer -->
 			<Type>TRAITTRIGGER_CAST_SUMMON_WRAITH</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>12</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
-					<iModifier>12</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -444,36 +459,39 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HYDROMANCER</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_SPRING</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Water Walking                               Hydromancer -->
 			<Type>TRAITTRIGGER_CAST_WATER_WALKING</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HYDROMANCER</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_WATER_WALKING</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Defensive Wave                              Hydromancer -->
 			<Type>TRAITTRIGGER_CAST_DEFENSIVE_WAVE</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HYDROMANCER</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_DEFENSIVE_WAVE</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Summon Water Elemental                      Hydromancer -->
 			<Type>TRAITTRIGGER_CAST_SUMMON_WATER_ELEMENTAL</Type>
@@ -492,24 +510,26 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_CRAFTMASTER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_RECYCLE</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Feed	                                    Dominant -->
 			<Type>TRAITTRIGGER_CAST_FEED</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DOMINANT</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_FEED</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Floating Eye	                            Redeemed -->
 			<Type>TRAITTRIGGER_CAST_FLOATING_EYE_KAHD</Type>
@@ -522,6 +542,7 @@
 			<TraitClassType>TRAITCLASS_KAHD</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_FLOATING_EYE</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Dispel	                            		Redeemed -->
 			<Type>TRAITTRIGGER_CAST_DISPEL_KAHD</Type>
@@ -588,43 +609,46 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_SUMMON_SCEADUGENGAN</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Blur	                            		Skiamancer -->
 			<Type>TRAITTRIGGER_CAST_BLUR</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_BLUR</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Shadowwalk	                            	Skiamancer -->
 			<Type>TRAITTRIGGER_CAST_SHADOWWALK</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_SHADOWWALK</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Summon Mistform	                            Skiamancer -->
 			<Type>TRAITTRIGGER_CAST_SUMMON_MISTFORM</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
-					<iModifier>12</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -636,51 +660,16 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>4</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>
 			<PrereqBonusType>BONUS_COPPER</PrereqBonusType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Connect             Gems                                        Veinhunter -->
 			<Type>TRAITTRIGGER_CONNECT_GEMS</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>8</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
-			<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>
-			<PrereqBonusType>BONUS_GEMS</PrereqBonusType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Connect             Gold                                        Veinhunter -->
-			<Type>TRAITTRIGGER_CONNECT_GOLD</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>8</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
-			<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>
-			<PrereqBonusType>BONUS_GOLD</PrereqBonusType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Connect             Iron                                        Veinhunter -->
-			<Type>TRAITTRIGGER_CONNECT_IRON</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>20</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
-			<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>
-			<PrereqBonusType>BONUS_IRON</PrereqBonusType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Connect             Mithril                                     Veinhunter -->
-			<Type>TRAITTRIGGER_CONNECT_MITHRIL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
@@ -689,31 +678,73 @@
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>
+			<PrereqBonusType>BONUS_GEMS</PrereqBonusType>
+			<bOncePerPlayer>1</bOncePerPlayer>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Connect             Gold                                        Veinhunter -->
+			<Type>TRAITTRIGGER_CONNECT_GOLD</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_VEINHUNTER</TraitType>
+					<iModifier>100</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>
+			<PrereqBonusType>BONUS_GOLD</PrereqBonusType>
+			<bOncePerPlayer>1</bOncePerPlayer>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Connect             Iron                                        Veinhunter -->
+			<Type>TRAITTRIGGER_CONNECT_IRON</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_VEINHUNTER</TraitType>
+					<iModifier>100</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>
+			<PrereqBonusType>BONUS_IRON</PrereqBonusType>
+			<bOncePerPlayer>1</bOncePerPlayer>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Connect             Mithril                                     Veinhunter -->
+			<Type>TRAITTRIGGER_CONNECT_MITHRIL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_VEINHUNTER</TraitType>
+					<iModifier>150</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>
 			<PrereqBonusType>BONUS_MITHRIL</PrereqBonusType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Connect             Mushrooms                                   Veinhunter -->
 			<Type>TRAITTRIGGER_CONNECT_MUSHROOMS</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>4</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>		
 			<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>
 			<PrereqBonusType>BONUS_MUSHROOMS</PrereqBonusType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Connect             Jeteye                                   	Demon of the Deep -->
 			<Type>TRAITTRIGGER_CONNECT_JETEYE</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DEMON_OF_THE_DEEP</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>		
 			<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>
 			<PrereqBonusType>BONUS_JETEYE</PrereqBonusType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Connect             Jeteye                                   	Fisherman -->
 			<Type>TRAITTRIGGER_CONNECT_JETEYE_IMPORTANT</Type>
@@ -804,11 +835,11 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_EGALITARIAN</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_ILLUSIONIST</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -820,7 +851,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_EGALITARIAN</TraitType>
-					<iModifier>4</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -844,7 +875,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HAUNTED_STRATEGIST</TraitType>
-					<iModifier>30</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -868,7 +899,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_CRAFTMASTER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -880,7 +911,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_CRAFTMASTER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -892,7 +923,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_CRAFTMASTER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -904,7 +935,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_CRAFTMASTER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -916,7 +947,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SLAVER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -928,7 +959,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_CRAFTMASTER</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -940,7 +971,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -952,7 +983,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -964,7 +995,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>200</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -976,7 +1007,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -988,7 +1019,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1000,7 +1031,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1052,14 +1083,14 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
 			<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
 			<PrereqBuildingClassType>BUILDINGCLASS_LIGHTHOUSE</PrereqBuildingClassType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Construct           Lighthouse                                  Virtuous Pirate -->
+		<TraitTriggerInfo> <!-- Construct           Lighthouse                                  Fisherman -->
 			<Type>TRAITTRIGGER_CONSTRUCT_LIGHTHOUSE_IMPORTANT</Type>
 			<CounterChanges>
 				<CounterChange>
@@ -1088,7 +1119,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1112,7 +1143,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1125,7 +1156,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1138,7 +1169,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1151,7 +1182,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1164,7 +1195,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1177,7 +1208,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1190,7 +1221,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1203,7 +1234,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1215,7 +1246,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1227,7 +1258,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DOMINANT</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1239,7 +1270,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_ILLUSIONIST</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1676,7 +1707,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HEMAPYROSYNCRETISTIC</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -1688,7 +1719,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HEMAPYROSYNCRETISTIC</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -1700,7 +1731,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HEMAPYROSYNCRETISTIC</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -1759,36 +1790,39 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>50</iModifier>
+					<iModifier>150</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
 			<TraitHookType>TRAITHOOK_CHANGE_RELIGION</TraitHookType>
 			<PrereqReligion>RELIGION_RUNES_OF_KILMORPH</PrereqReligion>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Change Religion     To Overlords                                Demon of the Deep -->
 			<Type>TRAITTRIGGER_CONVERT_OVERLORDS</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DEMON_OF_THE_DEEP</TraitType>
-					<iModifier>50</iModifier>
+					<iModifier>150</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
 			<TraitHookType>TRAITHOOK_CHANGE_RELIGION</TraitHookType>
 			<PrereqReligion>RELIGION_OCTOPUS_OVERLORDS</PrereqReligion>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Change Religion     To Esus                                 	Skiamancer -->
 			<Type>TRAITTRIGGER_CONVERT_ESUS</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
-					<iModifier>50</iModifier>
+					<iModifier>150</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
 			<TraitHookType>TRAITHOOK_CHANGE_RELIGION</TraitHookType>
 			<PrereqReligion>RELIGION_COUNCIL_OF_ESUS</PrereqReligion>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Change Religion     To Anything                                	Spiritual -->
 			<Type>TRAITTRIGGER_CONVERT_ANY_IMPORTANT</Type>
@@ -1876,7 +1910,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1887,7 +1921,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>-1</iModifier>
+					<iModifier>-5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1921,7 +1955,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HYDROMANCER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1933,7 +1967,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HYDROMANCER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -1945,7 +1979,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HYDROMANCER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -2470,7 +2504,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HYDROMANCER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -2483,7 +2517,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HYDROMANCER</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -2496,7 +2530,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HYDROMANCER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -2522,7 +2556,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>10</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -2535,7 +2569,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -2548,7 +2582,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -2561,7 +2595,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -2574,7 +2608,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -2600,7 +2634,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>10</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -2613,7 +2647,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -2639,7 +2673,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>10</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -2652,7 +2686,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -2665,11 +2699,11 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DOMINANT</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_ILLUSIONIST</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -2682,11 +2716,11 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DOMINANT</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_ILLUSIONIST</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -2699,11 +2733,11 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DOMINANT</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_ILLUSIONIST</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -2798,7 +2832,7 @@
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -2811,11 +2845,11 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>10</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -2828,11 +2862,11 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
-					<iModifier>50</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -2845,7 +2879,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_LYCANTHROPIC</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -2857,7 +2891,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_LYCANTHROPIC</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>10</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -2869,7 +2903,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_LYCANTHROPIC</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -2881,7 +2915,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_CRAFTMASTER</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -2893,19 +2927,20 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DOMINANT</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 			<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
 			<PrereqPromotionType>PROMOTION_CROWN_OF_COMMAND</PrereqPromotionType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Gain promo          Anything        gains Command1      		Dominant  -->
 			<Type>TRAITTRIGGER_GAIN_COMMAND1</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DOMINANT</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -2917,7 +2952,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DOMINANT</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -2929,7 +2964,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DOMINANT</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -2941,7 +2976,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DOMINANT</TraitType>
-					<iModifier>8</iModifier>
+					<iModifier>200</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -2953,16 +2988,17 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_ILLUSIONIST</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 			<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
 			<PrereqPromotionType>PROMOTION_ILLUSION</PrereqPromotionType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Hurry				Population                                  Slaver -->
 			<Type>TRAITTRIGGER_HURRY_POPULATION</Type>
@@ -2981,7 +3017,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_LYCANTHROPIC</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>6</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3066,7 +3102,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SPIDERKIN</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>10</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3139,7 +3175,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SCORCHED_EARTH</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>3</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_LYCANTHROPIC</TraitType>
@@ -3178,7 +3214,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>6</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3202,7 +3238,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3214,7 +3250,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>60</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3226,7 +3262,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>60</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3238,7 +3274,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3250,7 +3286,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3262,7 +3298,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3274,7 +3310,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3461,8 +3497,8 @@
 				<TraitHookType>TRAITHOOK_KILL_UNIT</TraitHookType>
 			<PrereqKilledRaceType>PROMOTION_VAHUA</PrereqKilledRaceType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Kill                Skeleton        kills Anything              Necromancer -->
-			<Type>TRAITTRIGGER_KILL_SKELETON</Type>
+  <!-- <TraitTriggerInfo> Necro already gets xp on undead kill, they dont need more help --> <!-- Kill                Skeleton        kills Anything              Necromancer -->
+	   <!-- <Type>TRAITTRIGGER_KILL_SKELETON</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
@@ -3472,7 +3508,7 @@
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_KILL_UNIT</TraitHookType>
 			<PrereqUnitClassType>UNITCLASS_SKELETON</PrereqUnitClassType>
-		</TraitTriggerInfo>
+		</TraitTriggerInfo> -->
 		<TraitTriggerInfo> <!-- Kill                NAval        kills Anything                 Swashbuckler -->
 			<Type>TRAITTRIGGER_KILL_NAVAL_VS_ANY_IMPORTANT</Type>
 			<CounterChanges>
@@ -3502,7 +3538,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SPIDERKIN</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3514,7 +3550,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SPIDERKIN</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3526,7 +3562,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SPIDERKIN</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3538,7 +3574,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SPIDERKIN</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3550,7 +3586,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SPIDERKIN</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>20</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3562,7 +3598,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_CRAFTMASTER</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>20</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3574,7 +3610,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HAUNTED_STRATEGIST</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>20</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -3603,42 +3639,42 @@
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>
 				<TraitHookType>TRAITHOOK_UNIT_LEVEL_UP</TraitHookType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Lose plot           Coast Terrain                               Hydromancer -->
-			<Type>TRAITTRIGGER_LOSE_PLOT_COAST</Type>
+  <!-- <TraitTriggerInfo> --> <!-- Lose plot           Coast Terrain                               Hydromancer -->
+	   <!-- <Type>TRAITTRIGGER_LOSE_PLOT_COAST</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HYDROMANCER</TraitType>
-					<iModifier>-1</iModifier>
+					<iModifier>-5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_LOSE_PLOT_OWNERSHIP</TraitHookType>
 			<PrereqTerrainType>TERRAIN_COAST</PrereqTerrainType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Lose plot           Ocean Terrain                               Hydromancer -->
-			<Type>TRAITTRIGGER_LOSE_PLOT_OCEAN</Type>
+		</TraitTriggerInfo> -->
+  <!-- <TraitTriggerInfo> --> <!-- Lose plot           Ocean Terrain                               Hydromancer -->
+      <!-- <Type>TRAITTRIGGER_LOSE_PLOT_OCEAN</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HYDROMANCER</TraitType>
-					<iModifier>-1</iModifier>
+					<iModifier>-5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_LOSE_PLOT_OWNERSHIP</TraitHookType>
 			<PrereqTerrainType>TERRAIN_OCEAN</PrereqTerrainType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Lose plot           Deep Ocean Terrain                          Hydromancer -->
-			<Type>TRAITTRIGGER_LOSE_PLOT_OCEAN_DEEP</Type>
+		</TraitTriggerInfo> -->
+  <!-- <TraitTriggerInfo> --> <!-- Lose plot           Deep Ocean Terrain                          Hydromancer -->
+	<!--	<Type>TRAITTRIGGER_LOSE_PLOT_OCEAN_DEEP</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HYDROMANCER</TraitType>
-					<iModifier>-1</iModifier>
+					<iModifier>-5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_LOSE_PLOT_OWNERSHIP</TraitHookType>
 			<PrereqTerrainType>TERRAIN_OCEAN_DEEP</PrereqTerrainType>
-		</TraitTriggerInfo>
+		</TraitTriggerInfo> -->
 		<TraitTriggerInfo> <!-- Lose plot           Aifon Isle                                  Hydromancer -->
 			<Type>TRAITTRIGGER_LOSE_PLOT_AIFON_ISLE</Type>
 			<CounterChanges>
@@ -4141,8 +4177,8 @@
 			<PrereqImprovementType>IMPROVEMENT_WELL_OF_SOULS</PrereqImprovementType>
 			<bGraphicalOnly>1</bGraphicalOnly>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Lose promo          Anything        lose Crown of Command      	Dominant  -->
-			<Type>TRAITTRIGGER_LOSE_CROWN_OF_COMMAND</Type>
+  <!-- <TraitTriggerInfo> changed to 1 time xp --> <!-- Lose promo          Anything        lose Crown of Command      	Dominant  -->
+	  <!-- <Type>TRAITTRIGGER_LOSE_CROWN_OF_COMMAND</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DOMINANT</TraitType>
@@ -4152,13 +4188,13 @@
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 			<TraitHookType>TRAITHOOK_UNIT_LOSE_PROMOTION</TraitHookType>
 			<PrereqPromotionType>PROMOTION_CROWN_OF_COMMAND</PrereqPromotionType>
-		</TraitTriggerInfo>
+		</TraitTriggerInfo> -->
 		<TraitTriggerInfo> <!-- Pillage             Anything                                    Scorched Earth -->
 			<Type>TRAITTRIGGER_PILLAGE</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SCORCHED_EARTH</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>10</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4191,7 +4227,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>-1</iModifier>
+					<iModifier>-5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4203,7 +4239,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>-1</iModifier>
+					<iModifier>-50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4215,7 +4251,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>-1</iModifier>
+					<iModifier>-25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4227,7 +4263,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>-1</iModifier>
+					<iModifier>-25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4239,7 +4275,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>-1</iModifier>
+					<iModifier>-25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4265,7 +4301,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INSTRUCTOR</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>3</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4279,7 +4315,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INSTRUCTOR</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>3</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4335,7 +4371,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_EGALITARIAN</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>3</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4419,7 +4455,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>3</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4446,7 +4482,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HYDROMANCER</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>1</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4458,7 +4494,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>1</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4505,7 +4541,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>20</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4550,7 +4586,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>300</iModifier>
+					<iModifier>500</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4562,7 +4598,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4574,7 +4610,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4586,7 +4622,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4598,7 +4634,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4610,7 +4646,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4622,7 +4658,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4645,7 +4681,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>50</iModifier>
+					<iModifier>200</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4657,7 +4693,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>250</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4765,7 +4801,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HYDROMANCER</TraitType>
-					<iModifier>50</iModifier>
+					<iModifier>200</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4861,7 +4897,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4897,7 +4933,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>75</iModifier>
+					<iModifier>200</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4921,7 +4957,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>50</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4969,7 +5005,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>25</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -4988,12 +5024,12 @@
 			<PrereqTech>TECH_WRITING</PrereqTech>
 			<TraitHookType>TRAITHOOK_TECH</TraitHookType>	
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Trade               Open Borders                                Virtuous Pirate -->
+		<TraitTriggerInfo> <!-- Trade               Open Borders                                Virtuous Pirate-->
 			<Type>TRAITTRIGGER_TRADE_OPEN_BORDERS</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -5040,23 +5076,23 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HYDROMANCER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_RECKLESS</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_ILLUSIONIST</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -5080,15 +5116,15 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_THEOCRATIC</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_DOMINANT</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_HEMAPYROSYNCRETISTIC</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -5124,7 +5160,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VIRTUOUS_PIRATE</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>10</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -5148,7 +5184,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SPIDERKIN</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -5160,7 +5196,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_LYCANTHROPIC</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -5172,7 +5208,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_CRAFTMASTER</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -5195,7 +5231,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_EGALITARIAN</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -5207,7 +5243,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_EGALITARIAN</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -5219,7 +5255,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_EGALITARIAN</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -5231,7 +5267,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_EGALITARIAN</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -5243,7 +5279,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -5255,7 +5291,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -5267,7 +5303,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_VEINHUNTER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -5303,31 +5339,33 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_ZARIA_INFO</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>			
 			<PrereqSpellType>SPELL_INSPIRATION</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Charm Person                               Caretaker -->
 			<Type>TRAITTRIGGER_CAST_CHARM_ZARIA</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_ZARIA_INFO</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>			
 			<PrereqSpellType>SPELL_CHARM_PERSON</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Construct           Building gives happiness                       Caretaker -->
 			<Type>TRAITTRIGGER_CONSTRUCT_BUILDING_HAPPINESS_ZARIA</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_ZARIA_INFO</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 				<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -5340,7 +5378,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_ZARIA_INFO</TraitType>
-					<iModifier>20</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 		<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -5353,7 +5391,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_ZARIA_INFO</TraitType>
-					<iModifier>50</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>			
@@ -5405,7 +5443,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_ZARIA_INFO</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>3</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -5429,7 +5467,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_ZARIA_INFO</TraitType>
-					<iModifier>200</iModifier>
+					<iModifier>500</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -5441,7 +5479,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_ZARIA_INFO</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
