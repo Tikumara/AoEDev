@@ -13439,7 +13439,7 @@
 			<fVisibilityPriority>10000</fVisibilityPriority>
 			<YieldChanges>
 				<iYield>0</iYield>
-				<iYield>0</iYield>
+				<iYield>1</iYield>
 				<iYield>12</iYield>
 			</YieldChanges>
 			<ObsoleteSafeCommerceChanges>
@@ -16551,7 +16551,7 @@
         	<Civilopedia>TXT_KEY_BUILDING_CRIME_MUTINY_PEDIA</Civilopedia>
         	<ArtDefineTag>ART_DEF_BUILDING_CRIME</ArtDefineTag>
    			<bCrimeEffect>1</bCrimeEffect>
-     	<iPrereqCrime>300</iPrereqCrime>
+     	<iPrereqCrime>3000</iPrereqCrime>
 			<iPrereqPopulation>5</iPrereqPopulation>
 			<PerPopBonuses>
 				<PerPopBonus>

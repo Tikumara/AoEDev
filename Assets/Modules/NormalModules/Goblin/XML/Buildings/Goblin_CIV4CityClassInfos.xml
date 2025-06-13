@@ -9,6 +9,7 @@
 	<CityClassInfo><!--Scorpion-->
 	<Type>CITYCLASS_SCORPION</Type>
 	<Description>TXT_KEY_CITYCLASS_SCORPION</Description>
+	<Civilopedia>TXT_KEY_CITYCLASS_SCORPION_PEDIA</Civilopedia>
 	<Buildings>
 	<Building>
 		<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
@@ -196,6 +197,7 @@
 	<CityClassInfo><!--Muris-->
 	<Type>CITYCLASS_MURIS</Type>
 	<Description>TXT_KEY_CITYCLASS_MURIS</Description>
+	<Civilopedia>TXT_KEY_CITYCLASS_MURIS_PEDIA</Civilopedia>
 		<Buildings>
 	<Building>
 		<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
@@ -382,6 +384,7 @@
 	<CityClassInfo><!--Lukos-->
 	<Type>CITYCLASS_LUKOS</Type>
 	<Description>TXT_KEY_CITYCLASS_LUKOS</Description>
+	<Civilopedia>TXT_KEY_CITYCLASS_LUKOS_PEDIA</Civilopedia>
 	<Buildings>
 	<Building>
 		<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>

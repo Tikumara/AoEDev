@@ -6,18 +6,7 @@
 <!-- City Classes -->
 <Civ4CityClassInfos xmlns="x-schema:CIV4BuildingsSchema.xml">
 	<CityClassInfos>
-	<CityClassInfo>
-	<Type>CITYCLASS_TEST</Type>
-	<Description>TXT_KEY_CITYCLASS_TEST</Description>
-	<Units>
-		<Unit>
-			<UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
-			<UnitType>UNIT_MOROI</UnitType>
-		</Unit>
-	</Units>
-	<ShortDescription>TXT_KEY_CITYCLASS_TEST_SHORT</ShortDescription>
-			
-	</CityClassInfo>
+
 	<CityClassInfo>
 	<Type>CITYCLASS_SAUROS_CUALLI</Type>
 		<Description>TXT_KEY_CITYCLASS_SAUROS_CUALLI</Description>

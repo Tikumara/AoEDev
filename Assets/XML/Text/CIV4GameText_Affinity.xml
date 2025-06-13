@@ -247,11 +247,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_AFFINITY_WILLPOWER</Tag>
-		<English>[ICON_BULLET]%s1 Willpower</English>
-		<French>[ICON_BULLET]%s1 Volonté</French>
-		<German>[ICON_BULLET]%s1 Willenskraft</German>
-		<Italian>[ICON_BULLET]%s1 Forza di Volontà</Italian>
-		<Spanish>[ICON_BULLET]%s1 Willpower</Spanish>
+		<English>[ICON_BULLET]%s1 Magical Power</English>
+		<French>[ICON_BULLET]%s1 Magical Power</French>
+		<German>[ICON_BULLET]%s1 Magical Power</German>
+		<Italian>[ICON_BULLET]%s1 Magical Power</Italian>
+		<Spanish>[ICON_BULLET]%s1 Magical Power</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_AFFINITY_WITHDRAWAL</Tag>

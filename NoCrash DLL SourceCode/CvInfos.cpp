@@ -10476,6 +10476,7 @@ m_bImmuneNeutral(false),
 m_bImmuneEnemy(false),
 m_bImmuneFlying(false),
 m_bImmuneNotAlive(false),
+m_bTargetSummon(false),
 m_bAbility(false),
 m_bDispel(false),
 m_bPush(false),
@@ -10868,6 +10869,10 @@ bool CvSpellInfo::isImmuneNotAlive() const
 	return m_bImmuneNotAlive;
 }
 
+bool CvSpellInfo::isTargetSummon() const
+{
+	return m_bTargetSummon;
+}
 bool CvSpellInfo::isPermanentUnitCreate() const
 {
 	return m_bPermanentUnitCreate;
@@ -11257,6 +11262,7 @@ void CvSpellInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bImmuneEnemy);
 	stream->Read(&m_bImmuneFlying);
 	stream->Read(&m_bImmuneNotAlive);
+	stream->Read(&m_bTargetSummon);
 	stream->Read(&m_bAbility);
 	stream->Read(&m_bDispel);
 	stream->Read(&m_bPush);
@@ -11444,6 +11450,7 @@ void CvSpellInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bImmuneEnemy);
 	stream->Write(m_bImmuneFlying);
 	stream->Write(m_bImmuneNotAlive);
+	stream->Write(m_bTargetSummon);
 	stream->Write(m_bAbility);
 	stream->Write(m_bDispel);
 	stream->Write(m_bPush);
@@ -11572,6 +11579,7 @@ bool CvSpellInfo::read(CvXMLLoadUtility* pXML)
 					pXML->GetChildXmlValByName(&(cbTemp.iExtraMaxDamage), "iExtraMaxDamage", 0);
 					pXML->GetChildXmlValByName(&(cbTemp.iExtraNumTargets), "iExtraNumTargets", 0);
 					pXML->GetChildXmlValByName(&(cbTemp.iExtraTargetRange), "iExtraTargetRange", 0);
+					pXML->GetChildXmlValByName(&(cbTemp.bExtraImmuneTeam), "bExtraImmuneTeam");
 					m_cbSpellBonuses.push_back(cbTemp);
 					if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()))						break;
 				}
@@ -11679,6 +11687,7 @@ bool CvSpellInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bImmuneEnemy, "bImmuneEnemy");
 	pXML->GetChildXmlValByName(&m_bImmuneFlying, "bImmuneFlying");
 	pXML->GetChildXmlValByName(&m_bImmuneNotAlive, "bImmuneNotAlive");
+	pXML->GetChildXmlValByName(&m_bTargetSummon, "bTargetSummon");
 	pXML->GetChildXmlValByName(&m_bAbility, "bAbility");
 	pXML->GetChildXmlValByName(&m_bDispel, "bDispel");
 	pXML->GetChildXmlValByName(&m_bPush, "bPush");
@@ -11784,6 +11793,7 @@ void CvSpellInfo::copyNonDefaults(CvSpellInfo* pClassInfo, CvXMLLoadUtility* pXM
 	if (isImmuneEnemy()					== false)				m_bImmuneEnemy					= pClassInfo->isImmuneEnemy();
 	if (isImmuneFlying()				== false)				m_bImmuneFlying					= pClassInfo->isImmuneFlying();
 	if (isImmuneNotAlive()				== false)				m_bImmuneNotAlive				= pClassInfo->isImmuneNotAlive();
+	if (isTargetSummon() == false)				m_bTargetSummon = pClassInfo->isTargetSummon();
 	if (isAbility()						== false)				m_bAbility						= pClassInfo->isAbility();
 	if (isDispel()						== false)				m_bDispel						= pClassInfo->isDispel();
 	if (isPush()						== false)				m_bPush							= pClassInfo->isPush();
@@ -52117,7 +52127,7 @@ bool CvAffinityInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_fDefensiveStrikes, "fDefensiveStrikes");
 	pXML->GetChildXmlValByName(&m_fAntiDefensiveStrikes, "fAntiDefensiveStrikes");
 	pXML->GetChildXmlValByName(&m_fCapacity, "fCapacity");
-	pXML->GetChildXmlValByName(&m_fWillpower, "fWillpower");
+	pXML->GetChildXmlValByName(&m_fWillpower, "fPower");
 	pXML->GetChildXmlValByName(&m_fWithdrawal, "fWithdrawal");
 	pXML->GetChildXmlValByName(&m_fAntiWithdrawal, "fAntiWithdrawal");
 	pXML->GetChildXmlValByName(&m_fHealRate, "fHealRate");

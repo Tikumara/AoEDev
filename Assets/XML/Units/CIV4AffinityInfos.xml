@@ -180,5 +180,15 @@
 			</BonusTypes>
 			<fSlaveChance>5</fSlaveChance>
 		</AffinityInfo>
+		<AffinityInfo><!-- Hydromancer Affinity -->
+			<Type>AFFINITY_WATER_HYDROMANCER</Type>
+			<Description>TXT_KEY_AFFINITY_HYDROMANCER</Description>
+			<Civilopedia>TXT_KEY_AFFINITY_HYDROMANCER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_AFFINITY_HYDROMANCER_STRATEGY</Strategy>
+			<BonusTypes>
+				<BonusType>BONUS_MANA_WATER</BonusType>
+			</BonusTypes>
+			<fPower>10</fPower>
+		</AffinityInfo>
 	</AffinityInfos>
 </Civ4AffinityInfos>

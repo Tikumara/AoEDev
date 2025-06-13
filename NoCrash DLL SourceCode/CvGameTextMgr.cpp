@@ -12976,12 +12976,12 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 	if (GC.getPromotionInfo(ePromotion).getEnemyWithdrawalChange() > 0)
 	{
 		szBuffer.append(pcNewline);
-		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_ENNEMY_WITHDRAWAL_TEXT", GC.getPromotionInfo(ePromotion).getEnemyWithdrawalChange()));
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_DECREASE_ENNEMY_WITHDRAWAL_TEXT", GC.getPromotionInfo(ePromotion).getEnemyWithdrawalChange()));
 	}
 	if (GC.getPromotionInfo(ePromotion).getEnemyWithdrawalChange() < 0)
 	{
 		szBuffer.append(pcNewline);
-		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_DECREASE_ENNEMY_WITHDRAWAL_TEXT", (-1*GC.getPromotionInfo(ePromotion).getEnemyWithdrawalChange())));
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_ENNEMY_WITHDRAWAL_TEXT", (-1*GC.getPromotionInfo(ePromotion).getEnemyWithdrawalChange())));
 	}
 
 	if (GC.getPromotionInfo(ePromotion).getCargoChange() != 0)
@@ -14470,6 +14470,11 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 		szBuffer.append(pcNewline);
 		szBuffer.append(gDLL->getText("TXT_KEY_SPELL_IMMUNE_NOT_ALIVE"));
 	}
+	if (GC.getSpellInfo(eSpell).isTargetSummon())
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_SPELL_TARGET_SUMMON"));
+	}
 	if (GC.getSpellInfo(eSpell).isRemoveHasCasted())
 	{
 		szBuffer.append(pcNewline);
@@ -14565,7 +14570,7 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 			{
 				bFirst = false;
 			}
-			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_DAMAGE", szBonusString.GetCString());
+			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_DAMAGE", iValue);
 		}
 		iValue = cbTemp.iExtraMaxDamage;
 		if (iValue != 0)
@@ -14579,7 +14584,7 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 			{
 				bFirst = false;
 			}
-			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_MAX_DAMAGE", szBonusString.GetCString());
+			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_MAX_DAMAGE", iValue);
 		}
 		iValue = cbTemp.iExtraNumTargets;
 		if (iValue != 0)
@@ -14593,7 +14598,7 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 			{
 				bFirst = false;
 			}
-			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_NUM_TARGETS", szBonusString.GetCString());
+			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_NUM_TARGETS", iValue);
 		}
 		iValue = cbTemp.iExtraTargetRange;
 		if (iValue != 0)
@@ -14607,7 +14612,19 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 			{
 				bFirst = false;
 			}
-			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_TARGET_RANGE", szBonusString.GetCString());
+			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_TARGET_RANGE", iValue);
+		}
+		if (cbTemp.bExtraImmuneTeam != false)
+		{
+			if (!bFirst)
+			{
+				szTempBuffer += L", ";
+			}
+			else
+			{
+				bFirst = false;
+			}
+			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_IMMUNE_TEAM",iValue);
 		}
 		szBuffer.append(gDLL->getText(szTempBuffer.GetCString()));
 
@@ -23832,6 +23849,12 @@ void CvGameTextMgr::setReligionHelp(CvWStringBuffer &szBuffer, ReligionTypes eRe
 /*************************************************************************************************/
 /**	Lawful-Chaotic Alignments					END												**/
 /*************************************************************************************************/
+
+	if (!CvWString(religion.getHelp()).empty())
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(religion.getHelp());
+	}
 }
 
 void CvGameTextMgr::setReligionHelpCity(CvWStringBuffer &szBuffer, ReligionTypes eReligion, CvCity *pCity, bool bCityScreen, bool bForceReligion, bool bForceState, bool bNoStateReligion)
@@ -31527,6 +31550,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 								szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_AND").c_str());
 							szTempBuffer.append(szTempBuffer2);
 						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 
 						szHelpString.append(szTempBuffer);
 						break;
@@ -31573,6 +31600,11 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 								szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_AND").c_str());
 							szTempBuffer.append(szTempBuffer2);
 						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
+
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -31610,6 +31642,11 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 								szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_AND").c_str());
 							szTempBuffer.append(szTempBuffer2);
 						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
+
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -31647,6 +31684,11 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 								szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_AND").c_str());
 							szTempBuffer.append(szTempBuffer2);
 						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
+
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -31686,6 +31728,11 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 								szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_AND").c_str());
 							szTempBuffer.append(szTempBuffer2);
 						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
+
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -31724,6 +31771,11 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 								szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_AND").c_str());
 							szTempBuffer.append(szTempBuffer2);
 						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
+
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -31758,6 +31810,11 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 								szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_AND").c_str());
 							szTempBuffer.append(szTempBuffer2);
 						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
+
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -31792,6 +31849,11 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 								szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_AND").c_str());
 							szTempBuffer.append(szTempBuffer2);
 						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
+
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -31846,6 +31908,11 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 								szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_AND").c_str());
 							szTempBuffer.append(szTempBuffer2);
 						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
+
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -31901,6 +31968,11 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 								szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_AND").c_str());
 							szTempBuffer.append(szTempBuffer2);
 						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
+
 						szHelpString.append(szTempBuffer);
 
 						break;
@@ -31927,6 +31999,11 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						//			szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_AND").c_str());
 						//		szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_COASTAL").c_str());
 						//	}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
+
 						szHelpString.append(szTempBuffer);
 						//	pbHookDisplayed[eTraitHook] = true;
 						break;
@@ -31945,6 +32022,11 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						{
 							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_NEUTRAL_FROM_GOOD").c_str());
 						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
+
 						szHelpString.append(szTempBuffer);
 
 						break;
@@ -31963,6 +32045,11 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						{
 							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_NEUTRAL_FROM_CHAOTIC").c_str());
 						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
+
 						szHelpString.append(szTempBuffer);
 
 						break;
@@ -31981,6 +32068,11 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						{
 							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_NEUTRAL_FROM_LAWFUL").c_str());
 						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
+
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -31998,6 +32090,11 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						//			szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_AND").c_str());
 						//		szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_COASTAL").c_str());
 						//	}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
+
 						szHelpString.append(szTempBuffer);
 						//	pbHookDisplayed[eTraitHook] = true;
 						break;
@@ -32008,6 +32105,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_UNIT_LOSE_ALIGNMENT").c_str());
 						else
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_UNIT_LOSE_ALIGNMENT").c_str());
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 
 						break;
@@ -32018,6 +32119,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_UNIT_GAIN_ETHICAL_ALIGNMENT").c_str());
 						else
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_UNIT_GAIN_ETHICAL_ALIGNMENT").c_str());
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 
 						break;
@@ -32028,6 +32133,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_UNIT_LOSE_ETHICAL_ALIGNMENT").c_str());
 						else
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_UNIT_LOSE_ETHICAL_ALIGNMENT").c_str());
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32037,7 +32146,11 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_GOODY").c_str());
 						else
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_GOODY").c_str());
-							szHelpString.append(szTempBuffer);
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
+						szHelpString.append(szTempBuffer);
 						break;
 					}
 					case TRAITHOOK_START_WAR:
@@ -32047,6 +32160,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						else
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_START_WAR").c_str());
 
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32057,6 +32174,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						else
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_MAKE_PEACE").c_str());
 
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32066,6 +32187,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_MAKE_VASSAL").c_str());
 						else
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_MAKE_VASSAL").c_str());
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32075,6 +32200,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_LOSE_VASSAL").c_str());
 						else
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_LOSE_VASSAL").c_str());
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32084,6 +32213,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_BECOME_VASSAL").c_str());
 						else
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_BECOME_VASSAL").c_str());
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32093,6 +32226,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_FREED_VASSAL").c_str());
 						else
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_FREED_VASSAL").c_str());
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32125,6 +32262,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 								szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_AND").c_str());
 							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_HEALTH_PREREQ").c_str());
 						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32134,6 +32275,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_BUILD_ROUTE").c_str());
 						else
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_BUILD_ROUTE").c_str());
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32160,6 +32305,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						else
 							szTempBuffer.Format(L"%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str());
 						szTempBuffer.append(szTempBuffer2);
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32169,6 +32318,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_CITY_FOUND").c_str());
 						else
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_CITY_FOUND").c_str());
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32199,6 +32352,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 							szTempBuffer2.Format(gDLL->getText("TXT_KEY_TRAITCOUNTER_CITY_POPULATION").c_str(), GC.getPromotionInfo((PromotionTypes)(GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger)).getPrereqRace()).getDescription());
 							szTempBuffer.append(szTempBuffer2);
 						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32215,6 +32372,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						if ((GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger)).isPrereqTrade())
 						{
 							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_TRADE_PREREQ").c_str());
+						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
 						}
 						szHelpString.append(szTempBuffer);
 						break;
@@ -32233,6 +32394,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 
 						}
 							
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32242,6 +32407,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_CITY_POPGROW").c_str());
 						else
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_CITY_POPGROW").c_str());
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32255,6 +32424,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						{
 							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_TO").c_str());
 							szTempBuffer.append(GC.getCultureLevelInfo((CultureLevelTypes)(GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger)).getPrereqCultureLevel()).getDescription());
+						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
 						}
 						szHelpString.append(szTempBuffer);
 						break;
@@ -32275,6 +32448,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_TO").c_str());
 							szTempBuffer.append(GC.getReligionInfo((ReligionTypes)(GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger)).getPrereqReligionType()).getDescription());
 						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32291,6 +32468,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 							szTempBuffer.append(GC.getReligionInfo((ReligionTypes)(GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger)).getPrereqReligionType()).getDescription());
 						}
 					
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32300,6 +32481,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_UNIT_CONVERT_CITY_RELIGIOUS_LEADER").c_str());
 						else
 							szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_UNIT_CONVERT_CITY").c_str());
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32320,6 +32505,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 								szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_ANY_GP_BORN").c_str());
 							else
 								szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_ANY_GP_BORN").c_str());
+						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
 						}
 						szHelpString.append(szTempBuffer);
 						break;
@@ -32344,6 +32533,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						else
 							szTempBuffer.Format(L"%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_TRADE").c_str());
 						szTempBuffer.append(szTempBuffer2);
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32364,9 +32557,13 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 								szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_CREATE_PROJECT_ANY").c_str());
 							else
 								szTempBuffer.Format(L"%s%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str(), gDLL->getText("TXT_KEY_TRAITHOOK_CREATE_PROJECT_ANY").c_str());
-							szHelpString.append(szTempBuffer);
-							break;
 						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
+						szHelpString.append(szTempBuffer);
+						break;
 					}
 					case TRAITHOOK_CAPTURE_UNIT:
 					{
@@ -32500,6 +32697,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						szTempBuffer.append(szKillerUnit);
 						szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITHOOK_CAPTURE_UNIT").c_str());
 						szTempBuffer.append(szKilledUnit);
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32649,6 +32850,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 
 						}
 
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32789,6 +32994,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						szTempBuffer.append(szKilledUnit);
 						szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITHOOK_KILLED_UNIT").c_str());
 						szTempBuffer.append(szKillerUnit);
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32832,6 +33041,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						else
 							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITHOOK_UNIT_PREREQ").c_str());
 
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32875,6 +33088,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						else
 							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITHOOK_UNIT_PREREQ").c_str());
 
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32917,6 +33134,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						else
 							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITHOOK_UNIT_PREREQ").c_str());
 
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 
 						break; 
@@ -32934,6 +33155,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						else
 							szTempBuffer.Format(L"%s", gDLL->getText("TXT_KEY_TRAITCOUNTER_CHANGE_ON_NEGATIVE").c_str());
 						szTempBuffer.append(szTempBuffer2);
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32952,6 +33177,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						CvWString szTempBuffer2;
 						szTempBuffer2.Format(gDLL->getText("TXT_KEY_TRAITHOOK_UNIT_GAIN_PROMOTION").c_str(), GC.getPromotionInfo((PromotionTypes)GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).getPrereqPromotionType()).getDescription());
 						szTempBuffer.append(szTempBuffer2);
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						break;
 					}
@@ -32970,6 +33199,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 						CvWString szTempBuffer2;
 						szTempBuffer2.Format(gDLL->getText("TXT_KEY_TRAITHOOK_UNIT_LOSE_PROMOTION").c_str(), GC.getPromotionInfo((PromotionTypes)GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).getPrereqPromotionType()).getDescription());
 						szTempBuffer.append(szTempBuffer2);
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
+						}
 						szHelpString.append(szTempBuffer);
 						//	pbHookDisplayed[eTraitHook] = true;
 						break;
@@ -33007,6 +33240,10 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 							CvWString szTempBuffer2;
 							szTempBuffer2.Format(gDLL->getText("TXT_KEY_TRAITHOOK_RELIGION_PREREQ").c_str(), GC.getReligionInfo((ReligionTypes)GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).getPrereqReligionType()).getDescription());
 							szTempBuffer.append(szTempBuffer2);
+						}
+						if (GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).isOncePerPlayer())
+						{
+							szTempBuffer.append(gDLL->getText("TXT_KEY_TRAITCOUNTER_ONCE").c_str());
 						}
 						szHelpString.append(szTempBuffer);
 						//	pbHookDisplayed[eTraitHook] = true;

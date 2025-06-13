@@ -1149,6 +1149,10 @@
 					<iResist>100</iResist>
 				</DamageTypeResist>
 				<DamageTypeResist>
+					<DamageType>DAMAGE_HOLY</DamageType>
+					<iResist>-50</iResist>
+				</DamageTypeResist>
+				<DamageTypeResist>
 					<DamageType>DAMAGE_POISON</DamageType>
 					<iResist>100</iResist>
 				</DamageTypeResist>
@@ -17364,7 +17368,10 @@
 					<iTerrainDefense>50</iTerrainDefense>
 				</TerrainDefense>
 			</TerrainDefenses>
-			<Button>Art/Interface/Buttons/Promotions/Civs/Amurites/WaterMastery.dds</Button>
+			<Affinities>
+				<Affinity>AFFINITY_WATER_HYDROMANCER</Affinity>
+			</Affinities>
+		<Button>Art/Interface/Buttons/Promotions/Civs/Amurites/WaterMastery.dds</Button>
 			<bWaterWalking>1</bWaterWalking>
 			<iMinLevel>-1</iMinLevel>
 			<PromotionSummonPerk>PROMOTION_WATER_MASTERY</PromotionSummonPerk>

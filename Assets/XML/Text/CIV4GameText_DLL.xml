@@ -332,35 +332,51 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_BONUS_EXTRA_DAMAGE</Tag>
-		<English>%s1 Extra Damage[SPACE]</English>
-		<French>%s1 Extra Damage[SPACE]</French>
-		<German>%s1 Extra Damage[SPACE]</German>
-		<Italian>%s1 Extra Damage[SPACE]</Italian>
-		<Spanish>%s1 Extra Damage[SPACE]</Spanish>
+		<English>%d1 Extra Damage[SPACE]</English>
+		<French>%d1 Extra Damage[SPACE]</French>
+		<German>%d1 Extra Damage[SPACE]</German>
+		<Italian>%d1 Extra Damage[SPACE]</Italian>
+		<Spanish>%d1 Extra Damage[SPACE]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_BONUS_EXTRA_MAX_DAMAGE</Tag>
-		<English>%s1 Extra Damage Limit[SPACE]</English>
-		<French>%s1 Extra Damage Limit[SPACE]</French>
-		<German>%s1 Extra Damage Limit[SPACE]</German>
-		<Italian>%s1 Extra Damage Limit[SPACE]</Italian>
-		<Spanish>%s1 Extra Damage Limit[SPACE]</Spanish>
+		<English>%d1 Extra Damage Limit[SPACE]</English>
+		<French>%d1 Extra Damage Limit[SPACE]</French>
+		<German>%d1 Extra Damage Limit[SPACE]</German>
+		<Italian>%d1 Extra Damage Limit[SPACE]</Italian>
+		<Spanish>%d1 Extra Damage Limit[SPACE]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_BONUS_EXTRA_NUM_TARGETS</Tag>
-		<English>To %s1 Additional Targets[SPACE]</English>
-		<French>To %s1 Additional Targets[SPACE]</French>
-		<German>To %s1 Additional Targets[SPACE]</German>
-		<Italian>To %s1 Additional Targets[SPACE]</Italian>
-		<Spanish>To %s1 Additional Targets[SPACE]</Spanish>
+		<English>%d1 Additional Targets[SPACE]</English>
+		<French>%d1 Additional Targets[SPACE]</French>
+		<German>%d1 Additional Targets[SPACE]</German>
+		<Italian>%d1 Additional Targets[SPACE]</Italian>
+		<Spanish>%d1 Additional Targets[SPACE]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_BONUS_EXTRA_TARGET_RANGE</Tag>
-		<English>%s1 Extra Spell Range[SPACE]</English>
-		<French>%s1 Extra Spell Range[SPACE]</French>
-		<German>%s1 Extra Spell Range[SPACE]</German>
-		<Italian>%s1 Extra Spell Range[SPACE]</Italian>
-		<Spanish>%s1 Extra Spell Range[SPACE]</Spanish>
+		<English>%d1 Extra Spell Range[SPACE]</English>
+		<French>%d1 Extra Spell Range[SPACE]</French>
+		<German>%d1 Extra Spell Range[SPACE]</German>
+		<Italian>%d1 Extra Spell Range[SPACE]</Italian>
+		<Spanish>%d1 Extra Spell Range[SPACE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BONUS_EXTRA_IMMUNE_TEAM</Tag>
+		<English>Immunity for your units</English>
+		<French>Immunity for your units</French>
+		<German>Immunity for your units</German>
+		<Italian>Immunity for your units</Italian>
+		<Spanish>Immunity for your units</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_NUM_TARGETS</Tag>
+		<English>[ICON_BULLET]Affects %d1 Units per targeted tile.</English>
+		<French>[ICON_BULLET]Affects %d1 Units per targeted tile.</French>
+		<German>[ICON_BULLET]Affects %d1 Units per targeted tile.</German>
+		<Italian>[ICON_BULLET]Affects %d1 Units per targeted tile.</Italian>
+		<Spanish>[ICON_BULLET]Affects %d1 Units per targeted tile.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CHEATERS_NEVER_PROSPER</Tag>
@@ -1459,6 +1475,14 @@
 		<German>[ICON_BULLET]Wird sich nur auf lebende Einheiten auswirken</German>
 		<Italian>[ICON_BULLET]Only affects living targets</Italian>
 		<Spanish>[ICON_BULLET]Only affects living targets</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_TARGET_SUMMON</Tag>
+		<English>[ICON_BULLET]Only affects Summons</English>
+		<French>[ICON_BULLET]Affectera seulement les évocations</French>
+		<German>[ICON_BULLET]Only affects Summons</German>
+		<Italian>[ICON_BULLET]Only affects Summons</Italian>
+		<Spanish>[ICON_BULLET]Only affects Summons</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_IMMUNE_TEAM</Tag>

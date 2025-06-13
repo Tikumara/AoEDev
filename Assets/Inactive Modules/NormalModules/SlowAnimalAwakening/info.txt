@@ -1,0 +1,16 @@
+[name]
+SlowAnimalAwakening
+[version]
+1
+[rifeversion]
+377
+[author]
+Doesnt
+[dependency]
+;Ashes of Erebus
+[compatible]
+;everything i hope
+[shortdesc]
+Slow down animal scaling
+[desc]
+Animals gain strength every 150 turns regardless of difficulty

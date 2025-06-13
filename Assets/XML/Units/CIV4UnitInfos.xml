@@ -20470,7 +20470,7 @@
 			</PrereqBonuses>
 			<iCost>180</iCost>
 			<iMoves>1</iMoves>
-			<iCombat>10</iCombat>
+			<iCombat>6</iCombat>
 			<iCultureGarrison>6</iCultureGarrison>
 			<iAsset>15</iAsset>
 			<UnitMeshGroups>
@@ -49978,23 +49978,11 @@
 			<iBombardRate>20</iBombardRate>
 			<iAsset>4</iAsset>
 			<UnitMeshGroups>
-				<iGroupSize>4</iGroupSize>
+				<iGroupSize>1</iGroupSize>
 				<fMaxSpeed>1</fMaxSpeed>
 				<fPadTime>1</fPadTime>
 				<iMeleeWaveSize>1</iMeleeWaveSize>
 				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_JOT_GIANT_CHAMPION</EarlyArtDefineTag>
-				</UnitMeshGroup>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_JOT_GIANT_CHAMPION</EarlyArtDefineTag>
-				</UnitMeshGroup>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_JOT_GIANT_CHAMPION</EarlyArtDefineTag>
-				</UnitMeshGroup>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
 					<EarlyArtDefineTag>ART_DEF_UNIT_JOT_GIANT_CHAMPION</EarlyArtDefineTag>
@@ -53745,23 +53733,11 @@
 			<iBombardRate>20</iBombardRate>
 			<iAsset>1</iAsset>
 			<UnitMeshGroups>
-				<iGroupSize>4</iGroupSize>
+				<iGroupSize>1</iGroupSize>
 				<fMaxSpeed>1.75</fMaxSpeed>
 				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
 				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_HUSCARL</EarlyArtDefineTag>
-				</UnitMeshGroup>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_HUSCARL</EarlyArtDefineTag>
-				</UnitMeshGroup>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_HUSCARL</EarlyArtDefineTag>
-				</UnitMeshGroup>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
 					<EarlyArtDefineTag>ART_DEF_UNIT_HUSCARL</EarlyArtDefineTag>

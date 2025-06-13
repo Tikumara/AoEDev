@@ -30468,7 +30468,15 @@ void CvUnitAI::AI_terraformerMove()
 				int iSpell = chooseSpell();
 				if (iSpell != NO_SPELL)
 				{
-					cast(iSpell);
+					if (GC.getSpellInfo((SpellTypes)iSpell).isTargeted())
+					{
+						cast(iSpell, chooseSpellTarget(iSpell));
+					}
+					else
+					{
+						cast(iSpell);
+
+					}
 					return;
 				}
 				else // we have someplace to go but no useful spell to cast at the moment
@@ -30577,7 +30585,15 @@ bool CvUnitAI::AI_pickupEquipment(int iRange)
 			int ispell = chooseSpell();
 			if (ispell != NO_SPELL)
 			{
-				cast(ispell);
+				if (GC.getSpellInfo((SpellTypes)ispell).isTargeted())
+				{
+					cast(ispell, chooseSpellTarget(ispell));
+				}
+				else
+				{
+					cast(ispell);
+
+				}
 			}
 			getGroup()->pushMission(MISSION_SKIP);
 			return true;

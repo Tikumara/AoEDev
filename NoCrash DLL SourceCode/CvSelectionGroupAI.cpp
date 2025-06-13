@@ -205,7 +205,14 @@ bool CvSelectionGroupAI::AI_PreUpdate()
 			int iSpell = pLoopUnit->chooseSpell();
 			if (iSpell != NO_SPELL)
 			{
-				pLoopUnit->cast(iSpell);
+				if (GC.getSpellInfo((SpellTypes)iSpell).isTargeted())
+				{
+					pLoopUnit->cast(iSpell, pLoopUnit->chooseSpellTarget(iSpell));
+				}
+				else
+				{
+					pLoopUnit->cast(iSpell);
+				}
 			}
 		}
 	}

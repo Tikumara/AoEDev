@@ -38,6 +38,7 @@
 	<ElementType name="iExtraNumTargets" content="textOnly" dt:type="int"/>
 	<ElementType name="iExtraTargetRange" content="textOnly" dt:type="int"/>
 	<ElementType name="iMaxApplications" content="textOnly" dt:type="int"/>
+	<ElementType name="bExtraImmuneTeam" content="textOnly" dt:type="boolean"/>
 	
 	<ElementType name="SpellBonus" content="eltOnly" order="many">
 		<element type="iPrereqExtraPower"/>
@@ -46,6 +47,7 @@
 		<element type="iExtraNumTargets"/>
 		<element type="iExtraTargetRange"/>
 		<element type="iMaxApplications"/>
+		<element type="bExtraImmuneTeam"/>
 	</ElementType>
 	<ElementType name="SpellBonuses" content="eltOnly">
 		<element type="SpellBonus" minOccurs="0"/>
@@ -57,6 +59,10 @@
 	<ElementType name="PromotionPrereq" content="textOnly"/>
 	<ElementType name="PromotionsPrereq" content="eltOnly">
 		<element type="PromotionPrereq" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="TargetPromotionPrereq" content="textOnly"/>
+	<ElementType name="TargetPromotionsPrereq" content="eltOnly">
+		<element type="TargetPromotionPrereq" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="iCrimePrereq" content="textOnly" dt:type="int"/>
 	<ElementType name="PromotionPrereq1" content="textOnly"/>
@@ -103,6 +109,7 @@
 	<ElementType name="PrereqAvailableCommander" content="textOnly" dt:type="boolean"/>
 	<ElementType name="PrereqIsNOTMinion" content="textOnly" dt:type="boolean"/>
 	<ElementType name="PrereqIsMinion" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bTargetAdjacentToWaterOnly" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bAdjacentToWaterOnly" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bCasterMustBeAlive" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bCasterNoDuration" content="textOnly" dt:type="boolean"/>
@@ -143,6 +150,7 @@
 	<ElementType name="bImmuneEnemy" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bImmuneFlying" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bImmuneNotAlive" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bTargetSummon" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bAbility" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bDispel" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bPush" content="textOnly" dt:type="boolean"/>
@@ -207,6 +215,7 @@
 		<element type="PromotionInStackPrereq"/>
 		<element type="UnitsIgnorePromotion"/>
 		<element type="PromotionsPrereq"/>
+		<element type="TargetPromotionsPrereq"/>
 		<element type="ReligionPrereq"/>
 		<element type="StateReligionPrereq"/>
 		<element type="TechPrereq"/>
@@ -225,6 +234,7 @@
 		<element type="iPrereqBroadEthicalAlignment"/>
 		<element type="iEthicalAlignmentModifier"/>
 		<element type="bAllowAI"/>
+		<element type="bTargetAdjacentToWaterOnly"/>
 		<element type="bAdjacentToWaterOnly"/>
 		<element type="bCasterMustBeAlive"/>
 		<element type="bCasterNoDuration"/>
@@ -265,6 +275,7 @@
 		<element type="bImmuneEnemy"/>
 		<element type="bImmuneFlying"/>
 		<element type="bImmuneNotAlive"/>
+		<element type="bTargetSummon"/>
 		<element type="bAbility"/>
 		<element type="bDispel"/>
 		<element type="bPush"/>

@@ -2182,6 +2182,7 @@ public:
 	bool isImmuneEnemy() const;
 	bool isImmuneFlying() const;
 	bool isImmuneNotAlive() const;
+	bool isTargetSummon() const;
 	bool isPermanentUnitCreate() const;
 	bool isPush() const;
 	bool isRemoveHasCasted() const;
@@ -2347,6 +2348,7 @@ protected:
 	bool m_bImmuneEnemy;
 	bool m_bImmuneFlying;
 	bool m_bImmuneNotAlive;
+	bool m_bTargetSummon;
 	bool m_bAbility;
 	bool m_bDispel;
 	bool m_bPush;

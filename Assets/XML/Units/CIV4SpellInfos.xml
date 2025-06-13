@@ -906,7 +906,7 @@
 			<Civilopedia>TXT_KEY_SPELL_GRAFT_FLESH_PEDIA</Civilopedia>
 			<SpellClasses>
 				<SpellClass>
-					<SpellClassType>SPELLCLASS_AIR</SpellClassType>
+					<SpellClassType>SPELLCLASS_BODY</SpellClassType>
 					<bSpellClass>1</bSpellClass>
 				</SpellClass>
 				<SpellClass>
@@ -4717,6 +4717,7 @@
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<iRange>1</iRange>
+			<iNumTargets>3</iNumTargets>
 			<bIsAutoCastable>1</bIsAutoCastable>
 			<iDamage>10</iDamage>
 			<iDamageLimit>30</iDamageLimit>
@@ -5519,8 +5520,8 @@
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<iRange>1</iRange>
-			<iDamage>25</iDamage>
-			<iDamageLimit>50</iDamageLimit>
+			<iDamage>20</iDamage>
+			<iDamageLimit>40</iDamageLimit>
 			<DamageType>DAMAGE_FIRE</DamageType>
 			<PyResult>spellRingofFlames(pCaster)</PyResult>
 			<Effect>EFFECT_RING_OF_FLAMES</Effect>

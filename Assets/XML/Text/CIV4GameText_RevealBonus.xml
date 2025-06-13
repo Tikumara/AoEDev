@@ -8471,11 +8471,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SIRFIS_PEDIA</Tag>
-		<English>Sirfis' angelic parentage was never in question. Stronger, taller than any amongst the clans, and with physical particularities that make it impossible to deny, Sirfis is of a rare breed, a goblin Aasimar. [NEWLINE]His claim of being the son of Bhall however is doubted by many, though few dared doing so in public, and none to his face. At least, none that saw the next sunrine.[NEWLINE][NEWLINE]--Extract from History of the Confederacy, Tarnat the Ever-Quoted</English>
-		<French>Sirfis' angelic parentage was never in question. Stronger, taller than any amongst the clans, and with physical particularities that make it impossible to deny, Sirfis is of a rare breed, a goblin Aasimar. [NEWLINE]His claim of being the son of Bhall however is doubted by many, though few dared doing so in public, and none to his face. At least, none that saw the next sunrine.[NEWLINE][NEWLINE]--Extract from History of the Confederacy, Tarnat the Ever-Quoted</French>
-		<German>Sirfis' angelic parentage was never in question. Stronger, taller than any amongst the clans, and with physical particularities that make it impossible to deny, Sirfis is of a rare breed, a goblin Aasimar. [NEWLINE]His claim of being the son of Bhall however is doubted by many, though few dared doing so in public, and none to his face. At least, none that saw the next sunrine.[NEWLINE][NEWLINE]--Extract from History of the Confederacy, Tarnat the Ever-Quoted</German>
-		<Italian>Sirfis' angelic parentage was never in question. Stronger, taller than any amongst the clans, and with physical particularities that make it impossible to deny, Sirfis is of a rare breed, a goblin Aasimar. [NEWLINE]His claim of being the son of Bhall however is doubted by many, though few dared doing so in public, and none to his face. At least, none that saw the next sunrine.[NEWLINE][NEWLINE]--Extract from History of the Confederacy, Tarnat the Ever-Quoted</Italian>
-		<Spanish>Sirfis' angelic parentage was never in question. Stronger, taller than any amongst the clans, and with physical particularities that make it impossible to deny, Sirfis is of a rare breed, a goblin Aasimar. [NEWLINE]His claim of being the son of Bhall however is doubted by many, though few dared doing so in public, and none to his face. At least, none that saw the next sunrine.[NEWLINE][NEWLINE]--Extract from History of the Confederacy, Tarnat the Ever-Quoted</Spanish>
+		<English>Sirfis' angelic parentage was never in question. Stronger, taller than any amongst the clans, and with physical particularities that make it impossible to deny, Sirfis is of a rare breed, a goblin Aasimar. [NEWLINE]His claim of being the son of Bhall however is doubted by many, though few dared doing so in public, and none to his face. At least, none that saw the next sunrise.[NEWLINE][NEWLINE]--Extract from History of the Confederacy, Tarnat the Ever-Quoted</English>
+		<French>Sirfis' angelic parentage was never in question. Stronger, taller than any amongst the clans, and with physical particularities that make it impossible to deny, Sirfis is of a rare breed, a goblin Aasimar. [NEWLINE]His claim of being the son of Bhall however is doubted by many, though few dared doing so in public, and none to his face. At least, none that saw the next sunrise.[NEWLINE][NEWLINE]--Extract from History of the Confederacy, Tarnat the Ever-Quoted</French>
+		<German>Sirfis' angelic parentage was never in question. Stronger, taller than any amongst the clans, and with physical particularities that make it impossible to deny, Sirfis is of a rare breed, a goblin Aasimar. [NEWLINE]His claim of being the son of Bhall however is doubted by many, though few dared doing so in public, and none to his face. At least, none that saw the next sunrise.[NEWLINE][NEWLINE]--Extract from History of the Confederacy, Tarnat the Ever-Quoted</German>
+		<Italian>Sirfis' angelic parentage was never in question. Stronger, taller than any amongst the clans, and with physical particularities that make it impossible to deny, Sirfis is of a rare breed, a goblin Aasimar. [NEWLINE]His claim of being the son of Bhall however is doubted by many, though few dared doing so in public, and none to his face. At least, none that saw the next sunrise.[NEWLINE][NEWLINE]--Extract from History of the Confederacy, Tarnat the Ever-Quoted</Italian>
+		<Spanish>Sirfis' angelic parentage was never in question. Stronger, taller than any amongst the clans, and with physical particularities that make it impossible to deny, Sirfis is of a rare breed, a goblin Aasimar. [NEWLINE]His claim of being the son of Bhall however is doubted by many, though few dared doing so in public, and none to his face. At least, none that saw the next sunrise.[NEWLINE][NEWLINE]--Extract from History of the Confederacy, Tarnat the Ever-Quoted</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_SAPPER_BOOM</Tag>
@@ -10914,28 +10914,28 @@ Exposure to others minds often causes befuddlement or confusion in the practitio
 		<Spanish>[ICON_BULLET]Affects up to %d1 units in the targeted tile.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<Tag>TXT_KEY_AFFINITY_HYDROMANCER</Tag>
+		<English>Hydromancer Affinity</English>
+		<French>Hydromancer Affinity</French>
+		<German>Hydromancer Affinity</German>
+		<Italian>Hydromancer Affinity</Italian>
+		<Spanish>Hydromancer Affinity</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<Tag>TXT_KEY_CITYCLASS_SAUROS_CUALLI</Tag>
+		<English>Cualli City of Fire and Blood</English>
+		<French>Cualli City of Fire and Blood</French>
+		<German>Cualli City of Fire and Blood</German>
+		<Italian>Cualli City of Fire and Blood</Italian>
+		<Spanish>Cualli City of Fire and Blood</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<Tag>TXT_KEY_CITYCLASS_SAUROS_CLAN</Tag>
+		<English>Ember City of Fire and Blood</English>
+		<French>Ember City of Fire and Blood</French>
+		<German>Ember City of Fire and Blood</German>
+		<Italian>Ember City of Fire and Blood</Italian>
+		<Spanish>Ember City of Fire and Blood</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>

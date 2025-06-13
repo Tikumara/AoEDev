@@ -792,6 +792,7 @@ void SpellBonuses::read(FDataStreamBase* pStream)
 	pStream->Read(&iExtraMaxDamage);
 	pStream->Read(&iExtraNumTargets);
 	pStream->Read(&iExtraTargetRange);
+	pStream->Read(&bExtraImmuneTeam);
 }
 
 void SpellBonuses::write(FDataStreamBase* pStream)
@@ -802,6 +803,7 @@ void SpellBonuses::write(FDataStreamBase* pStream)
 	pStream->Write(iExtraMaxDamage);
 	pStream->Write(iExtraNumTargets);
 	pStream->Write(iExtraTargetRange);
+	pStream->Write(bExtraImmuneTeam);
 }
 
 bool SpellBonuses::compare(SpellBonuses cbTemp)
@@ -813,6 +815,7 @@ bool SpellBonuses::compare(SpellBonuses cbTemp)
 	else if (iExtraMaxDamage != cbTemp.iExtraMaxDamage) bSame = false;
 	else if (iExtraNumTargets != cbTemp.iExtraNumTargets) bSame = false;
 	else if (iExtraTargetRange != cbTemp.iExtraTargetRange) bSame = false;
+	else if (bExtraImmuneTeam != cbTemp.bExtraImmuneTeam) bSame = false;
 	return bSame;
 }
 void SpellUpgradeData::read(FDataStreamBase* pStream)

@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Unit Infos -->
+<Civ4UnitInfos xmlns="x-schema:MRSTM_CIV4UnitSchema.xml">
+	<UnitInfos>
+	<!--T1 Unique Units -->
+		<UnitInfo>        <!-- Duskbringer -->
+			<Type>UNIT_DUSKBRINGER</Type>
+			<iMagicalPower></iMagicalPower>
+		</UnitInfo>
+	<!--T2 Units -->
+		<UnitInfo>        <!-- Adept -->          
+			<Type>UNIT_ADEPT</Type>
+			<iMagicalPower>50</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Shaman -->
+			<Type>UNIT_SHAMAN</Type>
+			<iMagicalPower>50</iMagicalPower>
+		</UnitInfo>
+	<!--T2 Unique Units -->
+		<UnitInfo>        <!-- Apprentice --> 
+			<Type>UNIT_APPRENTICE</Type>
+			<iMagicalPower>80</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Imp -->
+			<Type>UNIT_IMP</Type>
+			<iMagicalPower>50</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Binder -->
+			<Type>UNIT_BINDER</Type>
+			<iMagicalPower>30</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Frostling Shaman --> 
+			<Type>UNIT_FROSTLING_SHAMAN</Type>
+			<iMagicalPower>30</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>		<!-- Muris Clan Adept -->
+			<Type>UNIT_ADEPT_MURIS_CLAN</Type>
+			<iMagicalPower>50</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>		<!-- Scorpion Clan Adept -->
+			<Type>UNIT_ADEPT_SCORPION_CLAN</Type>
+			<iMagicalPower>50</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>		  <!-- Lukos Clan Adept -->
+			<Type>UNIT_ADEPT_LUKOS_CLAN</Type>
+			<iMagicalPower>50</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>		  <!-- Neith Clan Adept -->
+			<Class>UNITCLASS_ADEPT</Class>
+			<Type>UNIT_ADEPT_NEITH_CLAN</Type>
+			<iMagicalPower>60</iMagicalPower>
+		</UnitInfo>
+	<!--T2 Heroes -->
+		<UnitInfo>        <!-- Alcinus -->
+			<Type>UNIT_ALCINUS</Type>
+			<iMagicalPower>100</iMagicalPower>
+		</UnitInfo>
+	
+	<!--T3 Units -->
+		<UnitInfo>        <!-- Mage -->
+			<Type>UNIT_MAGE</Type>
+			<iMagicalPower>150</iMagicalPower>
+		</UnitInfo>
+	<!--T3 Unique Units -->		
+	<UnitInfo>        <!-- Tower Mage -->
+			<Type>UNIT_TOWER_MAGE</Type>
+			<iMagicalPower>150</iMagicalPower>
+		</UnitInfo>		
+		<UnitInfo>        <!-- Wizard -->
+			<Type>UNIT_WIZARD</Type>
+			<iMagicalPower>200</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Necromancer -->
+			<Type>UNIT_NECROMANCER</Type>
+			<iMagicalPower>150</iMagicalPower>
+		</UnitInfo>	
+		<UnitInfo>        <!-- Mobius Witch -->
+			<Type>UNIT_MOBIUS_WITCH</Type>	
+			<iMagicalPower>200</iMagicalPower>
+		</UnitInfo>	
+		<UnitInfo>        <!-- Illusionist -->
+			<Type>UNIT_ILLUSIONIST</Type>
+			<iMagicalPower>150</iMagicalPower>
+		</UnitInfo>			
+		<UnitInfo>        <!-- Ascendant -->
+			<Type>UNIT_ASCENDANT</Type>
+			<iMagicalPower>150</iMagicalPower>
+		</UnitInfo>	
+		<UnitInfo>        <!-- Shaper -->
+			<Type>UNIT_SHAPER</Type>
+			<iMagicalPower>150</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Chosen of D'Tesh -->
+			<Type>UNIT_CHOSEN_DTESH</Type>	
+			<iMagicalPower>120</iMagicalPower>
+		</UnitInfo>	
+		<UnitInfo>        <!-- Teopixki -->  
+			<Type>UNIT_TEOPIXKI</Type>	
+			<iMagicalPower>150</iMagicalPower>
+		</UnitInfo>	
+		<UnitInfo>        <!-- Skald --> 
+			<Type>UNIT_SKALD</Type>
+			<iMagicalPower>150</iMagicalPower>
+		</UnitInfo>	
+	<!--T3 Heroes -->
+		<UnitInfo>        <!-- Alcinus  Upgraded-->
+			<Type>UNIT_ALCINUS_UPGRADED</Type>
+			<iMagicalPower>220</iMagicalPower>
+		</UnitInfo>		
+		<UnitInfo>        <!-- Gaelan -->
+			<Type>UNIT_GAELAN</Type>
+			<iMagicalPower>220</iMagicalPower>
+		</UnitInfo>		
+		<UnitInfo>        <!-- Mokka -->
+			<Type>UNIT_MOKKA</Type>
+			<iMagicalPower>200</iMagicalPower>
+		</UnitInfo>		
+	<!--T4 Units -->
+		<UnitInfo>        <!-- Archmage -->
+			<Type>UNIT_ARCHMAGE</Type>
+			<iMagicalPower>300</iMagicalPower>
+		</UnitInfo>		
+		<UnitInfo>        <!-- Lich -->
+			<Type>UNIT_LICH</Type>
+			<iMagicalPower>0</iMagicalPower>
+		</UnitInfo>		
+	<!--T4 Unique Units -->
+		<UnitInfo>        <!-- Battlemage -->
+			<Type>UNIT_BATTLEMAGE</Type>
+			<iMagicalPower>400</iMagicalPower>
+		</UnitInfo>		
+		<UnitInfo>        <!-- Wraith Lord -->
+			<Type>UNIT_WRAITH_LORD</Type>
+			<iMagicalPower>350</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Eater of Dreams -->
+			<Type>UNIT_EATER_OF_DREAMS</Type>
+			<iMagicalPower>400</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- High Mage -->
+			<Type>UNIT_HIGHMAGE</Type>
+			<iMagicalPower>350</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Council of Eight -->
+			<Type>UNIT_COUNCIL_EIGHT</Type>
+			<iMagicalPower>300</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Swanmay -->
+			<Type>UNIT_SWANMAY</Type>
+			<iMagicalPower>300</iMagicalPower>
+		</UnitInfo>
+	<!--T4 Heroes -->
+		<UnitInfo>        <!-- Alcinus  Archmage-->
+			<Type>UNIT_ALCINUS_ARCHMAGE</Type>
+			<iMagicalPower>450</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Barbatos-->
+			<Type>UNIT_BARBATOS</Type>
+			<iMagicalPower>450</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Corlindale-->
+			<Type>UNIT_CORLINDALE</Type>
+			<iMagicalPower>450</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Gaelan Archmage -->
+			<Type>UNIT_GAELAN_ARCHMAGE</Type>
+			<iMagicalPower>450</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Gibbon Goetia -->
+			<Type>UNIT_GIBBON</Type>
+			<iMagicalPower>450</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Govannon -->
+			<Type>UNIT_GOVANNON</Type>
+			<iMagicalPower>450</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Hemah -->
+			<Type>UNIT_HEMAH</Type>
+			<iMagicalPower>450</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Kahd -->
+			<Type>UNIT_KAHD</Type>
+			<iMagicalPower>450</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Lord D'Tesh 50-->
+			<Type>UNIT_DTESH</Type>
+			<iMagicalPower>450</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Meshwaki 60-->
+			<Type>UNIT_MESKWAKI</Type>
+			<iMagicalPower>450</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Corgayle Ascended -->
+			<Type>UNIT_CORGAYLE_ASCENDED</Type>
+			<iMagicalPower>450</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>        <!-- Waldrun-->
+			<Type>UNIT_WALDRUN</Type>
+			<iMagicalPower>450</iMagicalPower>
+		</UnitInfo>
+		<UnitInfo>		<!--Judecca-->
+			<Type>UNIT_JUDECCA</Type>
+			<iMagicalPower>450</iMagicalPower>
+		</UnitInfo>
+</UnitInfos>
+</Civ4UnitInfos>

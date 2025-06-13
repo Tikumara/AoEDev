@@ -94,6 +94,14 @@
 		<Spanish>[NEWLINE][ICON_BULLET]Leader cannot adopt a state religion[NEWLINE][ICON_BULLET]Reduces the chance religions will spread to the leader's cities</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_TRAIT_AMPHIBIAN_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]Leader can found cities on water tiles.</English>
+		<French>[NEWLINE][ICON_BULLET]Leader can found cities on water tiles.</French>
+		<German>[NEWLINE][ICON_BULLET]Leader can found cities on water tiles.</German>
+		<Italian>[NEWLINE][ICON_BULLET]Leader can found cities on water tiles.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Leader can found cities on water tiles.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_EVENT_ADD_AGGRESSIVE_TRAIT</Tag>
 		<English>Gain the Aggressive Trait.</English>
 		<French>Obtenir le trait Aggressif.</French>

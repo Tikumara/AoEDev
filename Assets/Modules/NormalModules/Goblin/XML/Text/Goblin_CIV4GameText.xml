@@ -393,4 +393,52 @@ Author - Kantolin</Spanish>
 		<Italian>If the Muris cannot do their job, punish them as has happened to  others who have fallen behind.  They won't be happy with this, but I cannot play favorites.</Italian>
 		<Spanish>If the Muris cannot do their job, punish them as has happened to  others who have fallen behind.  They won't be happy with this, but I cannot play favorites.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITYCLASS_SCORPION</Tag>
+		<English>City of the Scorpion Clan</English>
+		<French>City of the Scorpion Clan</French>
+		<German>City of the Scorpion Clan</German>
+		<Italian>City of the Scorpion Clan</Italian>
+		<Spanish>City of the Scorpion Clan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITYCLASS_MURIS</Tag>
+		<English>City of the Muris Clan</English>
+		<French>City of the Muris Clan</French>
+		<German>City of the Muris Clan</German>
+		<Italian>City of the Muris Clan</Italian>
+		<Spanish>City of the Muris Clan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITYCLASS_MURIS_PEDIA</Tag>
+		<English>As all know, the Muris Clan was an early supporter of the Confederacy, and was rewarded for its loyalty with the control of large urban territories. While a fine political move, it was reviled by my colleagues studying urban planning. Indeed, the Muris' idea of architecture is a bunch of felled trees cobbled together, and their understanding of hygiene is whatever makes their rodent hordes thrive. i've long held the belief it's why they make the best scouts in the Confederacy. The wilderness is vastly preferable to sitting at home when home is in a Muris City.[NEWLINE][NEWLINE]--Extract from History of the Confederacy, Tarnat the Ever-Quoted</English>
+		<French>As all know, the Muris Clan was an early supporter of the Confederacy, and was rewarded for its loyalty with the control of large urban territories. While a fine political move, it was reviled by my colleagues studying urban planning. Indeed, the Muris' idea of architecture is a bunch of felled trees cobbled together, and their understanding of hygiene is whatever makes their rodent hordes thrive. i've long held the belief it's why they make the best scouts in the Confederacy. The wilderness is vastly preferable to sitting at home when home is in a Muris City.[NEWLINE][NEWLINE]--Extract from History of the Confederacy, Tarnat the Ever-Quoted</French>
+		<German>As all know, the Muris Clan was an early supporter of the Confederacy, and was rewarded for its loyalty with the control of large urban territories. While a fine political move, it was reviled by my colleagues studying urban planning. Indeed, the Muris' idea of architecture is a bunch of felled trees cobbled together, and their understanding of hygiene is whatever makes their rodent hordes thrive. i've long held the belief it's why they make the best scouts in the Confederacy. The wilderness is vastly preferable to sitting at home when home is in a Muris City.[NEWLINE][NEWLINE]--Extract from History of the Confederacy, Tarnat the Ever-Quoted</German>
+		<Italian>As all know, the Muris Clan was an early supporter of the Confederacy, and was rewarded for its loyalty with the control of large urban territories. While a fine political move, it was reviled by my colleagues studying urban planning. Indeed, the Muris' idea of architecture is a bunch of felled trees cobbled together, and their understanding of hygiene is whatever makes their rodent hordes thrive. i've long held the belief it's why they make the best scouts in the Confederacy. The wilderness is vastly preferable to sitting at home when home is in a Muris City.[NEWLINE][NEWLINE]--Extract from History of the Confederacy, Tarnat the Ever-Quoted</Italian>
+		<Spanish>As all know, the Muris Clan was an early supporter of the Confederacy, and was rewarded for its loyalty with the control of large urban territories. While a fine political move, it was reviled by my colleagues studying urban planning. Indeed, the Muris' idea of architecture is a bunch of felled trees cobbled together, and their understanding of hygiene is whatever makes their rodent hordes thrive. i've long held the belief it's why they make the best scouts in the Confederacy. The wilderness is vastly preferable to sitting at home when home is in a Muris City.[NEWLINE][NEWLINE]--Extract from History of the Confederacy, Tarnat the Ever-Quoted</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITYCLASS_LUKOS</Tag>
+		<English>City of the Lukos Clan</English>
+		<French>City of the Lukos Clan</French>
+		<German>City of the Lukos Clan</German>
+		<Italian>City of the Lukos Clan</Italian>
+		<Spanish>City of the Lukos Clan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITYCLASS_NEITH</Tag>
+		<English>City of the Neith Clan</English>
+		<French>City of the Neith Clan</French>
+		<German>City of the Neith Clan</German>
+		<Italian>City of the Neith Clan</Italian>
+		<Spanish>City of the Neith Clan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITYCLASS_UNITED</Tag>
+		<English>City of the United Chimarese Confederation</English>
+		<French>City of the United Chimarese Confederation</French>
+		<German>City of the United Chimarese Confederation</German>
+		<Italian>City of the United Chimarese Confederation</Italian>
+		<Spanish>City of the United Chimarese Confederation</Spanish>
+	</TEXT>
 </Civ4GameText>

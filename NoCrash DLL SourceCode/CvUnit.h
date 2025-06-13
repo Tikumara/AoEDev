@@ -1446,7 +1446,7 @@ public:
 	//TargetedSpell 0924 blackimp
 	SpellUpgradeData getSpellData(int spell);
 	int getSpellTargetRange(int spell);
-
+	bool isSpellImmuneTeam(int spell);
 	int getSpellDefenderValue(CvUnit* pLoopUnit, CvPlot* pTargetplot, int iDmgType) const;
 
 	void cast(int spell, CvPlot* pTargetPlot = NULL);
@@ -1488,6 +1488,7 @@ public:
 	void changeBaseCombatStr(int iChange);
 	void changeBaseCombatStrDefense(int iChange);
 	int chooseSpell();
+	CvPlot* chooseSpellTarget(int ispell);
 	int getExtraSpellMove() const;
 	void doDamage(int iDmg, int iDmgLimit, CvUnit* pAttacker, int iDmgType, bool bStartWar);
 /*************************************************************************************************/

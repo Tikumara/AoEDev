@@ -1780,4 +1780,12 @@
 		<Italian>[ICON_BULLET]Nessun costo di manutenzione da Corporazioni</Italian>
 		<Spanish>[ICON_BULLET]Sin costes de mantenimiento de las corporaciones</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAITCOUNTER_ONCE</Tag>
+		<English>[SPACE]Once per Game</English>
+		<French>[SPACE]Once per Game</French>
+		<German>[SPACE]Once per Game</German>
+		<Italian>[SPACE]Once per Game</Italian>
+		<Spanish>[SPACE]Once per Game</Spanish>
+	</TEXT>
 </Civ4GameText>

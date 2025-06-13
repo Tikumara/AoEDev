@@ -24270,6 +24270,31 @@ int CvUnit::getSpellTargetRange(int spell)
 	}
 	return iTargetRange;
 }
+bool CvUnit::isSpellImmuneTeam(int spell)
+{
+	int iMagicalPower = getSpellMagicalPower(spell);
+	int iExtraPower = iMagicalPower - GC.getSpellInfo((SpellTypes)spell).getMagicalPowerPrereq();
+	int iTargetRange = GC.getSpellInfo((SpellTypes)spell).getTargetRange();
+	SpellBonuses bonus;
+	int iNumBonusApplications = 0;
+	//Applying Spell Bonuses
+	for (int iI = 0; iI < GC.getSpellInfo((SpellTypes)spell).getNumSpellBonuses(); iI++)
+	{
+	
+		bonus = GC.getSpellInfo((SpellTypes)spell).getSpellBonus(iI);
+		if (bonus.bExtraImmuneTeam)
+		{
+			iNumBonusApplications = 0;
+			if (bonus.iPrereqExtraPower > 0)
+				iNumBonusApplications = std::min((iExtraPower / (bonus.iPrereqExtraPower)), bonus.iMaxApplications);
+			if (iNumBonusApplications > 0)
+			{
+				return true;
+			}
+		}
+	}
+	return false;
+}
 bool CvUnit::canCastTargetPlot(int spell, bool bTestVisible, CvPlot* pTargetPlot) const
 {
 	SpellTypes eSpell = (SpellTypes)spell;
@@ -25804,9 +25829,9 @@ void CvUnit::castDamage(int spell, CvPlot* pTargetPlot)
 								if (GC.getSpellInfo((SpellTypes)spell).getNumTargetPromotionsPrereq() > 0)
 								{
 									bValid = false;
-									for (int i = 0; i < GC.getSpellInfo((SpellTypes)spell).getNumTargetPromotionsPrereq(); i++)
+									for (int k = 0; k < GC.getSpellInfo((SpellTypes)spell).getNumTargetPromotionsPrereq(); k++)
 									{
-										if (pLoopUnit->isHasPromotion((PromotionTypes)GC.getSpellInfo((SpellTypes)spell).getTargetPromotionPrereq(i)))
+										if (pLoopUnit->isHasPromotion((PromotionTypes)GC.getSpellInfo((SpellTypes)spell).getTargetPromotionPrereq(k)))
 										{
 												bValid = true;
 												break;
@@ -25830,73 +25855,74 @@ void CvUnit::castDamage(int spell, CvPlot* pTargetPlot)
 							}
 						}
 					}
-				}
-				else
-				{
-					int iUnitsOnPlot = pLoopPlot->getNumUnits();
-					int iValue;
-					int iBestValue = 0;
-					int iBestUnitCounter = -1;
-					CvUnit* pBestUnit = NULL;
-					int iNumUnitsHit = 0;
-
-					bUnitHit = new bool[iUnitsOnPlot];
-
-					for (int i = 0; i < iUnitsOnPlot; i++)
+					else
 					{
-						bUnitHit[i] = false;
-					}
+						int iUnitsOnPlot = pLoopPlot->getNumUnits();
+						int iValue;
+						int iBestValue = 0;
+						int iBestUnitCounter = -1;
+						CvUnit* pBestUnit = NULL;
+						int iNumUnitsHit = 0;
 
-					for (int iI = 0; iI < std::min(iUnitsOnPlot, iNumTargets); iI++)
-					{
-						pUnitNode = pLoopPlot->headUnitNode();
-						int iCounter = -1;
-						iBestValue = 0;
-						pBestUnit = NULL;
-						while (pUnitNode != NULL)
+						bUnitHit = new bool[iUnitsOnPlot];
+
+						for (int k = 0; k < iUnitsOnPlot; k++)
 						{
-							iCounter++; // Start at 0
-							pLoopUnit = ::getUnit(pUnitNode->m_data);
-							pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
-							if (GC.getSpellInfo((SpellTypes)spell).getNumTargetPromotionsPrereq() > 0)
+							bUnitHit[k] = false;
+						}
+
+						for (int iI = 0; iI < std::min(iUnitsOnPlot, iNumTargets); iI++)
+						{
+							pUnitNode = pLoopPlot->headUnitNode();
+							int iCounter = -1;
+							iBestValue = 0;
+							pBestUnit = NULL;
+							while (pUnitNode != NULL)
 							{
-								bValid = false;
-								for (int i = 0; i < GC.getSpellInfo((SpellTypes)spell).getNumTargetPromotionsPrereq(); i++)
+								iCounter++; // Start at 0
+								pLoopUnit = ::getUnit(pUnitNode->m_data);
+								pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+								if (GC.getSpellInfo((SpellTypes)spell).getNumTargetPromotionsPrereq() > 0)
 								{
-									if (pLoopUnit->isHasPromotion((PromotionTypes)GC.getSpellInfo((SpellTypes)spell).getTargetPromotionPrereq(i)))
+									bValid = false;
+									for (int k = 0; k < GC.getSpellInfo((SpellTypes)spell).getNumTargetPromotionsPrereq(); k++)
 									{
-										bValid = true;
-										break;
+										if (pLoopUnit->isHasPromotion((PromotionTypes)GC.getSpellInfo((SpellTypes)spell).getTargetPromotionPrereq(k)))
+										{
+											bValid = true;
+											break;
+										}
 									}
 								}
-							}
-							if (bValid && !pLoopUnit->isImmuneToSpell(this, spell))
-							{
-								if (GC.getSpellInfo((SpellTypes)spell).isCausesWar() || GET_TEAM(getTeam()).isAtWar(pLoopUnit->getTeam()))
+								if (bValid && !pLoopUnit->isImmuneToSpell(this, spell))
 								{
-									if (!bUnitHit[iCounter])
+									if (GC.getSpellInfo((SpellTypes)spell).isCausesWar() || GET_TEAM(getTeam()).isAtWar(pLoopUnit->getTeam()))
 									{
-										iValue = getSpellDefenderValue(pLoopUnit, pLoopPlot, iDmgType);
-									
-										if (iValue > iBestValue)
+										if (!bUnitHit[iCounter])
 										{
-											iBestValue = iValue;
-											pBestUnit = pLoopUnit;
-											iBestUnitCounter = iCounter;
+											iValue = getSpellDefenderValue(pLoopUnit, pLoopPlot, iDmgType);
+
+											if (iValue > iBestValue)
+											{
+												iBestValue = iValue;
+												pBestUnit = pLoopUnit;
+												iBestUnitCounter = iCounter;
+											}
 										}
 									}
 								}
 							}
+							if (pBestUnit != NULL)
+							{
+								pBestUnit->doDamage(iDmg, iDmgLimit, this, iDmgType, true);
+								bUnitHit[iBestUnitCounter] = true;
+							}
 						}
-						if (pBestUnit != NULL)
-						{
-							pBestUnit->doDamage(iDmg, iDmgLimit, this, iDmgType, true);		
-							bUnitHit[iBestUnitCounter] = true;
-						}
-					}
-					SAFE_DELETE_ARRAY(bUnitHit);
+						SAFE_DELETE_ARRAY(bUnitHit);
 
+					}
 				}
+				
 			}
 		}
 	}
@@ -26389,7 +26415,7 @@ bool CvUnit::isImmuneToSpell(CvUnit* pCaster, int spell) const
 			return true;
 		}
 	}
-	if (GC.getSpellInfo((SpellTypes)spell).isImmuneTeam())
+	if (GC.getSpellInfo((SpellTypes)spell).isImmuneTeam() || pCaster->isSpellImmuneTeam(spell))
 	{
 		if (getTeam() == pCaster->getTeam())
 		{
@@ -26423,6 +26449,13 @@ bool CvUnit::isImmuneToSpell(CvUnit* pCaster, int spell) const
 	if (GC.getSpellInfo((SpellTypes)spell).isImmuneNotAlive())
 	{
 		if (!isAlive())
+		{
+			return true;
+		}
+	}
+	if (GC.getSpellInfo((SpellTypes)spell).isTargetSummon())
+	{
+		if (getSummoner()==-1)
 		{
 			return true;
 		}
@@ -26476,6 +26509,13 @@ bool CvUnit::isImmuneToSpell(CvCity* pCaster, int spell) const
 	if (GC.getSpellInfo((SpellTypes)spell).isImmuneNotAlive())
 	{
 		if (!isAlive())
+		{
+			return true;
+		}
+	}
+	if (GC.getSpellInfo((SpellTypes)spell).isTargetSummon())
+	{
+		if (getSummoner()==-1)
 		{
 			return true;
 		}
@@ -27681,7 +27721,7 @@ int CvUnit::chooseSpell()
 		iValue = 0;
 		if (canCast(iSpell, false))
 		{
-			iRange = GC.getSpellInfo((SpellTypes)iSpell).getRange();
+			iRange = std::max(GC.getSpellInfo((SpellTypes)iSpell).getTargetRange(),GC.getSpellInfo((SpellTypes)iSpell).getRange());
 			if (GC.getSpellInfo((SpellTypes)iSpell).getCreateUnitType() != NO_UNIT)
 			{
 				int iMoveRange = GC.getUnitInfo((UnitTypes)GC.getSpellInfo((SpellTypes)iSpell).getCreateUnitType()).getMoves() + getExtraSpellMove();
@@ -27924,6 +27964,31 @@ int CvUnit::chooseSpell()
 	return iBestSpell;
 }
 
+CvPlot* CvUnit::chooseSpellTarget(int iSpell)
+{
+	CvPlot* pBestPlot;
+	int iBestValue=-1;
+	int iLoopValue = 0;
+	int iRange = getSpellTargetRange(iSpell);//GC.getSpellInfo(eSpell).getTargetRange();// + getSpellExtraRange();
+	int iDX, iDY;
+	for (iDX = -(iRange); iDX <= iRange; iDX++)
+	{
+		for (iDY = -(iRange); iDY <= iRange; iDY++)
+		{
+			CvPlot* pTargetLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
+			iLoopValue = GC.getGameINLINE().getSorenRandNum(100, "Target spell Choice");
+			if (pTargetLoopPlot != NULL && canSpellTargetPlot(pTargetLoopPlot, iSpell))
+			{
+				if (iLoopValue>iBestValue)
+				{
+					iBestValue = iLoopValue;
+					pBestPlot = pTargetLoopPlot;
+				}
+			}
+		}
+	}
+	return pBestPlot;
+}
 int CvUnit::getExtraSpellMove() const
 {
 	int iCount = 0;
@@ -28921,6 +28986,12 @@ void CvUnit::updateAffinity(bool bKill)
 				{
 					changeSlaveGenerationChance((int)(fValue * fOldApplications));
 					changeSlaveGenerationChance((int)(fValue * fApplications));
+				}
+				fValue = kAffinity.getWillpower();
+				if (fValue != 0.00f)
+				{
+					changeExtraMagicalPower((int)(fValue * fOldApplications));
+					changeExtraMagicalPower((int)(fValue * fApplications));
 				}
 				fValue = kAffinity.getCombatHealPercent();
 				if (fValue != 0.00f)

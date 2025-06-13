@@ -2182,7 +2182,7 @@
 	<ElementType name="fDefensiveStrikeDamage" content="textOnly" dt:type="float"/>
 	<ElementType name="fAntiDefensiveStrikes" content="textOnly" dt:type="float"/>
 	<ElementType name="fCapacity" content="textOnly" dt:type="float"/>
-	<ElementType name="fWillpower" content="textOnly" dt:type="float"/>
+	<ElementType name="fPower" content="textOnly" dt:type="float"/>
 	<ElementType name="fWithdrawal" content="textOnly" dt:type="float"/>
 	<ElementType name="fAntiWithdrawal" content="textOnly" dt:type="float"/>
 	<ElementType name="fHealRate" content="textOnly" dt:type="float"/>
@@ -2253,7 +2253,7 @@
 		<element type="fDefensiveStrikeDamage"/>
 		<element type="fAntiDefensiveStrikes"/>
 		<element type="fCapacity"/>
-		<element type="fWillpower"/>
+		<element type="fPower"/>
 		<element type="fWithdrawal"/>
 		<element type="fAntiWithdrawal"/>
 		<element type="fHealRate"/>
