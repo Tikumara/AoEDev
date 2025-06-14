@@ -2825,6 +2825,10 @@
 					<UnitType>UNIT_SLUGA_COMMANDER_V2</UnitType>
 				</ExtraUnitClass>
 				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_BATTLE_SLUGA_V2</UnitClassType>
+					<UnitType>UNIT_BATTLE_SLUGA_V2</UnitType>
+				</ExtraUnitClass>
+				<ExtraUnitClass>
 					<UnitClassType>UNITCLASS_WAR_SLUGA_V2</UnitClassType>
 					<UnitType>UNIT_WAR_SLUGA_V2</UnitType>
 				</ExtraUnitClass>

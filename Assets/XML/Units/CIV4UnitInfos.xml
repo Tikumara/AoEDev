@@ -30600,6 +30600,9 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<UnitClassUpgrades>
+				<UnitClassUpgradeType>UNITCLASS_BATTLE_SLUGA_V2</UnitClassUpgradeType>
+			</UnitClassUpgrades>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMoves>2</iMoves>
 			<iWorkRate>0</iWorkRate>
