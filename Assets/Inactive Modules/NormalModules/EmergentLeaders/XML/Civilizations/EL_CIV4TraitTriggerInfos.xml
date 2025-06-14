@@ -86,7 +86,7 @@
 			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Summon Wraith                             Incorporeal -->
-			<Type>TRAITTRIGGER_CAST_RAISE_SKELETON_EL</Type>
+			<Type>TRAITTRIGGER_CAST_SUMMON_WRAITH_EL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
@@ -99,7 +99,7 @@
 			<PrereqSpellType>SPELL_SUMMON_WRAITH</PrereqSpellType>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Summon Mistform                          Incorporeal -->
-			<Type>TRAITTRIGGER_CAST_RAISE_SKELETON_EL</Type>
+			<Type>TRAITTRIGGER_CAST_SUMMON_MISTFORM_EL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_INCORPOREAL</TraitType>
