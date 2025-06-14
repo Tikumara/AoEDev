@@ -4973,7 +4973,7 @@
 			<PrereqTech>TECH_FANATICISM</PrereqTech>
 			<TraitHookType>TRAITHOOK_TECH</TraitHookType>	
 		</TraitTriggerInfo>
-				<TraitTriggerInfo> <!-- Tech                Sorcery	                                	Craftmaster -->
+		<TraitTriggerInfo> <!-- Tech                Sorcery	                                	Craftmaster -->
 			<Type>TRAITTRIGGER_TECH_SORCERY</Type>
 			<CounterChanges>
 				<CounterChange>
