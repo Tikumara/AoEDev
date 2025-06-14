@@ -6,8 +6,8 @@
 <!-- Spell Infos -->
 <Civ4SpellInfos xmlns="x-schema:ViciousSeas_CIV4UnitSpellSchema.xml">
 	<SpellInfos>
-		<SpellInfo>			<!-- Sinkeng City fort spell -->
-			<Type>SPELL_SUNKEN_CITY</Type>
+    <!-- <SpellInfo> -->			<!-- Sinkeng City fort spell -->
+    <!-- <Type>SPELL_SUNKEN_CITY</Type>
 			<Description>TXT_KEY_SUNKEN_CITY</Description>
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
 			<Help>TXT_KEY_SPELL_SUNKEN_CITY_HELP</Help>
@@ -23,7 +23,7 @@
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_DESTROY_UNDEAD</Sound>
 			<Button>Art/Interface/Buttons/Projects/PrepareExpedition.dds</Button>
-		</SpellInfo>
+		</SpellInfo> -->
 		<SpellInfo>			<!-- Plant kelp for Bezeri -->
 			<Type>SPELL_PLANT_KELP_BEZERI</Type>
 			<Description>TXT_KEY_SPELL_PLANT_KELP</Description>
