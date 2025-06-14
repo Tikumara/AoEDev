@@ -91,6 +91,7 @@
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
 			</FreePromotionUnitCombats>
+			<bAmphibian>1</bAmphibian>
 		</TraitInfo>
 	</TraitInfos> 
 </Civ4TraitInfos>
