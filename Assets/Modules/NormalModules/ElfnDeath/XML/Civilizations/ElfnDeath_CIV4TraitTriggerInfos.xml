@@ -12,46 +12,49 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>25</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			
 			<PrereqImprovementType>IMPROVEMENT_MANA_DEATH</PrereqImprovementType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Build               Shadow Mana                                 Soul Binder, Necromancer,Skiamancer -->
 			<Type>TRAITTRIGGER_BUILD_MANA_SHADOW_ELFNDEATH</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>25</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			
 			<PrereqImprovementType>IMPROVEMENT_MANA_SHADOW</PrereqImprovementType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Raise Skeleton                              Soul Binder, Necromancer -->
 			<Type>TRAITTRIGGER_CAST_RAISE_SKELETON_ELFNDEATH</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			
 			<PrereqSpellType>SPELL_RAISE_SKELETON</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Lichdom                                     Soul Binder, Necromancer -->
 			<Type>TRAITTRIGGER_CAST_LICHDOM_ELFNDEATH</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>500</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -64,7 +67,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
@@ -77,20 +80,21 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>50</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
 			<TraitHookType>TRAITHOOK_CHANGE_RELIGION</TraitHookType>
 			
 			<PrereqReligion>RELIGION_COUNCIL_OF_ESUS</PrereqReligion>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Death 1               Soul Binder, Necromancer -->
 			<Type>TRAITTRIGGER_GAIN_ADEPT_DEATH1_ELFNDEATH</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -104,7 +108,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -118,7 +122,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -132,7 +136,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -147,7 +151,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -162,7 +166,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -177,7 +181,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -192,7 +196,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -207,7 +211,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>150</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -222,7 +226,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>30</iModifier>
+					<iModifier>500</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -232,7 +236,7 @@
 			<PrereqUnitCombatType>UNITCOMBAT_DISCIPLE</PrereqUnitCombatType>
 			<PrereqPromotionType>PROMOTION_COMMAND4</PrereqPromotionType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Gain sluagh         Adept           gains sluagh            Soul Binder, Necromancer,Skiamancer -->
+		<TraitTriggerInfo> <!-- Gain sluagh         Adept           gains sluagh            Soul Binder -->
 			<Type>TRAITTRIGGER_GAIN_A_SLUAGH_ELFNDEATH</Type>
 			<CounterChanges>
 				<CounterChange>
@@ -266,7 +270,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>30</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			
 			</CounterChanges>
@@ -292,7 +296,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>50</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -304,7 +308,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>400</iModifier>
+					<iModifier>600</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -316,7 +320,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -330,7 +334,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -344,20 +348,21 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>12</iModifier>
+					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			
 			<PrereqSpellType>SPELL_SUMMON_SLUAGH</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Capture             Anything captures Anything   		        Dominant -->
 			<Type>TRAITTRIGGER_CAPTURE_SOULS_ELFNDEATH</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SOULBINDER</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>3</iModifier>
 				</CounterChange>
 				
 				

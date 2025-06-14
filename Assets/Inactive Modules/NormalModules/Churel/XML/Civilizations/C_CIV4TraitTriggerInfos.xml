@@ -20,26 +20,64 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_GRAVELEECH</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			
 			<PrereqImprovementType>IMPROVEMENT_MANA_DEATH</PrereqImprovementType>
+			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Cast                Summon Spectre                              Graveleech -->
-			<Type>TRAITTRIGGER_CAST_SUMMON_SPECTRE_CHUREL</Type>
+		<TraitTriggerInfo> <!-- Cast                Raise Skeleton                              Graveleech -->
+			<Type>TRAITTRIGGER_CAST_RAISE_SKELETON</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_GRAVELEECH</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
-				<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
-			
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
+			<PrereqSpellType>SPELL_RAISE_SKELETON</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Cast                Summon Spectre                              Graveleech -->
+			<Type>TRAITTRIGGER_CAST_SUMMON_SPECTRE</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_GRAVELEECH</TraitType>
+					<iModifier>100</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_SUMMON_SPECTRE</PrereqSpellType>
+			<bOncePerPlayer>1</bOncePerPlayer>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Cast                Summon Wraith                               Graveleech -->
+			<Type>TRAITTRIGGER_CAST_SUMMON_WRAITH</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_GRAVELEECH</TraitType>
+					<iModifier>15</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
+			<PrereqSpellType>SPELL_SUMMON_WRAITH</PrereqSpellType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Cast                Lichdom                                     Graveleech -->
+			<Type>TRAITTRIGGER_CAST_LICHDOM</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_GRAVELEECH</TraitType>
+					<iModifier>500</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
+			<PrereqSpellType>SPELL_LICHDOM</PrereqSpellType>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Gain plot           Broken Sepulcher                            Graveleech -->
 			<Type>TRAITTRIGGER_GAIN_PLOT_BROKEN_SEPULCHER_CHUREL</Type>
@@ -59,7 +97,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_GRAVELEECH</TraitType>
-					<iModifier>1</iModifier>
+					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -73,7 +111,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_GRAVELEECH</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -87,7 +125,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_GRAVELEECH</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -115,7 +153,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_GRAVELEECH</TraitType>
-					<iModifier>2</iModifier>
+					<iModifier>1</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
@@ -140,7 +178,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_GRAVELEECH</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
