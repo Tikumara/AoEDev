@@ -18,7 +18,7 @@
 				</GroupUnitClass>
 			</GroupUnitClasses>
 			<PrereqTechANDs>
-				<Tech>TECH_SAILING</Tech>
+				<Tech>TECH_NEVER</Tech>
 			</PrereqTechANDs>
 		</SpawnGroupInfo>
 		<SpawnGroupInfo>	<!--  Galleon -->
@@ -37,7 +37,7 @@
 				</GroupUnitClass>
 			</GroupUnitClasses>
 			<PrereqTechANDs>
-				<Tech>TECH_OPTICS</Tech>
+				<Tech>TECH_NEVER</Tech>
 			</PrereqTechANDs>
 		</SpawnGroupInfo>
 		<SpawnGroupInfo>	<!--  Caravel -->
@@ -52,7 +52,7 @@
 				</GroupUnitClass>
 			</GroupUnitClasses>
 			<PrereqTechANDs>
-				<Tech>TECH_OPTICS</Tech>
+				<Tech>TECH_NEVER</Tech>
 			</PrereqTechANDs>
 		</SpawnGroupInfo>
 		<SpawnGroupInfo>	<!--  Carrack -->
@@ -71,7 +71,7 @@
 				</GroupUnitClass>
 			</GroupUnitClasses>
 			<PrereqTechANDs>
-				<Tech>TECH_OPTICS</Tech>
+				<Tech>TECH_NEVER</Tech>
 			</PrereqTechANDs>
 		</SpawnGroupInfo>
 		<SpawnGroupInfo>	<!--  Privateer -->
@@ -86,7 +86,7 @@
 				</GroupUnitClass>
 			</GroupUnitClasses>
 			<PrereqTechANDs>
-				<Tech>TECH_OPTICS</Tech>
+				<Tech>TECH_NEVER</Tech>
 			</PrereqTechANDs>
 		</SpawnGroupInfo>
 		<SpawnGroupInfo>	<!--  Frigate -->
@@ -105,7 +105,7 @@
 				</GroupUnitClass>
 			</GroupUnitClasses>
 			<PrereqTechANDs>
-				<Tech>TECH_ASTRONOMY</Tech>
+				<Tech>TECH_NEVER</Tech>
 			</PrereqTechANDs>
 		</SpawnGroupInfo>
 		<SpawnGroupInfo>	<!--  Queen of the Line -->
@@ -128,8 +128,7 @@
 				</GroupUnitClass>
 			</GroupUnitClasses>
 			<PrereqTechANDs>
-				<Tech>TECH_ASTRONOMY</Tech>
-				<Tech>TECH_ENGINEERING</Tech>
+				<Tech>TECH_NEVER</Tech>
 			</PrereqTechANDs>
 		</SpawnGroupInfo>
 		<SpawnGroupInfo>	<!--  Arcane Barge --> <!-- Begin random land groups -->
@@ -144,8 +143,7 @@
 				</GroupUnitClass>
 			</GroupUnitClasses> 
 			<PrereqTechANDs>
-				<Tech>TECH_ASTRONOMY</Tech>
-				<Tech>TECH_SORCERY</Tech>
+				<Tech>TECH_NEVER</Tech>
 			</PrereqTechANDs>
 		</SpawnGroupInfo>
 	</SpawnGroupInfos>

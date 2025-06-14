@@ -323,19 +323,27 @@ When they are not currently needed elsewhere, the Temachtiani like to gather in 
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CONQUERORSOFTHESEA_HELP</Tag>
-		<English> - Slay the Leviathan, avenge your people!</English>
-		<French> - Slay the Leviathan, avenge your people!</French>
-		<German> - Slay the Leviathan, avenge your people!</German>
-		<Italian> - Slay the Leviathan, avenge your people!</Italian>
-		<Spanish> - Slay the Leviathan, avenge your people!</Spanish>
+		<English> [NEWLINE][ICON_BULLET]Level 1: Slay the Leviathan, avenge your people![NEWLINE][ICON_BULLET]Level 2: Having learned how to defend themselves, the Bezeri can now use settlers to found cities in the ocean.[NEWLINE][ICON_BULLET]Level 3: The Leviathan is dead! Units gain [LINK=PROMOTION_CONQUERORSOFTHESEA]Conquerors of the Sea[\LINK] +15%[ICON_RESEARCH] +15%[ICON_COMMERCE] +15%[ICON_CULTURE]</English>
+		<French>[NEWLINE][ICON_BULLET]Level 1: Slay the Leviathan, avenge your people![NEWLINE][ICON_BULLET]Level 2: Having learned how to defend themselves, the Bezeri can now use settlers to found cities in the ocean.[NEWLINE][ICON_BULLET]Level 3: The Leviathan is dead! Units gain [LINK=PROMOTION_CONQUERORSOFTHESEA]Conquerors of the Sea[\LINK] +15%[ICON_RESEARCH] +15%[ICON_COMMERCE] +15%[ICON_CULTURE]</French>
+		<German>[NEWLINE][ICON_BULLET]Level 1: Slay the Leviathan, avenge your people![NEWLINE][ICON_BULLET]Level 2: Having learned how to defend themselves, the Bezeri can now use settlers to found cities in the ocean.[NEWLINE][ICON_BULLET]Level 3: The Leviathan is dead! Units gain [LINK=PROMOTION_CONQUERORSOFTHESEA]Conquerors of the Sea[\LINK] +15%[ICON_RESEARCH] +15%[ICON_COMMERCE] +15%[ICON_CULTURE]</German>
+		<Italian>[NEWLINE][ICON_BULLET]Level 1: Slay the Leviathan, avenge your people![NEWLINE][ICON_BULLET]Level 2: Having learned how to defend themselves, the Bezeri can now use settlers to found cities in the ocean.[NEWLINE][ICON_BULLET]Level 3: The Leviathan is dead! Units gain [LINK=PROMOTION_CONQUERORSOFTHESEA]Conquerors of the Sea[\LINK] +15%[ICON_RESEARCH] +15%[ICON_COMMERCE] +15%[ICON_CULTURE]</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Level 1: Slay the Leviathan, avenge your people![NEWLINE][ICON_BULLET]Level 2: Having learned how to defend themselves, the Bezeri can now use settlers to found cities in the ocean.[NEWLINE][ICON_BULLET]Level 3: The Leviathan is dead! Units gain [LINK=PROMOTION_CONQUERORSOFTHESEA]Conquerors of the Sea[\LINK] +15%[ICON_RESEARCH] +15%[ICON_COMMERCE] +15%[ICON_CULTURE]</Spanish>
+	</TEXT>
+	<TEXT> 
+		<Tag>TXT_KEY_TRAIT_AMPHIBIAN_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]This Civilization is able to found cities in the ocean.</English>
+		<French>[NEWLINE][ICON_BULLET]This Civilization is able to found cities in the ocean.</French>
+		<German>[NEWLINE][ICON_BULLET]This Civilization is able to found cities in the ocean.</German>
+		<Italian>[NEWLINE][ICON_BULLET]This Civilization is able to found cities in the ocean.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]This Civilization is able to found cities in the ocean.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CONQUERORSOFTHESEA_PEDIA</Tag>
-		<English>The Bezeri lost their homes and fled to the land because of the Leviathan, a nightmarish beast that roams the oceans of Erebus. Seek your revenge and slay the beast! Only then will you earn the right to be the rulers of the deep. (Unlocks true Ocean Cities)</English>
-		<French>The Bezeri lost their homes and fled to the land because of the Leviathan, a nightmarish beast that roams the oceans of Erebus. Seek your revenge and slay the beast! Only then will you earn the right to be the rulers of the deep. (Unlocks true Ocean Cities)</French>
-		<German>The Bezeri lost their homes and fled to the land because of the Leviathan, a nightmarish beast that roams the oceans of Erebus. Seek your revenge and slay the beast! Only then will you earn the right to be the rulers of the deep. (Unlocks true Ocean Cities)</German>
-		<Italian>The Bezeri lost their homes and fled to the land because of the Leviathan, a nightmarish beast that roams the oceans of Erebus. Seek your revenge and slay the beast! Only then will you earn the right to be the rulers of the deep. (Unlocks true Ocean Cities)</Italian>
-		<Spanish>The Bezeri lost their homes and fled to the land because of the Leviathan, a nightmarish beast that roams the oceans of Erebus. Seek your revenge and slay the beast! Only then will you earn the right to be the rulers of the deep. (Unlocks true Ocean Cities)</Spanish>
+		<English>The Bezeri lost their homes and fled to the land because of the Leviathan, a nightmarish beast that roams the oceans of Erebus. Seek your revenge and slay the beast! Only then will you earn the right to be the rulers of the deep.</English>
+		<French>The Bezeri lost their homes and fled to the land because of the Leviathan, a nightmarish beast that roams the oceans of Erebus. Seek your revenge and slay the beast! Only then will you earn the right to be the rulers of the deep.</French>
+		<German>The Bezeri lost their homes and fled to the land because of the Leviathan, a nightmarish beast that roams the oceans of Erebus. Seek your revenge and slay the beast! Only then will you earn the right to be the rulers of the deep.</German>
+		<Italian>The Bezeri lost their homes and fled to the land because of the Leviathan, a nightmarish beast that roams the oceans of Erebus. Seek your revenge and slay the beast! Only then will you earn the right to be the rulers of the deep.</Italian>
+		<Spanish>The Bezeri lost their homes and fled to the land because of the Leviathan, a nightmarish beast that roams the oceans of Erebus. Seek your revenge and slay the beast! Only then will you earn the right to be the rulers of the deep.</Spanish>
 	</TEXT>
 	<TEXT> 
 		<Tag>TXT_KEY_TRAITCLASS_VICTORIOUS</Tag>
