@@ -217,7 +217,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DOMINANT</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>9</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -239,11 +239,15 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SLAVER</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>9</iModifier>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_HEMAPYROSYNCRETISTIC</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>9</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_ZARIA_INFO</TraitType>
+					<iModifier>9</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -255,7 +259,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_DEMON_OF_THE_DEEP</TraitType>
-					<iModifier>6</iModifier>
+					<iModifier>12</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -5398,18 +5402,6 @@
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>			
 			<PrereqSpellType>SPELL_ENTER_ARENA</PrereqSpellType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Capture             Anything captures Slave   		        	Caretaker -->
-			<Type>TRAITTRIGGER_CAPTURE_SLAVE_ZARIA</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_ZARIA_INFO</TraitType>
-					<iModifier>3</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
-			<TraitHookType>TRAITHOOK_CAPTURE_UNIT</TraitHookType>
-			<PrereqKilledUnitClassType>UNITCLASS_SLAVE</PrereqKilledUnitClassType>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Gain GP		Great Healer                                		Caretaker  -->
 			<Type>TRAITTRIGGER_GAIN_GP_COMMANDER_ZARIA</Type>
