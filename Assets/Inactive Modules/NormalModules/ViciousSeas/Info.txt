@@ -73,8 +73,9 @@ Drowned can become Drowned Callers at lvl 6, giving them Drowns on combat win an
 Barbarian ships can become Pirate Princes at lvl 6, giving them ship capture chance and creating a Pirate Free City.
 Changes to barbarian ship and lair spawns to balance the new lair and spawn system in the core game. (hopefully)
 Barbarian sea forts now have a commander.
-Ocean City building nerfed(?) from "becomes city center" to -30% upkeep and +1 trade routs.
-Coral fort moved to Feral Bond, build time increased by 40%.
+Bezeri settlers now able to found aquatic cities directly with required tech(any or: Iron working, fanaticism, sorcery, stirrups, astronomy, feral bond, bowyers)
+Fort to Aquatic city ability removed.
+Coral fort now requires no tech to build.
 (tentative) Drown and Krakens moved from demon to barbarian faction due to new demon spawn rules
 Seek Leviathan spell.
 Conquerors trait loses +1 movement.
