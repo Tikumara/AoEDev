@@ -853,11 +853,15 @@
 			<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
 			<bPrereqHealth>1</bPrereqHealth>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Construct           Command Post                                Haunted Strategist -->
+		<TraitTriggerInfo> <!-- Construct           Command Post                                Haunted Strategist, Instructor -->
 			<Type>TRAITTRIGGER_CONSTRUCT_COMMAND_POST</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_HAUNTED_STRATEGIST</TraitType>
+					<iModifier>150</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_INSTRUCTOR</TraitType>
 					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
@@ -4941,6 +4945,46 @@
 			<PrereqTech>TECH_WRITING</PrereqTech>
 			<TraitHookType>TRAITHOOK_TECH</TraitHookType>	
 		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Tech                Warefare	                                	Instructor,Haunted Strategist -->
+			<Type>TRAITTRIGGER_TECH_WARFARE</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_INSTRUCTOR</TraitType>
+					<iModifier>200</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_HAUNTED_STRATEGIST</TraitType>
+					<iModifier>200</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<PrereqTech>TECH_WARFARE</PrereqTech>
+			<TraitHookType>TRAITHOOK_TECH</TraitHookType>	
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Tech                Fanaticism	                                	Haunted Strategist -->
+			<Type>TRAITTRIGGER_TECH_FANATICISM</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_HAUNTED_STRATEGIST</TraitType>
+					<iModifier>600</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<PrereqTech>TECH_FANATICISM</PrereqTech>
+			<TraitHookType>TRAITHOOK_TECH</TraitHookType>	
+		</TraitTriggerInfo>
+				<TraitTriggerInfo> <!-- Tech                Sorcery	                                	Craftmaster -->
+			<Type>TRAITTRIGGER_TECH_SORCERY</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_CRAFTMASTER</TraitType>
+					<iModifier>600</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<PrereqTech>TECH_SORCERY</PrereqTech>
+			<TraitHookType>TRAITHOOK_TECH</TraitHookType>	
+		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Trade               Open Borders                                Virtuous Pirate-->
 			<Type>TRAITTRIGGER_TRADE_OPEN_BORDERS</Type>
 			<CounterChanges>
@@ -5368,7 +5412,7 @@
 			<PrereqKilledUnitClassType>UNITCLASS_SLAVE</PrereqKilledUnitClassType>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Gain GP		Great Healer                                		Caretaker  -->
-			<Type>TRAITTRIGGER_GAIN_GP_COMMANDER</Type>
+			<Type>TRAITTRIGGER_GAIN_GP_COMMANDER_ZARIA</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_ZARIA_INFO</TraitType>
