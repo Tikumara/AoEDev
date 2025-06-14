@@ -617,7 +617,6 @@
 					<iTerrainDefense>25</iTerrainDefense>
 				</TerrainDefense>
 			</TerrainDefenses>
-			<iMovesChange>1</iMovesChange>
 			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/Conqueror.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- PIRATE_PRINCE1 -->

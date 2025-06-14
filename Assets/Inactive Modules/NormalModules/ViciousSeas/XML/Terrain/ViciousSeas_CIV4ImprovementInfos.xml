@@ -626,7 +626,7 @@
 			<iAppearanceProbability>20</iAppearanceProbability>
 			<SpawnUnitType>UNIT_KRAKEN_SPAWN</SpawnUnitType>
 			<ImmediateSpawnUnitType>UNIT_HIGH_PRIEST_OF_THE_OVERLORDS</ImmediateSpawnUnitType>
-			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
+			<SpawnUnitCiv>CIVILIZATION_ORC</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
 			<iCultureRange>3</iCultureRange>
@@ -668,7 +668,7 @@
 			<iAppearanceProbability>50</iAppearanceProbability>
 			<SpawnUnitType>UNIT_DROWN</SpawnUnitType>
 			<ImmediateSpawnUnitType>UNIT_DROWN</ImmediateSpawnUnitType>
-			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
+			<SpawnUnitCiv>CIVILIZATION_ORC</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
 			<bExplorable>1</bExplorable>
@@ -718,7 +718,7 @@
 			<ImprovementUpgrade>IMPROVEMENT_HOWLING_REEF</ImprovementUpgrade>
 			<SpawnUnitType>UNIT_DROWN</SpawnUnitType>
 			<ImmediateSpawnUnitType>UNIT_DROWN</ImmediateSpawnUnitType>
-			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
+			<SpawnUnitCiv>CIVILIZATION_ORC</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
 			<bExplorable>1</bExplorable>
@@ -775,7 +775,7 @@
 			</TerrainMakesValids>
 			<SpawnUnitType>UNIT_STYGIAN_GUARD</SpawnUnitType>
 			<ImmediateSpawnUnitType>UNIT_STYGIAN_GUARD</ImmediateSpawnUnitType>
-			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
+			<SpawnUnitCiv>CIVILIZATION_ORC</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
 			<bExplorable>1</bExplorable>

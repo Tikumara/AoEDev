@@ -1,25 +1,108 @@
 <?xml version="1.0"?>
-<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
 <!-- Sid Meier's Civilization 4 -->
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
-<!-- Basic Infos -->
-
+<!-- Leader Trait Infos -->
 <Civ4TraitTriggerInfos xmlns="x-schema:ViciousSeas_CIV4CivilizationsSchema.xml">
 	<TraitTriggerInfos>
-		<TraitTriggerInfo> <!-- Kill                Leviathan        kills The Leviathan        Conquerors of the Sea -->
-			<Type>TRAITTRIGGER_KILL_VS_LEVIATHAN_VICIOUS</Type>
-			<CounterChanges>
-				<CounterChange>
+		<TraitTriggerInfo>		<!-- KILL   Leviathan       Kills the Leviathan       Conquerors of the Sea-->
+          <Type>TRAITTRIGGER_KILL_VS_LEVIATHAN_VICIOUS</Type>
+		      <CounterChanges>
+			    <CounterChange>
 					<TraitType>TRAIT_CONQUERORSOFTHESEA</TraitType>
-					<iModifier>1500</iModifier>
+					<iModifier>3000</iModifier>
 				</CounterChange>
-			</CounterChanges>
+			  </CounterChanges>	
 			<TraitClassType>TRAITCLASS_VICTORIOUS</TraitClassType>
 			
 			<TraitHookType>TRAITHOOK_KILL_UNIT</TraitHookType>
 			
 			<PrereqKilledUnitClassType>UNITCLASS_LEVIATHAN</PrereqKilledUnitClassType>
 		</TraitTriggerInfo>
-	</TraitTriggerInfos>
+		<TraitTriggerInfo> <!-- Tech                Fanaticism                 	Conquerors of the Sea -->
+			<Type>TRAITTRIGGER_TECH_FANATICICM_VICIOUS</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_CONQUERORSOFTHESEA</TraitType>
+					<iModifier>25</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_VICTORIOUS</TraitClassType>
+			<PrereqTech>TECH_FANATICISM</PrereqTech>
+			<TraitHookType>TRAITHOOK_TECH</TraitHookType>	
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Tech                Sorcery                	Conquerors of the Sea -->
+			<Type>TRAITTRIGGER_TECH_SORCERY_VICIOUS</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_CONQUERORSOFTHESEA</TraitType>
+					<iModifier>25</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_VICTORIOUS</TraitClassType>
+			<PrereqTech>TECH_SORCERY</PrereqTech>
+			<TraitHookType>TRAITHOOK_TECH</TraitHookType>	
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Tech                Iron Working                 	Conquerors of the Sea -->
+			<Type>TRAITTRIGGER_TECH_IRON_WORKING_VICIOUS</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_CONQUERORSOFTHESEA</TraitType>
+					<iModifier>25</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_VICTORIOUS</TraitClassType>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
+			<TraitHookType>TRAITHOOK_TECH</TraitHookType>	
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Tech                Bowyers                 	Conquerors of the Sea -->
+			<Type>TRAITTRIGGER_TECH_BOWYERS_VICIOUS</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_CONQUERORSOFTHESEA</TraitType>
+					<iModifier>25</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_VICTORIOUS</TraitClassType>
+			<PrereqTech>TECH_BOWYERS</PrereqTech>
+			<TraitHookType>TRAITHOOK_TECH</TraitHookType>	
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Tech                Stirrups                 	Conquerors of the Sea -->
+			<Type>TRAITTRIGGER_TECH_STIRRUPS_VICIOUS</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_CONQUERORSOFTHESEA</TraitType>
+					<iModifier>25</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_VICTORIOUS</TraitClassType>
+			<PrereqTech>TECH_STIRRUPS</PrereqTech>
+			<TraitHookType>TRAITHOOK_TECH</TraitHookType>	
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Tech                Astronomy                 	Conquerors of the Sea -->
+			<Type>TRAITTRIGGER_TECH_ASTRONOMY_VICIOUS</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_CONQUERORSOFTHESEA</TraitType>
+					<iModifier>25</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_VICTORIOUS</TraitClassType>
+			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
+			<TraitHookType>TRAITHOOK_TECH</TraitHookType>	
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Tech                Feral Bond                 	Conquerors of the Sea -->
+			<Type>TRAITTRIGGER_TECH_FERAL_BOND_VICIOUS</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_CONQUERORSOFTHESEA</TraitType>
+					<iModifier>25</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_VICTORIOUS</TraitClassType>
+			<PrereqTech>TECH_FERAL_BOND</PrereqTech>
+			<TraitHookType>TRAITHOOK_TECH</TraitHookType>	
+		</TraitTriggerInfo>
+	</TraitTriggerInfos> 
 </Civ4TraitTriggerInfos>

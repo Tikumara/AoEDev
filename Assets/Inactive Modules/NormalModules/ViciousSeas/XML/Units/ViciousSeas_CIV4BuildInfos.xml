@@ -28,7 +28,6 @@
 			<Type>BUILD_CORAL_FORT</Type>
 			<Description>TXT_KEY_BUILD_FORT</Description>
 			<Help/>
-			<PrereqTech>TECH_COMMUNE_WITH_NATURE</PrereqTech>
 			<iTime>3200</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>

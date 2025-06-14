@@ -220,3 +220,20 @@ def reqPirateCity(caster):
         return True
 
     return True
+
+def spellSeekLeviathan(caster):
+
+        getInfoType         = gc.getInfoTypeForString
+	iLeviathan = getInfoType('UNIT_LEVIATHAN')
+
+	for iPlayer in range(gc.getMAX_PLAYERS()):
+		pPlayer = gc.getPlayer(iPlayer)
+		py = PyPlayer(iPlayer)
+		if (pPlayer.isAlive()):
+			for pUnit in py.getUnitList():
+				if pUnit.getUnitType() == iLeviathan:
+					pPlot = pUnit.plot()
+					pPlayer = gc.getPlayer(caster.getOwner())
+					iTeam = pPlayer.getTeam()
+					pPlot.setRevealed(iTeam, True, False, TeamTypes.NO_TEAM)
+					CyInterface().addMessage(caster.getOwner(),True,25,CyTranslator().getText("We have found the monster!", ()),'',1,'Art/Interface/Buttons/Units/Leviathan.dds',ColorTypes(8),pUnit.getX(),pUnit.getY(),True,True)
