@@ -11257,6 +11257,11 @@ def spellAscension(caster):
 	newUnit = pPlayer.initUnit(iUnit, caster.getX(), caster.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	iVampiricStrength = getInfoType('PROMOTION_VAMPIRIC_STRENGTH')
 	iVampCount = caster.countHasPromotion(iVampiricStrength)
+        if caster.isHasPromotion(getInfoType('PROMOTION_ASPIRANT')):
+                newUnit.setHasPromotion(getInfoType('PROMOTION_ASPIRANT'),True)
+                newUnit.setHasPromotion(getInfoType('PROMOTION_ASPIRANT_1'),True)
+                newUnit.setHasPromotion(getInfoType('PROMOTION_ASPIRANT_2'),True)
+                newUnit.setHasPromotion(getInfoType('PROMOTION_ASPIRANT_3'),True)
 	for iProm in range(gc.getNumPromotionInfos()):
 		if caster.isHasPromotion(iProm):
 			if gc.getPromotionInfo(iProm).isEquipment():

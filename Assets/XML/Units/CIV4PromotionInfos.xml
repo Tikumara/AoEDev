@@ -34477,7 +34477,6 @@
 			<Type>PROMOTION_ASPIRANT_1</Type>
 			<Description>TXT_KEY_PROMOTION_ASPIRANT_1</Description>
 			<bAutoAcquire>1</bAutoAcquire>
-			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
 			<iCollateralDamageProtection>20</iCollateralDamageProtection>
 			<PromotionExcludes>
@@ -34517,7 +34516,6 @@
 			<Type>PROMOTION_ASPIRANT_2</Type>
 			<Description>TXT_KEY_PROMOTION_ASPIRANT_2</Description>
 			<bAutoAcquire>1</bAutoAcquire>
-			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
 			<PrereqUnits>
 				<PrereqUnit>UNIT_ASPIRANT</PrereqUnit>
@@ -34525,7 +34523,7 @@
 			<PrereqTraits>
 				<PrereqTrait>TRAIT_HUMANIST1</PrereqTrait>
 			</PrereqTraits>
-			<PrereqMinAge>100</PrereqMinAge>
+			<PrereqMinAge>35</PrereqMinAge>
 			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Ascension2.dds</Button>
 			<iCollateralDamageProtection>20</iCollateralDamageProtection>
 			<iExtraCombatStr>1</iExtraCombatStr>
@@ -34535,7 +34533,6 @@
 			<Type>PROMOTION_ASPIRANT_3</Type>
 			<Description>TXT_KEY_PROMOTION_ASPIRANT_3</Description>
 			<bAutoAcquire>1</bAutoAcquire>
-			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
 			<iCollateralDamageProtection>20</iCollateralDamageProtection>
 			<PrereqUnits>
@@ -34544,7 +34541,7 @@
 			<PrereqTraits>
 				<PrereqTrait>TRAIT_HUMANIST1</PrereqTrait>
 			</PrereqTraits>
-			<PrereqMinAge>200</PrereqMinAge>
+			<PrereqMinAge>75</PrereqMinAge>
 			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Ascension3.dds</Button>
 			<iCollateralDamageProtection>20</iCollateralDamageProtection>
 			<iExtraCombatStr>1</iExtraCombatStr>
