@@ -625,6 +625,14 @@
 						<MiddleArtDefineTag>ART_DEF_UNIT_ARCHMAGE_INFERNAL</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
+				<StyleUnit><!--Commander-->
+					<UnitType>UNIT_FORT_COMMANDER</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_ZABULUS_INFERNAL</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_ZABULUS_INFERNAL</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_ZABULUS_INFERNAL</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
 				<StyleUnit><!--Settler-->			<!--Civilian-->
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup>
