@@ -3193,6 +3193,10 @@
 					<UnitClassType>UNITCLASS_COMMANDER</UnitClassType>
 					<UnitType>UNIT_SALAMANDER</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_FORT_COMMANDER</UnitClassType>
+					<UnitType>UNIT_ZABULUS</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -7607,6 +7611,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_WOLF_PACK</UnitClassType>
 					<UnitType>UNIT_WOLF_PACK_UNDEAD</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_FORT_COMMANDER</UnitClassType>
+					<UnitType>UNIT_ZABULUS</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses/>

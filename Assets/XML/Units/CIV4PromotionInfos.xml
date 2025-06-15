@@ -25626,6 +25626,25 @@
 				</DamageTypeResist>
 			</DamageTypeResists>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Zabulus Influence -->
+			<Type>PROMOTION_ZABULUS_INFLUENCE</Type>
+			<Description>TXT_KEY_PROMOTION_ZABULUS_INFLUENCE</Description>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CityBonuses>
+				<CityBonus>
+					<bApplyEnemy>1</bApplyEnemy>
+					<bApplyRival>1</bApplyRival>
+					<fDiplo>-0.25</fDiplo>
+					<fHappy>-3</fHappy>
+					<fCrime>5</fCrime>
+					<iBonusRange>3</iBonusRange>
+				</CityBonus>
+			</CityBonuses>
+			<PrereqUnits>
+				<PrereqUnit>UNIT_ZABULUS</PrereqUnit>
+			</PrereqUnits>
+			<Button>Art/Interface/Buttons/Promotions/chilblains.dds</Button>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Malaise -->
 			<Type>PROMOTION_MALAISE</Type>
 			<Description>TXT_KEY_PROMOTION_MALAISE</Description>

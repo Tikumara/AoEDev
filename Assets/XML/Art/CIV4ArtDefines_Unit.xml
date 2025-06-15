@@ -17760,7 +17760,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_ZABULUS_INFERNAL</Type>
-            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,2,11</Button>
+            <Button>Art/Interface/Buttons/Units/ZabulusCommander/ZabulusCommander.dds</Button>
             <fScale>0.72</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <bActAsLand>0</bActAsLand>
