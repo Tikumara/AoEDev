@@ -10,46 +10,55 @@
 			<Type>HANDICAP_SETTLER</Type>
 			<Description>TXT_KEY_HANDICAP_SETTLER</Description>
 			<iWaterTilesPerOrc>5</iWaterTilesPerOrc> <!-- DIFF CONSTANT: Applies to savages on water only -->
+			<iMinimumTilesPerDemon>30</iMinimumTilesPerDemon>
 		</HandicapInfo>
 		<HandicapInfo>
 			<Type>HANDICAP_CHIEFTAIN</Type>
 			<Description>TXT_KEY_HANDICAP_CHIEFTAIN</Description>
 			<iWaterTilesPerOrc>5</iWaterTilesPerOrc> <!-- DIFF CONSTANT: Applies to savages on water only -->
+			<iMinimumTilesPerDemon>30</iMinimumTilesPerDemon>
 		</HandicapInfo>
 		<HandicapInfo>
 			<Type>HANDICAP_WARLORD</Type>
 			<Description>TXT_KEY_HANDICAP_WARLORD</Description>
 			<iWaterTilesPerOrc>5</iWaterTilesPerOrc> <!-- DIFF CONSTANT: Applies to savages on water only -->
+			<iMinimumTilesPerDemon>30</iMinimumTilesPerDemon>
 		</HandicapInfo>
 		<HandicapInfo>
 			<Type>HANDICAP_NOBLE</Type>
 			<Description>TXT_KEY_HANDICAP_NOBLE</Description>
 			<iWaterTilesPerOrc>5</iWaterTilesPerOrc> <!-- DIFF CONSTANT: Applies to savages on water only -->
+			<iMinimumTilesPerDemon>30</iMinimumTilesPerDemon>
 		</HandicapInfo>
 		<HandicapInfo>
 			<Type>HANDICAP_PRINCE</Type>
 			<Description>TXT_KEY_HANDICAP_PRINCE</Description>
 			<iWaterTilesPerOrc>5</iWaterTilesPerOrc> <!-- DIFF CONSTANT: Applies to savages on water only -->
+			<iMinimumTilesPerDemon>30</iMinimumTilesPerDemon>
 		</HandicapInfo>
 		<HandicapInfo>
 			<Type>HANDICAP_MONARCH</Type>
 			<Description>TXT_KEY_HANDICAP_MONARCH</Description>
 			<iWaterTilesPerOrc>5</iWaterTilesPerOrc> <!-- DIFF CONSTANT: Applies to savages on water only -->
+			<iMinimumTilesPerDemon>30</iMinimumTilesPerDemon>
 		</HandicapInfo>
 		<HandicapInfo>
 			<Type>HANDICAP_EMPEROR</Type>
 			<Description>TXT_KEY_HANDICAP_EMPEROR</Description>
 			<iWaterTilesPerOrc>5</iWaterTilesPerOrc> <!-- DIFF CONSTANT: Applies to savages on water only -->
+			<iMinimumTilesPerDemon>30</iMinimumTilesPerDemon>
 		</HandicapInfo>
 		<HandicapInfo>
 			<Type>HANDICAP_IMMORTAL</Type>
 			<Description>TXT_KEY_HANDICAP_IMMORTAL</Description>
 			<iWaterTilesPerOrc>5</iWaterTilesPerOrc> <!-- DIFF CONSTANT: Applies to savages on water only -->
+			<iMinimumTilesPerDemon>30</iMinimumTilesPerDemon>
 		</HandicapInfo>
 		<HandicapInfo>
 			<Type>HANDICAP_DEITY</Type>
 			<Description>TXT_KEY_HANDICAP_DEITY</Description>
 			<iWaterTilesPerOrc>5</iWaterTilesPerOrc> <!-- DIFF CONSTANT: Applies to savages on water only -->
+			<iMinimumTilesPerDemon>30</iMinimumTilesPerDemon>
 		</HandicapInfo>
 	</HandicapInfos>
 </Civ4HandicapInfo>

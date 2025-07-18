@@ -679,7 +679,7 @@
 			<iAppearanceProbability>70</iAppearanceProbability>
 			<SpawnUnitType>UNIT_DROWN</SpawnUnitType>
 			<ImmediateSpawnUnitType>UNIT_DROWN</ImmediateSpawnUnitType>
-			<SpawnUnitCiv>CIVILIZATION_ORC</SpawnUnitCiv>
+			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
 			<bExplorable>1</bExplorable>
@@ -729,7 +729,7 @@
 			<ImprovementUpgrade>IMPROVEMENT_HOWLING_REEF</ImprovementUpgrade>
 			<SpawnUnitType>UNIT_DROWN</SpawnUnitType>
 			<ImmediateSpawnUnitType>UNIT_DROWN</ImmediateSpawnUnitType>
-			<SpawnUnitCiv>CIVILIZATION_ORC</SpawnUnitCiv>
+			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
 			<bExplorable>1</bExplorable>
@@ -787,7 +787,7 @@
 			</TerrainMakesValids>
 			<SpawnUnitType>UNIT_STYGIAN_GUARD</SpawnUnitType>
 			<ImmediateSpawnUnitType>UNIT_STYGIAN_GUARD</ImmediateSpawnUnitType>
-			<SpawnUnitCiv>CIVILIZATION_ORC</SpawnUnitCiv>
+			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
 			<bExplorable>1</bExplorable>
