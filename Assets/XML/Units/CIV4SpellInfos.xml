@@ -537,26 +537,6 @@
 			<Sound>AS3D_SACRIFICE2</Sound>
 			<Button>Art/Interface/Buttons/Civics/Slavery.dds</Button>
 		</SpellInfo>
-		<SpellInfo>			<!-- Stasis -->
-			<Type>SPELL_STASIS</Type>
-			<Description>TXT_KEY_SPELL_STASIS</Description>
-			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
-			<Help>TXT_KEY_SPELL_STASIS_HELP</Help>
-			<CivilizationPrereq>CIVILIZATION_ILLIANS</CivilizationPrereq>
-			<bCityAction>1</bCityAction>
-			<bAllowAI>1</bAllowAI>
-			<bGlobal>1</bGlobal>
-			<TechPrereq>TECH_KNOWLEDGE_OF_THE_ETHER</TechPrereq>
-			<Quote>TXT_KEY_GLOBALSPELL_STASIS</Quote>
-			<iAIWeight>50</iAIWeight>
-			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
-			<bHasCasted>1</bHasCasted>
-			<PyResult>spellStasis(pCaster)</PyResult>
-			<PyRequirement>reqStasis(pCaster)</PyRequirement>
-			<Effect>EFFECT_SPELL1</Effect>
-			<Sound>AS3D_ALTERATION</Sound>
-			<Button>Art/Interface/Buttons/Spells/Stasis.dds</Button>
-		</SpellInfo>
 		<SpellInfo>			<!-- Tempest -->
 			<Type>SPELL_TEMPEST</Type>
 			<Description>TXT_KEY_SPELL_TEMPEST</Description>
