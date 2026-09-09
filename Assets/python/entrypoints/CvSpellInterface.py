@@ -9735,6 +9735,8 @@ def exploreLairRighteousNobhead(pUnit, pPlot):
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_DISCIPLE_THE_ORDER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_BANESWORD_DEMON"),True)
+	newUnit.setHasPromotion(getInfoType("PROMOTION_CRAZED"),True)
+	newUnit.setHasPromotion(getInfoType("PROMOTION_ENRAGED"),True)
 	
 def exploreLairWarrior(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())

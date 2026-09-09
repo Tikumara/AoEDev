@@ -1866,6 +1866,24 @@ This is the power of revelation and spiritual truth. At modest levels it can des
 		<Spanish>Oak</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BONUS_OAK_PEDIA</Tag>
+		<English>The average oak can grow to be about the width of three Doviello Warriors, lying on their backs, in diameter, with canopies reaching heights of three Giants standing on their shoulders. They can live for hundreds or even thousands of cycles. Their wood is a reliable choice for anything that needs to be built to last, from doors to warbows. 
+
+If a Dryad decides to go to war, it will often do so in the form of an old oak tree.</English>
+		<French>The average oak can grow to be about the width of three Doviello Warriors, lying on their backs, in diameter, with canopies reaching heights of three Giants standing on their shoulders. They can live for hundreds or even thousands of cycles. Their wood is a reliable choice for anything that needs to be built to last, from doors to warbows. 
+
+If a Dryad decides to go to war, it will often do so in the form of an old oak tree.</French>
+		<German>The average oak can grow to be about the width of three Doviello Warriors, lying on their backs, in diameter, with canopies reaching heights of three Giants standing on their shoulders. They can live for hundreds or even thousands of cycles. Their wood is a reliable choice for anything that needs to be built to last, from doors to warbows. 
+
+If a Dryad decides to go to war, it will often do so in the form of an old oak tree.</German>
+		<Italian>The average oak can grow to be about the width of three Doviello Warriors, lying on their backs, in diameter, with canopies reaching heights of three Giants standing on their shoulders. They can live for hundreds or even thousands of cycles. Their wood is a reliable choice for anything that needs to be built to last, from doors to warbows. 
+
+If a Dryad decides to go to war, it will often do so in the form of an old oak tree.</Italian>
+		<Spanish>The average oak can grow to be about the width of three Doviello Warriors, lying on their backs, in diameter, with canopies reaching heights of three Giants standing on their shoulders. They can live for hundreds or even thousands of cycles. Their wood is a reliable choice for anything that needs to be built to last, from doors to warbows. 
+
+If a Dryad decides to go to war, it will often do so in the form of an old oak tree.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BONUS_YEW</Tag>
 		<English>Yew</English>
 		<French>Yew</French>
@@ -1874,12 +1892,43 @@ This is the power of revelation and spiritual truth. At modest levels it can des
 		<Spanish>Yew</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BONUS_YEW_PEDIA</Tag>
+		<English>The average yew can grow to be about the width of a Doviello Warrior, lying on his back, in diameter, with canopies reaching heights of five Doviello Warriors or greater. Like oak trees, they can live for hundreds or even thousands of cycles. Their wood is strong, yet flexible. All parts of a yew, with the exception of their red berries, are poisonous to ingest. The poison that can be derived from yew is known as taxine.</English>
+		<French>The average yew can grow to be about the width of a Doviello Warrior, lying on his back, in diameter, with canopies reaching heights of five Doviello Warriors or greater. Like oak trees, they can live for hundreds or even thousands of cycles. Their wood is strong, yet flexible. All parts of a yew, with the exception of their red berries, are poisonous to ingest. The poison that can be derived from yew is known as taxine.</French>
+		<German>The average yew can grow to be about the width of a Doviello Warrior, lying on his back, in diameter, with canopies reaching heights of five Doviello Warriors or greater. Like oak trees, they can live for hundreds or even thousands of cycles. Their wood is strong, yet flexible. All parts of a yew, with the exception of their red berries, are poisonous to ingest. The poison that can be derived from yew is known as taxine.</German>
+		<Italian>The average yew can grow to be about the width of a Doviello Warrior, lying on his back, in diameter, with canopies reaching heights of five Doviello Warriors or greater. Like oak trees, they can live for hundreds or even thousands of cycles. Their wood is strong, yet flexible. All parts of a yew, with the exception of their red berries, are poisonous to ingest. The poison that can be derived from yew is known as taxine.</Italian>
+		<Spanish>The average yew can grow to be about the width of a Doviello Warrior, lying on his back, in diameter, with canopies reaching heights of five Doviello Warriors or greater. Like oak trees, they can live for hundreds or even thousands of cycles. Their wood is strong, yet flexible. All parts of a yew, with the exception of their red berries, are poisonous to ingest. The poison that can be derived from yew is known as taxine.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BONUS_DUSKWOOD</Tag>
 		<English>Duskwood</English>
 		<French>Duskwood</French>
 		<German>Duskwood</German>
 		<Italian>Duskwood</Italian>
 		<Spanish>Duskwood</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_DUSKWOOD_PEDIA</Tag>
+		<English>Duskwoods grow in densely packed groves, blocking the light and appearing rather eerie, which gave them their name. They have smooth black bark, and the trunks grow to an average height of one and a half Giants, with small lacy branches high on the tree. The wood is smoky grey and as tough as iron, though it weighs only half as much.
+ Only the most talented archers can draw a duskwood bow at all.
+
+Duskwood sap is a powerful adhesive and flame retardant, making it the ideal material for a ship's hull.</English>
+		<French>Duskwoods grow in densely packed groves, blocking the light and appearing rather eerie, which gave them their name. They have smooth black bark, and the trunks grow to an average height of one and a half Giants, with small lacy branches high on the tree. The wood is smoky grey and as tough as iron, though it weighs only half as much.
+ Only the most talented archers can draw a duskwood bow at all.
+
+Duskwood sap is a powerful adhesive and flame retardant, making it the ideal material for a ship's hull.</French>
+		<German>Duskwoods grow in densely packed groves, blocking the light and appearing rather eerie, which gave them their name. They have smooth black bark, and the trunks grow to an average height of one and a half Giants, with small lacy branches high on the tree. The wood is smoky grey and as tough as iron, though it weighs only half as much.
+ Only the most talented archers can draw a duskwood bow at all.
+
+Duskwood sap is a powerful adhesive and flame retardant, making it the ideal material for a ship's hull.</German>
+		<Italian>Duskwoods grow in densely packed groves, blocking the light and appearing rather eerie, which gave them their name. They have smooth black bark, and the trunks grow to an average height of one and a half Giants, with small lacy branches high on the tree. The wood is smoky grey and as tough as iron, though it weighs only half as much.
+ Only the most talented archers can draw a duskwood bow at all.
+
+Duskwood sap is a powerful adhesive and flame retardant, making it the ideal material for a ship's hull.</Italian>
+		<Spanish>Duskwoods grow in densely packed groves, blocking the light and appearing rather eerie, which gave them their name. They have smooth black bark, and the trunks grow to an average height of one and a half Giants, with small lacy branches high on the tree. Atop these trunks are small branches. The wood is smoky grey and as tough as iron, though it weighs only half as much.
+ Only the most talented archers can draw a duskwood bow at all.
+
+Duskwood sap is a powerful adhesive and flame retardant, making it the ideal material for a ship's hull.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_EFFLUVIUM</Tag>

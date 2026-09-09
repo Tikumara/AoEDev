@@ -23710,8 +23710,16 @@
 			<iAsset>6</iAsset>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
-					<BonusType>BONUS_MANA_NATURE</BonusType>
-					<iProductonModifier>35</iProductonModifier>
+					<BonusType>BONUS_OAK</BonusType>
+					<iProductonModifier>30</iProductonModifier>
+				</BonusProductionModifier>
+				<BonusProductionModifier>
+					<BonusType>BONUS_YEW</BonusType>
+					<iProductonModifier>30</iProductonModifier>
+				</BonusProductionModifier>
+				<BonusProductionModifier>
+					<BonusType>BONUS_DUSKWOOD</BonusType>
+					<iProductonModifier>30</iProductonModifier>
 				</BonusProductionModifier>
 			</BonusProductionModifiers>
 			<UnitMeshGroups>

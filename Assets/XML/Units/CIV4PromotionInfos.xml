@@ -46400,11 +46400,11 @@
 			<PrereqWeaponTier>2</PrereqWeaponTier>
 			<PromotionExcludes>
 				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
-				<Promotion>PROMOTION_OAK_WEAPONS</Promotion>
+				<Promotion>PROMOTION_OAK_HULL</Promotion>
 				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
-				<Promotion>PROMOTION_OAK_WEAPONS</Promotion>
+				<Promotion>PROMOTION_OAK_HULL</Promotion>
 				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
 				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
 			</PromotionOverwrites>
@@ -46438,16 +46438,16 @@
 			<PrereqInCity>1</PrereqInCity>
 			<PrereqWeaponTier>3</PrereqWeaponTier>
 			<PromotionExcludes>
-				<Promotion>PROMOTION_OAK_WEAPONS</Promotion>
-				<Promotion>PROMOTION_YEW_WEAPONS</Promotion>
+				<Promotion>PROMOTION_OAK_HULL</Promotion>
+				<Promotion>PROMOTION_YEW_HULL</Promotion>
 				<Promotion>PROMOTION_MITHRIL_WEAPONS</Promotion>
 				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
 				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
 				<Promotion>PROMOTION_RUSTED</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
-				<Promotion>PROMOTION_OAK_WEAPONS</Promotion>
-				<Promotion>PROMOTION_YEW_WEAPONS</Promotion>
+				<Promotion>PROMOTION_OAK_HULL</Promotion>
+				<Promotion>PROMOTION_YEW_HULL</Promotion>
 				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
 				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
 				<Promotion>PROMOTION_MITHRIL_WEAPONS</Promotion>

@@ -266,7 +266,6 @@
 			<iBetterDefenderThanPercent>-20</iBetterDefenderThanPercent>
 			<iMinLevel>-1</iMinLevel>
 			<iFreeXPPerTurn>0.25</iFreeXPPerTurn>
-			<PyPerTurn>checkFort(pCaster)</PyPerTurn>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Influence -->
 			<Type>PROMOTION_INFLUENCE</Type>

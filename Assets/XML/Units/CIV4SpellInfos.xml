@@ -6499,7 +6499,7 @@
 			<PromotionPrereq1>PROMOTION_WEREWOLF</PromotionPrereq1>
 			<bAllowAI>1</bAllowAI>
 			<iAIWeight>50</iAIWeight>
-			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bDisplayWhenDisabled>0</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<bIsAutoCastable>1</bIsAutoCastable>
 			<bAbility>1</bAbility>
