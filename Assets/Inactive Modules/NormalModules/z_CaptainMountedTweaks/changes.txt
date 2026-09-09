@@ -50,7 +50,6 @@ Fyrdwell champion adjusted to essentialy serve as a war chariot replacement (the
 -ElfnDeath-
 Ostuarri gained flank siege and archer bonuses to match other mounted. Can re-acquire ghostly mounts in cities on their UUS, like other civs.
 
-I'll add compatability with Chislev and Dao if they need it once their reworks are finished in the future. Compatability with Chimar as well once they are in a more complete state.
 
 [ TAMED ANIMAL MOUNTS OVERVIEW ]
 Any tamed animal can be sacrificed to grant that mount promotion to all mounted units in the stack.
@@ -133,3 +132,8 @@ V9 -
 Added compatability with Chimar, and barbarian wolf riders now match appropriate horse units
 Added Tamed Animal Mounts concept page
 Slightly increased the penalty from -25% vs defensive melee to -40%.
+
+V10 -
+Chislev Mounted Plains Hunters now follow mounted tweaks horse archers standards
+The powers that be already added Tristessa's units for me, big thanks! Small errenous details from those fixed
+Sand Worms for Sih-Aya now have Special Mounts, Sand Worm Archer doesn't have first strike immunity to match MountedTweaks standards

@@ -7,7 +7,7 @@
 			<NIF>Modules/NormalModules/ViciousSeas/Art/Terrain/Resources/Coral/Coral.nif</NIF>
 			<KFM/>
 			<Button>Modules/NormalModules/ViciousSeas/Art/Terrain/Resources/Coral/Coral.dds</Button>
-			<FontButtonIndex>99</FontButtonIndex>
+			<FontButtonIndex>140</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_TITAN_TURTLE_SCALE</Type>
@@ -16,7 +16,7 @@
 			<NIF>Art/Terrain/Resources/Marble/Marble.nif</NIF>
 			<KFM>Art/Terrain/Resources/Marble/Marble.kfm</KFM>
 			<Button>Modules/NormalModules/ViciousSeas/Art/Terrain/Resources/TitanTurtleScale/TitanScales.dds</Button>
-			<FontButtonIndex>5</FontButtonIndex>
+			<FontButtonIndex>143</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_KRAKEN_EYE</Type>
@@ -25,7 +25,7 @@
 			<NIF>Art/Terrain/Resources/Oil/Oil.nif</NIF>
 			<KFM>Art/Terrain/Resources/Oil/Oil.kfm</KFM>
 			<Button>Modules/NormalModules/ViciousSeas/Art/Terrain/Resources/KrakenEye/KrakenEye.dds</Button>
-			<FontButtonIndex>6</FontButtonIndex>
+			<FontButtonIndex>142</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_GIANT_KELP_LUMBER</Type>
@@ -34,7 +34,7 @@
 			<NIF>Art/Terrain/Resources/Stone/Stone.nif</NIF>
 			<KFM>Art/Terrain/Resources/Stone/Stone.kfm</KFM>
 			<Button>Modules/NormalModules/ViciousSeas/Art/Terrain/Resources/GiantKelpLumber/KelpLumber.dds</Button>
-			<FontButtonIndex>7</FontButtonIndex>
+			<FontButtonIndex>141</FontButtonIndex>
 		</BonusArtInfo>
 		</BonusArtInfos>
 </Civ4ArtDefines>

@@ -804,7 +804,7 @@
 			<NIF>Art/Terrain/Resources/Timber/Oak.nif</NIF>
 			<KFM>Art/Terrain/Resources/Timber/olive_press.kfm</KFM>
 			<Button>Art/Interface/Buttons/WorldBuilder/WoodOak.dds</Button>
-			<FontButtonIndex>2</FontButtonIndex>
+			<FontButtonIndex>130</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_WOOD_YEW</Type>
@@ -813,7 +813,7 @@
 			<NIF>Art/Terrain/Resources/Timber/Yew.nif</NIF>
 			<KFM>Art/Terrain/Resources/Timber/olive_press.kfm</KFM>
 			<Button>Art/Interface/Buttons/WorldBuilder/WoodYew.dds</Button>
-			<FontButtonIndex>4</FontButtonIndex>
+			<FontButtonIndex>131</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_WOOD_DUSK</Type>
@@ -822,7 +822,7 @@
 			<NIF>Art/Terrain/Resources/Timber/Dusk.nif</NIF>
 			<KFM>Art/Terrain/Resources/Timber/olive_press.kfm</KFM>
 			<Button>Art/Interface/Buttons/WorldBuilder/WoodDusk.dds</Button>
-			<FontButtonIndex>7</FontButtonIndex>
+			<FontButtonIndex>132</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_EFFLUVIUM</Type>
@@ -831,7 +831,7 @@
 			<NIF>Art/effects/cities_smoking/fx_cities_smoking_01.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/WorldBuilder/Effluvium.dds</Button>
-			<FontButtonIndex>7</FontButtonIndex>
+			<FontButtonIndex>135</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_SERAPHIM_GOLD</Type>
@@ -840,7 +840,7 @@
 			<NIF>Art/Terrain/Resources/SeraphimGold/SeraphimGold.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/WorldBuilder/SeraphimGold.dds</Button>
-			<FontButtonIndex>7</FontButtonIndex>
+			<FontButtonIndex>138</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_DAGIAN_BRONZE</Type>
@@ -849,7 +849,7 @@
 			<NIF>Art/Terrain/Resources/DagianBronze/Copper.nif</NIF>
 			<KFM>Art/Terrain/Resources/DagianBronze/Copper.kfm</KFM>
 			<Button>Art/Interface/Buttons/WorldBuilder/Dagian.dds</Button>
-			<FontButtonIndex>7</FontButtonIndex>
+			<FontButtonIndex>134</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_CARCEREM</Type>
@@ -858,7 +858,7 @@
 			<NIF>Art/Terrain/Resources/Carcerem/Carcerem.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/WorldBuilder/Carcerem.dds</Button>
-			<FontButtonIndex>7</FontButtonIndex>
+			<FontButtonIndex>133</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_LIVING_IVORY</Type>
@@ -867,7 +867,7 @@
 			<NIF>Art/Terrain/Resources/LivingIvory/LivingIvory.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/WorldBuilder/LivingIvory.dds</Button>
-			<FontButtonIndex>7</FontButtonIndex>
+			<FontButtonIndex>137</FontButtonIndex>
 		</BonusArtInfo>
 	</BonusArtInfos>
 </Civ4ArtDefines>

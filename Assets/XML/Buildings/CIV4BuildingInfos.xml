@@ -7787,6 +7787,20 @@
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 			</BonusHappinessChanges>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_OAK</BonusType>
+					<iProductonModifier>20</iProductonModifier>
+				</BonusProductionModifier>
+				<BonusProductionModifier>
+					<BonusType>BONUS_YEW</BonusType>
+					<iProductonModifier>20</iProductonModifier>
+				</BonusProductionModifier>
+				<BonusProductionModifier>
+					<BonusType>BONUS_DUSKWOOD</BonusType>
+					<iProductonModifier>20</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -15646,6 +15660,14 @@
 			<BonusYieldModifiers>
 				<BonusYieldModifier>
 					<BonusType>BONUS_REFINED_MANA</BonusType>
+					<YieldModifiers>
+						<iYield>0</iYield>
+						<iYield>5</iYield>
+						<iYield>0</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+				<BonusYieldModifier>
+					<BonusType>BONUS_EFFLUVIUM</BonusType>
 					<YieldModifiers>
 						<iYield>0</iYield>
 						<iYield>5</iYield>
