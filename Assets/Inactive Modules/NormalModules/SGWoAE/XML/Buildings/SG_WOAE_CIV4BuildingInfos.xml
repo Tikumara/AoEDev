@@ -18,8 +18,8 @@
 			<Type>BUILDING_WM_THE_SENATE</Type>
 			<SpecialBuildingType>NONE</SpecialBuildingType>
 			<Description>Senate</Description>
-			<Civilopedia>TXT_KEY_BUILDING_WM_THE_SENATE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_WM_THE_SENATE_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
             <Help>[ICON_BULLET]The Senate can only be built in a Republic</Help>	
 			<PrereqCivic>CIVIC_REPUBLIC</PrereqCivic>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
@@ -80,8 +80,8 @@
 			<Type>BUILDING_WM_CATHEDRAL</Type>
 			<SpecialBuildingType>NONE</SpecialBuildingType>
 			<Description>Cathedral</Description>
-			<Civilopedia>TXT_KEY_BUILDING_ANGKOR_WAT_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_ANGKOR_WAT_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
             <Help>[ICON_BULLET]Can only be build in a Theocracy</Help>
 			<PrereqCivic>CIVIC_THEOCRACY</PrereqCivic>			
 			<Advisor>ADVISOR_RELIGION</Advisor>
@@ -152,8 +152,8 @@
             <Type>BUILDING_WM_ARROW_TOWER</Type>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <Description>Arrow Tower</Description>
-            <Civilopedia>TXT_KEY_BUILDING_WM_ARROW_TOWER_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_WM_ARROW_TOWER_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
             <Help></Help>
             <Advisor>ADVISOR_MILITARY</Advisor>
             <ArtDefineTag>ART_DEF_BUILDING_WM_ARROW_TOWER</ArtDefineTag>
@@ -197,9 +197,9 @@
             <BuildingClass>BUILDINGCLASS_WM_UNIVERSITY</BuildingClass>
             <Type>BUILDING_WM_UNIVERSITY</Type>
             <SpecialBuildingType>NONE</SpecialBuildingType>
-            <Description>University</Description>
-            <Civilopedia>TXT_KEY_BUILDING_WM_UNIVERSITY_PEDIA</Civilopedia>
-            <Strategy></Strategy>
+            <Description>Lyceum</Description>
+			<Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
             <Help>[ICON_BULLET]The University requires Scholarship Civic</Help>
             <Advisor>ADVISOR_SCIENCE</Advisor>
             <ArtDefineTag>ART_DEF_BUILDING_OXFORD_UNIVERSITY</ArtDefineTag>
@@ -252,8 +252,8 @@
             <Type>BUILDING_WM_TREE_OF_SUCELLUS</Type>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <Description>Council Tree</Description>
-            <Civilopedia>TXT_KEY_BUILDING_COUNCIL_TREE_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_COUNCIL_TREE_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
             <!--<Help>[ICON_BULLET]Converts all Forest and Jungle near the City to Ancient Forest</Help>  bugged pending getting python to fire, then should work-->
             <Advisor>ADVISOR_ECONOMY</Advisor>
             <ArtDefineTag>ART_DEF_BUILDING_COUNCIL_TREE</ArtDefineTag>
@@ -351,6 +351,7 @@
             <Type>BUILDING_WM_OGHAM_LANDMARK</Type>
             <Description>Ogham Landmark</Description>
             <Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
             <Advisor>ADVISOR_MILITARY</Advisor>
             <ArtDefineTag>ART_DEF_BUILDING_OGHAM_LANDMARK</ArtDefineTag>
             <PrereqTech>TECH_CALENDAR</PrereqTech>
@@ -393,9 +394,9 @@
 			<BuildingClass>BUILDINGCLASS_OAC_VACANT_MAUSOLEUM</BuildingClass>
 			<Type>BUILDING_OAC_VACANT_MAUSOLEUM</Type>
 			<SpecialBuildingType>NONE</SpecialBuildingType>
-			<Description>Vacant Mausoleum</Description>
-			<Civilopedia>TXT_KEY_BUILDING_VACANT_MAUSOLEUM_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_VACANT_MAUSOLEUM_STRATEGY</Strategy>
+			<Description>Eternal Stela</Description>
+			<Civilopedia>Let the names inscribed here remain for all time.</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MAUSOLEUM_OF_MAUSSOLLOS</ArtDefineTag>
 			<iConquestProb>100</iConquestProb>
@@ -440,9 +441,9 @@
 			<BuildingClass>BUILDINGCLASS_OAC_TEMPLE_OF_DAGDA</BuildingClass>
 			<Type>BUILDING_OAC_TEMPLE_OF_DAGDA</Type>
 			<SpecialBuildingType>NONE</SpecialBuildingType>
-			<Description>Temple Of Dagda</Description>
-			<Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_TEMPLE_OF_DAGDA_STRATEGY</Strategy>
+			<Description>Temple Of Tali</Description>
+            <Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_DAGDA</ArtDefineTag>
 			<iConquestProb>100</iConquestProb>
@@ -537,8 +538,8 @@
 			<Type>BUILDING_OAC_IDOL_OF_SAINT</Type>
 			<SpecialBuildingType>NONE</SpecialBuildingType>
 			<Description>Oath of Preservation</Description>
-			<Civilopedia>TXT_KEY_BUILDING_IDOL_OF_SAINT_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_IDOL_OF_SAINT_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_IDOL_OF_SAINT</ArtDefineTag>
 			<iConquestProb>100</iConquestProb>
@@ -625,8 +626,8 @@
 			<Type>BUILDING_OAC_TOWER_OF_HERVE</Type>
 			<SpecialBuildingType>NONE</SpecialBuildingType>
 			<Description>Tower Of Herve</Description>
-			<Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_TOWER_OF_HERVE_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOWER_OF_HERVE</ArtDefineTag>
 			<iConquestProb>100</iConquestProb>
@@ -661,8 +662,8 @@
 			<Type>BUILDING_OAC_GREED_OF_VELGYR</Type>
 			<SpecialBuildingType>NONE</SpecialBuildingType>
 			<Description>Greed Of Velgyr</Description>
-			<Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_GREED_OF_VELGYR_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GREED_OF_VELGYR</ArtDefineTag>
 			<iConquestProb>100</iConquestProb>
@@ -704,8 +705,8 @@
 			<Type>BUILDING_OAC_THREEFIELD_ORDER</Type>
 			<SpecialBuildingType>NONE</SpecialBuildingType>
 			<Description>Threefield Order</Description>
-			<Civilopedia>TXT_KEY_BUILDING_THREEFIELD_ORDER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_THREEFIELD_ORDER_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_THREEFIELD_ORDER</ArtDefineTag>
 			<iConquestProb>100</iConquestProb>
@@ -757,8 +758,8 @@
 			<Type>BUILDING_OAC_RATCATCHERS_GUILD</Type>
 			<SpecialBuildingType>NONE</SpecialBuildingType>
 			<Description>Ratchatcher's Guild</Description>
-			<Civilopedia>TXT_KEY_BUILDING_RATCATCHERS_GUILD_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_RATCATCHERS_GUILD_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_RATCATCHERS_GUILD</ArtDefineTag>
 			<iConquestProb>100</iConquestProb>
@@ -812,8 +813,8 @@
 			<Type>BUILDING_OAC_LEUCETIOUS_ATELIER</Type>
 			<SpecialBuildingType>NONE</SpecialBuildingType>
 			<Description>Leucetious' Atelier</Description>
-			<Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_LEUCETIOUS_ATELIER_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_LEUCETIOUS_ATELIER</ArtDefineTag>
 			<iConquestProb>100</iConquestProb>
@@ -881,13 +882,15 @@
 			<Type>BUILDING_OAC_CIRCLE_OF_EIGHT</Type>
 			<SpecialBuildingType>NONE</SpecialBuildingType>
 			<Description>Circle Of Eight</Description>
-			<Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_CIRCLE_OF_EIGHT_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CIRCLE_OF_EIGHT</ArtDefineTag>
 			<iConquestProb>100</iConquestProb>
-			<PrereqTech>TECH_SORCERY</PrereqTech>
-			<PrereqTech>TECH_SANITATION</PrereqTech>
+			<TechTypes>
+				<PrereqTech>TECH_ARCANE_LORE</PrereqTech>
+				<PrereqTech>TECH_SANITATION</PrereqTech>
+			</TechTypes>
 			<FreeBonus>BONUS_MANA_METAMAGIC</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
 			<FreeBuilding>BUILDINGCLASS_ALCHEMY_LAB</FreeBuilding>
@@ -927,8 +930,8 @@
 			<Type>BUILDING_OAC_GUILD_OF_ENDEAVORS</Type>
 			<SpecialBuildingType>NONE</SpecialBuildingType>
 			<Description>Guild Of Endeavors</Description>
-			<Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_GUILD_OF_ENDEAVORS_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GUILD_OF_ENDEAVORS</ArtDefineTag>
 			<iConquestProb>100</iConquestProb>
@@ -971,9 +974,8 @@
 			<Type>BUILDING_OAC_BREWING_OF_CREATION</Type>
 			<SpecialBuildingType>NONE</SpecialBuildingType>
 			<Description>Divine Brewery</Description>
-			<Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_BREWING_OF_CREATION_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_BREWING_OF_CREATION_HELP</Help>
+            <Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BREWING_OF_CREATION</ArtDefineTag>
 			<iConquestProb>100</iConquestProb>
@@ -1066,9 +1068,8 @@
 			<Type>BUILDING_OAC_SHRINE_OF_JUNIL</Type>
 			<SpecialBuildingType>NONE</SpecialBuildingType>
 			<Description>Shrine Of Junil</Description>
-			<Civilopedia>TXT_KEY_BUILDING_SHRINE_OF_JUNIL_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_SHRINE_OF_JUNIL_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_ONLY_GOOD_HELP</Help>
+            <Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Strategy>
 			<iConquestProb>100</iConquestProb>
 			<PrereqTech>TECH_RELIGIOUS_LAW</PrereqTech>
 			<Advisor>ADVISOR_RELIGION</Advisor>
@@ -1084,6 +1085,10 @@
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
+			<PrereqAlignments>
+				<Alignment>ALIGNMENT_GOOD</Alignment>
+				<Alignment>ALIGNMENT_NEUTRAL</Alignment>
+			</PrereqAlignments>			
 		</BuildingInfo>
     </BuildingInfos>		
 </Civ4BuildingInfos>
