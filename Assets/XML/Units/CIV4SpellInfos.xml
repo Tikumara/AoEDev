@@ -10147,6 +10147,41 @@
 			<Sound>AS3D_SPELL_DEMON</Sound>
 			<Button>Art/Interface/Buttons/Spells/Roar.dds</Button>
 		</SpellInfo>
+		<SpellInfo>
+			<!-- Repulse Metal -->
+			<Type>SPELL_BREATH_REPULSE_METAL</Type>
+			<Description>TXT_KEY_SPELL_BREATH_REPULSE_METAL</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<PromotionPrereq1>PROMOTION_MAGNETIC_FIELD</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<bIsAutoCastable>1</bIsAutoCastable>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bResistable>1</bResistable>
+			<iRange>1</iRange>
+			<iResistModify>10</iResistModify>
+			<SpellClasses>
+				<SpellClass>
+					<SpellClassType>SPELLCLASS_EARTH</SpellClassType>
+					<bSpellClass>1</bSpellClass>
+				</SpellClass>
+				<SpellClass>
+					<SpellClassType>SPELLCLASS_DEBUFF</SpellClassType>
+					<bSpellClass>1</bSpellClass>
+				</SpellClass>
+			</SpellClasses>
+			<bImmuneTeam>1</bImmuneTeam>
+			<bImmuneNeutral>1</bImmuneNeutral>
+			<bAbility>1</bAbility>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_BREATH_FIRE</Sound>
+			<Button>Art/Interface/Buttons/Spells/repulsemetal.dds</Button>
+			<RemovePromotions>
+				<RemovePromotion>PROMOTION_BRONZE_WEAPONS</RemovePromotion>
+				<RemovePromotion>PROMOTION_IRON_WEAPONS</RemovePromotion>
+				<RemovePromotion>PROMOTION_MITHRIL_WEAPONS</RemovePromotion>
+			</RemovePromotions>
+		</SpellInfo>
 		<SpellInfo>			<!-- Scaled Dragon - Lighthouse -->
 			<Type>SPELL_SCALEDRDAGON_LIGHTHOUSE</Type>
 			<Description>TXT_KEY_SPELL_FORM_OF_LIGHTHOUSE</Description>

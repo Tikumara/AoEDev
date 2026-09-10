@@ -9137,6 +9137,12 @@ def exploreLairSeedDragon(pUnit, pPlot):
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_SEED_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
+def exploreLairFangDragon(pUnit, pPlot):
+	pPlayer = gc.getPlayer(pUnit.getOwner())
+	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
+	pNewPlot = findClearPlot(-1, pPlot)
+	newUnit = bPlayer.initUnit(getInfoType('UNIT_FANG_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+
 def exploreLairBloodDragon(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
@@ -10229,6 +10235,12 @@ def exploreLairAngryFrostlingHard(pUnit, pPlot):
 	newUnit6 = bPlayer.initUnit(getInfoType('UNIT_FROSTLING_ARCHER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit7 = bPlayer.initUnit(getInfoType('UNIT_FROSTLING_WOLF_RIDER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit8 = bPlayer.initUnit(getInfoType('UNIT_FROSTLING_WOLF_RIDER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+
+def perTurnOsGabellaAlignment(pCaster):
+	pPlayer = gc.getPlayer(pCaster.getOwner())
+	if (pPlayer.getAlignment()==getInfoType("ALIGNMENT_GOOD")):
+		newUnit = pPlayer.initUnit(getInfoType('UNIT_OS_GABELLA_REDEEMED'), pCaster.getX(), pCaster.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		newUnit.convert(pCaster)
 
 def perTurnArmaWeapon(pCaster):
 	pPlayer = gc.getPlayer(pCaster.getOwner())

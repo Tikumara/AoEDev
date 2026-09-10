@@ -7242,6 +7242,230 @@
 			<iTier>6</iTier>
 			<Image>Art/Interface/Popups/OsGabellaBanner.dds</Image>
 			<Quote>TXT_KEY_POPUP_OSGABELLA_CREATION</Quote>
+			<PyPerTurn>perTurnOsGabellaAlignment(pCaster)</PyPerTurn>
+		</UnitInfo>
+		<UnitInfo>        <!-- Os-Gabella Redeemed -->
+			<Class>UNITCLASS_OS_GABELLA</Class>
+			<Type>UNIT_OS_GABELLA_REDEEMED</Type>
+			<Combat>UNITCOMBAT_RECON</Combat>
+			<DefaultUnitAI>UNITAI_HERO</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_OS-GABELLA_UNIT_REDEEMED</Description>
+			<Civilopedia>TXT_KEY_UNIT_OS-GABELLA_UNIT_REDEEMED_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_OS-GABELLA_UNIT_REDEEMED_STRATEGY</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_MAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_WARWIZARD</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_MANA_UPGRADE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_TERRAFORMER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<NotUnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_WORKER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</NotUnitAIs>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_MANA_CREATION</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_ICE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_FORCE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_DIMENSIONAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_AIR</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_BODY</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_CHAOS</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_DEATH</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_EARTH</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_ENCHANTMENT</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_ENTROPY</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_FIRE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_LAW</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_LIFE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_METAMAGIC</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_MIND</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_NATURE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_SPIRIT</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_WATER</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_SHADOW</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_MANA_SUN</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
+			<PrereqTech>TECH_NEVER</PrereqTech>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>32</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_MAGIC</FlavorType>
+					<iFlavor>40</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iAIWeight>50</iAIWeight>
+			<iCost>-1</iCost>
+			<iMoves>2</iMoves>
+			<iWorkRate>400</iWorkRate>
+			<iCombat>6</iCombat>
+			<bImmortal>1</bImmortal>
+			<iCultureGarrison>6</iCultureGarrison>
+			<iAsset>10</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_OS_GABELLA_REDEEMED</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DIMENSIONAL1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DIMENSIONAL2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DIMENSIONAL3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MASTER_OF_DIMENSIONS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MAGIC_RESISTANCE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_HERO</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_ARCANE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SUBDUE_ANIMAL</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SUBDUE_BEASTS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_LORUM_DIABOLI</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<BonusAffinities>
+				<BonusAffinity>
+					<BonusType>BONUS_MANA_DIMENSIONAL</BonusType>
+					<iAffinity>2</iAffinity>
+				</BonusAffinity>
+			</BonusAffinities>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_HOLY</DamageType>
+					<iCombat>2</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+			<bFreeXP>1</bFreeXP>
+			<iFreePromotionPick>1</iFreePromotionPick>
+			<iTier>6</iTier>
+			<Image>Art/Interface/Popups/OsgabellaAppTitan.dds</Image>
+			<Quote>TXT_KEY_POPUP_OSGABELLA_REDEEMED_CREATION</Quote>
 		</UnitInfo>
 		<UnitInfo>        <!-- PERPENTACH -->
 			<Class>UNITCLASS_PERPENTACH</Class>
@@ -59790,10 +60014,6 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_HERO</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-				<FreePromotion>
 					<PromotionType>PROMOTION_MONSTROUS_CREATURE</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
@@ -59892,10 +60112,6 @@
 				</FreePromotion>
 				<FreePromotion>
 					<PromotionType>PROMOTION_DRAGON</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-				<FreePromotion>
-					<PromotionType>PROMOTION_HERO</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
@@ -60001,10 +60217,6 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_HERO</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-				<FreePromotion>
 					<PromotionType>PROMOTION_MONSTROUS_CREATURE</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
@@ -60103,10 +60315,6 @@
 				</FreePromotion>
 				<FreePromotion>
 					<PromotionType>PROMOTION_DRAGON</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-				<FreePromotion>
-					<PromotionType>PROMOTION_HERO</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
@@ -60211,10 +60419,6 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_HERO</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-				<FreePromotion>
 					<PromotionType>PROMOTION_MONSTROUS_CREATURE</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
@@ -60316,10 +60520,6 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_HERO</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-				<FreePromotion>
 					<PromotionType>PROMOTION_MONSTROUS_CREATURE</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
@@ -60364,6 +60564,119 @@
 			<Quote>TXT_KEY_POPUP_ELDER_DRAGON_CREATION</Quote>
 			<iPowerAdd>200</iPowerAdd>
 			<iPowerMult>10</iPowerMult>
+		</UnitInfo>
+		<UnitInfo>	<!-- Fang Dragon -->
+			<Class>UNITCLASS_FANG_DRAGON</Class>
+			<Type>UNIT_FANG_DRAGON</Type>
+			<Combat>UNITCOMBAT_BEAST</Combat>
+			<DefaultUnitAI>UNITAI_HERO</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_FANG_DRAGON</Description>
+			<Civilopedia>TXT_KEY_UNIT_FANG_DRAGON_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_FANG_DRAGON_STRATEGY</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<bCanMoveImpassable>1</bCanMoveImpassable>
+			<bIgnoreTerrainCost>1</bIgnoreTerrainCost>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_HERO</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>30</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iCost>-1</iCost>
+			<iMoves>4</iMoves>
+			<iCombat>35</iCombat>
+			<iDropRange>4</iDropRange>
+			<iCombatDefense>30</iCombatDefense>
+			<iXPValueAttack>100</iXPValueAttack>
+			<iXPValueDefense>50</iXPValueDefense>
+			<!-- Collateral -->
+			<iCollateralDamage>100</iCollateralDamage>
+			<iCollateralDamageLimit>100</iCollateralDamageLimit>
+			<iCollateralDamageMaxUnits>6</iCollateralDamageMaxUnits>
+			<!-- /Collateral -->
+			<iCultureGarrison>16</iCultureGarrison>
+			<iAsset>42</iAsset>
+			<PrereqTech>TECH_NEVER</PrereqTech>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_FANG_DRAGON</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MAGIC_IMMUNE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DRAGON</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MONSTROUS_CREATURE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MAGNETIC_FIELD</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<TerrainImpassables>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+			</TerrainImpassables>
+			<DenyPromotions>
+				<Promotion>PROMOTION_TAME</Promotion>
+			</DenyPromotions>
+			<bCanClimbPeaks>1</bCanClimbPeaks>
+			<iTier>4</iTier>
+			<Image>Art/Interface/Popups/FangDragonBorder.dds</Image>
+			<iPowerAdd>200</iPowerAdd>
+			<iPowerMult>10</iPowerMult>
+			<Quote>TXT_KEY_UNIT_FANG_DRAGON_CREATION</Quote>
 		</UnitInfo>
 		<UnitInfo>        <!-- Dracolich -->
 			<Class>UNITCLASS_DRACOLICH</Class>

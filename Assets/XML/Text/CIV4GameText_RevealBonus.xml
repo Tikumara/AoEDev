@@ -651,6 +651,22 @@
 		<Spanish>Angelorum Cavea</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_LORUM_DIABOLI</Tag>
+		<English>Lorum Diaboli</English>
+		<French>Lorum Diaboli</French>
+		<German>Lorum Diaboli</German>
+		<Italian>Lorum Diaboli</Italian>
+		<Spanish>Lorum Diaboli</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_LORUM_DIABOLI_PEDIA</Tag>
+		<English>It will one day be placed in the heart of the Carcer Judicium, as a prison for all demonkind.</English>
+		<French>It will one day be placed in the heart of the Carcer Judicium, as a prison for all demonkind.</French>
+		<German>It will one day be placed in the heart of the Carcer Judicium, as a prison for all demonkind.</German>
+		<Italian>It will one day be placed in the heart of the Carcer Judicium, as a prison for all demonkind.</Italian>
+		<Spanish>It will one day be placed in the heart of the Carcer Judicium, as a prison for all demonkind.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_EQUIPMENT_CLAVA_VINDEX_HELP</Tag>
 		<English>[ICON_BULLET]Prevents units killed by it from returning as [LINK=UNIT_MANES]Manes[\LINK] or being [LINK=SPELL_RESURRECTION]Resurrected[\LINK].</English>
 		<French>[ICON_BULLET]Prevents units killed by it from returning as [LINK=UNIT_MANES]Manes[\LINK] or being [LINK=SPELL_RESURRECTION]Resurrected[\LINK].</French>
@@ -11961,6 +11977,99 @@ Prepare yourselves.</German>
 Prepare yourselves.</Italian>
 		<Spanish>A surge of necromantic energy shakes the foundations of this place as bone and claw rip themselves from the churning earth and meld into the towering form of a Dracolich.
 Prepare yourselves.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FANG_DRAGON</Tag>
+		<English>Fang Dragon</English>
+		<French>Fang Dragon</French>
+		<German>Fang Dragon</German>
+		<Italian>Fang Dragon</Italian>
+		<Spanish>Fang Dragon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FANG_DRAGON_PEDIA</Tag>
+		<English>The only flightless dragon. The Fang Dragon can pass through stone and are four times as heavy as it's significant size would indicate. It is quick on land, but when passing through earth it's almost instantaneous. It has no breath weapon, but it's bite easily cuts through stone and metal alike. Flesh and bone are little more than water to them. Fang Dragons can control a powerful magnetic field around their body, either attracting, or repulsing metal. Fang Dragon teeth, horns and scales are prized by enchanters and crafters. But priests of Kilmorph consider them sacred. Fang Dragons collect large gemstones and can be bribed for safe passage with a gem of unusual beauty.</English>
+		<French>The only flightless dragon. The Fang Dragon can pass through stone and are four times as heavy as it's significant size would indicate. It is quick on land, but when passing through earth it's almost instantaneous. It has no breath weapon, but it's bite easily cuts through stone and metal alike. Flesh and bone are little more than water to them. Fang Dragons can control a powerful magnetic field around their body, either attracting, or repulsing metal. Fang Dragon teeth, horns and scales are prized by enchanters and crafters. But priests of Kilmorph consider them sacred. Fang Dragons collect large gemstones and can be bribed for safe passage with a gem of unusual beauty.</French>
+		<German>The only flightless dragon. The Fang Dragon can pass through stone and are four times as heavy as it's significant size would indicate. It is quick on land, but when passing through earth it's almost instantaneous. It has no breath weapon, but it's bite easily cuts through stone and metal alike. Flesh and bone are little more than water to them. Fang Dragons can control a powerful magnetic field around their body, either attracting, or repulsing metal. Fang Dragon teeth, horns and scales are prized by enchanters and crafters. But priests of Kilmorph consider them sacred. Fang Dragons collect large gemstones and can be bribed for safe passage with a gem of unusual beauty.</German>
+		<Italian>The only flightless dragon. The Fang Dragon can pass through stone and are four times as heavy as it's significant size would indicate. It is quick on land, but when passing through earth it's almost instantaneous. It has no breath weapon, but it's bite easily cuts through stone and metal alike. Flesh and bone are little more than water to them. Fang Dragons can control a powerful magnetic field around their body, either attracting, or repulsing metal. Fang Dragon teeth, horns and scales are prized by enchanters and crafters. But priests of Kilmorph consider them sacred. Fang Dragons collect large gemstones and can be bribed for safe passage with a gem of unusual beauty.</Italian>
+		<Spanish>The only flightless dragon. The Fang Dragon can pass through stone and are four times as heavy as it's significant size would indicate. It is quick on land, but when passing through earth it's almost instantaneous. It has no breath weapon, but it's bite easily cuts through stone and metal alike. Flesh and bone are little more than water to them. Fang Dragons can control a powerful magnetic field around their body, either attracting, or repulsing metal. Fang Dragon teeth, horns and scales are prized by enchanters and crafters. But priests of Kilmorph consider them sacred. Fang Dragons collect large gemstones and can be bribed for safe passage with a gem of unusual beauty.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_FANG_CREATION</Tag>
+		<English>A Fang Dragon, beautiful and deadly, has been disturbed from it's rest.
+Angered by a tunnelling miner's indiscretion, or by some sacrilege against Kilmorph, it now intends to carve a path of destruction through Erebus.</English>
+		<French>A Fang Dragon, beautiful and deadly, has been disturbed from it's rest.
+Angered by a tunnelling miner's indiscretion, or by some sacrilege against Kilmorph, it now intends to carve a path of destruction through Erebus.</French>
+		<German>A Fang Dragon, beautiful and deadly, has been disturbed from it's rest.
+Angered by a tunnelling miner's indiscretion, or by some sacrilege against Kilmorph, it now intends to carve a path of destruction through Erebus.</German>
+		<Italian>A Fang Dragon, beautiful and deadly, has been disturbed from it's rest.
+Angered by a tunnelling miner's indiscretion, or by some sacrilege against Kilmorph, it now intends to carve a path of destruction through Erebus.</Italian>
+		<Spanish>A Fang Dragon, beautiful and deadly, has been disturbed from it's rest.
+Angered by a tunnelling miner's indiscretion, or by some sacrilege against Kilmorph, it now intends to carve a path of destruction through Erebus.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_EXPLORE_LAIR_FANG_DRAGON</Tag>
+		<English>Your unit is digging away, deep underground, pickaxe cutting deep into the rock walls as they search for treasure.
+The rock in this section is especially tough; the pick seems to glance off every strike like armour, or maybe a shell.
+Determined, your unit swings harder and harder until suddenly they find a gap of softer rock, almost spongy to the touch.
+Excited, they swing their shoulder back and put the full weight of themself into the next swing, causing it to sink in deep!
+The rock begins to violently heave and shake around the unit, and a terrible roar booms into the narrow tunnel.
+The pickaxe is wrenched from the unit as the rock turns around, revealing a gemed dragon, beautiful and deadly.
+
+And the pickaxe appears to be lodged in what is probably its rectum.
+It's time to leave!</English>
+		<French>Your unit is digging away, deep underground, pickaxe cutting deep into the rock walls as they search for treasure.
+The rock in this section is especially tough; the pick seems to glance off every strike like armour, or maybe a shell.
+Determined, your unit swings harder and harder until suddenly they find a gap of softer rock, almost spongy to the touch.
+Excited, they swing their shoulder back and put the full weight of themself into the next swing, causing it to sink in deep!
+The rock begins to violently heave and shake around the unit, and a terrible roar booms into the narrow tunnel.
+The pickaxe is wrenched from the unit as the rock turns around, revealing a gemed dragon, beautiful and deadly.
+
+And the pickaxe appears to be lodged in what is probably its rectum.
+It's time to leave!</French>
+		<German>Your unit is digging away, deep underground, pickaxe cutting deep into the rock walls as they search for treasure.
+The rock in this section is especially tough; the pick seems to glance off every strike like armour, or maybe a shell.
+Determined, your unit swings harder and harder until suddenly they find a gap of softer rock, almost spongy to the touch.
+Excited, they swing their shoulder back and put the full weight of themself into the next swing, causing it to sink in deep!
+The rock begins to violently heave and shake around the unit, and a terrible roar booms into the narrow tunnel.
+The pickaxe is wrenched from the unit as the rock turns around, revealing a gemed dragon, beautiful and deadly.
+
+And the pickaxe appears to be lodged in what is probably its rectum.
+It's time to leave!</German>
+		<Italian>Your unit is digging away, deep underground, pickaxe cutting deep into the rock walls as they search for treasure.
+The rock in this section is especially tough; the pick seems to glance off every strike like armour, or maybe a shell.
+Determined, your unit swings harder and harder until suddenly they find a gap of softer rock, almost spongy to the touch.
+Excited, they swing their shoulder back and put the full weight of themself into the next swing, causing it to sink in deep!
+The rock begins to violently heave and shake around the unit, and a terrible roar booms into the narrow tunnel.
+The pickaxe is wrenched from the unit as the rock turns around, revealing a gemed dragon, beautiful and deadly.
+
+And the pickaxe appears to be lodged in what is probably its rectum.
+It's time to leave!</Italian>
+		<Spanish>Your unit is digging away, deep underground, pickaxe cutting deep into the rock walls as they search for treasure.
+The rock in this section is especially tough; the pick seems to glance off every strike like armour, or maybe a shell.
+Determined, your unit swings harder and harder until suddenly they find a gap of softer rock, almost spongy to the touch.
+Excited, they swing their shoulder back and put the full weight of themself into the next swing, causing it to sink in deep!
+The rock begins to violently heave and shake around the unit, and a terrible roar booms into the narrow tunnel.
+The pickaxe is wrenched from the unit as the rock turns around, revealing a gemed dragon, beautiful and deadly.
+
+And the pickaxe appears to be lodged in what is probably its rectum.
+It's time to leave!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BREATH_REPULSE_METAL</Tag>
+		<English>Repulse Metal</English>
+		<French>Repulse Metal</French>
+		<German>Repulse Metal</German>
+		<Italian>Repulse Metal</Italian>
+		<Spanish>Repulse Metal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MAGNETIC_FIELD</Tag>
+		<English>Magnetic Field</English>
+		<French>Magnetic Field</French>
+		<German>Magnetic Field</German>
+		<Italian>Magnetic Field</Italian>
+		<Spanish>Magnetic Field</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_DRAGON_TEARS</Tag>

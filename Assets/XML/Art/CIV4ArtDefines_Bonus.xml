@@ -828,8 +828,8 @@
 			<Type>ART_DEF_BONUS_EFFLUVIUM</Type>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/effects/cities_smoking/fx_cities_smoking_01.nif</NIF>
-			<KFM/>
+			<NIF>Art/Terrain/Resources/Effluvium/Copper.nif</NIF>
+			<KFM>Art/Terrain/Resources/Effluvium/Copper.kfm</KFM>
 			<Button>Art/Interface/Buttons/WorldBuilder/Effluvium.dds</Button>
 			<FontButtonIndex>135</FontButtonIndex>
 		</BonusArtInfo>

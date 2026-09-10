@@ -2455,6 +2455,53 @@
 					<iCombat>2</iCombat>
 				</DamageTypeCombat>
 			</DamageTypeCombats>
+			<BonusAffinities>
+				<BonusAffinity>
+					<BonusType>BONUS_CARCEREM</BonusType>
+					<iAffinity>1</iAffinity>
+				</BonusAffinity>
+			</BonusAffinities>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Lorum diaboli -->
+			<Type>PROMOTION_LORUM_DIABOLI</Type>
+			<Description>TXT_KEY_EQUIPMENT_LORUM_DIABOLI</Description>
+			<Help>TXT_KEY_EQUIPMENT_CLAVA_VINDEX_HELP</Help>
+			<Civilopedia>TXT_KEY_EQUIPMENT_LORUM_DIABOLI_PEDIA</Civilopedia>
+			<iAsset>50</iAsset>
+			<Button>Art/Interface/Buttons/Equipment/lorum_diaboli.dds</Button>
+			<bEquipment>1</bEquipment>
+			<PromotionCombatMods>
+				<PromotionCombatMod>
+					<PromotionType>PROMOTION_DEMON</PromotionType>
+					<iCombatMod>100</iCombatMod>
+				</PromotionCombatMod>
+				<PromotionCombatMod>
+					<PromotionType>PROMOTION_ICE_DEMON</PromotionType>
+					<iCombatMod>100</iCombatMod>
+				</PromotionCombatMod>
+			</PromotionCombatMods>
+			<PythonPostCombatLost>postCombatClavaVindex(pCaster, pOpponent)</PythonPostCombatLost>
+			<PythonPostCombatWon>postCombatClavaVindex(pCaster, pOpponent)</PythonPostCombatWon>
+			<CityBonuses>
+				<CityBonus>
+					<bApplySelf>1</bApplySelf>
+					<bApplyTeam>1</bApplyTeam>
+					<fCrime>-6</fCrime>
+					<iBonusRange>2</iBonusRange>
+				</CityBonus>
+			</CityBonuses>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_HOLY</DamageType>
+					<iCombat>1</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+			<BonusAffinities>
+				<BonusAffinity>
+					<BonusType>BONUS_CARCEREM</BonusType>
+					<iAffinity>1</iAffinity>
+				</BonusAffinity>
+			</BonusAffinities>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Compelling Jewel -->
 			<Type>PROMOTION_COMPELLING_JEWEL</Type>
@@ -14302,6 +14349,12 @@
 				</AuraBonus>
 			</AuraBonuses>
 			<Button>Art/Interface/Buttons/Promotions/SacredTear.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo> <!-- Magnetic Field -->
+			<Type>PROMOTION_MAGNETIC_FIELD</Type>
+			<Description>TXT_KEY_PROMOTION_MAGNETIC_FIELD</Description>
+			<bNoXP>1</bNoXP>
+			<Button>Art/Interface/Buttons/Units/Lightning Elemental.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Shimmering Human Form -->
 			<Type>PROMOTION_SHIMMERING_HUMAN_FORM</Type>

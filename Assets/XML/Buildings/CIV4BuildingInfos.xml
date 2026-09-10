@@ -6506,7 +6506,6 @@
 			<iAIWeight>15</iAIWeight>
 			<iCost>160</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iMinAreaSize>10</iMinAreaSize>
 			<iConquestProb>25</iConquestProb>
 			<iAsset>1</iAsset>
 			<iPower>1</iPower>
@@ -6547,7 +6546,6 @@
 			<iAIWeight>15</iAIWeight>
 			<iCost>220</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iMinAreaSize>10</iMinAreaSize>
 			<iConquestProb>25</iConquestProb>
 			<iAsset>1</iAsset>
 			<iPower>1</iPower>
@@ -6610,7 +6608,6 @@
 			<iAIWeight>15</iAIWeight>
 			<iCost>160</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iMinAreaSize>10</iMinAreaSize>
 			<iConquestProb>25</iConquestProb>
 			<iAsset>1</iAsset>
 			<iPower>1</iPower>
@@ -6651,7 +6648,6 @@
 			<iAIWeight>15</iAIWeight>
 			<iCost>220</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iMinAreaSize>10</iMinAreaSize>
 			<iConquestProb>25</iConquestProb>
 			<iAsset>1</iAsset>
 			<iPower>1</iPower>

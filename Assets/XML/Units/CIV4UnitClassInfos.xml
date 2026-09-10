@@ -184,6 +184,17 @@
 			<DefaultUnit>UNIT_OS_GABELLA</DefaultUnit>
 			<iMercenaryWeight>0</iMercenaryWeight>
 		</UnitClassInfo>
+		<UnitClassInfo>		<!-- GOSEA -->
+			<Type>UNITCLASS_GOSEA</Type>
+			<Description>TXT_KEY_LEADER_GOSEA</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_GOSEA</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
 		<UnitClassInfo>		<!-- ROSIER_OATHTAKER -->
 			<Type>UNITCLASS_ROSIER_OATHTAKER</Type>
 			<Description>TXT_KEY_UNIT_ROSIER_OATHTAKER</Description>
@@ -4760,6 +4771,17 @@
 			<iInstanceCostModifier>0</iInstanceCostModifier>
 			<bUnique>1</bUnique>
 			<DefaultUnit>UNIT_SHIMMERING_DRAGON</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Fang Dragon -->
+			<Type>UNITCLASS_FANG_DRAGON</Type>
+			<Description>TXT_KEY_UNIT_FANG_DRAGON</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_FANG_DRAGON</DefaultUnit>
 			<iMercenaryWeight>0</iMercenaryWeight>
 		</UnitClassInfo>
 		<UnitClassInfo>		<!-- Dracolich -->
