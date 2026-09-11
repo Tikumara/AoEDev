@@ -296,4 +296,44 @@
 		<Italian>[TAB]The eternal winter of the Age of Ice provided sustainable benefits to those who knew how to live with it. The Illians, for example, could extract food bonuses from otherwise unworkable terrain. But the Frozen of Mulcarn, who need no food, can turn the latent energy of winter into what they need- not food or water, but raw materials and rare metals. [PARAGRAPH:2]But for anyone else, these extremely harsh winters, harsher than blizzards, provide nothing at all.</Italian>
 		<Spanish>[TAB]The eternal winter of the Age of Ice provided sustainable benefits to those who knew how to live with it. The Illians, for example, could extract food bonuses from otherwise unworkable terrain. But the Frozen of Mulcarn, who need no food, can turn the latent energy of winter into what they need- not food or water, but raw materials and rare metals. [PARAGRAPH:2]But for anyone else, these extremely harsh winters, harsher than blizzards, provide nothing at all.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_STALKS</Tag>
+		<English>Fairylight Stalks</English>
+		<French>Fairylight Stalks</French>
+		<German>Fairylight Stalks</German>
+		<Italian>Fairylight Stalks</Italian>
+		<Spanish>Fairylight Stalks</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ETERNAL_WOODS</Tag>
+		<English>Eternal Woods</English>
+		<French>Eternal Woods</French>
+		<German>Eternal Woods</German>
+		<Italian>Eternal Woods</Italian>
+		<Spanish>Eternal Woods</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_MUSHROOM_FOREST</Tag>
+		<English>Mushroom Forest</English>
+		<French>Mushroom Forest</French>
+		<German>Mushroom Forest</German>
+		<Italian>Mushroom Forest</Italian>
+		<Spanish>Mushroom Forest</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_DARK_MUSHROOMS</Tag>
+		<English>Ancient Mushroom Forest</English>
+		<French>Ancient Mushroom Forest</French>
+		<German>Ancient Mushroom Forest</German>
+		<Italian>Ancient Mushroom Forest</Italian>
+		<Spanish>Ancient Mushroom Forest</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_JUNGLE_ANCIENT</Tag>
+		<English>Ancient Jungle</English>
+		<French>Ancient Jungle</French>
+		<German>Ancient Jungle</German>
+		<Italian>Ancient Jungle</Italian>
+		<Spanish>Ancient Jungle</Spanish>
+	</TEXT>
 </Civ4GameText>
