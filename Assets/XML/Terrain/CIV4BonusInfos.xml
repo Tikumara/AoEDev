@@ -3302,7 +3302,6 @@
 			<iPlayer>100</iPlayer>
 			<bHills>1</bHills>
 			<bFlatlands>1</bFlatlands>
-			<bNoRiverSide>1</bNoRiverSide>
 			<TerrainBooleans>
 				<TerrainBoolean>
 					<TerrainType>TERRAIN_GRASS</TerrainType>
@@ -3384,7 +3383,6 @@
 			<iUnique>7</iUnique>
 			<bHills>1</bHills>
 			<bFlatlands>1</bFlatlands>
-			<bNoRiverSide>1</bNoRiverSide>
 			<TerrainBooleans>
 				<TerrainBoolean>
 					<TerrainType>TERRAIN_GRASS</TerrainType>

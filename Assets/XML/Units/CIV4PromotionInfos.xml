@@ -33387,9 +33387,10 @@
 		<PromotionInfo>		<!-- Elephant Blood-->
 			<Type>PROMOTION_ELEPHANT_BLOOD</Type>
 			<Description>TXT_KEY_PROMOTION_ELEPHANT_BLOOD</Description>
-			<iExperiencePercent>20</iExperiencePercent>
-			<iExtraCombatStr>1</iExtraCombatStr>
-			<iExtraCombatDefense>1</iExtraCombatDefense>
+			<iCombatPercent>15</iCombatPercent>
+			<iCollateralExtraTargets>2</iCollateralExtraTargets>
+			<iCollateralLimitBoost>20</iCollateralLimitBoost>
+			<iCollateralDamageChange>10</iCollateralDamageChange>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
@@ -33448,7 +33449,7 @@
 			<Description>TXT_KEY_PROMOTION_GRIFFON_BLOOD</Description>
 			<iVisibilityChange>1</iVisibilityChange>
 			<iExtraPerception>1</iExtraPerception>
-			<bIgnoreTerrainCosts>1</bIgnoreTerrainCosts>
+			<bClimbPeaks>1</bClimbPeaks>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
@@ -33596,12 +33597,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<DamageTypeCombats>
-				<DamageTypeCombat>
-					<DamageType>DAMAGE_POISON</DamageType>
-					<iCombat>1</iCombat>
-				</DamageTypeCombat>
-			</DamageTypeCombats>
+			<iInvisibleLevel>1</iInvisibleLevel>
 			<PromotionExcludes>
 				<Promotion>PROMOTION_WILD_DOVIELLO</Promotion>
 			</PromotionExcludes>
@@ -33635,7 +33631,7 @@
 			<Type>PROMOTION_TIGER_BLOOD</Type>
 			<Help>TXT_KEY_PROMOTION_LION_BLOOD_HELP</Help>
 			<Description>TXT_KEY_PROMOTION_TIGER_BLOOD</Description>
-			<iChanceFirstStrikesChange>2</iChanceFirstStrikesChange>
+			<iChanceFirstStrikesChange>1</iChanceFirstStrikesChange>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
